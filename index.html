@@ -2481,4 +2481,43 @@
             });
         });
     </script>
+    <script>
+        // Отключаем все анимации hero на мобильных устройствах
+function disableHeroAnimations() {
+    if (window.innerWidth <= 1024) {
+        // Делаем все слова сразу видимыми
+        const allWords = document.querySelectorAll('.reveal-word');
+        allWords.forEach(word => {
+            word.classList.add('filled');
+            word.style.color = 'white';
+            word.style.webkitTextStroke = '0';
+            word.style.animation = 'none';
+            word.style.transition = 'none';
+        });
+        
+        // Для слова achieve
+        const achieveWord = document.querySelector('#achieve-word');
+        if (achieveWord) {
+            achieveWord.style.color = 'var(--accent-gold)';
+            achieveWord.style.animation = 'none';
+            achieveWord.style.transition = 'none';
+        }
+        
+        // Убираем все обработчики скролла для hero
+        window.removeEventListener('scroll', updateHeroOnScroll);
+        
+        // Убираем фиксированную высоту
+        const heroSection = document.querySelector('.hero-section');
+        if (heroSection) {
+            heroSection.style.height = 'auto';
+        }
+    }
+}
+
+// Запускаем при загрузке
+document.addEventListener('DOMContentLoaded', disableHeroAnimations);
+
+// И при изменении размера окна
+window.addEventListener('resize', disableHeroAnimations);
+    </script>
 </html>

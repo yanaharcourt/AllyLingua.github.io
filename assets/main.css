@@ -851,45 +851,6 @@ h6 {
     transform: translateY(-5px);
 }
 
-/* Responsive styles */
-@media (max-width: 992px) {
-    .features-container {
-        flex-direction: column;
-    }
-
-    .feature-block {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .why-choose-section {
-        padding: 60px 40px;
-    }
-
-    .section-title {
-        font-size: 36px;
-    }
-}
-
-@media (max-width: 576px) {
-    .why-choose-section {
-        padding: 40px 20px;
-    }
-
-    .section-title {
-        font-size: 32px;
-    }
-
-    .feature-header h4 {
-        font-size: 20px;
-    }
-
-    .feature-number {
-        font-size: 48px;
-    }
-}
-
 /*--------------------------------------------------------------
 # Benefits 
 --------------------------------------------------------------*/
