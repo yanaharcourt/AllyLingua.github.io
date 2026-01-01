@@ -1677,6 +1677,132 @@ h6 {
     transform: scale(1.02);
 }
 
+/* Адаптив для разрешений от 1024px и ниже */
+@media screen and (max-width: 1024px) {
+    .programs-section {
+        margin-left: 0 !important;
+        padding: 60px 20px !important;
+        margin-bottom: 60px !important;
+        min-height: auto !important;
+    }
+
+    .programs-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        max-width: 100% !important;
+        min-height: auto !important;
+    }
+
+    .programs-text {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        text-align: center !important;
+        padding-right: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 40px !important;
+        flex: none !important;
+    }
+
+    /* Заголовок как .feature-header h4 */
+    .programs-text h1 {
+        font-size: 28px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .programs-description {
+        font-size: 15px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .programs-images {
+        display: none !important; /* Полностью скрываем фото на мобильных */
+    }
+
+    .program-tabs {
+        display: flex !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important; /* Разрешаем перенос текста на новую строку */
+        gap: 8px !important;
+        border-bottom: none !important;
+        margin-bottom: 30px !important;
+    }
+
+    .program-tab {
+        font-size: 15px !important;
+        padding: 8px 12px !important;
+        margin-right: 0 !important;
+        background: #f8f8f8 !important;
+        border-radius: 6px !important;
+        white-space: normal !important; /* Позволяет тексту внутри таба переноситься */
+        text-align: center !important;
+        border: none !important;
+        flex: none !important;
+    }
+
+    .program-tab.active {
+        background: var(--accent-color-2) !important;
+        color: var(--accent-color) !important;
+    }
+
+    .program-tab::after {
+        display: none !important;
+    }
+
+    .enrol-btn {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+}
+
+/* 768px */
+@media screen and (max-width: 768px) {
+    .programs-text h1 {
+        font-size: 28px !important;
+    }
+}
+
+/* 414px */
+@media screen and (max-width: 414px) {
+    .programs-section {
+        padding: 40px 15px !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    
+    .program-tab {
+        font-size: 14px !important;
+    }
+}
+
+/* 375px */
+@media screen and (max-width: 375px) {
+    .programs-text h1 {
+        font-size: 26px !important;
+    }
+}
+
+/* 360px */
+@media screen and (max-width: 360px) {
+    .program-tab {
+        font-size: 13px !important;
+    }
+}
+
+/* 320px */
+@media screen and (max-width: 320px) {
+    .programs-text h1 {
+        font-size: 24px !important;
+    }
+
+    .program-tab {
+        font-size: 12px !important;
+        padding: 6px 10px !important;
+    }
+}
 /*--------------------------------------------------------------
 # OUR TEACHERS
 --------------------------------------------------------------*/
