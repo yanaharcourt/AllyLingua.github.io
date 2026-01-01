@@ -2080,7 +2080,84 @@ h6 {
     max-width: 152px;
 }
 
+@media screen and (max-width: 1920px) {
+    .success-metrics {
+        gap: 80px;
+    }
+}
 
+@media screen and (max-width: 1600px) {
+    .success-metrics {
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .success-metrics {
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .success-metrics {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+    .metric-item {
+        text-align: center;
+    }
+    .metric-label {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .metric-number {
+        font-size: 42px;
+    }
+    .metric-label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .success-metrics {
+        gap: 35px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .metric-number {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .metric-number {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .metric-number {
+        font-size: 40px;
+    }
+    .metric-label {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .success-metrics {
+        gap: 30px;
+    }
+    .metric-number {
+        font-size: 38px;
+    }
+}
 
 /*--------------------------------------------------------------
 # TESTIMONIAL SECTION ? 
@@ -2402,6 +2479,7 @@ h6 {
     opacity: 0.9;
     transform: translateY(-2px);
 }
+
 
 /*--------------------------------------------------------------
 # FORM
