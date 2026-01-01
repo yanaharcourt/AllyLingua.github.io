@@ -3037,10 +3037,8 @@ select {
 }
 
 /* ============================================================
-   АДАПТИВНЫЕ СТИЛИ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ
-   ============================================================ */
-
-/* Бургер-меню (скрыто на desktop) */
+АДАПТИВНЫЕ СТИЛИ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ
+============================================================ */
 .mobile-menu-toggle {
     display: none;
     position: fixed;
@@ -3210,8 +3208,8 @@ MEDIA QUERIES MENU
     .mobile-menu-toggle {
         width: 40px;
         height: 40px;
-        top: 15px;
-        left: 360px;
+        top: 20px;
+        left: 320px;
     }
     .mobile-menu-toggle span {
         width: 22px;
@@ -3229,7 +3227,7 @@ MEDIA QUERIES MENU
     .mobile-menu-toggle {
         width: 35px;
         height: 35px;
-        top: 10px;
+        top: 15px;
         left: 325px;
     }
     .mobile-menu-toggle span {
@@ -3245,7 +3243,7 @@ MEDIA QUERIES MENU
     .mobile-menu-toggle {
         width: 35px;
         height: 35px;
-        top: 10px;
+        top: 15px;
         left: 315px;
     }
     .mobile-menu-overlay ul li a {
@@ -3258,8 +3256,8 @@ MEDIA QUERIES MENU
     .mobile-menu-toggle {
         width: 35px;
         height: 35px;
-        top: 10px;
-        left: 275px;
+        top: 15px;
+        left: 260px;
     }
 
     .mobile-menu-toggle span {
