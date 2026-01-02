@@ -2340,8 +2340,7 @@ h6 {
 # TESTIMONIAL SECTION ADAPTIVE
 --------------------------------------------------------------*/
 
-/* 1920px */
-@media (max-width: 1920px) {
+/* @media (max-width: 1920px) {
     .testimonials-section {
         max-width: 1400px;
         padding: 60px 40px;
@@ -2359,7 +2358,6 @@ h6 {
     }
 }
 
-/* 1600px */
 @media (max-width: 1600px) {
     .testimonials-section {
         max-width: 1200px;
@@ -2378,9 +2376,8 @@ h6 {
         font-size: 80px;
         left: calc(100% - 50px);
     }
-}
+} */
 
-/* 1280px */
 @media (max-width: 1280px) {
     .testimonials-section {
         padding: 50px 20px;
@@ -2416,7 +2413,6 @@ h6 {
     }
 }
 
-/* 1024px */
 @media (max-width: 1024px) {
     .testimonials-section {
         padding: 40px 15px;
@@ -2458,7 +2454,6 @@ h6 {
     }
 }
 
-/* 768px */
 @media (max-width: 768px) {
     .testimonials-header {
         text-align: center;
@@ -2498,7 +2493,6 @@ h6 {
     }
 }
 
-/* 414px */
 @media (max-width: 414px) {
     .testimonials-section {
         padding: 30px 10px;
@@ -2527,7 +2521,6 @@ h6 {
     }
 }
 
-/* 375px */
 @media (max-width: 375px) {
     .testimonials-header h2 {
         font-size: 26px;
@@ -2547,7 +2540,6 @@ h6 {
     }
 }
 
-/* 320px */
 @media (max-width: 320px) {
     .testimonials-header h2 {
         font-size: 24px;
