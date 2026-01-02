@@ -162,47 +162,33 @@
             </div>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
-                    // Optional: Initialize GSAP animations if needed
+
                     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-                        // Animate section title - with modified settings to ensure visibility
-                        gsap.from('.section-title', {
+
+                        const tl = gsap.timeline({
                             scrollTrigger: {
                                 trigger: '.why-choose-section',
                                 start: 'top 80%',
-                                once: true, // Only trigger once
-                            },
-                            y: 50,
-                            opacity: 0,
-                            duration: 1,
-                            onComplete: function () {
-                                // Force title to be visible after animation
-                                document.querySelector('.section-title').style.opacity = '1';
-                                document.querySelector('.section-title').style.visibility = 'visible';
+                                once: true
                             }
                         });
 
-                        // Animate feature blocks with stagger
-                        gsap.from('.feature-block', {
-                            scrollTrigger: {
-                                trigger: '.features-container',
-                                start: 'top 80%',
-                            },
+                        tl.from('.section-title', {
+                            y: 50,
+                            opacity: 0,
+                            duration: 0.9
+                        });
+
+                        tl.from('.feature-block', {
                             y: 30,
                             opacity: 0,
                             stagger: 0.2,
-                            duration: 0.8
-                        });
+                            duration: 0.7
+                        }, "-=0.2"); 
                     }
-                    // Optional: Custom hover behavior if needed beyond CSS
-                    const featureBlocks = document.querySelectorAll('.feature-block');
-
-                    featureBlocks.forEach(block => {
-                        block.addEventListener('mouseenter', function () {
-                            // Additional hover effects could be added here if needed
-                        });
-                    });
                 });
-            </script>
+                </script>
+
         </section>
 
         <!-- --------------------------------------------------------------
