@@ -4760,7 +4760,7 @@ FAQ
 }
 
 .mobile-menu-toggle.active span:nth-child(2) {
-    opacity: 0 !important;
+    opacity: -1 !important;
 }
 
 .mobile-menu-toggle.active span:nth-child(3) {
