@@ -1121,7 +1121,7 @@ h6 {
 
 @media (max-width: 768px) {
     .why-choose-section {
-        padding: 40px 0;
+        padding: 100px 0;
     }
     .section-title {
         font-size: 32px;
@@ -1154,6 +1154,9 @@ h6 {
 @media (max-width: 414px) {
     .container {
         padding: 0 15px;
+    }
+    .why-choose-section {
+        padding: 100px 0;
     }
     .section-title {
         font-size: 28px;
@@ -1349,7 +1352,7 @@ h6 {
     }
     .benefits-section .container {
         max-width: 100%;
-        padding: 0 20px;
+        padding: 0px;
         box-sizing: border-box;
     }
     .tab-headers {
@@ -1391,10 +1394,10 @@ h6 {
 
 @media (max-width: 414px) {
     .benefits-section {
-        padding: 40px 0 60px;
+        padding: 40px 20px;
     }
     .container {
-        padding: 0 15px;
+        padding: 0px;
     }
     .tab-headers {
         flex-direction: row;
@@ -1940,7 +1943,7 @@ h6 {
 
 @media screen and (max-width: 414px) {
     .programs-section {
-        padding: 40px 15px !important;
+        padding: 100px 20px !important;
         margin-bottom: 0 !important;
         padding-bottom: 0 !important;
     }
@@ -2191,7 +2194,7 @@ h6 {
 }
 
 @media (max-width: 414px) {
-    .teachers-section { padding: 52px 0; }
+    .teachers-section { padding: 60px; }
     .teacher-profile { display: none; }
     .teacher-profile.active { display: flex; }
     .teacher-image { height: 260px; }
@@ -2676,7 +2679,7 @@ h6 {
 
 @media (max-width: 414px) {
     .testimonials-section {
-        padding: 30px 10px;
+        padding: 100px 20px;
     }
     .testimonials-header h2 {
         font-size: 28px;
@@ -2996,7 +2999,9 @@ select {
 }
 
 @media (max-width: 414px) {
-    .trial-form-section { padding: 50px 0; }
+    .trial-form-section { 
+        padding: 50px 0; 
+    }
 
     .text-content h2 { font-size: 28px; }
 
