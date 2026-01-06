@@ -4756,15 +4756,16 @@ FAQ
 }
 
 .mobile-menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(11px);
+    transform: rotate(45deg) translate(6px);
 }
 
 .mobile-menu-toggle.active span:nth-child(2) {
-    opacity: -1 !important;
+    opacity: 0 !important;
+    display: none;
 }
 
 .mobile-menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(11px);
+    transform: rotate(-45deg) translate(6px);
 }
 
 .mobile-menu-overlay {
@@ -4774,11 +4775,13 @@ FAQ
     left: -100%;
     width: 100%;
     height: 100vh;
+    height: 100dvh; 
     background-color: var(--nav-bg);
     z-index: 999;
     transition: left 0.4s ease;
     overflow-y: auto;
-    padding: 100px 30px 30px;
+    padding: 80px 30px 30px;
+    box-sizing: border-box;
 }
 
 .mobile-menu-overlay.active {
@@ -4998,5 +5001,40 @@ MEDIA QUERIES MENU
     }
     .mobile-menu-overlay ul li a {
         font-size: 16px;
+    }
+}
+
+/* ============================================================
+GLOBAL MOBILE IMPROVEMENTS
+============================================================ */
+@media (max-width: 414px) {
+    /* Consistent section spacing */
+    section {
+        scroll-margin-top: 80px;
+    }
+    
+    /* Prevent horizontal scroll */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    /* Improve touch targets */
+    button, a, .clickable {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Better text readability */
+    p {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Fix for iOS Safari viewport height */
+@supports (-webkit-touch-callout: none) {
+    .mobile-menu-overlay {
+        height: -webkit-fill-available;
     }
 }
