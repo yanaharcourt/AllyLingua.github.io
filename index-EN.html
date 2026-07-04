@@ -1,0 +1,2457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online English Language School</title>
+
+    <!-- Подключение Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/main.css">
+    <!-- Подключение GSAP для анимаций -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+</head>
+
+    <body>
+        <!-- --------------------------------------------------------------
+        # Курсор
+        ---------------------------------------------------------------->
+        <div class="js-cursor-init">
+            <div class="cursor-circle">
+                <div class="circle_wrap"></div>
+                <div class="view_more_cursor">
+                    <span class="text">View</span>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- --------------------------------------------------------------
+        # Left Navigation
+        ---------------------------------------------------------------->
+        <div class="left-nav">
+            <a href="./index-EN.html" class="logo-container">
+                <img src="./assets/img/Logo.svg" alt="Logo" class="logo-default">
+                <img src="./assets/img/logo-active.svg" alt="Logo Hover" class="logo-hover">
+            </a>
+            <div class="burger-lines">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <span class="explore-text">EXPLORE</span>
+            <div class="side-menu">
+                <ul>
+                    <li><a href="index-EN.html">HOME</a></li>
+                    <li><a href="courses-EN.html">COURSES</a></li>
+                    <li><a href="#teachers">TEACHERS</a></li>
+                    <li><a href="#reviews">REVIEWS</a></li>
+                    <div class="language-switcher">
+                        <a href="./index.html" class="language-btn" title="Switch to Russian">
+                            <span class="language-text">RU</span>
+                        </a>
+                    </div>
+                </ul>
+                
+            </div>
+        </div>
+
+        <!-- --------------------------------------------------------------
+        # Right Navigation
+        ---------------------------------------------------------------->
+        <a href="./courses-EN.html" class="right-nav">
+            <span class="arrow">→</span>
+            <span class="enrol-text">ENROL</span>
+            <div class="right-side-menu"></div>
+        </a>
+        
+        <!-- --------------------------------------------------------------
+        # Hero Section
+        ---------------------------------------------------------------->
+        <section class="hero-section" data-cursor-text="Scroll">
+            <div class="hero-background"
+                style="background-image: url('assets/img/Hero.jpg');">
+            </div>
+
+            <div class="text-container">
+                <!-- Слова с одинаковой структурой для работы анимации -->
+                <div class="word-layer">
+                    <h1 class="reveal-word">Master</h1>
+                </div>
+                <div class="word-layer">
+                    <h1 class="reveal-word">English</h1>
+                </div>
+                <div class="word-layer">
+                    <h1 id="achieve-word" class="reveal-word">achieve</h1>
+                </div>
+                <div class="word-layer">
+                    <h1 class="reveal-word">your</h1>
+                </div>
+                <div class="word-layer">
+                    <h1 class="reveal-word">dreams</h1>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="scroll-indicator-dot"></div>
+            </div>
+        </section>
+
+        <!-- --------------------------------------------------------------
+        # Why Choose Ally Lingua
+        ---------------------------------------------------------------->
+        <section class="why-choose-section">
+            <div class="container">
+                <h1 class="section-title">Why Choose Ally Lingua?</h1>
+
+                <div class="features-container">
+                    <div class="feature-block">
+                        <div class="feature-content">
+                            <div class="feature-header">
+                                <h4>Fluent Confidence</h4>
+                                <span class="feature-number">01</span>
+                            </div>
+                            <p class="body-text-2">
+                                Attain fluency and confidence for success in professional and social interactions.
+                                Our proven methodology focuses on practical communication skills that you
+                                can apply immediately.
+                            </p>
+                            <div class="feature-line">
+                                <div class="feature-line-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-block">
+                        <div class="feature-content">
+                            <div class="feature-header">
+                                <h4>Tailored Learning</h4>
+                                <span class="feature-number">02</span>
+                            </div>
+                            <p class="body-text-2">
+                                Programs aligned with your specific goals and tailored to your personal abilities. We
+                                adjust our teaching approach to match your learning style and pace for optimal
+                                results.
+                            </p>
+                            <div class="feature-line">
+                                <div class="feature-line-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-block">
+                        <div class="feature-content">
+                            <div class="feature-header">
+                                <h4>Study Any Time</h4>
+                                <span class="feature-number">03</span>
+                            </div>
+                            <p class="body-text-2">
+                                Flexible scheduling allows you to choose your ideal study time, day or night. Our
+                                online platform makes it convenient to learn English around your busy lifestyle.
+                            </p>
+                            <div class="feature-line">
+                                <div class="feature-line-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+
+                    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+
+                        const tl = gsap.timeline({
+                            scrollTrigger: {
+                                trigger: '.why-choose-section',
+                                start: 'top 80%',
+                                once: true
+                            }
+                        });
+
+                        tl.from('.section-title', {
+                            y: 50,
+                            opacity: 0,
+                            duration: 0.9
+                        });
+
+                        tl.from('.feature-block', {
+                            y: 30,
+                            opacity: 0,
+                            stagger: 0.2,
+                            duration: 0.7
+                        }, "-=0.2"); 
+                    }
+                });
+                </script>
+
+        </section>
+
+        <!-- --------------------------------------------------------------
+        # Benefits Section with Tabs
+        ---------------------------------------------------------------->
+        <section class="benefits-section">
+            <div class="container">
+                <!-- Background text that changes with active tab -->
+                <div class="background-text-container">
+                    <h2 class="background-text active" data-tab="career">Career Success</h2>
+                    <h2 class="background-text" data-tab="global">Global Connections</h2>
+                    <h2 class="background-text" data-tab="personal">Personal Growth</h2>
+                </div>
+
+                <!-- Tab headers that act as buttons -->
+                <div class="tab-headers">
+                    <h3 class="tab-header active" data-tab="career">Career Success</h3>
+                    <h3 class="tab-header" data-tab="global">Global Connections</h3>
+                    <h3 class="tab-header" data-tab="personal">Personal Growth</h3>
+                </div>
+
+                <!-- Tab content -->
+                <div class="tab-content-container">
+                    <div class="tab-content active" data-tab="career">
+                        <p>Unlock new career opportunities with confident English communication. Our graduates report
+                            promotions, international assignments, and successful job interviews thanks to their improved
+                            language skills.</p>
+                    </div>
+
+                    <div class="tab-content" data-tab="global">
+                        <p>Connect with people around the world through confident English communication. Build authentic
+                            relationships, experience different cultures, and expand your personal and professional network
+                            beyond geographical boundaries.</p>
+                    </div>
+
+                    <div class="tab-content" data-tab="personal">
+                        <p>Discover a new version of yourself through language mastery. Students report increased
+                            confidence,
+                            enhanced cognitive abilities, and a broader worldview as they progress in their English learning
+                            journey with us.</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const tabHeaders = document.querySelectorAll('.tab-header');
+
+                    tabHeaders.forEach(header => {
+                        header.addEventListener('click', function (e) {
+                            e.preventDefault();
+
+                            const tabId = this.getAttribute('data-tab');
+
+                            document.querySelectorAll('.tab-header').forEach(el => el.classList.remove('active'));
+                            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+                            document.querySelectorAll('.background-text').forEach(el => el.classList.remove('active'));
+
+                            this.classList.add('active');
+                            document.querySelector(`.tab-content[data-tab="${tabId}"]`).classList.add('active');
+                            document.querySelector(`.background-text[data-tab="${tabId}"]`).classList.add('active');
+                        });
+                    });
+                });
+            </script>
+        </section>
+        
+        <!-- --------------------------------------------------------------
+        # OUR PROGRAMS
+        ---------------------------------------------------------------->
+        <section id="programs-compact" class="programs-section">
+            <div class="programs-container">
+                <!-- Left content area (text) -->
+                <div class="programs-text">
+                    <h1>Our Programs</h1>
+                    <p class="programs-description">Discover our specialised English courses designed to help you achieve
+                        fluency and confidence for personal growth and professional success.</p>
+
+                    <div class="program-selection">
+                        <p class="select-label">SELECT A PROGRAM</p>
+                        <div class="program-tabs">
+                            <div class="program-tab active" data-program="business" onclick="window.location.href='./courses-EN.html'">Business English</div>
+                            <div class="program-tab" data-program="general" onclick="window.location.href='./courses-EN.html'">General English</div>
+                            <div class="program-tab" data-program="children" onclick="window.location.href='./courses-EN.html'">Children's English</div>
+                        </div>
+
+                        <!-- Pagination dots -->
+                        <!-- <div class="pagination-dots">
+                            <span class="dot active" data-program="business"></span>
+                            <span class="dot" data-program="general"></span>
+                            <span class="dot" data-program="children"></span>
+                        </div> -->
+
+                        <a href="./courses-EN.html" class="enrol-btn" id="compact-enrol-btn">Explore Our Courses</a>
+                    </div>
+                </div>
+
+                <!-- Right content area (images) -->
+                <div class="programs-images"
+                    style="width: 100%; position: relative; display: flex; justify-content: flex-end; overflow: visible; height: 650px; max-width: 100%;">
+                    <div class="image-container"
+                        style="display: flex; justify-content: flex-end; position: relative; width: 100%; overflow: visible; height: 650px; margin-right:180px">
+                        <!-- Business English image -->
+                        <div class="program-image" id="business-image" data-program="business"
+                            style="width: 506px; z-index: 3; position: relative; display: inline-block; height: 650px; transform: translate(150px, 0px); opacity: 1;">
+                            <img src="./assets/img/Business English b&w.png"
+                                alt="Business English"
+                                style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
+                        </div>
+
+                        <!-- General English image -->
+                        <div class="program-image" id="general-image" data-program="general"
+                            style="width: 506px; z-index: 2; position: relative; display: inline-block; height: 650px; transform: translate(-90px, 0px); opacity: 1;">
+                            <img src="./assets/img/General English b&w.png"
+                                alt="General English"
+                                style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
+                        </div>
+
+                        <!-- Children's English image -->
+                        <div class="program-image" id="children-image" data-program="children"
+                            style="width: 506px; z-index: 1; position: relative; display: inline-block; height: 650px; opacity: 1; transform: translate(-450px, 0px);">
+                            <img src="./assets/img/Children's English b&w.png"
+                                alt="Children's English"
+                                style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+        <!-- --------------------------------------------------------------
+        # Expanded Program Sections
+        ---------------------------------------------------------------->
+        <!-- <section id="expanded-section" class="expanded-section hidden">
+            <div class="back-button">
+                <a href="#" id="back-to-programs">
+                    <span class="back-arrow">←</span> Back to programs
+                </a>
+            </div>
+
+            <div id="business-expanded" class="program-expanded-view hidden">
+                <div class="expanded-content">
+                    <div class="expanded-left">
+                        <div class="expanded-images">
+                            <div class="image-box active" data-program="business"
+                                style="width: 538px; z-index: 3; position: relative; display: inline-block; height: 769px; transform: translate(0px, 0px); opacity: 1;">
+                                <img src="./assets/img/Business English active.png"
+                                    alt="Business English"
+                                    style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
+                            </div>
+
+                            <div class="image-box" data-program="general"
+                                style="width: 538px; z-index: 2; position: relative; display: inline-block; height: 769px; transform: translate(-226px, 0px); opacity: 1;">
+                                <img src="./assets/img/Business English-General English.png"
+                                    alt="General English"
+                                    style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
+                            </div>
+
+                            <div class="image-box" data-program="children"
+                                style="width: 538px; z-index: 1; position: relative; display: inline-block; height: 769px; opacity: 1; transform: translate(-958px, 0px);">
+                                <img src="./assets/img/Business English-Children's English.png"
+                                    alt="Children's English"
+                                    style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expanded-right">
+                        <h1>Business English</h1>
+                        <div class="accent-line"></div>
+                        <p class="expanded-description">
+                            Ally Lingua offers specialized Business English courses, utilizing the Oxford "Business Result"
+                            program,
+                            to equip professionals with the language skills necessary for success in global business
+                            environments.
+                        </p>
+
+                        <div class="program-features">
+                            <h2>Program Features</h2>
+                            <ul class="feature-list">
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="./assets/img/Business Eng.1.svg"
+                                            alt="Business vocabulary icon">
+                                    </div>
+                                    <p>Professional vocabulary and terminology specific to various business contexts</p>
+                                </li>
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="./assets/img/Business Eng.2.svg"
+                                            alt="Negotiation icon">
+                                    </div>
+                                    <p>Negotiation tactics and strategies in English</p>
+                                </li>
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="./assets/img/Business Eng.3.svg"
+                                            alt="Writing icon">
+                                    </div>
+                                    <p>Business writing skills: emails, reports, and proposals</p>
+                                </li>
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="./assets/img/Business Eng.4.svg"
+                                            alt="Presentation icon">
+                                    </div>
+                                    <p>Presentation skills and public speaking confidence</p>
+                                </li>
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="./assets/img/Business Eng.5.svg"
+                                            alt="Career icon">
+                                    </div>
+                                    <p>Interview preparation and career advancement English</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="general-expanded" class="program-expanded-view hidden">
+                <div class="expanded-content">
+                    <div class="expanded-left">
+                        <div class="expanded-images">
+                            <div class="image-box active" data-program="business"
+                                style="width: 538px; z-index: 2; position: relative; display: inline-block; height: 769px; transform: translate(0px, 0px); opacity: 1;">
+                                <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/General%20English-Business%20English.png"
+                                    alt="Business English"
+                                    style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
+                            </div>
+
+                            <div class="image-box" data-program="general"
+                                style="width: 538px; z-index: 3; position: relative; display: inline-block; height: 769px; transform: translate(-434px, 0px); opacity: 1;">
+                                <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/General%20English%20active.png"
+                                    alt="General English"
+                                    style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
+                            </div>
+
+                            <div class="image-box" data-program="children"
+                                style="width: 538px; z-index: 1; position: relative; display: inline-block; height: 769px; opacity: 1; transform: translate(-954px, 0px);">
+                                <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/General%20English-Children's%20English.png"
+                                    alt="Children's English"
+                                    style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expanded-right">
+                        <h1>General English</h1>
+                        <div class="accent-line"></div>
+                        <p class="expanded-description">
+                            Our General English curriculum, featuring Oxford's "American Headway," provides a strong
+                            foundation
+                            for language
+                            proficiency, with experienced teachers focusing on confidence and international connections.
+                        </p>
+
+                        <div class="program-features">
+                            <h2>Program Features</h2>
+                            <ul class="feature-list">
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/General%20Eng.1.svg"
+                                            alt="Business vocabulary icon">
+                                    </div>
+                                    <p>Conversation skills and natural speaking fluency</p>
+                                </li>
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/General%20Eng.2.svg"
+                                            alt="Negotiation icon">
+                                    </div>
+                                    <p>Grammar fundamentals and advanced structures</p>
+                                </li>
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/General%20Eng.3.svg"
+                                            alt="Writing icon">
+                                    </div>
+                                    <p>Reading comprehension and critical thinking</p>
+                                </li>
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/General%20Eng.4.svg"
+                                            alt="Presentation icon">
+                                    </div>
+                                    <p>Writing skills for various contexts and audiences</p>
+                                </li>
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/General%20Eng.5.svg"
+                                            alt="Career icon">
+                                    </div>
+                                    <p>Cultural understanding and idiomatic expressions</p>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="children-expanded" class="program-expanded-view hidden">
+                <div class="expanded-content">
+                    <div class="expanded-left">
+                        <div class="expanded-images">
+                            <div class="image-box active" data-program="business"
+                                style="width: 538px; z-index: 2; position: relative; display: inline-block; height: 769px; transform: translate(0px, 0px); opacity: 1;">
+                                <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/Kids%20English%20-%20Business%20English.png"
+                                    alt="Business English"
+                                    style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
+                            </div>
+
+                            <div class="image-box" data-program="general"
+                                style="width: 538px; z-index: 3; position: relative; display: inline-block; height: 769px; transform: translate(-434px, 0px); opacity: 1;">
+                                <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/Kids%20English%20-%20General%20English.png"
+                                    alt="General English"
+                                    style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
+                            </div>
+
+                            <div class="image-box" data-program="children"
+                                style="width: 538px; z-index: 3; position: relative; display: inline-block; height: 769px; opacity: 1; transform: translate(-954px, 0px);">
+                                <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/Children's%20English%20active.png"
+                                    alt="Children's English"
+                                    style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expanded-right">
+                        <h1>Children's English</h1>
+                        <div class="accent-line"></div>
+                        <p class="expanded-description">
+                            Ally Lingua offers children's English classes using the Oxford "American Beehive" series,
+                            promoting
+                            interactive
+                            activities, captivating stories, and language exercises to foster a love for learning English.
+                        </p>
+
+                        <div class="program-features">
+                            <h2>Program Features</h2>
+                            <ul class="feature-list">
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/Kids%20Eng.1.svg"
+                                            alt="Business vocabulary icon">
+                                    </div>
+                                    <p>Fun, interactive games and activities that make learning enjoyable</p>
+                                </li>
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/Kids%20Eng.2.svg"
+                                            alt="Negotiation icon">
+                                    </div>
+                                    <p>Age-appropriate stories and materials that capture imagination</p>
+                                </li>
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/Kids%20Eng.3.svg"
+                                            alt="Writing icon">
+                                    </div>
+                                    <p>Songs, chants, and rhythmic learning techniques</p>
+                                </li>
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/Kids%20Eng.4.svg"
+                                            alt="Presentation icon">
+                                    </div>
+                                    <p>Friendly and encouraging teachers dedicated to each child's development</p>
+                                </li>
+                                <li>
+                                    <div class="feature-icon">
+                                        <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/Kids%20Eng.5.svg"
+                                            alt="Career icon">
+                                    </div>
+                                    <p>Progress tracking and milestone celebrations</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- --------------------------------------------------------------
+        # OUR TEACHERS
+        ---------------------------------------------------------------->
+        <section class="teachers-section" id="teachers">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Meet Our<span class="accent-text"> Teachers</span></h2>
+                    <p class="body-text-1">Our dedicated team of experienced language instructors brings expertise, passion,
+                        and
+                        cultural insight to every lesson. Each teacher is carefully selected for their qualifications and
+                        commitment to your success.</p>
+                </div>
+
+                <div class="teachers-content">
+                    <div class="teachers-list">
+                        <div class="teacher-item active" data-teacher="sarah">
+                            <h3>Yana Harcourt</h3>
+                            <p>Business English Specialist</p>
+                        </div>
+                        <div class="teacher-item" data-teacher="david">
+                            <h3>David Martinez</h3>
+                            <p>Conversation & Pronunciation</p>
+                        </div>
+                    </div>
+
+                    <div class="teacher-profile active" id="sarah-profile">
+                        <div class="teacher-image">
+                            <img src="./assets/img/Yana-Harcourt.png"
+                                alt="Yana-Harcourt- Business English Specialist">
+                        </div>
+                        <div class="teacher-info">
+                            <div class="quote">
+                                <h4>I believe that language learning should be practical, engaging, and adapted to each student's unique goals and learning style.</h4>
+                            </div>
+                            <div class="teacher-bio">
+                                <p>With 7+ years of teaching experience spanning elementary to university level and business professionals, Yana brings multilingual expertise and cross-cultural communication skills to Ally Lingua. She holds a Bachelor's in TESOL and English Linguistics and creates customized lesson plans tailored to each student's unique needs and learning style.</p>
+                            </div>
+                            <div class="teacher-tags">
+                                <span class="tag">TESOL Certified</span>
+                                <span class="tag">BA in English Linguistics</span>
+                                <span class="tag">Multilingual Educator</span>
+                                <span class="tag">Business Communication</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- David Martinez -->
+                    <div class="teacher-profile" id="david-profile">
+                        <div class="teacher-image">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=800&fit=crop" alt="David Martinez - Conversation & Pronunciation">
+                        </div>
+                        <div class="teacher-info">
+                            <div class="quote">
+                                <h4>Clear communication opens doors. My goal is to help you speak English naturally and confidently.</h4>
+                            </div>
+                            <div class="teacher-bio">
+                                <p>David specializes in helping students perfect their pronunciation and conversational skills. With 8 years of teaching experience and a background in phonetics, he uses innovative techniques to help students sound more natural and confident in English.</p>
+                            </div>
+                            <div class="teacher-tags">
+                                <span class="tag">CELTA Certified</span>
+                                <span class="tag">Phonetics Expert</span>
+                                <span class="tag">Conversation Skills</span>
+                                <span class="tag">Accent Reduction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const teacherItems = document.querySelectorAll('.teacher-item');
+                    const teacherProfiles = document.querySelectorAll('.teacher-profile');
+                    
+                    teacherItems.forEach(item => {
+                        item.addEventListener('click', function() {
+                            const teacherId = this.getAttribute('data-teacher');
+                            
+                            // Remove active class from all items
+                            teacherItems.forEach(t => t.classList.remove('active'));
+                            
+                            // Add active class to clicked item
+                            this.classList.add('active');
+                            
+                            // Hide all profiles with fade out
+                            teacherProfiles.forEach(profile => {
+                                if (profile.classList.contains('active')) {
+                                    // Fade out animation
+                                    if (typeof gsap !== 'undefined') {
+                                        gsap.to(profile, {
+                                            opacity: 0,
+                                            duration: 0.3,
+                                            onComplete: () => {
+                                                profile.classList.remove('active');
+                                                profile.style.display = 'none';
+                                            }
+                                        });
+                                    } else {
+                                        profile.classList.remove('active');
+                                        profile.style.display = 'none';
+                                    }
+                                }
+                            });
+                            
+                            // Show selected profile with fade in
+                            const selectedProfile = document.getElementById(teacherId + '-profile');
+                            if (selectedProfile) {
+                                setTimeout(() => {
+                                    selectedProfile.style.display = 'flex';
+                                    selectedProfile.classList.add('active');
+                                    
+                                    if (typeof gsap !== 'undefined') {
+                                        gsap.fromTo(selectedProfile, 
+                                            { opacity: 0, y: 20 },
+                                            { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }
+                                        );
+                                    }
+                                }, 300);
+                            }
+                        });
+                    });
+                });
+            </script>
+        </section>
+
+        <!-- --------------------------------------------------------------
+        # METRICS
+        ---------------------------------------------------------------->
+        <div class="success-metrics">
+            <div class="metric-item">
+                <div class="metric-number">96%</div>
+                <div class="metric-label">Student satisfaction rate</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-number">5,000+</div>
+                <div class="metric-label">Students from around the world</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-number">92%</div>
+                <div class="metric-label">Achieved theirlanguage goals</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-number">30+</div>
+                <div class="metric-label">Countries represented in our student body</div>
+            </div>
+        </div>
+
+        <!-- --------------------------------------------------------------
+        # TESTIMONIAL SECTION
+        ---------------------------------------------------------------->
+        <section class="testimonials-section" id="reviews">
+            <div class="testimonials-header">
+                <div class="header-title">
+                    <h2>What our <span class="accent-text">students</span> are saying</h2>
+                </div>
+                <div class="header-description">
+                    <p>Our students share their experiences and achievements after learning with Ally Lingua</p>
+                </div>
+            </div>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-number">01</div>
+                
+                <!-- Testimonial 1 - Carlos -->
+                <div class="testimonial-card active" data-testimonial="1">
+                    <!-- <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="Carlos Rodriguez">
+                    </div> -->
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">The <span class="highlight">flexible online lessons</span> fit perfectly with my busy schedule. My teacher customized a program specifically for finance terminology. Within 3 months, I was confidently leading international meetings.</p>
+                        <h4 class="testimonial-author">Carlos Rodriguez</h4>
+                        <p class="testimonial-position">Financial Analyst, Barcelona</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 - Yuki -->
+                <div class="testimonial-card" data-testimonial="2">
+                    <!-- <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop" alt="Yuki Tanaka">
+                    </div> -->
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">I achieved my <span class="highlight">IELTS band 8.0</span> thanks to Michael's expert guidance. His strategies and personalized feedback were invaluable. Now I'm studying at my dream university in London!</p>
+                        <h4 class="testimonial-author">Yuki Tanaka</h4>
+                        <p class="testimonial-position">University Student, Tokyo</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 - Anna -->
+                <div class="testimonial-card" data-testimonial="3">
+                    <!-- <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=500&fit=crop" alt="Anna Kowalski">
+                    </div> -->
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">My daughter absolutely <span class="highlight">loves Emily's classes!</span> She went from being shy to speaking English confidently in just 6 months. The interactive games and stories make learning so enjoyable.</p>
+                        <h4 class="testimonial-author">Anna Kowalski</h4>
+                        <p class="testimonial-position">Parent, Warsaw</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 - James -->
+                <div class="testimonial-card" data-testimonial="4">
+                    <!-- <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop" alt="James Thompson">
+                    </div> -->
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">David helped me <span class="highlight">perfect my pronunciation</span> for client presentations. His phonetics expertise and patient approach made all the difference. I now feel confident speaking in any professional setting.</p>
+                        <h4 class="testimonial-author">James Thompson</h4>
+                        <p class="testimonial-position">Sales Director, Manchester</p>
+                    </div>
+                </div>
+
+                <div class="nav-arrow prev">&#10094;</div>
+                <div class="nav-arrow next">&#10095;</div>
+            </div>
+
+            <div class="navigation-dots">
+                <div class="dot active" data-slide="1"></div>
+                <div class="dot" data-slide="2"></div>
+                <div class="dot" data-slide="3"></div>
+                <div class="dot" data-slide="4"></div>
+            </div>
+
+            <div class="cta-button">
+                <a href="#booking-form">Start Your Journey Today</a>
+            </div>
+        </section>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            const dots = document.querySelectorAll('.navigation-dots .dot');
+            const prevBtn = document.querySelector('.nav-arrow.prev');
+            const nextBtn = document.querySelector('.nav-arrow.next');
+            const testimonialNumber = document.querySelector('.testimonial-number');
+            
+            let currentSlide = 1;
+            const totalSlides = testimonialCards.length;
+            
+            function showSlide(slideNum) {
+                // Update current slide number
+                currentSlide = slideNum;
+                
+                // Update number display
+                testimonialNumber.textContent = '0' + slideNum;
+                
+                // Hide all cards
+                testimonialCards.forEach(card => {
+                    card.classList.remove('active');
+                    if (typeof gsap !== 'undefined') {
+                        gsap.set(card, { display: 'none', opacity: 0 });
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Show current card with animation
+                const currentCard = document.querySelector(`.testimonial-card[data-testimonial="${slideNum}"]`);
+                if (currentCard) {
+                    if (typeof gsap !== 'undefined') {
+                        gsap.set(currentCard, { display: 'flex' });
+                        gsap.to(currentCard, {
+                            opacity: 1,
+                            x: 0,
+                            duration: 0.5,
+                            ease: "power2.out",
+                            onComplete: () => {
+                                currentCard.classList.add('active');
+                            }
+                        });
+                    } else {
+                        currentCard.style.display = 'flex';
+                        currentCard.classList.add('active');
+                    }
+                }
+                
+                // Update dots
+                dots.forEach(dot => {
+                    dot.classList.remove('active');
+                });
+                const activeDot = document.querySelector(`.dot[data-slide="${slideNum}"]`);
+                if (activeDot) {
+                    activeDot.classList.add('active');
+                }
+            }
+            
+            // Previous button
+            prevBtn.addEventListener('click', () => {
+                let prevSlide = currentSlide - 1;
+                if (prevSlide < 1) prevSlide = totalSlides;
+                showSlide(prevSlide);
+            });
+            
+            // Next button
+            nextBtn.addEventListener('click', () => {
+                let nextSlide = currentSlide + 1;
+                if (nextSlide > totalSlides) nextSlide = 1;
+                showSlide(nextSlide);
+            });
+            
+            // Dots navigation
+            dots.forEach(dot => {
+                dot.addEventListener('click', function() {
+                    const slideNum = parseInt(this.getAttribute('data-slide'));
+                    showSlide(slideNum);
+                });
+            });
+            
+            // Auto-play (optional - remove if you don't want it)
+            let autoplayInterval = setInterval(() => {
+                let nextSlide = currentSlide + 1;
+                if (nextSlide > totalSlides) nextSlide = 1;
+                showSlide(nextSlide);
+            }, 5000); // Change slide every 5 seconds
+            
+            // Pause autoplay on hover
+            const sliderContainer = document.querySelector('.testimonial-slider');
+            sliderContainer.addEventListener('mouseenter', () => {
+                clearInterval(autoplayInterval);
+            });
+            
+            sliderContainer.addEventListener('mouseleave', () => {
+                autoplayInterval = setInterval(() => {
+                    let nextSlide = currentSlide + 1;
+                    if (nextSlide > totalSlides) nextSlide = 1;
+                    showSlide(nextSlide);
+                }, 5000);
+            });
+            
+            // Initialize first slide
+            showSlide(1);
+        });
+        </script>
+
+        <!-- --------------------------------------------------------------
+        # FORM
+        ---------------------------------------------------------------->
+        <section class="trial-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <div class="text-content">
+                        <h2>Book Your <span class="accent-text">Free</span> Trial Lesson</h2>
+                        <p class="body-text-1">Take the first step towards English language mastery. Our teachers will
+                            conduct a
+                            personal consultation and help determine your current level.</p>
+
+                        <ul class="features-list">
+                            <li>Personalised approach for each student</li>
+                            <li>Customised programmes to suit your goals and needs</li>
+                            <li>Flexible lesson scheduling</li>
+                            <li>Modern teaching methodologies</li>
+                        </ul>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <form 
+                            id="booking-form"
+                            action="https://formspree.io/f/xjgknbnl" 
+                            method="POST"
+                        >
+                            <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                            </div>
+
+                            <div class="form-group">
+                            <label for="telephone">Telephone</label>
+                            <input type="tel" id="telephone" name="telephone" required>
+                            </div>
+
+                            <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                            <label for="englishLevel">Your English Level</label>
+                            <select id="englishLevel" name="englishLevel">
+                                <option value="beginner">Beginner</option>
+                                <option value="elementary">Elementary</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                            </div>
+
+                            <div class="form-group">
+                            <label for="learningGoal">Your Learning Goal</label>
+                            <select id="learningGoal" name="learningGoal">
+                                <option value="career">Career Development</option>
+                                <option value="academic">Academic Purposes</option>
+                                <option value="travel">Travel</option>
+                                <option value="general">General Improvement</option>
+                            </select>
+                            </div>
+
+                            <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="privacy" required>
+                                I agree to the <a href="./privacy_policy_en.html" target="_blank">Privacy Policy</a>
+                            </label>
+                            </div>
+
+                            <button type="submit" class="booking-button">Book Your Trial Lesson</button>
+                        </form>
+                        </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- --------------------------------------------------------------
+        # FAQ
+        ---------------------------------------------------------------->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked <span>Questions</span></h2>
+                    <div class="underline"></div>
+                    <p class="section-subheading">Answers to the most common questions about our school and teaching methods
+                    </p>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>How are lessons conducted at Ally Lingua?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lessons are delivered both at our education centre and online via Zoom or Skype. Each lesson
+                                incorporates all language skills: speaking, reading, listening, and writing. We use a
+                                communicative approach where the primary focus is on practising conversational English in
+                                real-life situations.</p>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>How much do the courses cost?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Course fees depend on the programme selected, intensity, and format of lessons. Individual
+                                lessons start from £45 per session, whilst group lessons start from £25. During your free
+                                initial consultation, we'll recommend the optimal course for your needs and budget.</p>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>How long will it take me to learn English?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>The duration of your learning journey depends on your goals and starting level. On average,
+                                progressing up one level (e.g., from A1 to A2) takes approximately 3-4 months with lessons
+                                twice
+                                weekly. During your first session, we'll conduct an assessment and provide a more accurate
+                                timeline for your learning objectives.</p>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>What qualifications do your teachers have?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>All our teachers have relevant qualifications and international certifications (TEFL, CELTA,
+                                DELTA). Most have over 5 years of experience and have trained abroad. We carefully select
+                                educators not only based on their qualifications but also on their personal qualities—their
+                                ability to connect with each student.</p>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Do you offer corporate English courses?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes, we offer specialised programmes for companies. Our teachers can conduct lessons either
+                                at
+                                your office or online. We develop corporate courses tailored to your industry's specifics
+                                and
+                                the particular needs of your employees. Contact us for a bespoke commercial proposal.</p>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>What happens if I miss a lesson?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>If you notify us about missing a lesson at least 24 hours in advance, we'll reschedule it for
+                                another convenient time. If there's no prior notification, the lesson is considered
+                                delivered.
+                                For group lessons, we provide materials from the missed lesson and the opportunity to ask
+                                the
+                                teacher questions.</p>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- --------------------------------------------------------------
+        # ARTICLES
+        ---------------------------------------------------------------->
+        <section class="articles-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="articles-heading">Helpful <span>Articles</span> and Resources</h2>
+                    <div class="underline"></div>
+                    <p class="section-subheading">Our experts share tips and methods for effective English language learning
+                    </p>
+                </div>
+
+                <div class="articles-grid">
+                    <!-- Article 1 -->
+                    <div class="article-card">
+                        <img src="assets/img/article1.jpg"
+                            alt="Effective Ways to Memorise New Vocabulary" class="article-image">
+                        <div class="article-content">
+                            <span class="article-date">12 March 2023</span>
+                            <h3 class="article-title">5 Effective Ways to Memorise New Vocabulary</h3>
+                            <p class="article-excerpt">Expanding your vocabulary is one of the key aspects of language
+                                learning.
+                                Discover proven techniques that will help you memorise new words faster and more
+                                effectively.
+                            </p>
+                            <a href="#" class="read-more">Read Article</a>
+                        </div>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="article-card">
+                        <img src="assets/img/article2.jpg"
+                            alt="How to Prepare for the IELTS Examination" class="article-image">
+                        <div class="article-content">
+                            <span class="article-date">25 February 2023</span>
+                            <h3 class="article-title">How to Prepare for the IELTS Examination</h3>
+                            <p class="article-excerpt">The international IELTS exam requires thorough preparation. In this
+                                article, we explain the structure of the exam and share strategies for achieving a high
+                                score.
+                            </p>
+                            <a href="#" class="read-more">Read Article</a>
+                        </div>
+                    </div>
+
+                    <!-- Article 3 -->
+                    <div class="article-card">
+                        <img src="assets/img/article3.jpg"
+                            alt="English for Travel: Key Phrases and Situations" class="article-image">
+                        <div class="article-content">
+                            <span class="article-date">8 February 2023</span>
+                            <h3 class="article-title">English for Travel: Key Phrases and Situations</h3>
+                            <p class="article-excerpt">Planning a trip abroad? We've prepared a list of essential phrases
+                                and
+                                expressions that will help you feel confident in any situation whilst travelling.</p>
+                            <a href="#" class="read-more">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --------------------------------------------------------------
+        # FOOTER
+        ---------------------------------------------------------------->
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- First Column -->
+                <div class="footer-col">
+                    <h3 class="footer-logo">Ally Lingua</h3>
+                    <p class="footer-tagline">English language mastery to achieve your goals</p>
+                    <p class="footer-description">A modern language school with a personalised approach to each student. We
+                        help
+                        unlock your language potential and achieve your desired results.</p>
+                    <!-- <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <img src="./assets/img/LinkedIn.svg" alt="LinkedIn" width="40" height="40">
+                        </a>
+                        <a href="https://www.facebook.com/allylingua" class="social-icon">
+                            <img src="./assets/img/Facebook.svg" alt="Facebook" width="40" height="40">
+                        </a>
+                        <a href="https://www.instagram.com/ally_lingua_ru/" class="social-icon">
+                            <img src="./assets/img/Instagram.svg" alt="Instagram" width="40" height="40">
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="./assets/img/x.svg" alt="X (Twitter)" width="40" height="40">
+                        </a>
+                    </div> -->
+                </div>
+
+                <!-- Second Column -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact-list">
+                        <!-- <li class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                                    fill="#D4AF37" />
+                            </svg>
+                            <span>10 Oxford Street, Suite 315, London</span>
+                        </li> -->
+                        <li class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
+                                    fill="#D4AF37" />
+                            </svg>
+                            <a href="ally.lingua@gmail.com">ally.lingua@gmail.com</a>
+                        </li>
+                        <!-- <li class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 15.5C18.8 15.5 17.5 15.3 16.4 14.9C16.3 14.9 16.2 14.9 16.1 14.9C15.8 14.9 15.6 15 15.4 15.2L13.2 17.4C10.4 15.9 8 13.6 6.6 10.8L8.8 8.6C9.1 8.3 9.2 7.9 9 7.6C8.7 6.5 8.5 5.2 8.5 4C8.5 3.5 8 3 7.5 3H4C3.5 3 3 3.5 3 4C3 13.4 10.6 21 20 21C20.5 21 21 20.5 21 20V16.5C21 16 20.5 15.5 20 15.5ZM19 12H21C21 7 17 3 12 3V5C15.9 5 19 8.1 19 12ZM15 12H17C17 9.2 14.8 7 12 7V9C13.7 9 15 10.3 15 12Z"
+                                    fill="#D4AF37" />
+                            </svg>
+                            <a href="tel:+442012345678">+44 (20) 1234-5678</a>
+                        </li> -->
+                        <li class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z"
+                                    fill="#D4AF37" />
+                            </svg>
+                            <span>Mon-Fri: 09:00 - 21:00</span>
+                        </li>
+                        <!-- <li class="footer-contact-item">
+                            <span>Sat: 10:00 - 18:00</span>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <!-- Third Column -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <!-- <li><a href="#">About Us</a></li> -->
+                        <li><a href="./courses-EN.html">Courses</a></li>
+                        <li><a href="#teachers">Teachers</a></li>
+                        <!-- <li><a href="#">Pricing</a></li> -->
+                        <!-- <li><a href="#">Blog</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- Fourth Column -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Our Courses</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Business English</a></li>
+                        <li><a href="#">General English</a></li>
+                        <li><a href="#">English for Children</a></li>
+                        <li><a href="#">IELTS Preparation</a></li>
+                        <li><a href="#">TOEFL Preparation</a></li>
+                        <li><a href="#">Individual Lessons</a></li>
+                        <li><a href="#">Corporate Training</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Line -->
+            <div class="footer-bottom">
+                <p>© 2026 Ally Lingua. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="./privacy_policy_en.html">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </footer>
+
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+
+        <!-- --------------------------------------------------------------
+        # Mobile menu 
+        ---------------------------------------------------------------->
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="mobile-menu-overlay">
+            <ul>
+                <li><a href="./index-EN.html">Home</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
+                <li><a href="./courses-EN.html">Courses</a></li>
+                <li><a href="./index-EN.html #teachers">Teachers</a></li>
+                <li><a href="./index-EN.html #contact">Reviews</a></li>
+                <div class="language-switcher">
+                    <a href="./index.html" class="language-btn" title="Switch to Russian">
+                        <span class="language-text">RU</span>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </body>
+
+    <!-- --------------------------------------------------------------
+    # CURSOR 
+    ---------------------------------------------------------------->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cursor = document.querySelector('.js-cursor-init');
+            const cursorCircle = cursor.querySelector('.cursor-circle');
+            const viewText = cursor.querySelector('.view_more_cursor .text');
+
+            // Function to determine if background is dark or light
+            const isDarkBackground = (element) => {
+                // Get the background color of the element
+                const bgColor = window.getComputedStyle(element).backgroundColor;
+
+                // If no background color or transparent, check parent
+                if (!bgColor || bgColor === 'transparent' || bgColor === 'rgba(0, 0, 0, 0)') {
+                    if (element.parentElement) {
+                        return isDarkBackground(element.parentElement);
+                    }
+                    return false; // Default to light if we can't determine
+                }
+
+                // Parse the RGB values
+                const rgb = bgColor.match(/\d+/g);
+                if (!rgb || rgb.length < 3) return false;
+
+                // Calculate brightness - higher value means lighter background
+                // Formula: (R * 299 + G * 587 + B * 114) / 1000
+                const brightness = (parseInt(rgb[0]) * 299 + parseInt(rgb[1]) * 587 + parseInt(rgb[2]) * 114) / 1000;
+
+                // Consider dark if brightness is less than 128
+                return brightness < 128;
+            };
+
+            // Update cursor position and style
+            document.addEventListener('mousemove', (e) => {
+                requestAnimationFrame(() => {
+                    cursor.style.left = `${e.clientX}px`;
+                    cursor.style.top = `${e.clientY}px`;
+                });
+
+                // Get element under cursor
+                const element = document.elementFromPoint(e.clientX, e.clientY);
+                if (!element) return;
+
+                // Reset cursor styles
+                cursor.classList.remove('white_cursor', 'dark_cursor', 'active');
+                viewText.style.display = 'none';
+
+                // Handle different sections
+                const heroSection = element.closest('.hero-section');
+                const whyChooseSection = element.closest('.why-choose-section');
+                const navElements = element.closest('.left-nav') || element.closest('.right-nav');
+
+                // If cursor is over hero section
+                if (heroSection) {
+                    cursor.classList.add('active', 'white_cursor');
+                }
+                // If cursor is over why choose section
+                else if (whyChooseSection) {
+                    cursor.classList.add('active', 'dark_cursor');
+                }
+                // If cursor is over navigation
+                else if (navElements) {
+                    // Navigation elements use white cursor by default
+                    cursor.classList.add('white_cursor');
+                }
+                // For other elements, determine by background
+                else {
+                    if (isDarkBackground(element)) {
+                        cursor.classList.add('white_cursor');
+                    } else {
+                        cursor.classList.add('dark_cursor');
+                    }
+                }
+
+                // Special case for accent-word
+                if (element.classList.contains('accent-word') || element.closest('.accent-word')) {
+                    cursor.classList.add('active');
+                    viewText.style.display = 'block';
+                }
+            });
+
+            // Cursor click animation
+            document.addEventListener('mousedown', () => {
+                cursorCircle.style.transform = 'scale(0.9)';
+            });
+
+            document.addEventListener('mouseup', () => {
+                cursorCircle.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+
+    <!-- --------------------------------------------------------------
+    # NAVIGATION MENU
+    ---------------------------------------------------------------->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const leftNav = document.querySelector('.left-nav');
+            const rightNav = document.querySelector('.right-nav');
+            const exploreText = document.querySelector('.explore-text');
+            const enrolText = document.querySelector('.enrol-text');
+            const burgerLines = document.querySelectorAll('.burger-line');
+            const arrow = document.querySelector('.arrow');
+
+            // Сохраняем оригинальные обработчики событий для правого меню
+            const originalRightNavMouseenter = rightNav.onmouseenter;
+            const originalRightNavMouseleave = rightNav.onmouseleave;
+
+            // Флаг для отслеживания наведения на правое меню
+            let isRightNavHovered = false;
+
+            // Добавляем новые обработчики событий для правого меню с сохранением оригинальной функциональности
+            rightNav.addEventListener('mouseenter', function () {
+                isRightNavHovered = true;
+                // Стандартное поведение при наведении - всегда меняем на белый
+                enrolText.style.color = 'white';
+                arrow.style.color = 'white';
+
+                // Вызываем оригинальный обработчик, если он был
+                if (typeof originalRightNavMouseenter === 'function') {
+                    originalRightNavMouseenter.call(this);
+                }
+            });
+
+            rightNav.addEventListener('mouseleave', function () {
+                isRightNavHovered = false;
+                // При уходе курсора обновляем цвета в зависимости от фона
+                updateMenuColors();
+
+                // Вызываем оригинальный обработчик, если он был
+                if (typeof originalRightNavMouseleave === 'function') {
+                    originalRightNavMouseleave.call(this);
+                }
+            });
+
+            // Функция для определения, является ли секция тёмной
+            function isDarkSection(element) {
+                if (!element) return false;
+
+                // Проверяем по классам секций
+                if (element.classList.contains('benefits-section')) {
+                    return true; // Секция Benefits всегда тёмная
+                }
+
+                if (element.classList.contains('hero-section')) {
+                    return true; // Hero секция тоже считаем тёмной из-за изображения
+                }
+
+                // Проверяем по цвету фона
+                const backgroundColor = window.getComputedStyle(element).backgroundColor;
+                if (backgroundColor !== 'transparent' && backgroundColor !== 'rgba(0, 0, 0, 0)') {
+                    const rgb = backgroundColor.match(/\d+/g);
+                    if (rgb && rgb.length >= 3) {
+                        // Вычисляем яркость
+                        const brightness = (parseInt(rgb[0]) * 299 + parseInt(rgb[1]) * 587 + parseInt(rgb[2]) * 114) / 1000;
+                        return brightness < 128; // Тёмный если яркость < 128
+                    }
+                }
+
+                // Проверяем фоновое изображение
+                const backgroundImage = window.getComputedStyle(element).backgroundImage;
+                if (backgroundImage && backgroundImage !== 'none') {
+                    return true; // Предполагаем, что секции с фоновыми изображениями тёмные
+                }
+
+                // Проверяем родительский элемент
+                if (element.parentElement && element.parentElement !== document.body) {
+                    return isDarkSection(element.parentElement);
+                }
+
+                return false;
+            }
+
+            // Функция для проверки, находится ли меню над тёмной секцией
+            function checkMenuOverSection() {
+                // Для левого меню (EXPLORE)
+                const leftNavRect = exploreText.getBoundingClientRect();
+                const leftNavX = leftNavRect.left + leftNavRect.width / 2;
+                const leftNavY = leftNavRect.top + leftNavRect.height / 2;
+
+                // Для правого меню (ENROL)
+                const rightNavRect = enrolText.getBoundingClientRect();
+                const rightNavX = rightNavRect.left + rightNavRect.width / 2;
+                const rightNavY = rightNavRect.top + rightNavRect.height / 2;
+
+                // Получаем элементы, которые находятся под координатами меню
+                const tempLeft = document.elementFromPoint(leftNavX, leftNavY);
+                const tempRight = document.elementFromPoint(rightNavX, rightNavY);
+
+                // Находим ближайшие секции для левого и правого меню
+                const leftSection = tempLeft ? tempLeft.closest('section') : null;
+                const rightSection = tempRight ? tempRight.closest('section') : null;
+
+                // Проверяем, тёмные ли эти секции
+                const isLeftDark = leftSection ? isDarkSection(leftSection) : false;
+                const isRightDark = rightSection ? isDarkSection(rightSection) : false;
+
+                return { isLeftDark, isRightDark };
+            }
+
+            // Функция для обновления цветов меню
+            function updateMenuColors() {
+                // Получаем информацию о секциях под меню
+                const { isLeftDark, isRightDark } = checkMenuOverSection();
+
+                // Обновляем цвета левого меню (EXPLORE)
+                if (isLeftDark) {
+                    exploreText.style.color = '#FFFFFF';
+                    burgerLines.forEach(line => {
+                        line.style.backgroundColor = '#FFFFFF';
+                    });
+                } else {
+                    exploreText.style.color = 'var(--heading-color)';
+                    burgerLines.forEach(line => {
+                        line.style.backgroundColor = 'var(--heading-color)';
+                    });
+                }
+
+                // Обновляем цвета правого меню (ENROL), только если на него не наведён курсор
+                if (!isRightNavHovered) {
+                    if (isRightDark) {
+                        enrolText.style.color = '#FFFFFF';
+                        arrow.style.color = '#FFFFFF';
+                    } else {
+                        enrolText.style.color = 'var(--heading-color)';
+                        arrow.style.color = 'var(--heading-color)';
+                    }
+                }
+            }
+
+            // Явно указываем, какие секции считать тёмными
+            function markDarkSections() {
+                // Находим секцию benefits
+                const benefitsSection = document.querySelector('.benefits-section');
+                if (benefitsSection) {
+                    benefitsSection.setAttribute('data-is-dark', 'true');
+                }
+
+                // Находим hero секцию
+                const heroSection = document.querySelector('.hero-section');
+                if (heroSection) {
+                    heroSection.setAttribute('data-is-dark', 'true');
+                }
+            }
+
+            // Вызываем маркировку тёмных секций
+            markDarkSections();
+
+            // Проверяем цвета при прокрутке страницы (с дебаунсом для производительности)
+            let scrollTimeout;
+            window.addEventListener('scroll', function () {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(updateMenuColors, 100);
+            });
+
+            // Проверяем цвета при изменении размера окна
+            let resizeTimeout;
+            window.addEventListener('resize', function () {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(updateMenuColors, 100);
+            });
+
+            // Начальная проверка
+            setTimeout(updateMenuColors, 500);
+
+            // Дополнительная проверка после полной загрузки страницы
+            window.addEventListener('load', function () {
+                updateMenuColors();
+                // Повторная проверка через небольшой интервал для большей надежности
+                setTimeout(updateMenuColors, 1000);
+            });
+        });
+    </script>
+
+    <!-- --------------------------------------------------------------
+    # SCROLL EFFECT
+    ---------------------------------------------------------------->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // DOM элементы
+            const heroSection = document.querySelector('.hero-section');
+            const words = document.querySelectorAll('.reveal-word');
+            const wordLayers = document.querySelectorAll('.word-layer');
+            const achieveWord = document.getElementById('achieve-word');
+
+            // Переменные состояния
+            let currentWordIndex = -1;
+            let canScroll = true; // Default to true to ensure scrolling always works
+            let isScrolling = false;
+
+            // Сохранение начальных и конечных позиций слов
+            const initialPositions = [];
+            const finalPositions = [];
+
+            // ВАЖНО: Определяем, загружается ли страница с прокруткой или нет
+            const isPageScrolled = window.scrollY > 10;
+
+            // Функция для применения золотого цвета к слову "achieve" с плавной анимацией
+            function applyGoldColor() {
+                if (achieveWord) {
+                    achieveWord.classList.add('filling');
+                    achieveWord.classList.add('filled');
+                    achieveWord.style.color = '#E2AE3C';
+                    achieveWord.style.webkitTextStroke = '0';
+                    achieveWord.style.backgroundSize = '100% 100%';
+                }
+            }
+
+            // Инициализация: сохранение позиций и установка начальных стилей
+            wordLayers.forEach((layer, index) => {
+                const word = layer.querySelector('.reveal-word');
+
+                // Сохранение конечных позиций слов
+                const computedStyle = window.getComputedStyle(layer);
+                finalPositions[index] = {
+                    top: computedStyle.getPropertyValue('--top-position') ||
+                        computedStyle.top ||
+                        (25 + index * 15) + '%',
+                    left: computedStyle.getPropertyValue('--left-position') ||
+                        computedStyle.left ||
+                        (10 + index * 15) + '%'
+                };
+
+                // Установка начальных позиций (за пределами экрана снизу)
+                initialPositions[index] = {
+                    top: `calc(${finalPositions[index].top} + 100px)`,
+                    left: finalPositions[index].left
+                };
+
+                // Если страница прокручена, сразу показываем все слова
+                if (isPageScrolled) {
+                    // Установка финальных позиций и стилей
+                    layer.style.top = finalPositions[index].top;
+                    layer.style.left = finalPositions[index].left;
+                    layer.style.opacity = '1';
+
+                    word.classList.add('filled');
+
+                    if (word.id === 'achieve-word') {
+                        word.style.color = '#E2AE3C';
+                        word.style.webkitTextStroke = '0';
+                        word.style.backgroundSize = '100% 100%';
+                    } else {
+                        word.style.color = 'white';
+                        word.style.webkitTextStroke = '0';
+                        word.style.backgroundSize = '100% 100%';
+                    }
+
+                    // Устанавливаем индекс на последнее слово
+                    currentWordIndex = words.length - 1;
+                } else {
+                    // Страница не прокручена, применяем начальные скрытые стили
+                    layer.style.top = initialPositions[index].top;
+                    layer.style.left = initialPositions[index].left;
+                    layer.style.opacity = '0';
+
+                    word.style.color = 'transparent';
+                    word.classList.remove('filled');
+                    word.classList.remove('filling');
+
+                    if (word.id === 'achieve-word') {
+                        word.style.webkitTextStroke = '1px #E2AE3C';
+                    } else {
+                        word.style.webkitTextStroke = '1px white';
+                    }
+
+                    // Блокируем скролл только если страница не прокручена
+                    canScroll = false;
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+
+            // Обработчик событий колеса мыши для анимации скролла
+            window.addEventListener('wheel', function (e) {
+                // Если страница уже прокручена, разрешаем обычный скролл
+                if (isPageScrolled || window.scrollY > 10) {
+                    return;
+                }
+
+                // Если прокрутка не разрешена и мы еще не обрабатываем событие скролла
+                if (!canScroll) {
+                    e.preventDefault();
+                    handleScroll(e);
+                } else if (canScroll && window.scrollY === 0 && e.deltaY < 0) {
+                    // Если мы в начале страницы и скроллим вверх
+                    e.preventDefault();
+                    canScroll = false;
+                    document.body.style.overflow = 'hidden';
+                    // Скрываем последнее слово
+                    if (currentWordIndex >= 0) {
+                        hideWord(currentWordIndex);
+                        currentWordIndex--;
+                    }
+                }
+            }, { passive: false });
+
+            // Основная функция обработки скролла
+            function handleScroll(e) {
+                // Блокируем обработку параллельных событий скролла
+                if (isScrolling) return;
+                isScrolling = true;
+
+                if (e.deltaY > 0) { // Скролл вниз
+                    if (currentWordIndex < words.length - 1) {
+                        // Показываем следующее слово
+                        currentWordIndex++;
+                        showWord(currentWordIndex);
+                    } else if (currentWordIndex === words.length - 1 && !canScroll) {
+                        // Все слова показаны, разрешаем стандартную прокрутку
+                        canScroll = true;
+                        document.body.style.overflow = 'auto';
+                    }
+                } else { // Скролл вверх
+                    if (!canScroll && currentWordIndex >= 0) {
+                        // Скрываем текущее слово и переходим к предыдущему
+                        hideWord(currentWordIndex);
+                        currentWordIndex--;
+                    }
+                }
+
+                // Разрешаем следующее событие скролла через задержку
+                setTimeout(() => {
+                    isScrolling = false;
+                }, 250);
+            }
+
+            // Функция для показа слова
+            function showWord(index) {
+                if (index >= 0 && index < wordLayers.length) {
+                    const layer = wordLayers[index];
+                    const word = layer.querySelector('.reveal-word');
+
+                    // Анимация появления слова
+                    layer.style.opacity = '1';
+                    layer.style.top = finalPositions[index].top;
+                    layer.style.transition = 'top 0.3s ease, opacity 0.3s ease';
+
+                    // Плавное заполнение цветом с задержкой
+                    setTimeout(() => {
+                        word.classList.add('filling');
+
+                        setTimeout(() => {
+                            word.classList.add('filled');
+
+                            // Если это слово "achieve", применяем золотой цвет
+                            if (word.id === 'achieve-word') {
+                                applyGoldColor();
+                            }
+                        }, 100);
+                    }, 150);
+                }
+
+                // Если это последнее слово, разрешаем прокрутку страницы
+                if (index === words.length - 1) {
+                    setTimeout(() => {
+                        canScroll = true;
+                        document.body.style.overflow = 'auto';
+                    }, 400);
+                }
+            }
+
+            // Функция для скрытия слова
+            function hideWord(index) {
+                if (index >= 0 && index < wordLayers.length) {
+                    const layer = wordLayers[index];
+                    const word = layer.querySelector('.reveal-word');
+
+                    // Удаляем классы анимации
+                    word.classList.remove('filling');
+                    word.classList.remove('filled');
+
+                    // Возвращаем к контурному состоянию
+                    if (word.id === 'achieve-word') {
+                        word.style.color = 'transparent';
+                        word.style.webkitTextStroke = '1px #E2AE3C';
+                        word.style.backgroundSize = '0% 100%';
+                    } else {
+                        word.style.color = 'transparent';
+                        word.style.webkitTextStroke = '1px white';
+                        word.style.backgroundSize = '0% 100%';
+                    }
+
+                    // Анимируем исчезновение
+                    setTimeout(() => {
+                        layer.style.opacity = '0';
+                        layer.style.top = initialPositions[index].top;
+                        layer.style.transition = 'top 0.3s ease, opacity 0.3s ease';
+                    }, 100);
+                }
+            }
+
+            // Функция для показа всех слов сразу без блокировки прокрутки
+            function showAllWords() {
+                wordLayers.forEach((layer, index) => {
+                    const word = layer.querySelector('.reveal-word');
+
+                    // Показываем слово
+                    layer.style.opacity = '1';
+                    layer.style.top = finalPositions[index].top;
+                    layer.style.transition = 'top 0.3s ease, opacity 0.3s ease';
+
+                    // Применяем стиль с задержкой
+                    word.classList.add('filling');
+                    word.classList.add('filled');
+
+                    if (word.id === 'achieve-word') {
+                        word.style.color = '#E2AE3C';
+                        word.style.webkitTextStroke = '0';
+                        word.style.textShadow = '0 0 2px rgba(226, 174, 60, 0.3)';
+                        word.style.backgroundSize = '100% 100%';
+                    } else {
+                        word.style.color = 'white';
+                        word.style.webkitTextStroke = '0';
+                        word.style.backgroundSize = '100% 100%';
+                    }
+                });
+
+                // Устанавливаем состояние
+                currentWordIndex = words.length - 1;
+                canScroll = true;
+                document.body.style.overflow = 'auto';
+            }
+
+            // Аварийная функция разблокировки скролла
+            function unlockScrolling() {
+                canScroll = true;
+                document.body.style.overflow = 'auto';
+                showAllWords();
+            }
+
+            // Добавляем обработчик кнопки Escape для разблокировки скролла в любой ситуации
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    unlockScrolling();
+                }
+            });
+
+            // Добавляем наблюдатель за видимостью страницы для исправления скролла при возвращении на вкладку
+            document.addEventListener('visibilitychange', function () {
+                if (document.visibilityState === 'visible') {
+                    // Если страница уже прокручена, разблокируем скролл
+                    if (window.scrollY > 10) {
+                        unlockScrolling();
+                    }
+                }
+            });
+
+            // Сохраняем функции для отладки
+            window.unlockScrolling = unlockScrolling;
+            window.showAllWords = showAllWords;
+
+            window.hideAllWords = function () {
+                // Только если мы в начале страницы
+                if (window.scrollY === 0) {
+                    wordLayers.forEach((layer, index) => {
+                        const word = layer.querySelector('.reveal-word');
+
+                        // Удаляем классы
+                        word.classList.remove('filling');
+                        word.classList.remove('filled');
+
+                        // Сбрасываем стили
+                        if (word.id === 'achieve-word') {
+                            word.style.color = 'transparent';
+                            word.style.webkitTextStroke = '1px #E2AE3C';
+                            word.style.backgroundSize = '0% 100%';
+                        } else {
+                            word.style.color = 'transparent';
+                            word.style.webkitTextStroke = '1px white';
+                            word.style.backgroundSize = '0% 100%';
+                        }
+
+                        // Анимируем исчезновение
+                        setTimeout(() => {
+                            layer.style.opacity = '0';
+                            layer.style.top = initialPositions[index].top;
+                            layer.style.transition = 'top 0.3s ease, opacity 0.3s ease';
+                        }, 100 + index * 50);
+                    });
+
+                    // Сбрасываем состояние
+                    currentWordIndex = -1;
+                    canScroll = false;
+                    document.body.style.overflow = 'hidden';
+                }
+            };
+
+            // Функция для позиционирования слов
+            window.moveWord = function (wordIndex, topPos, leftPos) {
+                if (wordIndex >= 0 && wordIndex < wordLayers.length) {
+                    const layer = wordLayers[wordIndex];
+
+                    // Устанавливаем CSS-переменные
+                    layer.style.setProperty('--top-position', topPos);
+                    layer.style.setProperty('--left-position', leftPos);
+
+                    // Также применяем непосредственно к стилям для мгновенного эффекта
+                    layer.style.top = topPos;
+                    layer.style.left = leftPos;
+
+                    // Обновляем сохраненные позиции для анимации
+                    finalPositions[wordIndex] = { top: topPos, left: leftPos };
+                    initialPositions[wordIndex] = {
+                        top: `calc(${topPos} + 100px)`,
+                        left: leftPos
+                    };
+
+                    console.log(`Слово ${wordIndex + 1} перемещено: верх=${topPos}, лево=${leftPos}`);
+                } else {
+                    console.error('Индекс слова вне диапазона. Доступные слова: 0-4');
+                }
+            };
+
+            // Функция для отображения информации о словах в консоли
+            window.wordInfo = function () {
+                const wordInfo = [
+                    { index: 0, word: "Master" },
+                    { index: 1, word: "English" },
+                    { index: 2, word: "achieve" },
+                    { index: 3, word: "your" },
+                    { index: 4, word: "dreams" }
+                ];
+                console.table(wordInfo);
+                console.log("Для перемещения слов используйте: moveWord(index, 'top%', 'left%')");
+                console.log("Чтобы разблокировать скролл в любой момент, используйте: unlockScrolling()");
+            };
+
+            // Дополнительный таймер для проверки состояния скролла
+            setTimeout(function () {
+                // Если скролл всё ещё заблокирован, но страница прокручена - разблокируем
+                if (!canScroll && window.scrollY > 10) {
+                    unlockScrolling();
+                }
+            }, 1500);
+
+            // Вызовем функцию wordInfo() при загрузке для подсказки в консоли
+            setTimeout(wordInfo, 1000);
+        });
+    </script>
+
+    <!-- --------------------------------------------------------------
+    # OUR PROGRAMS EXPANDED VIEW
+    ---------------------------------------------------------------->
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // DOM Elements
+            const programsCompactSection = document.getElementById('programs-compact');
+            const expandedSection = document.getElementById('expanded-section');
+            const backToPrograms = document.getElementById('back-to-programs');
+            const programTabs = document.querySelectorAll('.program-tab');
+            const paginationDots = document.querySelectorAll('.dot');
+            const programImages = document.querySelectorAll('.program-image');
+            const expandedViews = document.querySelectorAll('.program-expanded-view');
+            const imageBoxes = document.querySelectorAll('.image-box');
+            const enrolButton = document.getElementById('compact-enrol-btn');
+
+            // Current active program
+            let activeProgram = 'business';
+            // Flag to prevent multiple clicks during animations
+            let isAnimating = false;
+
+            // Function to set active tab in compact view
+            function setActiveTab(program) {
+                programTabs.forEach(function (tab) {
+                    tab.classList.toggle('active', tab.getAttribute('data-program') === program);
+                });
+
+                paginationDots.forEach(function (dot) {
+                    dot.classList.toggle('active', dot.getAttribute('data-program') === program);
+                });
+
+                activeProgram = program;
+            }
+
+            // Function to switch to expanded view with smooth animation
+            function switchToExpandedView(program) {
+                if (isAnimating) return;
+                isAnimating = true;
+
+                gsap.to(programsCompactSection, {
+                    opacity: 0,
+                    scale: 0.95,
+                    duration: 0.5,
+                    onComplete: function () {
+                        programsCompactSection.classList.add('hidden');
+                        expandedSection.classList.remove('hidden');
+
+                        gsap.fromTo(expandedSection,
+                            { opacity: 0, scale: 0.9 },
+                            { opacity: 1, scale: 1, duration: 0.5, onComplete: () => isAnimating = false }
+                        );
+
+                        expandedViews.forEach(view => {
+                            view.classList.toggle('hidden', view.id !== `${program}-expanded`);
+                            view.classList.toggle('visible', view.id === `${program}-expanded`);
+                        });
+                    }
+                });
+            }
+
+            // Function to switch back to compact view
+            function switchToCompactView() {
+                if (isAnimating) return;
+                isAnimating = true;
+
+                gsap.to(expandedSection, {
+                    opacity: 0,
+                    scale: 0.95,
+                    duration: 0.5,
+                    onComplete: function () {
+                        expandedSection.classList.add('hidden');
+                        expandedViews.forEach(view => view.classList.add('hidden'));
+                        programsCompactSection.classList.remove('hidden');
+
+                        gsap.fromTo(programsCompactSection,
+                            { opacity: 0, scale: 0.95 },
+                            { opacity: 1, scale: 1, duration: 0.5, onComplete: () => isAnimating = false }
+                        );
+                    }
+                });
+            }
+
+            // Function to switch between expanded views
+            function switchExpandedView(program) {
+                if (isAnimating) return;
+                isAnimating = true;
+
+                const currentView = document.querySelector('.program-expanded-view.visible');
+                const newView = document.getElementById(`${program}-expanded`);
+
+                if (!currentView || !newView || currentView === newView) {
+                    isAnimating = false;
+                    return;
+                }
+
+                activeProgram = program;
+
+                gsap.to(currentView, {
+                    opacity: 0,
+                    scale: 0.95,
+                    duration: 0.3,
+                    onComplete: function () {
+                        currentView.classList.add('hidden');
+                        currentView.classList.remove('visible');
+
+                        newView.classList.remove('hidden');
+                        gsap.fromTo(newView,
+                            { opacity: 0, scale: 0.9 },
+                            {
+                                opacity: 1, scale: 1, duration: 0.3, onComplete: () => {
+                                    newView.classList.add('visible');
+                                    isAnimating = false;
+                                }
+                            }
+                        );
+                    }
+                });
+            }
+
+            // Event Listeners
+            programTabs.forEach(tab => tab.addEventListener('click', function () {
+                if (isAnimating) return;
+                setActiveTab(this.getAttribute('data-program'));
+                animateImages(activeProgram);
+            }));
+
+            paginationDots.forEach(dot => dot.addEventListener('click', function () {
+                if (isAnimating) return;
+                setActiveTab(this.getAttribute('data-program'));
+                animateImages(activeProgram);
+            }));
+
+            programImages.forEach(image => image.addEventListener('click', function (e) {
+                e.stopPropagation();
+                if (isAnimating) return;
+                switchToExpandedView(this.getAttribute('data-program'));
+            }));
+
+            backToPrograms.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (isAnimating) return;
+                switchToCompactView();
+            });
+
+            imageBoxes.forEach(box => box.addEventListener('click', function (e) {
+                e.stopPropagation();
+                if (isAnimating) return;
+                if (this.getAttribute('data-program') !== activeProgram) {
+                    switchExpandedView(this.getAttribute('data-program'));
+                }
+            }));
+
+            enrolButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (isAnimating) return;
+                switchToExpandedView(activeProgram);
+            });
+
+            function initImagePositions() {
+                gsap.set('#business-image', { x: 150, opacity: 1, zIndex: 3 });
+                gsap.set('#general-image', { x: -90, opacity: 1, zIndex: 2 });
+                gsap.set('#children-image', { x: -450, opacity: 1, zIndex: 1 });
+            }
+
+            initImagePositions();
+
+            function animateImages(program) {
+                if (isAnimating) return;
+                isAnimating = true;
+
+                const positions = {
+                    business: { x: [150, -90, -450], zIndex: [3, 2, 1] },
+                    general: { x: [450, 150, -90], zIndex: [2, 3, 1] },
+                    children: { x: [450, 450, 150], zIndex: [1, 2, 3] }
+                };
+
+                ['#business-image', '#general-image', '#children-image'].forEach((id, i) => {
+                    gsap.to(id, {
+                        x: positions[program].x[i],
+                        opacity: 1,
+                        zIndex: positions[program].zIndex[i],
+                        duration: 0.6,
+                        onComplete: () => isAnimating = false
+                    });
+                });
+            }
+        });
+    </script> -->
+
+    <!-- --------------------------------------------------------------
+    # OUR PROGRAMS CLOSED VIEW
+    ---------------------------------------------------------------->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all program images
+            const programImages = document.querySelectorAll('.programs-images .program-image');
+
+            // Add hover effect
+            programImages.forEach(function (image) {
+                image.addEventListener('mouseenter', function () {
+                    gsap.to(this, {
+                        scale: 1.05, // Slight scale up on hover
+                        duration: 0.3,
+                        ease: "power1.out"
+                    });
+                });
+
+                image.addEventListener('mouseleave', function () {
+                    gsap.to(this, {
+                        scale: 1, // Return to original scale
+                        duration: 0.3,
+                        ease: "power1.out"
+                    });
+                });
+            });
+
+            // Implement program switching functionality
+            programImages.forEach(function (image) {
+                image.addEventListener('click', function () {
+                    const program = this.getAttribute('data-program');
+
+                    // Update tabs and dots to reflect the selected program
+                    setActiveTab(program);
+
+                    // Also update the program details if needed
+                    updateProgramDetails(program);
+                });
+            });
+
+            function updateProgramDetails(program) {
+                // Get all program details
+                const programDetails = document.querySelectorAll('.program-detail');
+
+                // Hide all details first
+                programDetails.forEach(function (detail) {
+                    detail.classList.remove('active');
+                });
+
+                // Show the selected program detail
+                const selectedDetail = document.getElementById(program + '-detail');
+                if (selectedDetail) {
+                    selectedDetail.classList.add('active');
+                }
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Получаем все изображения в детальном виде
+            const detailImages = document.querySelectorAll('.program-details-container .program-image');
+
+            // Добавляем обработчики клика для каждого изображения
+            detailImages.forEach(function (image) {
+                image.addEventListener('click', function () {
+                    const program = this.getAttribute('data-program');
+
+                    // Обновляем активную вкладку
+                    setActiveTab(program);
+
+                    // Показываем соответствующие детали программы
+                    updateProgramDetails(program);
+                });
+            });
+
+            // Функция для обновления деталей программы
+            function updateProgramDetails(program) {
+                // Скрываем все детали
+                document.querySelectorAll('.program-detail').forEach(function (detail) {
+                    detail.classList.remove('active');
+                });
+
+                // Показываем детали выбранной программы
+                const selectedDetail = document.getElementById(program + '-detail');
+                if (selectedDetail) {
+                    selectedDetail.classList.add('active');
+                }
+            }
+        });
+        function updateProgramDetails(program) {
+            // Скрываем все детали (удаляем класс 'active' у всех)
+            document.querySelectorAll('.program-detail').forEach(function (detail) {
+                detail.classList.remove('active');
+            });
+
+            // Показываем детали выбранной программы (добавляем класс 'active')
+            const selectedDetail = document.getElementById(program + '-detail');
+            if (selectedDetail) {
+                selectedDetail.classList.add('active');
+            }
+        }
+    </script>
+
+    <!-- --------------------------------------------------------------
+    # metrics
+    ---------------------------------------------------------------->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const metrics = document.querySelectorAll('.metric-item');
+            let hasAnimated = false;
+            
+            // Функция для анимации чисел
+            function animateCounter(element, target, suffix = '') {
+                const duration = 2000; // 2 секунды
+                const steps = 60;
+                const increment = target / steps;
+                let current = 0;
+                let step = 0;
+                
+                const timer = setInterval(() => {
+                    step++;
+                    current += increment;
+                    
+                    if (step >= steps) {
+                        element.textContent = target.toLocaleString() + suffix;
+                        clearInterval(timer);
+                    } else {
+                        element.textContent = Math.floor(current).toLocaleString() + suffix;
+                    }
+                }, duration / steps);
+            }
+            
+            // Наблюдатель для запуска анимации при скролле
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !hasAnimated) {
+                        hasAnimated = true;
+                        
+                        metrics.forEach((metric, index) => {
+                            const numberElement = metric.querySelector('.metric-number');
+                            const text = numberElement.textContent;
+                            
+                            // Определяем число и суффикс
+                            let target, suffix;
+                            
+                            if (text.includes('%')) {
+                                target = parseInt(text.replace('%', ''));
+                                suffix = '%';
+                            } else if (text.includes('+')) {
+                                target = parseInt(text.replace(/\D/g, ''));
+                                suffix = '+';
+                            } else {
+                                target = parseInt(text.replace(/\D/g, ''));
+                                suffix = '';
+                            }
+                            
+                            // Запускаем анимацию с задержкой
+                            setTimeout(() => {
+                                numberElement.textContent = '0' + suffix;
+                                animateCounter(numberElement, target, suffix);
+                            }, index * 200);
+                            
+                            // Анимация появления через GSAP
+                            if (typeof gsap !== 'undefined') {
+                                gsap.from(metric, {
+                                    y: 30,
+                                    opacity: 0,
+                                    duration: 0.6,
+                                    delay: index * 0.2,
+                                    ease: "power2.out"
+                                });
+                            }
+                        });
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            // Наблюдаем за секцией метрик
+            const metricsSection = document.querySelector('.success-metrics');
+            if (metricsSection) {
+                observer.observe(metricsSection);
+            }
+        });
+    </script>
+
+    <!-- --------------------------------------------------------------
+    # FAQ
+    ---------------------------------------------------------------->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+
+                header.addEventListener('click', () => {
+                    // Close all items
+                    accordionItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+    
+    <!-- --------------------------------------------------------------
+    # ПРОКРУТКА ПРИ НАЖАТИИ НА МЕНЮ
+    ---------------------------------------------------------------->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll для всех якорных ссылок
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    
+                    // Игнорируем пустые ссылки
+                    if (href === '#' || href === '') return;
+                    
+                    e.preventDefault();
+                    
+                    const targetId = href.substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        // Закрываем меню если оно открыто
+                        const leftNav = document.querySelector('.left-nav');
+                        if (leftNav) {
+                            leftNav.classList.remove('open'); // если у вас есть такой класс
+                        }
+                        
+                        // Плавная прокрутка
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- ========================================
+    Back to Top Button
+    ======================================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const backToTopButton = document.getElementById('backToTop');
+
+            // Show/hide button based on scroll position
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('show');
+                } else {
+                    backToTopButton.classList.remove('show');
+                }
+            });
+
+            // Smooth scroll to top when button is clicked
+            backToTopButton.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <!-- ========================================
+    MOBILE MENU
+    ======================================== -->
+    <script>
+        // Бургер-меню
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            mobileMenuOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileMenuOverlay.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // Закрытие меню при клике на ссылку
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-overlay a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+
+    <!-- ========================================
+    Отключение прокрутки для hero
+    ======================================== -->
+    <script>
+        (function() {
+            var isMobile = window.innerWidth <= 1024;
+            
+            if (isMobile) {
+                // Сохраняем оригинальную функцию добавления событий
+                var originalAddEventListener = EventTarget.prototype.addEventListener;
+                
+                // Подменяем её своей версией
+                EventTarget.prototype.addEventListener = function(type, listener, options) {
+                    // Если кто-то пытается слушать колесико мыши (свайп) на мобильном...
+                    if (type === 'wheel' || type === 'mousewheel') {
+                        // ...мы просто игнорируем это! Скролл остается системным.
+                        return; 
+                    }
+                    // Для всех остальных событий (клики и т.д.) всё работает как обычно
+                    return originalAddEventListener.call(this, type, listener, options);
+                };
+                
+                console.log("Mobile Guard: Scroll-jacking blocked.");
+            }
+        })();
+    </script>
+</html>

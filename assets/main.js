@@ -130,6 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
     isRightNavHovered = false;
     // При уходе курсора обновляем цвета в зависимости от фона
     updateMenuColors();
+    leftNav.classList.toggle('is-dark', isLeftDark);
 
     // Вызываем оригинальный обработчик, если он был
     if (typeof originalRightNavMouseleave === 'function') {

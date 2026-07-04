@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses - Ally Lingua</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Cursor -->
+    <div class="js-cursor-init">
+        <div class="cursor-circle">
+            <div class="circle_wrap"></div>
+            <div class="scroll_cursor_txt">
+                <span class="text">Scroll</span>
+            </div>
+            <div class="view_more_cursor">
+                <span class="text">View</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------------------
+    # Left Navigation
+    ---------------------------------------------------------------->
+    <div class="left-nav">
+        <a href="./index-EN.html" class="logo-container">
+            <img src="./assets/img/Logo.svg" alt="Logo" class="logo-default">
+            <img src="./assets/img/logo-active.svg" alt="Logo Hover" class="logo-hover">
+        </a>
+
+        <div class="burger-lines">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </div>
+        <span class="explore-text">EXPLORE</span>
+        <div class="side-menu">
+            <ul>
+                <li><a href="index-EN.html">HOME</a></li>
+                <li><a href="courses-EN.html">COURSES</a></li>
+                <li><a href="#teachers">TEACHERS</a></li>
+                <li><a href="#reviews">REVIEWS</a></li>
+                <div class="language-switcher">
+                    <a href="./courses.html" class="language-btn" title="Switch to Russian">
+                        <span class="language-text">RU</span>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------------------
+    # Right Navigation
+    ---------------------------------------------------------------->
+    <a href="./courses-EN.html" class="right-nav">
+        <span class="arrow">→</span>
+        <span class="enrol-text">ENROL</span>
+        <div class="right-side-menu"></div>
+    </a>
+
+    <!-- Hero Section -->
+    <section class="courses-hero">
+        <div class="hero-background"
+                style="background-image: url('assets/img/our-courses.jpg');">
+            </div>
+        <div class="courses-hero-content">
+            <h1>Our Courses</h1>
+            <p>Choose from our comprehensive range of English language courses designed to meet your specific goals and learning needs</p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section">
+        <div class="courses-container">
+            <div class="section-intro">
+                <h2>Find Your Perfect Course</h2>
+                <p>Whether you're looking to advance your career, prepare for exams, or improve your everyday English,
+                    we have the right course for you. All our programs are taught by experienced native English speakers
+                    using proven Oxford methodologies.</p>
+            </div>
+
+            <div class="courses-grid" id="coursesGrid">
+                <!-- Kids English Course -->
+                <div class="course-card" data-course="kids">
+                    <div class="course-compact-view">
+                        <img src="./assets/img/kids-english.jpg" alt="Kids English" class="course-image">
+
+                        <div class="course-content">
+                            <span class="course-category">Young Learners</span>
+                            <h3 class="course-title">Kids English (Group Classes)</h3>
+
+                            <p class="course-description">
+                                Fun, interactive group lessons for children built on Cambridge's Power Up methodology.
+                            </p>
+
+                            <ul class="course-benefits">
+                                <li>Learn through games, songs and stories in a lively group setting</li>
+                                <li>Build vocabulary and confidence with age-appropriate topics</li>
+                                <li>Develop speaking and listening skills alongside classmates</li>
+                            </ul>
+
+                            <div class="course-price-section">
+                                <div class="course-price">
+                                    <span class="price-amount">€100</span>
+                                    <span class="price-period">per month</span>
+                                </div>
+
+                                <div class="course-buttons">
+                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Expanded view -->
+                    <div class="course-expanded-view" style="display:none;">
+                        <div class="expanded-header">
+                            <div class="expanded-image-container">
+                                <img src="./assets/img/kids-english.jpg"
+                                    alt="Kids English" class="expanded-course-image">
+                            </div>
+
+                            <div class="expanded-content-wrapper">
+                                <span class="course-category">Young Learners</span>
+                                <h3 class="course-title">Kids English (Group Classes)</h3>
+
+                                <p class="course-description">
+                                    Our group course for children combines Cambridge's Power Up with Oxford's Family
+                                    and Friends, blending both series' strengths in songs, stories, phonics and
+                                    guided practice. Small groups let children learn together through games,
+                                    role-play and creative tasks, building real communication skills while staying
+                                    motivated and engaged.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="expanded-grid">
+                            <div class="expanded-section">
+                                <h3>What You'll Learn</h3>
+                                <ul class="feature-list">
+                                    <li>Core vocabulary through songs, chants and stories</li>
+                                    <li>Phonics and early reading skills</li>
+                                    <li>Everyday speaking through games and role-play</li>
+                                    <li>Listening practice with native-style audio</li>
+                                    <li>Simple grammar introduced through repetition</li>
+                                    <li>Confidence speaking in front of a group</li>
+                                </ul>
+                            </div>
+
+                            <div class="expanded-section">
+                                <h3>Who Is This For?</h3>
+                                <ul class="feature-list">
+                                    <li>Children aged 6–12 starting or building on English</li>
+                                    <li>Kids who enjoy learning alongside peers</li>
+                                    <li>Parents wanting a fun, structured curriculum</li>
+                                    <li>Beginners through pre-intermediate levels</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="course-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Duration</div>
+                                <div class="detail-value">Flexible</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Class Size</div>
+                                <div class="detail-value">Group of 4–6</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Level</div>
+                                <div class="detail-value">Beginner+</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Schedule</div>
+                                <div class="detail-value">Twice per week</div>
+                            </div>
+                        </div>
+
+                        <div class="course-price-section">
+                            <div class="course-price">
+                                <span class="price-amount">€100</span>
+                                <span class="price-period">per month</span>
+                            </div>
+
+                            <div class="course-buttons">
+                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                <button class="btn-close close-btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kids English Individual Course -->
+                <div class="course-card" data-course="kids-individual">
+                    <div class="course-compact-view">
+                        <img src="./assets/img/kids-english-individual.jpg" alt="Kids English Individual" class="course-image">
+
+                        <div class="course-content">
+                            <span class="course-category">Young Learners</span>
+                            <h3 class="course-title">Kids English (Individual Classes)</h3>
+
+                            <p class="course-description">
+                                One-on-one lessons for children, paced to their level using Power Up and Family and Friends.
+                            </p>
+
+                            <ul class="course-benefits">
+                                <li>Fully personalised pace and topics for your child</li>
+                                <li>Faster progress with undivided teacher attention</li>
+                                <li>Flexible scheduling around school and family life</li>
+                            </ul>
+
+                            <div class="course-price-section">
+                                <div class="course-price">
+                                    <span class="price-amount">€180</span>
+                                    <span class="price-period">per month</span>
+                                </div>
+
+                                <div class="course-buttons">
+                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Expanded view -->
+                    <div class="course-expanded-view" style="display:none;">
+                        <div class="expanded-header">
+                            <div class="expanded-image-container">
+                                <img src="./assets/img/kids-english-individual.jpg"
+                                    alt="Kids English Individual" class="expanded-course-image">
+                            </div>
+
+                            <div class="expanded-content-wrapper">
+                                <span class="course-category">Young Learners</span>
+                                <h3 class="course-title">Kids English (Individual Classes)</h3>
+
+                                <p class="course-description">
+                                    One-to-one lessons built around your child, using Cambridge's Power Up and
+                                    Oxford's Family and Friends. The teacher adapts pace, topics and activities to
+                                    your child's level and interests, giving full attention to pronunciation,
+                                    confidence and steady progress without the pace of a group.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="expanded-grid">
+                            <div class="expanded-section">
+                                <h3>What You'll Learn</h3>
+                                <ul class="feature-list">
+                                    <li>Vocabulary and phonics paced to your child</li>
+                                    <li>One-on-one speaking and pronunciation practice</li>
+                                    <li>Reading and listening tailored to interests</li>
+                                    <li>Grammar reinforced through personal feedback</li>
+                                    <li>Confidence built without group pressure</li>
+                                    <li>Progress tracked and adjusted lesson by lesson</li>
+                                </ul>
+                            </div>
+
+                            <div class="expanded-section">
+                                <h3>Who Is This For?</h3>
+                                <ul class="feature-list">
+                                    <li>Children needing a personalised pace</li>
+                                    <li>Shy learners who prefer 1:1 attention</li>
+                                    <li>Kids catching up or preparing for school English</li>
+                                    <li>Families wanting flexible scheduling</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="course-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Duration</div>
+                                <div class="detail-value">Flexible</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Class Size</div>
+                                <div class="detail-value">1:1</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Level</div>
+                                <div class="detail-value">Beginner+</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Schedule</div>
+                                <div class="detail-value">Twice per week</div>
+                            </div>
+                        </div>
+
+                        <div class="course-price-section">
+                            <div class="course-price">
+                                <span class="price-amount">€180</span>
+                                <span class="price-period">per month</span>
+                            </div>
+
+                            <div class="course-buttons">
+                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                <button class="btn-close close-btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business English Course -->
+                <div class="course-card" data-course="business">
+                    <div class="course-compact-view">
+                        <img src="./assets/img/business-english.jpg" alt="Business English" class="course-image">
+
+                        <div class="course-content">
+                            <span class="course-category">Professional</span>
+                            <h3 class="course-title">Business English</h3>
+
+                            <p class="course-description">
+                                Develop confident, professional communication using Oxford Business Result methodology.
+                            </p>
+
+                            <ul class="course-benefits">
+                                <li>Lead meetings and presentations with confidence in just 3 months</li>
+                                <li>Write professional emails that get results</li>
+                                <li>Negotiate effectively with international partners</li>
+                            </ul>
+
+                            <div class="course-price-section">
+                                <div class="course-price">
+                                    <span class="price-amount">€220</span>
+                                    <span class="price-period">per month</span>
+                                </div>
+
+                                <div class="course-buttons">
+                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Expanded view -->
+                    <div class="course-expanded-view" style="display:none;">
+                        <div class="expanded-header">
+                            <div class="expanded-image-container">
+                                <img src="./assets/img/business-english.jpg"
+                                    alt="Business English" class="expanded-course-image">
+                            </div>
+
+                            <div class="expanded-content-wrapper">
+                                <span class="course-category">Professional</span>
+                                <h3 class="course-title">Business English</h3>
+
+                                <p class="course-description">
+                                    This programme helps you operate confidently in international business environments.
+                                    You'll work with authentic case studies, role-plays and practical tasks that mirror
+                                    real communication: meetings, conference calls, negotiations and client relations.
+                                    We focus on clarity, diplomacy and natural professional style — so your English
+                                    supports your career rather than limiting it.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="expanded-grid">
+                            <div class="expanded-section">
+                                <h3>What You'll Learn</h3>
+                                <ul class="feature-list">
+                                    <li>Professional vocabulary across business situations</li>
+                                    <li>Confident participation in meetings and calls</li>
+                                    <li>Clear and persuasive presentations</li>
+                                    <li>Negotiation language and conflict resolution</li>
+                                    <li>Effective business emails and reports</li>
+                                    <li>Cross-cultural communication strategies</li>
+                                </ul>
+                            </div>
+
+                            <div class="expanded-section">
+                                <h3>Who Is This For?</h3>
+                                <ul class="feature-list">
+                                    <li>Professionals working with international partners</li>
+                                    <li>Entrepreneurs and business owners</li>
+                                    <li>Managers developing leadership communication</li>
+                                    <li>Graduates entering the global job market</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="course-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Duration</div>
+                                <div class="detail-value">Flexible</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Class Size</div>
+                                <div class="detail-value">1:1 or 1:4</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Level</div>
+                                <div class="detail-value">Intermediate+</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Schedule</div>
+                                <div class="detail-value">Twice per week</div>
+                            </div>
+                        </div>
+
+                        <div class="course-price-section">
+                            <div class="course-price">
+                                <span class="price-amount">€220</span>
+                                <span class="price-period">per month</span>
+                            </div>
+
+                            <div class="course-buttons">
+                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                <button class="btn-close close-btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- General English Course -->
+                <div class="course-card" data-course="general">
+                    <div class="course-compact-view">
+                        <img src="assets/img/general-english.jpg" alt="General English" class="course-image">
+
+                        <div class="course-content">
+                            <span class="course-category">Foundation</span>
+                            <h3 class="course-title">General English</h3>
+
+                            <p class="course-description">
+                                Build strong everyday English using Oxford American Headway methodology.
+                            </p>
+
+                            <ul class="course-benefits">
+                                <li>Speak confidently in everyday situations within 2 months</li>
+                                <li>Understand native speakers without subtitles</li>
+                                <li>Travel abroad with ease and independence</li>
+                            </ul>
+
+                            <div class="course-price-section">
+                                <div class="course-price">
+                                    <span class="price-amount">€220</span>
+                                    <span class="price-period">per month</span>
+                                </div>
+
+                                <div class="course-buttons">
+                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-expanded-view" style="display:none;">
+                        <div class="expanded-header">
+                            <div class="expanded-image-container">
+                                <img src="assets/img/general-english.jpg"
+                                    alt="General English" class="expanded-course-image">
+                            </div>
+
+                            <div class="expanded-content-wrapper">
+                                <span class="course-category">Foundation</span>
+                                <h3 class="course-title">General English</h3>
+
+                                <p class="course-description">
+                                    A comprehensive course designed to help you feel comfortable using English every
+                                    day. Lessons combine conversation practice, grammar in context, listening tasks,
+                                    reading
+                                    strategies and guided writing. You'll build fluency step by step, learning natural
+                                    expressions and developing the confidence to speak in travel, work and social
+                                    situations.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="expanded-grid">
+                            <div class="expanded-section">
+                                <h3>What You'll Learn</h3>
+                                <ul class="feature-list">
+                                    <li>Fluent everyday conversation skills</li>
+                                    <li>Grammar explained in clear, practical ways</li>
+                                    <li>Listening for real-life interactions</li>
+                                    <li>Reading comprehension and vocabulary growth</li>
+                                    <li>Writing for different everyday purposes</li>
+                                    <li>Useful idioms and natural expressions</li>
+                                </ul>
+                            </div>
+
+                            <div class="expanded-section">
+                                <h3>Who Is This For?</h3>
+                                <ul class="feature-list">
+                                    <li>Adults improving overall English ability</li>
+                                    <li>Learners preparing for travel or relocation</li>
+                                    <li>Students needing stronger language foundations</li>
+                                    <li>Anyone wanting to feel confident speaking</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="course-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Duration</div>
+                                <div class="detail-value">Flexible</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Class Size</div>
+                                <div class="detail-value">1:1 or 1:4</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Level</div>
+                                <div class="detail-value">All levels</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Schedule</div>
+                                <div class="detail-value">Twice per week</div>
+                            </div>
+                        </div>
+
+                        <div class="course-price-section">
+                            <div class="course-price">
+                                <span class="price-amount">€220</span>
+                                <span class="price-period">per month</span>
+                            </div>
+
+                            <div class="course-buttons">
+                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                <button class="btn-close close-btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- English for Children -->
+                <!-- <div class="course-card" data-course="children">
+                    <div class="course-compact-view">
+                        <img src="assets/img/English-for-Children.jpg" alt="English for Children" class="course-image">
+                        <div class="course-content">
+                            <span class="course-category">Kids Programme</span>
+                            <h3 class="course-title">English for Children</h3>
+                            <p class="course-description">
+                                A fun, interactive course based on Cambridge programmes for ages 6-12.
+                            </p>
+
+                            <ul class="course-benefits">
+                                <li>Your child speaks English confidently in 3 months</li>
+                                <li>Learn through games, songs and creative projects</li>
+                                <li>Build confidence for school and Cambridge YLE exams</li>
+                            </ul>
+
+                            <div class="course-price-section">
+                                <div class="course-price">
+                                    <span class="price-amount">€280</span>
+                                    <span class="price-period">per month</span>
+                                </div>
+                                <div class="course-buttons">
+                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-expanded-view" style="display:none;">
+                        <div class="expanded-header">
+                            <div class="expanded-image-container">
+                                <img src="assets/img/English-for-Children.jpgs"
+                                    alt="English for Children" class="expanded-course-image">
+                            </div>
+                            <div class="expanded-content-wrapper">
+                                <span class="course-category">Kids Programme</span>
+                                <h3 class="course-title">English for Children</h3>
+                                <p class="course-description">
+                                    Our English for Children course is built around Cambridge Young Learners materials,
+                                    ensuring a structured yet engaging journey. Every lesson is fully interactive —
+                                    children speak from day one, collaborate on creative projects and take part in
+                                    role-play activities that mirror real-life communication. Parents love seeing their
+                                    child grow in confidence, curiosity and ability to express themselves — whilst we
+                                    gently build strong reading, writing and listening foundations.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="expanded-grid">
+                            <div class="expanded-section">
+                                <h3>What They'll Learn</h3>
+                                <ul class="feature-list">
+                                    <li>Clear pronunciation and natural sentence building</li>
+                                    <li>Speaking confidence through play and role-play</li>
+                                    <li>Listening skills for everyday communication</li>
+                                    <li>Step-by-step reading and writing skills</li>
+                                    <li>Team projects and creative problem-solving</li>
+                                    <li>Optional preparation for Cambridge YLE exams</li>
+                                </ul>
+                            </div>
+                            <div class="expanded-section">
+                                <h3>Who Is This For?</h3>
+                                <ul class="feature-list">
+                                    <li>Children aged 6–12</li>
+                                    <li>Beginners and continuing learners</li>
+                                    <li>Children who struggle with traditional textbook learning</li>
+                                    <li>Parents who want visible, long-term progress</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="course-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Duration</div>
+                                <div class="detail-value">Ongoing</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Class Size</div>
+                                <div class="detail-value">1:1 or 1:4</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Level</div>
+                                <div class="detail-value">Beginner+</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Schedule</div>
+                                <div class="detail-value">Twice per week</div>
+                            </div>
+                        </div>
+
+                        <div class="course-price-section">
+                            <div class="course-price">
+                                <span class="price-amount">€280</span>
+                                <span class="price-period">per month</span>
+                            </div>
+                            <div class="course-buttons">
+                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                <button class="btn-close close-btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- IELTS Preparation -->
+                <div class="course-card" data-course="ielts">
+                    <div class="course-compact-view">
+                        <img src="./assets/img/IELTS.png" alt="IELTS Preparation" class="course-image">
+                        <div class="course-content">
+                            <span class="course-category">Exam Preparation</span>
+                            <h3 class="course-title">IELTS Preparation</h3>
+                            <p class="course-description">
+                                A complete strategy-based programme covering all four skills.
+                            </p>
+
+                            <ul class="course-benefits">
+                                <li>Achieve your target band score in 8-16 weeks</li>
+                                <li>Learn proven exam strategies from certified IELTS tutors</li>
+                                <li>Get individual feedback on Speaking and Writing tasks</li>
+                            </ul>
+
+                            <div class="course-price-section">
+                                <div class="course-price">
+                                    <span class="price-amount">€250</span>
+                                    <span class="price-period">per month</span>
+                                </div>
+                                <div class="course-buttons">
+                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-expanded-view" style="display:none;">
+                        <div class="expanded-header">
+                            <div class="expanded-image-container">
+                                <img src="./assets/img/IELTS.png"
+                                    alt="IELTS Preparation" class="expanded-course-image">
+                            </div>
+                            <div class="expanded-content-wrapper">
+                                <span class="course-category">Exam Preparation</span>
+                                <h3 class="course-title">IELTS Preparation</h3>
+                                <p class="course-description">
+                                    This course focuses on real exam performance. We begin with a detailed level
+                                    assessment and create a personal study pathway. You'll learn examiner expectations,
+                                    discover powerful writing templates and practise structured Speaking responses with
+                                    individual feedback. Mock tests, exam simulations and targeted homework ensure
+                                    steady,
+                                    measurable progress so you feel confident and well prepared on exam day.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="expanded-grid">
+                            <div class="expanded-section">
+                                <h3>What You'll Learn</h3>
+                                <ul class="feature-list">
+                                    <li>Time-saving reading techniques and analysis</li>
+                                    <li>Listening strategies for complex audio</li>
+                                    <li>Strong structures for Writing Task 1 & 2</li>
+                                    <li>Speaking practice across Parts 1–3</li>
+                                    <li>Time management and exam psychology</li>
+                                    <li>Individual improvement plans to raise your score</li>
+                                </ul>
+                            </div>
+                            <div class="expanded-section">
+                                <h3>Who Is This For?</h3>
+                                <ul class="feature-list">
+                                    <li>Students preparing for study abroad</li>
+                                    <li>Applicants for visas and immigration</li>
+                                    <li>Learners aiming for band 6.0–8.0+</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="course-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Duration</div>
+                                <div class="detail-value">8–16 weeks</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Class Size</div>
+                                <div class="detail-value">1:1</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Level</div>
+                                <div class="detail-value">Intermediate+</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Schedule</div>
+                                <div class="detail-value">Twice per week</div>
+                            </div>
+                        </div>
+
+                        <div class="course-price-section">
+                            <div class="course-price">
+                                <span class="price-amount">€250</span>
+                                <span class="price-period">per month</span>
+                            </div>
+                            <div class="course-buttons">
+                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                <button class="btn-close close-btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOEFL Preparation -->
+                <div class="course-card" data-course="toefl">
+                    <div class="course-compact-view">
+                        <img src="./assets/img/TOFEL.jpg" alt="TOEFL Preparation" class="course-image">
+                        <div class="course-content">
+                            <span class="course-category">Exam Preparation</span>
+                            <h3 class="course-title">TOEFL Preparation</h3>
+                            <p class="course-description">
+                                Master every TOEFL section with academic language support.
+                            </p>
+
+                            <ul class="course-benefits">
+                                <li>Score 90+ on TOEFL iBT with proven strategies</li>
+                                <li>Understand complex academic lectures and texts</li>
+                                <li>Write clear, structured academic responses under pressure</li>
+                            </ul>
+
+                            <div class="course-price-section">
+                                <div class="course-price">
+                                    <span class="price-amount">€250</span>
+                                    <span class="price-period">per month</span>
+                                </div>
+                                <div class="course-buttons">
+                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-expanded-view" style="display:none;">
+                        <div class="expanded-header">
+                            <div class="expanded-image-container">
+                                <img src="./assets/img/TOFEL.jpg"
+                                    alt="TOEFL Preparation" class="expanded-course-image">
+                            </div>
+                            <div class="expanded-content-wrapper">
+                                <span class="course-category">Exam Preparation</span>
+                                <h3 class="course-title">TOEFL Preparation</h3>
+                                <p class="course-description">
+                                    Following ETS-style formats, this course builds your academic English whilst
+                                    developing essential exam strategies. You'll learn to interpret complex lectures,
+                                    organise written responses clearly and deliver confident spoken answers. Regular
+                                    mock tests and detailed teacher feedback help refine your performance step by step.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="expanded-grid">
+                            <div class="expanded-section">
+                                <h3>What You'll Learn</h3>
+                                <ul class="feature-list">
+                                    <li>Academic writing with logical structure</li>
+                                    <li>Effective Speaking task responses</li>
+                                    <li>Listening techniques for university lectures</li>
+                                    <li>Recognition of common TOEFL traps</li>
+                                    <li>Full mock tests with analysis</li>
+                                </ul>
+                            </div>
+                            <div class="expanded-section">
+                                <h3>Who Is This For?</h3>
+                                <ul class="feature-list">
+                                    <li>University admissions</li>
+                                    <li>Academic programmes and scholarships</li>
+                                    <li>Learners aiming for competitive scores</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="course-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Duration</div>
+                                <div class="detail-value">8–16 weeks</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Class Size</div>
+                                <div class="detail-value">1:1</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Level</div>
+                                <div class="detail-value">Upper-Intermediate+</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Schedule</div>
+                                <div class="detail-value">Twice per week</div>
+                            </div>
+                        </div>
+
+                        <div class="course-price-section">
+                            <div class="course-price">
+                                <span class="price-amount">€250</span>
+                                <span class="price-period">per month</span>
+                            </div>
+                            <div class="course-buttons">
+                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                <button class="btn-close close-btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Individual Lessons -->
+                <div class="course-card" data-course="individual">
+                    <div class="course-compact-view">
+                        <img src="./assets/img/Individual-Lessons.jpg" alt="Individual Lessons" class="course-image">
+                        <div class="course-content">
+                            <span class="course-category">Personalised</span>
+                            <h3 class="course-title">Individual Lessons</h3>
+                            <p class="course-description">
+                                Fully personalised programme tailored to your unique goals.
+                            </p>
+
+                            <ul class="course-benefits">
+                                <li>100% focus on your specific needs and learning pace</li>
+                                <li>Flexible scheduling that fits your lifestyle</li>
+                                <li>See measurable progress in as little as 4 weeks</li>
+                            </ul>
+
+                            <div class="course-price-section">
+                                <div class="course-price">
+                                    <span class="price-amount">€220</span>
+                                    <span class="price-period">per month</span>
+                                </div>
+                                <div class="course-buttons">
+                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-expanded-view" style="display:none;">
+                        <div class="expanded-header">
+                            <div class="expanded-image-container">
+                                <img src="./assets/img/Individual-Lessons.jpg"
+                                    alt="Individual Lessons" class="expanded-course-image">
+                            </div>
+                            <div class="expanded-content-wrapper">
+                                <span class="course-category">Personalised</span>
+                                <h3 class="course-title">Individual Lessons</h3>
+                                <p class="course-description">
+                                    We start with a thorough consultation and build a plan around your lifestyle and
+                                    aims. Lessons focus on real communication, targeted correction and practical
+                                    scenarios.
+                                    You'll receive structured homework, teacher feedback and optional recordings to
+                                    review
+                                    and strengthen your progress between sessions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="expanded-grid">
+                            <div class="expanded-section">
+                                <h3>Perfect For</h3>
+                                <ul class="feature-list">
+                                    <li>Relocation or job interviews</li>
+                                    <li>Accelerated progress</li>
+                                    <li>Professional communication</li>
+                                    <li>Overcoming speaking barriers</li>
+                                </ul>
+                            </div>
+                            <div class="expanded-section">
+                                <h3>Benefits</h3>
+                                <ul class="feature-list">
+                                    <li>Completely customised plan</li>
+                                    <li>Flexible scheduling</li>
+                                    <li>Optional lesson recordings</li>
+                                    <li>Homework with feedback</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="course-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Duration</div>
+                                <div class="detail-value">Flexible</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Class Size</div>
+                                <div class="detail-value">1:1</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Level</div>
+                                <div class="detail-value">All levels</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Schedule</div>
+                                <div class="detail-value">Flexible</div>
+                            </div>
+                        </div>
+
+                        <div class="course-price-section">
+                            <div class="course-price">
+                                <span class="price-amount">€220</span>
+                                <span class="price-period">per month</span>
+                            </div>
+                            <div class="course-buttons">
+                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                <button class="btn-close close-btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate Training -->
+                <div class="course-card" data-course="corporate">
+                    <div class="course-compact-view">
+                        <img src="./assets/img/Corporate-Training.jpg" alt="Corporate Training" class="course-image">
+                        <div class="course-content">
+                            <span class="course-category">Corporate</span>
+                            <h3 class="course-title">Corporate Training</h3>
+                            <p class="course-description">
+                                Practical English for teams based on Oxford methodologies.
+                            </p>
+
+                            <ul class="course-benefits">
+                                <li>Transform team communication in international business</li>
+                                <li>Master negotiations, presentations and client relations</li>
+                                <li>Write professional emails that drive results</li>
+                            </ul>
+
+                            <div class="course-price-section">
+                                <div class="course-price">
+                                    <span class="price-amount">€300</span>
+                                    <span class="price-period">per month</span>
+                                </div>
+                                <div class="course-buttons">
+                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-expanded-view" style="display:none;">
+                        <div class="expanded-header">
+                            <div class="expanded-image-container">
+                                <img src="./assets/img/Corporate-Training.jpg"
+                                    alt="Corporate Training" class="expanded-course-image">
+                            </div>
+                            <div class="expanded-content-wrapper">
+                                <span class="course-category">Corporate</span>
+                                <h3 class="course-title">Corporate Training</h3>
+                                <p class="course-description">
+                                    Our corporate programmes align with your company goals. We integrate real case
+                                    studies,
+                                    industry-specific language and communication challenges your teams face daily.
+                                    Regular
+                                    progress tracking and KPI reporting ensure measurable results that support
+                                    productivity,
+                                    sales and client relations.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="expanded-grid">
+                            <div class="expanded-section">
+                                <h3>What Teams Gain</h3>
+                                <ul class="feature-list">
+                                    <li>Confident professional communication</li>
+                                    <li>Stronger presentations and negotiations</li>
+                                    <li>Clear and effective business emails</li>
+                                    <li>Role-play based on real company scenarios</li>
+                                    <li>Industry-specific vocabulary</li>
+                                    <li>Cross-cultural communication skills</li>
+                                </ul>
+                            </div>
+                            <div class="expanded-section">
+                                <h3>Who Is This For?</h3>
+                                <ul class="feature-list">
+                                    <li>Companies with international clients</li>
+                                    <li>Teams preparing for global projects</li>
+                                    <li>Sales and customer service departments</li>
+                                    <li>Management and leadership teams</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="course-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Duration</div>
+                                <div class="detail-value">Flexible</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Class Size</div>
+                                <div class="detail-value">Custom</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Level</div>
+                                <div class="detail-value">All levels</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Schedule</div>
+                                <div class="detail-value">Twice per week</div>
+                            </div>
+                        </div>
+
+                        <div class="course-price-section">
+                            <div class="course-price">
+                                <span class="price-amount">€300</span>
+                                <span class="price-period">per month</span>
+                            </div>
+                            <div class="course-buttons">
+                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
+                                <button class="btn-close close-btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------------------------------------------------------
+    # FOOTER
+    ---------------------------------------------------------------->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- First Column -->
+            <div class="footer-col">
+                <h3 class="footer-logo">Ally Lingua</h3>
+                <p class="footer-tagline">English language mastery to achieve your goals</p>
+                <p class="footer-description">A modern language school with a personalised approach to each student. We
+                    help
+                    unlock your language potential and achieve your desired results.</p>
+                <!-- <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <img src="./assets/img/LinkedIn.svg" alt="LinkedIn" width="40" height="40">
+                    </a>
+                    <a href="https://www.facebook.com/allylingua" class="social-icon">
+                        <img src="./assets/img/Facebook.svg" alt="Facebook" width="40" height="40">
+                    </a>
+                    <a href="https://www.instagram.com/ally_lingua_ru/" class="social-icon">
+                        <img src="./assets/img/Instagram.svg" alt="Instagram"  width="40" height="40">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="./assets/img/x.svg" alt="X (Twitter)" width="40" height="40">
+                    </a>
+                </div> -->
+            </div>
+
+            <!-- Second Column -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact</h4>
+                <ul class="footer-contact-list">
+                    <!-- <li class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                                    fill="#D4AF37" />
+                            </svg>
+                            <span>10 Oxford Street, Suite 315, London</span>
+                        </li> -->
+                    <li class="footer-contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
+                                fill="#D4AF37" />
+                        </svg>
+                        <a href="ally.lingua@gmail.com">ally.lingua@gmail.com</a>
+                    </li>
+                    <!-- <li class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 15.5C18.8 15.5 17.5 15.3 16.4 14.9C16.3 14.9 16.2 14.9 16.1 14.9C15.8 14.9 15.6 15 15.4 15.2L13.2 17.4C10.4 15.9 8 13.6 6.6 10.8L8.8 8.6C9.1 8.3 9.2 7.9 9 7.6C8.7 6.5 8.5 5.2 8.5 4C8.5 3.5 8 3 7.5 3H4C3.5 3 3 3.5 3 4C3 13.4 10.6 21 20 21C20.5 21 21 20.5 21 20V16.5C21 16 20.5 15.5 20 15.5ZM19 12H21C21 7 17 3 12 3V5C15.9 5 19 8.1 19 12ZM15 12H17C17 9.2 14.8 7 12 7V9C13.7 9 15 10.3 15 12Z"
+                                    fill="#D4AF37" />
+                            </svg>
+                            <a href="tel:+442012345678">+44 (20) 1234-5678</a>
+                        </li> -->
+                    <li class="footer-contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z"
+                                fill="#D4AF37" />
+                        </svg>
+                        <span>Mon-Fri: 09:00 - 21:00</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Third Column -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="./index-EN.html">Home</a></li>
+                    <li><a href="./courses-EN.html">Courses</a></li>
+                    <li><a href="./index-EN.html#teachers">Teachers</a></li>
+                </ul>
+            </div>
+
+            <!-- Fourth Column -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Our Courses</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Business English</a></li>
+                    <li><a href="#">General English</a></li>
+                    <li><a href="#">English for Children</a></li>
+                    <li><a href="#">IELTS Preparation</a></li>
+                    <li><a href="#">TOEFL Preparation</a></li>
+                    <li><a href="#">Individual Lessons</a></li>
+                    <li><a href="#">Corporate Training</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-bottom">
+            <p>© 2026 Ally Lingua. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="./privacy_policy_en.html">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+
+
+    <!-- --------------------------------------------------------------
+        # Mobile menu 
+        ---------------------------------------------------------------->
+    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="mobile-menu-overlay">
+        <ul>
+            <li><a href="./index-EN.html">Home</a></li>
+            <!-- <li><a href="#about">About</a></li> -->
+            <li><a href="./courses-EN.html">Courses</a></li>
+            <li><a href="./index-EN.html #teachers">Teachers</a></li>
+            <li><a href="./index-EN.html #contact">Reviews</a></li>
+            <div class="language-switcher">
+                <a href="./courses.html" class="language-btn" title="Switch to Russian">
+                    <span class="language-text">RU</span>
+                </a>
+            </div>
+        </ul>
+    </nav>
+</body>
+
+<!-- --------------------------------------------------------------
+    # CURSOR 
+        ---------------------------------------------------------------->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cursor = document.querySelector('.js-cursor-init');
+        const cursorCircle = cursor.querySelector('.cursor-circle');
+        const scrollText = cursor.querySelector('.scroll_cursor_txt .text');
+        const viewText = cursor.querySelector('.view_more_cursor .text');
+
+        // Function to determine if background is dark or light
+        const isDarkBackground = (element) => {
+            // Get the background color of the element
+            const bgColor = window.getComputedStyle(element).backgroundColor;
+
+            // If no background color or transparent, check parent
+            if (!bgColor || bgColor === 'transparent' || bgColor === 'rgba(0, 0, 0, 0)') {
+                if (element.parentElement) {
+                    return isDarkBackground(element.parentElement);
+                }
+                return false; // Default to light if we can't determine
+            }
+
+            // Parse the RGB values
+            const rgb = bgColor.match(/\d+/g);
+            if (!rgb || rgb.length < 3) return false;
+
+            // Calculate brightness - higher value means lighter background
+            // Formula: (R * 299 + G * 587 + B * 114) / 1000
+            const brightness = (parseInt(rgb[0]) * 299 + parseInt(rgb[1]) * 587 + parseInt(rgb[2]) * 114) / 1000;
+
+            // Consider dark if brightness is less than 128
+            return brightness < 128;
+        };
+
+        // Update cursor position and style
+        document.addEventListener('mousemove', (e) => {
+            requestAnimationFrame(() => {
+                cursor.style.left = `${e.clientX}px`;
+                cursor.style.top = `${e.clientY}px`;
+            });
+
+            // Get element under cursor
+            const element = document.elementFromPoint(e.clientX, e.clientY);
+            if (!element) return;
+
+            // Reset cursor styles
+            cursor.classList.remove('white_cursor', 'dark_cursor', 'active');
+            scrollText.style.display = 'none';
+            viewText.style.display = 'none';
+
+            // Handle different sections
+            const heroSection = element.closest('.hero-section');
+            const whyChooseSection = element.closest('.why-choose-section');
+            const navElements = element.closest('.left-nav') || element.closest('.right-nav');
+
+            // If cursor is over hero section
+            if (heroSection) {
+                cursor.classList.add('active', 'white_cursor');
+                scrollText.style.display = 'block';
+            }
+            // If cursor is over why choose section
+            else if (whyChooseSection) {
+                cursor.classList.add('active', 'dark_cursor');
+                scrollText.style.display = 'block';
+            }
+            // If cursor is over navigation
+            else if (navElements) {
+                // Navigation elements use white cursor by default
+                cursor.classList.add('white_cursor');
+            }
+            // For other elements, determine by background
+            else {
+                if (isDarkBackground(element)) {
+                    cursor.classList.add('white_cursor');
+                } else {
+                    cursor.classList.add('dark_cursor');
+                }
+            }
+
+            // Special case for accent-word
+            if (element.classList.contains('accent-word') || element.closest('.accent-word')) {
+                cursor.classList.add('active');
+                scrollText.style.display = 'none';
+                viewText.style.display = 'block';
+            }
+        });
+
+        // Cursor click animation
+        document.addEventListener('mousedown', () => {
+            cursorCircle.style.transform = 'scale(0.9)';
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursorCircle.style.transform = 'scale(1)';
+        });
+    });
+</script>
+
+<!-- --------------------------------------------------------------
+    # NAVIGATION MENU
+    ---------------------------------------------------------------->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const leftNav = document.querySelector('.left-nav');
+        const rightNav = document.querySelector('.right-nav');
+        const exploreText = document.querySelector('.explore-text');
+        const enrolText = document.querySelector('.enrol-text');
+        const burgerLines = document.querySelectorAll('.burger-line');
+        const arrow = document.querySelector('.arrow');
+
+        // Сохраняем оригинальные обработчики событий для правого меню
+        const originalRightNavMouseenter = rightNav.onmouseenter;
+        const originalRightNavMouseleave = rightNav.onmouseleave;
+
+        // Флаг для отслеживания наведения на правое меню
+        let isRightNavHovered = false;
+
+        // Добавляем новые обработчики событий для правого меню с сохранением оригинальной функциональности
+        rightNav.addEventListener('mouseenter', function () {
+            isRightNavHovered = true;
+            // Стандартное поведение при наведении - всегда меняем на белый
+            enrolText.style.color = 'white';
+            arrow.style.color = 'white';
+
+            // Вызываем оригинальный обработчик, если он был
+            if (typeof originalRightNavMouseenter === 'function') {
+                originalRightNavMouseenter.call(this);
+            }
+        });
+
+        rightNav.addEventListener('mouseleave', function () {
+            isRightNavHovered = false;
+            // При уходе курсора обновляем цвета в зависимости от фона
+            updateMenuColors();
+
+            // Вызываем оригинальный обработчик, если он был
+            if (typeof originalRightNavMouseleave === 'function') {
+                originalRightNavMouseleave.call(this);
+            }
+        });
+
+        // Функция для определения, является ли секция тёмной
+        function isDarkSection(element) {
+            if (!element) return false;
+
+            // Проверяем по классам секций
+            if (element.classList.contains('benefits-section')) {
+                return true; // Секция Benefits всегда тёмная
+            }
+
+            if (element.classList.contains('hero-section')) {
+                return true; // Hero секция тоже считаем тёмной из-за изображения
+            }
+
+            // Проверяем по цвету фона
+            const backgroundColor = window.getComputedStyle(element).backgroundColor;
+            if (backgroundColor !== 'transparent' && backgroundColor !== 'rgba(0, 0, 0, 0)') {
+                const rgb = backgroundColor.match(/\d+/g);
+                if (rgb && rgb.length >= 3) {
+                    // Вычисляем яркость
+                    const brightness = (parseInt(rgb[0]) * 299 + parseInt(rgb[1]) * 587 + parseInt(rgb[2]) * 114) / 1000;
+                    return brightness < 128; // Тёмный если яркость < 128
+                }
+            }
+
+            // Проверяем фоновое изображение
+            const backgroundImage = window.getComputedStyle(element).backgroundImage;
+            if (backgroundImage && backgroundImage !== 'none') {
+                return true; // Предполагаем, что секции с фоновыми изображениями тёмные
+            }
+
+            // Проверяем родительский элемент
+            if (element.parentElement && element.parentElement !== document.body) {
+                return isDarkSection(element.parentElement);
+            }
+
+            return false;
+        }
+
+        // Функция для проверки, находится ли меню над тёмной секцией
+        function checkMenuOverSection() {
+            // Для левого меню (EXPLORE)
+            const leftNavRect = exploreText.getBoundingClientRect();
+            const leftNavX = leftNavRect.left + leftNavRect.width / 2;
+            const leftNavY = leftNavRect.top + leftNavRect.height / 2;
+
+            // Для правого меню (ENROL)
+            const rightNavRect = enrolText.getBoundingClientRect();
+            const rightNavX = rightNavRect.left + rightNavRect.width / 2;
+            const rightNavY = rightNavRect.top + rightNavRect.height / 2;
+
+            // Получаем элементы, которые находятся под координатами меню
+            const tempLeft = document.elementFromPoint(leftNavX, leftNavY);
+            const tempRight = document.elementFromPoint(rightNavX, rightNavY);
+
+            // Находим ближайшие секции для левого и правого меню
+            const leftSection = tempLeft ? tempLeft.closest('section') : null;
+            const rightSection = tempRight ? tempRight.closest('section') : null;
+
+            // Проверяем, тёмные ли эти секции
+            const isLeftDark = leftSection ? isDarkSection(leftSection) : false;
+            const isRightDark = rightSection ? isDarkSection(rightSection) : false;
+
+            return { isLeftDark, isRightDark };
+        }
+
+        // Функция для обновления цветов меню
+        function updateMenuColors() {
+            // Получаем информацию о секциях под меню
+            const { isLeftDark, isRightDark } = checkMenuOverSection();
+
+            // Обновляем цвета левого меню (EXPLORE)
+            if (isLeftDark) {
+                exploreText.style.color = '#FFFFFF';
+                burgerLines.forEach(line => {
+                    line.style.backgroundColor = '#FFFFFF';
+                });
+            } else {
+                exploreText.style.color = 'var(--heading-color)';
+                burgerLines.forEach(line => {
+                    line.style.backgroundColor = 'var(--heading-color)';
+                });
+            }
+
+            // Обновляем цвета правого меню (ENROL), только если на него не наведён курсор
+            if (!isRightNavHovered) {
+                if (isRightDark) {
+                    enrolText.style.color = '#FFFFFF';
+                    arrow.style.color = '#FFFFFF';
+                } else {
+                    enrolText.style.color = 'var(--heading-color)';
+                    arrow.style.color = 'var(--heading-color)';
+                }
+            }
+        }
+
+        // Явно указываем, какие секции считать тёмными
+        function markDarkSections() {
+            // Находим секцию benefits
+            const benefitsSection = document.querySelector('.benefits-section');
+            if (benefitsSection) {
+                benefitsSection.setAttribute('data-is-dark', 'true');
+            }
+
+            // Находим hero секцию
+            const heroSection = document.querySelector('.hero-section');
+            if (heroSection) {
+                heroSection.setAttribute('data-is-dark', 'true');
+            }
+        }
+
+        // Вызываем маркировку тёмных секций
+        markDarkSections();
+
+        // Проверяем цвета при прокрутке страницы (с дебаунсом для производительности)
+        let scrollTimeout;
+        window.addEventListener('scroll', function () {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(updateMenuColors, 100);
+        });
+
+        // Проверяем цвета при изменении размера окна
+        let resizeTimeout;
+        window.addEventListener('resize', function () {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(updateMenuColors, 100);
+        });
+
+        // Начальная проверка
+        setTimeout(updateMenuColors, 500);
+
+        // Дополнительная проверка после полной загрузки страницы
+        window.addEventListener('load', function () {
+            updateMenuColors();
+            // Повторная проверка через небольшой интервал для большей надежности
+            setTimeout(updateMenuColors, 1000);
+        });
+    });
+</script>
+
+<!-- --------------------------------------------------------------
+    # SCROLL EFFECT
+    ---------------------------------------------------------------->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // DOM элементы
+        const heroSection = document.querySelector('.hero-section');
+        const words = document.querySelectorAll('.reveal-word');
+        const wordLayers = document.querySelectorAll('.word-layer');
+        const achieveWord = document.getElementById('achieve-word');
+
+        // Переменные состояния
+        let currentWordIndex = -1;
+        let canScroll = true; // Default to true to ensure scrolling always works
+        let isScrolling = false;
+
+        // Сохранение начальных и конечных позиций слов
+        const initialPositions = [];
+        const finalPositions = [];
+
+        // ВАЖНО: Определяем, загружается ли страница с прокруткой или нет
+        const isPageScrolled = window.scrollY > 10;
+
+        // Функция для применения золотого цвета к слову "achieve" с плавной анимацией
+        function applyGoldColor() {
+            if (achieveWord) {
+                achieveWord.classList.add('filling');
+                achieveWord.classList.add('filled');
+                achieveWord.style.color = '#E2AE3C';
+                achieveWord.style.webkitTextStroke = '0';
+                achieveWord.style.backgroundSize = '100% 100%';
+            }
+        }
+
+        // Инициализация: сохранение позиций и установка начальных стилей
+        wordLayers.forEach((layer, index) => {
+            const word = layer.querySelector('.reveal-word');
+
+            // Сохранение конечных позиций слов
+            const computedStyle = window.getComputedStyle(layer);
+            finalPositions[index] = {
+                top: computedStyle.getPropertyValue('--top-position') ||
+                    computedStyle.top ||
+                    (25 + index * 15) + '%',
+                left: computedStyle.getPropertyValue('--left-position') ||
+                    computedStyle.left ||
+                    (10 + index * 15) + '%'
+            };
+
+            // Установка начальных позиций (за пределами экрана снизу)
+            initialPositions[index] = {
+                top: `calc(${finalPositions[index].top} + 100px)`,
+                left: finalPositions[index].left
+            };
+
+            // Если страница прокручена, сразу показываем все слова
+            if (isPageScrolled) {
+                // Установка финальных позиций и стилей
+                layer.style.top = finalPositions[index].top;
+                layer.style.left = finalPositions[index].left;
+                layer.style.opacity = '1';
+
+                word.classList.add('filled');
+
+                if (word.id === 'achieve-word') {
+                    word.style.color = '#E2AE3C';
+                    word.style.webkitTextStroke = '0';
+                    word.style.backgroundSize = '100% 100%';
+                } else {
+                    word.style.color = 'white';
+                    word.style.webkitTextStroke = '0';
+                    word.style.backgroundSize = '100% 100%';
+                }
+
+                // Устанавливаем индекс на последнее слово
+                currentWordIndex = words.length - 1;
+            } else {
+                // Страница не прокручена, применяем начальные скрытые стили
+                layer.style.top = initialPositions[index].top;
+                layer.style.left = initialPositions[index].left;
+                layer.style.opacity = '0';
+
+                word.style.color = 'transparent';
+                word.classList.remove('filled');
+                word.classList.remove('filling');
+
+                if (word.id === 'achieve-word') {
+                    word.style.webkitTextStroke = '1px #E2AE3C';
+                } else {
+                    word.style.webkitTextStroke = '1px white';
+                }
+
+                // Блокируем скролл только если страница не прокручена
+                canScroll = false;
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        // Обработчик событий колеса мыши для анимации скролла
+        window.addEventListener('wheel', function (e) {
+            // Если страница уже прокручена, разрешаем обычный скролл
+            if (isPageScrolled || window.scrollY > 10) {
+                return;
+            }
+
+            // Если прокрутка не разрешена и мы еще не обрабатываем событие скролла
+            if (!canScroll) {
+                e.preventDefault();
+                handleScroll(e);
+            } else if (canScroll && window.scrollY === 0 && e.deltaY < 0) {
+                // Если мы в начале страницы и скроллим вверх
+                e.preventDefault();
+                canScroll = false;
+                document.body.style.overflow = 'hidden';
+                // Скрываем последнее слово
+                if (currentWordIndex >= 0) {
+                    hideWord(currentWordIndex);
+                    currentWordIndex--;
+                }
+            }
+        }, { passive: false });
+
+        // Основная функция обработки скролла
+        function handleScroll(e) {
+            // Блокируем обработку параллельных событий скролла
+            if (isScrolling) return;
+            isScrolling = true;
+
+            if (e.deltaY > 0) { // Скролл вниз
+                if (currentWordIndex < words.length - 1) {
+                    // Показываем следующее слово
+                    currentWordIndex++;
+                    showWord(currentWordIndex);
+                } else if (currentWordIndex === words.length - 1 && !canScroll) {
+                    // Все слова показаны, разрешаем стандартную прокрутку
+                    canScroll = true;
+                    document.body.style.overflow = 'auto';
+                }
+            } else { // Скролл вверх
+                if (!canScroll && currentWordIndex >= 0) {
+                    // Скрываем текущее слово и переходим к предыдущему
+                    hideWord(currentWordIndex);
+                    currentWordIndex--;
+                }
+            }
+
+            // Разрешаем следующее событие скролла через задержку
+            setTimeout(() => {
+                isScrolling = false;
+            }, 500);
+        }
+
+        // Функция для показа слова
+        function showWord(index) {
+            if (index >= 0 && index < wordLayers.length) {
+                const layer = wordLayers[index];
+                const word = layer.querySelector('.reveal-word');
+
+                // Анимация появления слова
+                layer.style.opacity = '1';
+                layer.style.top = finalPositions[index].top;
+                layer.style.transition = 'top 0.7s ease, opacity 0.7s ease';
+
+                // Плавное заполнение цветом с задержкой
+                setTimeout(() => {
+                    word.classList.add('filling');
+
+                    setTimeout(() => {
+                        word.classList.add('filled');
+
+                        // Если это слово "achieve", применяем золотой цвет
+                        if (word.id === 'achieve-word') {
+                            applyGoldColor();
+                        }
+                    }, 200);
+                }, 400);
+            }
+
+            // Если это последнее слово, разрешаем прокрутку страницы
+            if (index === words.length - 1) {
+                setTimeout(() => {
+                    canScroll = true;
+                    document.body.style.overflow = 'auto';
+                }, 1000);
+            }
+        }
+
+        // Функция для скрытия слова
+        function hideWord(index) {
+            if (index >= 0 && index < wordLayers.length) {
+                const layer = wordLayers[index];
+                const word = layer.querySelector('.reveal-word');
+
+                // Удаляем классы анимации
+                word.classList.remove('filling');
+                word.classList.remove('filled');
+
+                // Возвращаем к контурному состоянию
+                if (word.id === 'achieve-word') {
+                    word.style.color = 'transparent';
+                    word.style.webkitTextStroke = '1px #E2AE3C';
+                    word.style.backgroundSize = '0% 100%';
+                } else {
+                    word.style.color = 'transparent';
+                    word.style.webkitTextStroke = '1px white';
+                    word.style.backgroundSize = '0% 100%';
+                }
+
+                // Анимируем исчезновение
+                setTimeout(() => {
+                    layer.style.opacity = '0';
+                    layer.style.top = initialPositions[index].top;
+                    layer.style.transition = 'top 0.7s ease, opacity 0.7s ease';
+                }, 200);
+            }
+        }
+
+        // Функция для показа всех слов сразу без блокировки прокрутки
+        function showAllWords() {
+            wordLayers.forEach((layer, index) => {
+                const word = layer.querySelector('.reveal-word');
+
+                // Показываем слово
+                layer.style.opacity = '1';
+                layer.style.top = finalPositions[index].top;
+                layer.style.transition = 'top 0.7s ease, opacity 0.7s ease';
+
+                // Применяем стиль с задержкой
+                word.classList.add('filling');
+                word.classList.add('filled');
+
+                if (word.id === 'achieve-word') {
+                    word.style.color = '#E2AE3C';
+                    word.style.webkitTextStroke = '0';
+                    word.style.textShadow = '0 0 2px rgba(226, 174, 60, 0.3)';
+                    word.style.backgroundSize = '100% 100%';
+                } else {
+                    word.style.color = 'white';
+                    word.style.webkitTextStroke = '0';
+                    word.style.backgroundSize = '100% 100%';
+                }
+            });
+
+            // Устанавливаем состояние
+            currentWordIndex = words.length - 1;
+            canScroll = true;
+            document.body.style.overflow = 'auto';
+        }
+
+        // Аварийная функция разблокировки скролла
+        function unlockScrolling() {
+            canScroll = true;
+            document.body.style.overflow = 'auto';
+            showAllWords();
+        }
+
+        // Добавляем обработчик кнопки Escape для разблокировки скролла в любой ситуации
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                unlockScrolling();
+            }
+        });
+
+        // Добавляем наблюдатель за видимостью страницы для исправления скролла при возвращении на вкладку
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState === 'visible') {
+                // Если страница уже прокручена, разблокируем скролл
+                if (window.scrollY > 10) {
+                    unlockScrolling();
+                }
+            }
+        });
+
+        // Сохраняем функции для отладки
+        window.unlockScrolling = unlockScrolling;
+        window.showAllWords = showAllWords;
+
+        window.hideAllWords = function () {
+            // Только если мы в начале страницы
+            if (window.scrollY === 0) {
+                wordLayers.forEach((layer, index) => {
+                    const word = layer.querySelector('.reveal-word');
+
+                    // Удаляем классы
+                    word.classList.remove('filling');
+                    word.classList.remove('filled');
+
+                    // Сбрасываем стили
+                    if (word.id === 'achieve-word') {
+                        word.style.color = 'transparent';
+                        word.style.webkitTextStroke = '1px #E2AE3C';
+                        word.style.backgroundSize = '0% 100%';
+                    } else {
+                        word.style.color = 'transparent';
+                        word.style.webkitTextStroke = '1px white';
+                        word.style.backgroundSize = '0% 100%';
+                    }
+
+                    // Анимируем исчезновение
+                    setTimeout(() => {
+                        layer.style.opacity = '0';
+                        layer.style.top = initialPositions[index].top;
+                        layer.style.transition = 'top 0.7s ease, opacity 0.7s ease';
+                    }, 200 + index * 100);
+                });
+
+                // Сбрасываем состояние
+                currentWordIndex = -1;
+                canScroll = false;
+                document.body.style.overflow = 'hidden';
+            }
+        };
+
+        // Функция для позиционирования слов
+        window.moveWord = function (wordIndex, topPos, leftPos) {
+            if (wordIndex >= 0 && wordIndex < wordLayers.length) {
+                const layer = wordLayers[wordIndex];
+
+                // Устанавливаем CSS-переменные
+                layer.style.setProperty('--top-position', topPos);
+                layer.style.setProperty('--left-position', leftPos);
+
+                // Также применяем непосредственно к стилям для мгновенного эффекта
+                layer.style.top = topPos;
+                layer.style.left = leftPos;
+
+                // Обновляем сохраненные позиции для анимации
+                finalPositions[wordIndex] = { top: topPos, left: leftPos };
+                initialPositions[wordIndex] = {
+                    top: `calc(${topPos} + 100px)`,
+                    left: leftPos
+                };
+
+                console.log(`Слово ${wordIndex + 1} перемещено: верх=${topPos}, лево=${leftPos}`);
+            } else {
+                console.error('Индекс слова вне диапазона. Доступные слова: 0-4');
+            }
+        };
+
+        // Функция для отображения информации о словах в консоли
+        window.wordInfo = function () {
+            const wordInfo = [
+                { index: 0, word: "Master" },
+                { index: 1, word: "English" },
+                { index: 2, word: "achieve" },
+                { index: 3, word: "your" },
+                { index: 4, word: "dreams" }
+            ];
+            console.table(wordInfo);
+            console.log("Для перемещения слов используйте: moveWord(index, 'top%', 'left%')");
+            console.log("Чтобы разблокировать скролл в любой момент, используйте: unlockScrolling()");
+        };
+
+        // Дополнительный таймер для проверки состояния скролла
+        setTimeout(function () {
+            // Если скролл всё ещё заблокирован, но страница прокручена - разблокируем
+            if (!canScroll && window.scrollY > 10) {
+                unlockScrolling();
+            }
+        }, 1500);
+
+        // Вызовем функцию wordInfo() при загрузке для подсказки в консоли
+        setTimeout(wordInfo, 1000);
+    });
+</script>
+
+<!-- --------------------------------------------------------------
+    # OUR PROGRAMS CLOSED VIEW
+    ---------------------------------------------------------------->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get all program images
+        const programImages = document.querySelectorAll('.programs-images .program-image');
+
+        // Add hover effect
+        programImages.forEach(function (image) {
+            image.addEventListener('mouseenter', function () {
+                gsap.to(this, {
+                    scale: 1.05, // Slight scale up on hover
+                    duration: 0.3,
+                    ease: "power1.out"
+                });
+            });
+
+            image.addEventListener('mouseleave', function () {
+                gsap.to(this, {
+                    scale: 1, // Return to original scale
+                    duration: 0.3,
+                    ease: "power1.out"
+                });
+            });
+        });
+
+        // Implement program switching functionality
+        programImages.forEach(function (image) {
+            image.addEventListener('click', function () {
+                const program = this.getAttribute('data-program');
+
+                // Update tabs and dots to reflect the selected program
+                setActiveTab(program);
+
+                // Also update the program details if needed
+                updateProgramDetails(program);
+            });
+        });
+
+        function updateProgramDetails(program) {
+            // Get all program details
+            const programDetails = document.querySelectorAll('.program-detail');
+
+            // Hide all details first
+            programDetails.forEach(function (detail) {
+                detail.classList.remove('active');
+            });
+
+            // Show the selected program detail
+            const selectedDetail = document.getElementById(program + '-detail');
+            if (selectedDetail) {
+                selectedDetail.classList.add('active');
+            }
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Получаем все изображения в детальном виде
+        const detailImages = document.querySelectorAll('.program-details-container .program-image');
+
+        // Добавляем обработчики клика для каждого изображения
+        detailImages.forEach(function (image) {
+            image.addEventListener('click', function () {
+                const program = this.getAttribute('data-program');
+
+                // Обновляем активную вкладку
+                setActiveTab(program);
+
+                // Показываем соответствующие детали программы
+                updateProgramDetails(program);
+            });
+        });
+
+        // Функция для обновления деталей программы
+        function updateProgramDetails(program) {
+            // Скрываем все детали
+            document.querySelectorAll('.program-detail').forEach(function (detail) {
+                detail.classList.remove('active');
+            });
+
+            // Показываем детали выбранной программы
+            const selectedDetail = document.getElementById(program + '-detail');
+            if (selectedDetail) {
+                selectedDetail.classList.add('active');
+            }
+        }
+    });
+    function updateProgramDetails(program) {
+        // Скрываем все детали (удаляем класс 'active' у всех)
+        document.querySelectorAll('.program-detail').forEach(function (detail) {
+            detail.classList.remove('active');
+        });
+
+        // Показываем детали выбранной программы (добавляем класс 'active')
+        const selectedDetail = document.getElementById(program + '-detail');
+        if (selectedDetail) {
+            selectedDetail.classList.add('active');
+        }
+    }
+</script>
+
+<!-- --------------------------------------------------------------
+    # metrics
+    ---------------------------------------------------------------->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const metrics = document.querySelectorAll('.metric-item');
+        let hasAnimated = false;
+
+        // Функция для анимации чисел
+        function animateCounter(element, target, suffix = '') {
+            const duration = 2000; // 2 секунды
+            const steps = 60;
+            const increment = target / steps;
+            let current = 0;
+            let step = 0;
+
+            const timer = setInterval(() => {
+                step++;
+                current += increment;
+
+                if (step >= steps) {
+                    element.textContent = target.toLocaleString() + suffix;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current).toLocaleString() + suffix;
+                }
+            }, duration / steps);
+        }
+
+        // Наблюдатель для запуска анимации при скролле
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !hasAnimated) {
+                    hasAnimated = true;
+
+                    metrics.forEach((metric, index) => {
+                        const numberElement = metric.querySelector('.metric-number');
+                        const text = numberElement.textContent;
+
+                        // Определяем число и суффикс
+                        let target, suffix;
+
+                        if (text.includes('%')) {
+                            target = parseInt(text.replace('%', ''));
+                            suffix = '%';
+                        } else if (text.includes('+')) {
+                            target = parseInt(text.replace(/\D/g, ''));
+                            suffix = '+';
+                        } else {
+                            target = parseInt(text.replace(/\D/g, ''));
+                            suffix = '';
+                        }
+
+                        // Запускаем анимацию с задержкой
+                        setTimeout(() => {
+                            numberElement.textContent = '0' + suffix;
+                            animateCounter(numberElement, target, suffix);
+                        }, index * 200);
+
+                        // Анимация появления через GSAP
+                        if (typeof gsap !== 'undefined') {
+                            gsap.from(metric, {
+                                y: 30,
+                                opacity: 0,
+                                duration: 0.6,
+                                delay: index * 0.2,
+                                ease: "power2.out"
+                            });
+                        }
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        // Наблюдаем за секцией метрик
+        const metricsSection = document.querySelector('.success-metrics');
+        if (metricsSection) {
+            observer.observe(metricsSection);
+        }
+    });
+</script>
+
+<!-- --------------------------------------------------------------
+    # FAQ
+    ---------------------------------------------------------------->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const accordionItems = document.querySelectorAll('.accordion-item');
+
+        accordionItems.forEach(item => {
+            const header = item.querySelector('.accordion-header');
+
+            header.addEventListener('click', () => {
+                // Close all items
+                accordionItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    });
+</script>
+
+<!-- --------------------------------------------------------------
+    # ПРОКРУТКА ПРИ НАЖАТИИ НА МЕНЮ
+    ---------------------------------------------------------------->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Smooth scroll для всех якорных ссылок
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+
+                // Игнорируем пустые ссылки
+                if (href === '#' || href === '') return;
+
+                e.preventDefault();
+
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    // Закрываем меню если оно открыто
+                    const leftNav = document.querySelector('.left-nav');
+                    if (leftNav) {
+                        leftNav.classList.remove('open');
+                    }
+
+                    // Плавная прокрутка
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+<!-- --------------------------------------------------------------
+    # Course Cards Script
+    ---------------------------------------------------------------->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const courseCards = document.querySelectorAll('.course-card');
+
+        courseCards.forEach(card => {
+            const readMoreBtn = card.querySelector('.read-more-btn');
+            const closeBtn = card.querySelector('.close-btn');
+            const enrollBtns = card.querySelectorAll('.enroll-btn');
+
+            readMoreBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                courseCards.forEach(otherCard => {
+                    if (otherCard !== card && otherCard.classList.contains('expanded')) {
+                        closeCard(otherCard);
+                    }
+                });
+
+                expandCard(card);
+            });
+
+            closeBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                closeCard(card);
+            });
+
+            enrollBtns.forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    alert('Thank you for your interest! Our team will contact you within 48 hours.');
+                });
+            });
+        });
+
+        function expandCard(card) {
+            const compactView = card.querySelector('.course-compact-view');
+            const expandedView = card.querySelector('.course-expanded-view');
+
+            gsap.timeline()
+                .to(compactView, {
+                    opacity: 0,
+                    duration: 0.3,
+                    onComplete: () => {
+                        compactView.style.display = 'none';
+                        expandedView.style.display = 'block';
+                        card.classList.add('expanded');
+                    }
+                })
+                .fromTo(expandedView,
+                    { opacity: 0, y: 20 },
+                    { opacity: 1, y: 0, duration: 0.4 }
+                );
+
+            setTimeout(() => {
+                const cardTop = card.getBoundingClientRect().top + window.pageYOffset - 100;
+                window.scrollTo({ top: cardTop, behavior: 'smooth' });
+            }, 400);
+        }
+
+        function closeCard(card) {
+            const compactView = card.querySelector('.course-compact-view');
+            const expandedView = card.querySelector('.course-expanded-view');
+
+            gsap.timeline()
+                .to(expandedView, {
+                    opacity: 0,
+                    y: -20,
+                    duration: 0.3,
+                    onComplete: () => {
+                        expandedView.style.display = 'none';
+                        compactView.style.display = 'flex';
+                        card.classList.remove('expanded');
+                    }
+                })
+                .fromTo(compactView,
+                    { opacity: 0 },
+                    { opacity: 1, duration: 0.3 }
+                );
+        }
+    });
+</script>
+
+<!-- ========================================
+    Back to Top Button
+    ======================================== -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const backToTopButton = document.getElementById('backToTop');
+
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        // Smooth scroll to top when button is clicked
+        backToTopButton.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+
+<!-- ========================================
+    MOBILE MENU
+    ======================================== -->
+<script>
+    // Бургер-меню
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileMenuToggle.classList.toggle('active');
+        mobileMenuOverlay.classList.toggle('active');
+        document.body.style.overflow = mobileMenuOverlay.classList.contains('active') ? 'hidden' : '';
+    });
+
+    // Закрытие меню при клике на ссылку
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu-overlay a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuToggle.classList.remove('active');
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+</script>
+
+</html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online English Language School</title>
+    <title>Онлайн-школа английского языка</title>
 
     <!-- Подключение Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,7 @@
         rel="stylesheet">
     
     <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/ru-styles.css">
     <!-- Подключение GSAP для анимаций -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
@@ -31,9 +32,6 @@
         <div class="js-cursor-init">
             <div class="cursor-circle">
                 <div class="circle_wrap"></div>
-                <div class="scroll_cursor_txt">
-                    <span class="text">Scroll</span>
-                </div>
                 <div class="view_more_cursor">
                     <span class="text">View</span>
                 </div>
@@ -45,24 +43,24 @@
         # Left Navigation
         ---------------------------------------------------------------->
         <div class="left-nav">
-            <div class="logo-container">
+            <a href="./index.html" class="logo-container">
                 <img src="./assets/img/Logo.svg" alt="Logo" class="logo-default">
                 <img src="./assets/img/logo-active.svg" alt="Logo Hover" class="logo-hover">
-            </div>
+            </a>
             <div class="burger-lines">
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
             </div>
-            <span class="explore-text">EXPLORE</span>
+            <span class="explore-text">МЕНЮ</span>
             <div class="side-menu">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="courses.html">COURSES</a></li>
-                    <li><a href="#teachers">TEACHERS</a></li>
-                    <li><a href="#reviews">REVIEWS</a></li>
+                    <li><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="courses.html">КУРСЫ</a></li>
+                    <li><a href="#teachers">ПРЕПОДАВАТЕЛИ</a></li>
+                    <li><a href="#reviews">ОТЗЫВЫ</a></li>
                     <div class="language-switcher">
-                        <a href="./EN-index.html" class="language-btn" title="Switch to English">
-                            <span class="language-text">RU</span>
+                        <a href="./index-EN.html" class="language-btn" title="Switch to English">
+                            <span class="language-text">EN</span>
                         </a>
                     </div>
                 </ul>
@@ -73,16 +71,16 @@
         <!-- --------------------------------------------------------------
         # Right Navigation
         ---------------------------------------------------------------->
-        <div class="right-nav">
+        <a href="./courses.html" class="right-nav">
             <span class="arrow">→</span>
-            <span class="enrol-text">ENROL</span>
+            <span class="enrol-text">ЗАПИСАТЬСЯ</span>
             <div class="right-side-menu"></div>
-        </div>
+        </a>
         
         <!-- --------------------------------------------------------------
         # Hero Section
         ---------------------------------------------------------------->
-        <section class="hero-section" data-cursor-text="Scroll">
+        <section class="hero-section" data-cursor-text="Скролл">
             <div class="hero-background"
                 style="background-image: url('assets/img/Hero.jpg');">
             </div>
@@ -90,20 +88,26 @@
             <div class="text-container">
                 <!-- Слова с одинаковой структурой для работы анимации -->
                 <div class="word-layer">
-                    <h1 class="reveal-word">Master</h1>
+                    <h1 class="reveal-word">Освойте</h1>
                 </div>
                 <div class="word-layer">
-                    <h1 class="reveal-word">English</h1>
+                    <h1 class="reveal-word">английский</h1>
                 </div>
                 <div class="word-layer">
-                    <h1 id="achieve-word" class="reveal-word">achieve</h1>
+                    <h1 id="achieve-word" class="reveal-word">осуществите</h1>
                 </div>
                 <div class="word-layer">
-                    <h1 class="reveal-word">your</h1>
+                    <h1 class="reveal-word">свои</h1>
                 </div>
                 <div class="word-layer">
-                    <h1 class="reveal-word">dreams</h1>
+                    <h1 class="reveal-word">мечты</h1>
                 </div>
+            </div>
+
+            <p class="hero-subtext">Через 3 месяца — уверенно говорите на встречах, в поездках, в жизни</p>
+
+            <div class="scroll-indicator">
+                <div class="scroll-indicator-dot"></div>
             </div>
         </section>
 
@@ -112,19 +116,19 @@
         ---------------------------------------------------------------->
         <section class="why-choose-section">
             <div class="container">
-                <h1 class="section-title">Why Choose Ally Lingua?</h1>
+                <h1 class="section-title">Почему выбирают Ally Lingua?</h1>
 
                 <div class="features-container">
                     <div class="feature-block">
                         <div class="feature-content">
                             <div class="feature-header">
-                                <h4>Fluent Confidence</h4>
+                                <h4>Уверенно говорите с первого месяца</h4>
                                 <span class="feature-number">01</span>
                             </div>
                             <p class="body-text-2">
-                                Attain fluency and confidence for success in professional and social interactions.
-                                Our proven methodology focuses on practical communication skills that you
-                                can apply immediately.
+                                Через 4–6 недель вы перестанете переводить фразы в голове — они начнут
+                                появляться сами. Мы сразу ставим разговорную практику в основу занятий,
+                                а не откладываем её «на потом».
                             </p>
                             <div class="feature-line">
                                 <div class="feature-line-fill"></div>
@@ -135,13 +139,13 @@
                     <div class="feature-block">
                         <div class="feature-content">
                             <div class="feature-header">
-                                <h4>Tailored Learning</h4>
+                                <h4>Никаких лишних тем</h4>
                                 <span class="feature-number">02</span>
                             </div>
                             <p class="body-text-2">
-                                Programs aligned with your specific goals and tailored to your personal abilities. We
-                                adjust our teaching approach to match your learning style and pace for optimal
-                                results.
+                                Учите только то, что нужно именно вам: переговоры, путешествия, экзамен
+                                или переезд. Мы подстраиваем программу под вашу цель — без общего курса
+                                «для всех подряд».
                             </p>
                             <div class="feature-line">
                                 <div class="feature-line-fill"></div>
@@ -152,12 +156,12 @@
                     <div class="feature-block">
                         <div class="feature-content">
                             <div class="feature-header">
-                                <h4>Study Any Time</h4>
+                                <h4>Учитесь между делом</h4>
                                 <span class="feature-number">03</span>
                             </div>
                             <p class="body-text-2">
-                                Flexible scheduling allows you to choose your ideal study time, day or night. Our
-                                online platform makes it convenient to learn English around your busy lifestyle.
+                                Урок в 7 утра перед работой или в 22:00 после того, как дети уснули —
+                                расписание подстраивается под вашу жизнь, а не наоборот.
                             </p>
                             <div class="feature-line">
                                 <div class="feature-line-fill"></div>
@@ -204,37 +208,36 @@
             <div class="container">
                 <!-- Background text that changes with active tab -->
                 <div class="background-text-container">
-                    <h2 class="background-text active" data-tab="career">Career Success</h2>
-                    <h2 class="background-text" data-tab="global">Global Connections</h2>
-                    <h2 class="background-text" data-tab="personal">Personal Growth</h2>
+                    <h2 class="background-text active" data-tab="career">Карьерный успех</h2>
+                    <h2 class="background-text" data-tab="global">Связи по всему миру</h2>
+                    <h2 class="background-text" data-tab="personal">Личностный рост</h2>
                 </div>
 
                 <!-- Tab headers that act as buttons -->
                 <div class="tab-headers">
-                    <h3 class="tab-header active" data-tab="career">Career Success</h3>
-                    <h3 class="tab-header" data-tab="global">Global Connections</h3>
-                    <h3 class="tab-header" data-tab="personal">Personal Growth</h3>
+                    <h3 class="tab-header active" data-tab="career">Карьерный успех</h3>
+                    <h3 class="tab-header" data-tab="global">Связи по всему миру</h3>
+                    <h3 class="tab-header" data-tab="personal">Личностный рост</h3>
                 </div>
 
                 <!-- Tab content -->
                 <div class="tab-content-container">
                     <div class="tab-content active" data-tab="career">
-                        <p>Unlock new career opportunities with confident English communication. Our graduates report
-                            promotions, international assignments, and successful job interviews thanks to their improved
-                            language skills.</p>
+                        <p>Откройте новые карьерные возможности благодаря уверенному владению английским. Наши выпускники
+                            получают повышения, международные назначения и успешно проходят собеседования
+                            благодаря улучшенным языковым навыкам.</p>
                     </div>
 
                     <div class="tab-content" data-tab="global">
-                        <p>Connect with people around the world through confident English communication. Build authentic
-                            relationships, experience different cultures, and expand your personal and professional network
-                            beyond geographical boundaries.</p>
+                        <p>Общайтесь с людьми со всего мира благодаря уверенному владению английским. Стройте настоящие
+                            отношения, знакомьтесь с разными культурами и расширяйте личные и профессиональные
+                            связи за пределами географических границ.</p>
                     </div>
 
                     <div class="tab-content" data-tab="personal">
-                        <p>Discover a new version of yourself through language mastery. Students report increased
-                            confidence,
-                            enhanced cognitive abilities, and a broader worldview as they progress in their English learning
-                            journey with us.</p>
+                        <p>Откройте в себе новую версию себя через овладение языком. Студенты отмечают рост уверенности,
+                            развитие когнитивных способностей и расширение кругозора по мере продвижения
+                            в изучении английского вместе с нами.</p>
                     </div>
                 </div>
             </div>
@@ -268,16 +271,17 @@
             <div class="programs-container">
                 <!-- Left content area (text) -->
                 <div class="programs-text">
-                    <h1>Our Programs</h1>
-                    <p class="programs-description">Discover our specialised English courses designed to help you achieve
-                        fluency and confidence for personal growth and professional success.</p>
+                    <h1>Наши программы</h1>
+                    <p class="programs-description">Ознакомьтесь с нашими специализированными курсами английского языка,
+                        которые помогут вам достичь свободного владения языком и уверенности для личностного
+                        роста и профессионального успеха.</p>
 
                     <div class="program-selection">
-                        <p class="select-label">SELECT A PROGRAM</p>
+                        <p class="select-label">ВЫБЕРИТЕ ПРОГРАММУ</p>
                         <div class="program-tabs">
-                            <div class="program-tab active" data-program="business" onclick="window.location.href='./courses.html'">Business English</div>
-                            <div class="program-tab" data-program="general" onclick="window.location.href='./courses.html'">General English</div>
-                            <div class="program-tab" data-program="children" onclick="window.location.href='./courses.html'">Children's English</div>
+                            <div class="program-tab active" data-program="business" onclick="window.location.href='./courses.html'">Бизнес-английский</div>
+                            <div class="program-tab" data-program="general" onclick="window.location.href='./courses.html'">Общий английский</div>
+                            <div class="program-tab" data-program="children" onclick="window.location.href='./courses.html'">Английский для детей</div>
                         </div>
 
                         <!-- Pagination dots -->
@@ -287,7 +291,7 @@
                             <span class="dot" data-program="children"></span>
                         </div> -->
 
-                        <a href="./courses.html" class="enrol-btn" id="compact-enrol-btn">Explore Our Courses</a>
+                        <a href="./courses.html" class="enrol-btn" id="compact-enrol-btn">Подобрать программу</a>
                     </div>
                 </div>
 
@@ -300,7 +304,7 @@
                         <div class="program-image" id="business-image" data-program="business"
                             style="width: 506px; z-index: 3; position: relative; display: inline-block; height: 650px; transform: translate(150px, 0px); opacity: 1;">
                             <img src="./assets/img/Business English b&w.png"
-                                alt="Business English"
+                                alt="Бизнес-английский"
                                 style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
                         </div>
 
@@ -308,7 +312,7 @@
                         <div class="program-image" id="general-image" data-program="general"
                             style="width: 506px; z-index: 2; position: relative; display: inline-block; height: 650px; transform: translate(-90px, 0px); opacity: 1;">
                             <img src="./assets/img/General English b&w.png"
-                                alt="General English"
+                                alt="Общий английский"
                                 style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
                         </div>
 
@@ -316,7 +320,7 @@
                         <div class="program-image" id="children-image" data-program="children"
                             style="width: 506px; z-index: 1; position: relative; display: inline-block; height: 650px; opacity: 1; transform: translate(-450px, 0px);">
                             <img src="./assets/img/Children's English b&w.png"
-                                alt="Children's English"
+                                alt="Английский для детей"
                                 style="width: 100%; height: 100%; object-fit: contain; object-position: top; display: block;">
                         </div>
                     </div>
@@ -591,113 +595,62 @@
         <section class="teachers-section" id="teachers">
             <div class="container">
                 <div class="section-header">
-                    <h2>Meet Our<span class="accent-text"> Teachers</span></h2>
-                    <p class="body-text-1">Our dedicated team of experienced language instructors brings expertise, passion,
-                        and
-                        cultural insight to every lesson. Each teacher is carefully selected for their qualifications and
-                        commitment to your success.</p>
+                    <h2>Знакомьтесь с нашими<span class="accent-text"> преподавателями</span></h2>
+                    <p class="body-text-1">Наша преданная команда опытных преподавателей привносит в каждый урок
+                        экспертизу, увлечённость и понимание культурных особенностей. Каждый преподаватель
+                        тщательно отобран за свою квалификацию и приверженность вашему успеху.</p>
                 </div>
 
                 <div class="teachers-content">
                     <div class="teachers-list">
-                        <!-- <div class="teacher-item active" data-teacher="sarah">
-                            <h3>Yana Harcourt</h3>
-                            <p>Business English Specialist</p>
-                        </div> -->
-                        <div class="teacher-item active" data-teacher="david">
-                            <h3>David Martinez</h3>
-                            <p>Conversation & Pronunciation</p>
+                        <div class="teacher-item active" data-teacher="sarah">
+                            <h3>Яна Харкорт</h3>
+                            <p>Специалист по бизнес-английскому</p>
                         </div>
-                        <div class="teacher-item" data-teacher="emily">
-                            <h3>Emily Chen</h3>
-                            <p>Children's English Expert</p>
-                        </div>
-                        <div class="teacher-item" data-teacher="michael">
-                            <h3>Michael Anderson</h3>
-                            <p>Academic English & IELTS</p>
+                        <div class="teacher-item" data-teacher="david">
+                            <h3>Дэвид Мартинес</h3>
+                            <p>Разговорная речь и произношение</p>
                         </div>
                     </div>
 
-                    <!-- <div class="teacher-profile active" id="sarah-profile">
+                    <div class="teacher-profile active" id="sarah-profile">
                         <div class="teacher-image">
                             <img src="./assets/img/Yana-Harcourt.png"
-                                alt="Yana-Harcourt- Business English Specialist">
+                                alt="Яна Харкорт — специалист по бизнес-английскому">
                         </div>
                         <div class="teacher-info">
                             <div class="quote">
-                                <h4>I believe that language learning should be practical, engaging, and adapted to each student's unique goals and learning style.</h4>
+                                <h4>Я считаю, что изучение языка должно быть практичным, увлекательным и адаптированным под уникальные цели и стиль обучения каждого студента.</h4>
                             </div>
                             <div class="teacher-bio">
-                                <p>With 7+ years of teaching experience spanning elementary to university level and business professionals, Yana brings multilingual expertise and cross-cultural communication skills to Ally Lingua. She holds a Bachelor's in TESOL and English Linguistics and creates customized lesson plans tailored to each student's unique needs and learning style.</p>
+                                <p>Имея более 7 лет опыта преподавания — от начальной школы до университетского уровня и бизнес-специалистов — Яна привносит в Ally Lingua многоязычную экспертизу и навыки межкультурного общения. Она имеет степень бакалавра по TESOL и английской лингвистике и разрабатывает индивидуальные планы уроков, подстроенные под потребности и стиль обучения каждого студента.</p>
                             </div>
                             <div class="teacher-tags">
-                                <span class="tag">TESOL Certified</span>
-                                <span class="tag">BA in English Linguistics</span>
-                                <span class="tag">Multilingual Educator</span>
-                                <span class="tag">Business Communication</span>
+                                <span class="tag">Сертификат TESOL</span>
+                                <span class="tag">Бакалавр английской лингвистики</span>
+                                <span class="tag">Многоязычный педагог</span>
+                                <span class="tag">Деловое общение</span>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
                     <!-- David Martinez -->
-                    <div class="teacher-profile active" id="david-profile">
+                    <div class="teacher-profile" id="david-profile">
                         <div class="teacher-image">
-                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=800&fit=crop" alt="David Martinez - Conversation & Pronunciation">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=800&fit=crop" alt="Дэвид Мартинес — разговорная речь и произношение">
                         </div>
                         <div class="teacher-info">
                             <div class="quote">
-                                <h4>Clear communication opens doors. My goal is to help you speak English naturally and confidently.</h4>
+                                <h4>Чёткая коммуникация открывает двери. Моя цель — помочь вам говорить по-английски естественно и уверенно.</h4>
                             </div>
                             <div class="teacher-bio">
-                                <p>David specializes in helping students perfect their pronunciation and conversational skills. With 8 years of teaching experience and a background in phonetics, he uses innovative techniques to help students sound more natural and confident in English.</p>
+                                <p>Дэвид специализируется на помощи студентам в оттачивании произношения и разговорных навыков. Имея 8 лет опыта преподавания и образование в области фонетики, он использует инновационные методики, чтобы студенты звучали естественнее и увереннее на английском.</p>
                             </div>
                             <div class="teacher-tags">
-                                <span class="tag">CELTA Certified</span>
-                                <span class="tag">Phonetics Expert</span>
-                                <span class="tag">Conversation Skills</span>
-                                <span class="tag">Accent Reduction</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Emily Chen -->
-                    <div class="teacher-profile" id="emily-profile">
-                        <div class="teacher-image">
-                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&h=800&fit=crop" alt="Emily Chen - Children's English Expert">
-                        </div>
-                        <div class="teacher-info">
-                            <div class="quote">
-                                <h4>Every child is unique, and learning should be fun, engaging, and filled with discovery.</h4>
-                            </div>
-                            <div class="teacher-bio">
-                                <p>Emily has dedicated 10 years to teaching English to children aged 4-16. She creates engaging, interactive lessons that make learning fun and effective. Her patient approach and creative teaching methods help young learners develop a genuine love for the English language.</p>
-                            </div>
-                            <div class="teacher-tags">
-                                <span class="tag">Early Childhood Education</span>
-                                <span class="tag">Cambridge YLE Certified</span>
-                                <span class="tag">Interactive Learning</span>
-                                <span class="tag">Child Psychology</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Michael Anderson -->
-                    <div class="teacher-profile" id="michael-profile">
-                        <div class="teacher-image">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=800&fit=crop" alt="Michael Anderson - Academic English & IELTS">
-                        </div>
-                        <div class="teacher-info">
-                            <div class="quote">
-                                <h4>Success in IELTS comes from strategy, practice, and understanding exactly what examiners want.</h4>
-                            </div>
-                            <div class="teacher-bio">
-                                <p>Michael is an IELTS expert with 15 years of experience preparing students for academic success. His students consistently achieve band scores of 7.5 and above. He combines deep knowledge of exam strategies with comprehensive language instruction.</p>
-                            </div>
-                            <div class="teacher-tags">
-                                <span class="tag">IELTS Examiner</span>
-                                <span class="tag">DELTA Certified</span>
-                                <span class="tag">Academic Writing</span>
-                                <span class="tag">Test Preparation</span>
+                                <span class="tag">Сертификат CELTA</span>
+                                <span class="tag">Эксперт по фонетике</span>
+                                <span class="tag">Разговорные навыки</span>
+                                <span class="tag">Коррекция акцента</span>
                             </div>
                         </div>
                     </div>
@@ -765,19 +718,19 @@
         <div class="success-metrics">
             <div class="metric-item">
                 <div class="metric-number">96%</div>
-                <div class="metric-label">Student satisfaction rate</div>
+                <div class="metric-label">Уровень удовлетворённости студентов</div>
             </div>
             <div class="metric-item">
                 <div class="metric-number">5,000+</div>
-                <div class="metric-label">Students from around the world</div>
+                <div class="metric-label">Студентов со всего мира</div>
             </div>
             <div class="metric-item">
                 <div class="metric-number">92%</div>
-                <div class="metric-label">Achieved theirlanguage goals</div>
+                <div class="metric-label">Достигли своих языковых целей</div>
             </div>
             <div class="metric-item">
                 <div class="metric-number">30+</div>
-                <div class="metric-label">Countries represented in our student body</div>
+                <div class="metric-label">Стран среди наших студентов</div>
             </div>
         </div>
 
@@ -787,10 +740,10 @@
         <section class="testimonials-section" id="reviews">
             <div class="testimonials-header">
                 <div class="header-title">
-                    <h2>What our <span class="accent-text">students</span> are saying</h2>
+                    <h2>Что говорят наши <span class="accent-text">студенты</span></h2>
                 </div>
                 <div class="header-description">
-                    <p>Our students share their experiences and achievements after learning with Ally Lingua</p>
+                    <p>Наши студенты делятся своим опытом и достижениями после обучения в Ally Lingua</p>
                 </div>
             </div>
 
@@ -803,9 +756,9 @@
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="Carlos Rodriguez">
                     </div> -->
                     <div class="testimonial-content">
-                        <p class="testimonial-text">The <span class="highlight">flexible online lessons</span> fit perfectly with my busy schedule. My teacher customized a program specifically for finance terminology. Within 3 months, I was confidently leading international meetings.</p>
-                        <h4 class="testimonial-author">Carlos Rodriguez</h4>
-                        <p class="testimonial-position">Financial Analyst, Barcelona</p>
+                        <p class="testimonial-text"><span class="highlight">Гибкие онлайн-занятия</span> идеально вписались в мой плотный график. Преподаватель составил программу специально под финансовую терминологию. Уже через 3 месяца я уверенно вела международные встречи.</p>
+                        <h4 class="testimonial-author">Карлос Родригес</h4>
+                        <p class="testimonial-position">Финансовый аналитик, Барселона</p>
                     </div>
                 </div>
 
@@ -815,9 +768,9 @@
                         <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop" alt="Yuki Tanaka">
                     </div> -->
                     <div class="testimonial-content">
-                        <p class="testimonial-text">I achieved my <span class="highlight">IELTS band 8.0</span> thanks to Michael's expert guidance. His strategies and personalized feedback were invaluable. Now I'm studying at my dream university in London!</p>
-                        <h4 class="testimonial-author">Yuki Tanaka</h4>
-                        <p class="testimonial-position">University Student, Tokyo</p>
+                        <p class="testimonial-text">Я получила <span class="highlight">8.0 балла на IELTS</span> благодаря экспертному руководству Майкла. Его стратегии и индивидуальная обратная связь были бесценны. Теперь я учусь в университете своей мечты в Лондоне!</p>
+                        <h4 class="testimonial-author">Юки Танака</h4>
+                        <p class="testimonial-position">Студентка университета, Токио</p>
                     </div>
                 </div>
 
@@ -827,9 +780,9 @@
                         <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=500&fit=crop" alt="Anna Kowalski">
                     </div> -->
                     <div class="testimonial-content">
-                        <p class="testimonial-text">My daughter absolutely <span class="highlight">loves Emily's classes!</span> She went from being shy to speaking English confidently in just 6 months. The interactive games and stories make learning so enjoyable.</p>
-                        <h4 class="testimonial-author">Anna Kowalski</h4>
-                        <p class="testimonial-position">Parent, Warsaw</p>
+                        <p class="testimonial-text">Моя дочь просто <span class="highlight">обожает занятия с Эмили!</span> Всего за 6 месяцев она перестала стесняться и стала уверенно говорить по-английски. Интерактивные игры и истории делают обучение по-настоящему увлекательным.</p>
+                        <h4 class="testimonial-author">Анна Ковальски</h4>
+                        <p class="testimonial-position">Родитель, Варшава</p>
                     </div>
                 </div>
 
@@ -839,9 +792,9 @@
                         <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop" alt="James Thompson">
                     </div> -->
                     <div class="testimonial-content">
-                        <p class="testimonial-text">David helped me <span class="highlight">perfect my pronunciation</span> for client presentations. His phonetics expertise and patient approach made all the difference. I now feel confident speaking in any professional setting.</p>
-                        <h4 class="testimonial-author">James Thompson</h4>
-                        <p class="testimonial-position">Sales Director, Manchester</p>
+                        <p class="testimonial-text">Дэвид помог мне <span class="highlight">довести произношение до совершенства</span> для презентаций перед клиентами. Его экспертиза в фонетике и терпеливый подход сыграли решающую роль. Теперь я уверенно говорю в любой профессиональной обстановке.</p>
+                        <h4 class="testimonial-author">Джеймс Томпсон</h4>
+                        <p class="testimonial-position">Директор по продажам, Манчестер</p>
                     </div>
                 </div>
 
@@ -857,7 +810,7 @@
             </div>
 
             <div class="cta-button">
-                <a href="#booking-form">Start Your Journey Today</a>
+                <a href="#booking-form">Начните свой путь сегодня</a>
             </div>
         </section>
 
@@ -974,16 +927,15 @@
             <div class="container">
                 <div class="form-container">
                     <div class="text-content">
-                        <h2>Book Your <span class="accent-text">Free</span> Trial Lesson</h2>
-                        <p class="body-text-1">Take the first step towards English language mastery. Our teachers will
-                            conduct a
-                            personal consultation and help determine your current level.</p>
+                        <h2>Запишитесь на <span class="accent-text">бесплатный</span> пробный урок</h2>
+                        <p class="body-text-1">Сделайте первый шаг к свободному владению английским. Наши преподаватели
+                            проведут персональную консультацию и помогут определить ваш текущий уровень.</p>
 
                         <ul class="features-list">
-                            <li>Personalised approach for each student</li>
-                            <li>Customised programmes to suit your goals and needs</li>
-                            <li>Flexible lesson scheduling</li>
-                            <li>Modern teaching methodologies</li>
+                            <li>Индивидуальный подход к каждому студенту</li>
+                            <li>Программы, адаптированные под ваши цели и потребности</li>
+                            <li>Гибкое расписание занятий</li>
+                            <li>Современные методики преподавания</li>
                         </ul>
                     </div>
 
@@ -994,12 +946,12 @@
                             method="POST"
                         >
                             <div class="form-group">
-                            <label for="fullName">Full Name</label>
+                            <label for="fullName">Имя и фамилия</label>
                             <input type="text" id="fullName" name="fullName" required>
                             </div>
 
                             <div class="form-group">
-                            <label for="telephone">Telephone</label>
+                            <label for="telephone">Телефон</label>
                             <input type="tel" id="telephone" name="telephone" required>
                             </div>
 
@@ -1009,33 +961,33 @@
                             </div>
 
                             <div class="form-group">
-                            <label for="englishLevel">Your English Level</label>
+                            <label for="englishLevel">Ваш уровень английского</label>
                             <select id="englishLevel" name="englishLevel">
-                                <option value="beginner">Beginner</option>
+                                <option value="beginner">Начальный</option>
                                 <option value="elementary">Elementary</option>
-                                <option value="intermediate">Intermediate</option>
-                                <option value="advanced">Advanced</option>
+                                <option value="intermediate">Средний</option>
+                                <option value="advanced">Продвинутый</option>
                             </select>
                             </div>
 
                             <div class="form-group">
-                            <label for="learningGoal">Your Learning Goal</label>
+                            <label for="learningGoal">Ваша цель обучения</label>
                             <select id="learningGoal" name="learningGoal">
-                                <option value="career">Career Development</option>
-                                <option value="academic">Academic Purposes</option>
-                                <option value="travel">Travel</option>
-                                <option value="general">General Improvement</option>
+                                <option value="career">Карьерное развитие</option>
+                                <option value="academic">Учёба</option>
+                                <option value="travel">Путешествия</option>
+                                <option value="general">Общее развитие</option>
                             </select>
                             </div>
 
                             <div class="form-group">
                             <label>
                                 <input type="checkbox" name="privacy" required>
-                                I agree to the <a href="./privacy_policy_en.html" target="_blank">Privacy Policy</a>
+                                Я согласен(на) с <a href="./privacy_policy_en.html" target="_blank">Политикой конфиденциальности</a>
                             </label>
                             </div>
 
-                            <button type="submit" class="booking-button">Book Your Trial Lesson</button>
+                            <button type="submit" class="booking-button">Узнать свой уровень бесплатно</button>
                         </form>
                         </div>
 
@@ -1050,96 +1002,93 @@
         <section class="faq-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Frequently Asked <span>Questions</span></h2>
+                    <h2>Часто задаваемые <span>вопросы</span></h2>
                     <div class="underline"></div>
-                    <p class="section-subheading">Answers to the most common questions about our school and teaching methods
+                    <p class="section-subheading">Ответы на самые частые вопросы о нашей школе и методах преподавания
                     </p>
                 </div>
 
                 <div class="accordion">
                     <div class="accordion-item">
                         <div class="accordion-header">
-                            <h3>How are lessons conducted at Ally Lingua?</h3>
+                            <h3>Как проходят занятия в Ally Lingua?</h3>
                             <span class="accordion-icon">+</span>
                         </div>
                         <div class="accordion-content">
-                            <p>Lessons are delivered both at our education centre and online via Zoom or Skype. Each lesson
-                                incorporates all language skills: speaking, reading, listening, and writing. We use a
-                                communicative approach where the primary focus is on practising conversational English in
-                                real-life situations.</p>
+                            <p>Занятия проходят как в нашем учебном центре, так и онлайн через Zoom или Skype. Каждый урок
+                                охватывает все языковые навыки: говорение, чтение, аудирование и письмо. Мы используем
+                                коммуникативный подход, где основной акцент делается на практике разговорного
+                                английского в реальных ситуациях.</p>
                         </div>
                         <div class="divider"></div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header">
-                            <h3>How much do the courses cost?</h3>
+                            <h3>Сколько стоят курсы?</h3>
                             <span class="accordion-icon">+</span>
                         </div>
                         <div class="accordion-content">
-                            <p>Course fees depend on the programme selected, intensity, and format of lessons. Individual
-                                lessons start from £45 per session, whilst group lessons start from £25. During your free
-                                initial consultation, we'll recommend the optimal course for your needs and budget.</p>
+                            <p>Стоимость курса зависит от выбранной программы, интенсивности и формата занятий. Индивидуальные
+                                занятия начинаются от 3 500 ₽ за урок, групповые — от 1 800 ₽. На бесплатной первичной
+                                консультации мы подберём оптимальный курс под ваши потребности и бюджет.</p>
                         </div>
                         <div class="divider"></div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header">
-                            <h3>How long will it take me to learn English?</h3>
+                            <h3>Сколько времени нужно, чтобы выучить английский?</h3>
                             <span class="accordion-icon">+</span>
                         </div>
                         <div class="accordion-content">
-                            <p>The duration of your learning journey depends on your goals and starting level. On average,
-                                progressing up one level (e.g., from A1 to A2) takes approximately 3-4 months with lessons
-                                twice
-                                weekly. During your first session, we'll conduct an assessment and provide a more accurate
-                                timeline for your learning objectives.</p>
+                            <p>Продолжительность обучения зависит от ваших целей и начального уровня. В среднем переход на
+                                следующий уровень (например, с A1 на A2) занимает около 3–4 месяцев при занятиях
+                                дважды в неделю. Большинство студентов замечают первый сдвиг — свободно
+                                поддержать разговор — уже после 8–10 занятий. На первом уроке мы проведём
+                                оценку уровня и дадим более точный прогноз по срокам достижения ваших целей.</p>
                         </div>
                         <div class="divider"></div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header">
-                            <h3>What qualifications do your teachers have?</h3>
+                            <h3>Какая квалификация у ваших преподавателей?</h3>
                             <span class="accordion-icon">+</span>
                         </div>
                         <div class="accordion-content">
-                            <p>All our teachers have relevant qualifications and international certifications (TEFL, CELTA,
-                                DELTA). Most have over 5 years of experience and have trained abroad. We carefully select
-                                educators not only based on their qualifications but also on their personal qualities—their
-                                ability to connect with each student.</p>
+                            <p>Все наши преподаватели имеют профильное образование и международные сертификаты (TEFL, CELTA,
+                                DELTA). Большинство из них имеют более 5 лет опыта и проходили стажировку за рубежом.
+                                Мы тщательно отбираем педагогов не только по квалификации, но и по личным
+                                качествам — умению находить общий язык с каждым студентом.</p>
                         </div>
                         <div class="divider"></div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header">
-                            <h3>Do you offer corporate English courses?</h3>
+                            <h3>Есть ли у вас корпоративные курсы английского?</h3>
                             <span class="accordion-icon">+</span>
                         </div>
                         <div class="accordion-content">
-                            <p>Yes, we offer specialised programmes for companies. Our teachers can conduct lessons either
-                                at
-                                your office or online. We develop corporate courses tailored to your industry's specifics
-                                and
-                                the particular needs of your employees. Contact us for a bespoke commercial proposal.</p>
+                            <p>Да, мы предлагаем специализированные программы для компаний. Наши преподаватели могут
+                                проводить занятия как у вас в офисе, так и онлайн. Мы разрабатываем корпоративные
+                                курсы с учётом специфики вашей отрасли и потребностей сотрудников. Свяжитесь
+                                с нами, чтобы получить индивидуальное коммерческое предложение.</p>
                         </div>
                         <div class="divider"></div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header">
-                            <h3>What happens if I miss a lesson?</h3>
+                            <h3>Что будет, если я пропущу занятие?</h3>
                             <span class="accordion-icon">+</span>
                         </div>
                         <div class="accordion-content">
-                            <p>If you notify us about missing a lesson at least 24 hours in advance, we'll reschedule it for
-                                another convenient time. If there's no prior notification, the lesson is considered
-                                delivered.
-                                For group lessons, we provide materials from the missed lesson and the opportunity to ask
-                                the
-                                teacher questions.</p>
+                            <p>Если вы предупредите о пропуске занятия минимум за 24 часа, мы перенесём его на другое
+                                удобное время. Без предварительного уведомления занятие считается проведённым.
+                                Для групповых занятий мы предоставляем материалы пропущенного урока и возможность
+                                задать вопросы преподавателю.</p>
                         </div>
                         <div class="divider"></div>
                     </div>
@@ -1153,9 +1102,9 @@
         <section class="articles-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="articles-heading">Helpful <span>Articles</span> and Resources</h2>
+                    <h2 class="articles-heading">Полезные <span>статьи</span> и материалы</h2>
                     <div class="underline"></div>
-                    <p class="section-subheading">Our experts share tips and methods for effective English language learning
+                    <p class="section-subheading">Наши эксперты делятся советами и методиками эффективного изучения английского
                     </p>
                 </div>
 
@@ -1163,45 +1112,44 @@
                     <!-- Article 1 -->
                     <div class="article-card">
                         <img src="assets/img/article1.jpg"
-                            alt="Effective Ways to Memorise New Vocabulary" class="article-image">
+                            alt="Эффективные способы запоминания новых слов" class="article-image">
                         <div class="article-content">
-                            <span class="article-date">12 March 2023</span>
-                            <h3 class="article-title">5 Effective Ways to Memorise New Vocabulary</h3>
-                            <p class="article-excerpt">Expanding your vocabulary is one of the key aspects of language
-                                learning.
-                                Discover proven techniques that will help you memorise new words faster and more
-                                effectively.
+                            <span class="article-date">12 марта 2023</span>
+                            <h3 class="article-title">5 эффективных способов запоминания новых слов</h3>
+                            <p class="article-excerpt">Расширение словарного запаса — один из ключевых аспектов изучения
+                                языка. Узнайте проверенные приёмы, которые помогут запоминать новые слова
+                                быстрее и эффективнее.
                             </p>
-                            <a href="#" class="read-more">Read Article</a>
+                            <a href="#" class="read-more">Читать статью</a>
                         </div>
                     </div>
 
                     <!-- Article 2 -->
                     <div class="article-card">
                         <img src="assets/img/article2.jpg"
-                            alt="How to Prepare for the IELTS Examination" class="article-image">
+                            alt="Как подготовиться к экзамену IELTS" class="article-image">
                         <div class="article-content">
-                            <span class="article-date">25 February 2023</span>
-                            <h3 class="article-title">How to Prepare for the IELTS Examination</h3>
-                            <p class="article-excerpt">The international IELTS exam requires thorough preparation. In this
-                                article, we explain the structure of the exam and share strategies for achieving a high
-                                score.
+                            <span class="article-date">25 февраля 2023</span>
+                            <h3 class="article-title">Как подготовиться к экзамену IELTS</h3>
+                            <p class="article-excerpt">Международный экзамен IELTS требует тщательной подготовки. В этой
+                                статье мы расскажем о структуре экзамена и поделимся стратегиями для получения
+                                высокого балла.
                             </p>
-                            <a href="#" class="read-more">Read Article</a>
+                            <a href="#" class="read-more">Читать статью</a>
                         </div>
                     </div>
 
                     <!-- Article 3 -->
                     <div class="article-card">
                         <img src="assets/img/article3.jpg"
-                            alt="English for Travel: Key Phrases and Situations" class="article-image">
+                            alt="Английский для путешествий: ключевые фразы и ситуации" class="article-image">
                         <div class="article-content">
-                            <span class="article-date">8 February 2023</span>
-                            <h3 class="article-title">English for Travel: Key Phrases and Situations</h3>
-                            <p class="article-excerpt">Planning a trip abroad? We've prepared a list of essential phrases
-                                and
-                                expressions that will help you feel confident in any situation whilst travelling.</p>
-                            <a href="#" class="read-more">Read Article</a>
+                            <span class="article-date">8 февраля 2023</span>
+                            <h3 class="article-title">Английский для путешествий: ключевые фразы и ситуации</h3>
+                            <p class="article-excerpt">Планируете поездку за границу? Мы подготовили список необходимых
+                                фраз и выражений, которые помогут вам чувствовать себя уверенно в любой ситуации
+                                во время путешествия.</p>
+                            <a href="#" class="read-more">Читать статью</a>
                         </div>
                     </div>
                 </div>
@@ -1216,33 +1164,28 @@
                 <!-- First Column -->
                 <div class="footer-col">
                     <h3 class="footer-logo">Ally Lingua</h3>
-                    <p class="footer-tagline">English language mastery to achieve your goals</p>
-                    <p class="footer-description">A modern language school with a personalised approach to each student. We
-                        help
-                        unlock your language potential and achieve your desired results.</p>
-                    <div class="social-icons">
-                        <!-- <a href="#" class="social-icon">
-                            <img src="./assets/img/LinkedIn.svg"
-                                alt="LinkedIn" width="40" height="40">
-                        </a> -->
+                    <p class="footer-tagline">Владение английским для достижения ваших целей</p>
+                    <p class="footer-description">Современная языковая школа с индивидуальным подходом к каждому студенту.
+                        Мы помогаем раскрыть ваш языковой потенциал и достичь желаемых результатов.</p>
+                    <!-- <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <img src="./assets/img/LinkedIn.svg" alt="LinkedIn" width="40" height="40">
+                        </a>
                         <a href="https://www.facebook.com/allylingua" class="social-icon">
-                            <img src="./assets/img/Facebook.svg"
-                                alt="Facebook" width="40" height="40">
+                            <img src="./assets/img/Facebook.svg" alt="Facebook" width="40" height="40">
                         </a>
                         <a href="https://www.instagram.com/ally_lingua_ru/" class="social-icon">
-                            <img src="./assets/img/Instagram.svg"
-                                alt="Instagram" width="40" height="40">
+                            <img src="./assets/img/Instagram.svg" alt="Instagram" width="40" height="40">
                         </a>
-                        <!-- <a href="#" class="social-icon">
-                            <img src="./assets/img/x.svg"
-                                alt="X (Twitter)" width="40" height="40">
-                        </a> -->
-                    </div>
+                        <a href="#" class="social-icon">
+                            <img src="./assets/img/x.svg" alt="X (Twitter)" width="40" height="40">
+                        </a>
+                    </div> -->
                 </div>
 
                 <!-- Second Column -->
                 <div class="footer-col">
-                    <h4 class="footer-heading">Contact</h4>
+                    <h4 class="footer-heading">Контакты</h4>
                     <ul class="footer-contact-list">
                         <!-- <li class="footer-contact-item">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1258,7 +1201,7 @@
                                     d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
                                     fill="#D4AF37" />
                             </svg>
-                            <a href="linguaally@gmail.com">linguaally@gmail.com</a>
+                            <a href="ally.lingua@gmail.com">ally.lingua@gmail.com</a>
                         </li>
                         <!-- <li class="footer-contact-item">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1274,7 +1217,7 @@
                                     d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z"
                                     fill="#D4AF37" />
                             </svg>
-                            <span>Mon-Fri: 09:00 - 21:00</span>
+                            <span>Пн–Пт: 09:00 – 21:00</span>
                         </li>
                         <!-- <li class="footer-contact-item">
                             <span>Sat: 10:00 - 18:00</span>
@@ -1284,12 +1227,12 @@
 
                 <!-- Third Column -->
                 <div class="footer-col">
-                    <h4 class="footer-heading">Quick Links</h4>
+                    <h4 class="footer-heading">Быстрые ссылки</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Главная</a></li>
                         <!-- <li><a href="#">About Us</a></li> -->
-                        <li><a href="./courses.html">Courses</a></li>
-                        <li><a href="#teachers">Teachers</a></li>
+                        <li><a href="./courses.html">Курсы</a></li>
+                        <li><a href="#teachers">Преподаватели</a></li>
                         <!-- <li><a href="#">Pricing</a></li> -->
                         <!-- <li><a href="#">Blog</a></li> -->
                     </ul>
@@ -1297,30 +1240,30 @@
 
                 <!-- Fourth Column -->
                 <div class="footer-col">
-                    <h4 class="footer-heading">Our Courses</h4>
+                    <h4 class="footer-heading">Наши курсы</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Business English</a></li>
-                        <li><a href="#">General English</a></li>
-                        <li><a href="#">English for Children</a></li>
-                        <li><a href="#">IELTS Preparation</a></li>
-                        <li><a href="#">TOEFL Preparation</a></li>
-                        <li><a href="#">Individual Lessons</a></li>
-                        <li><a href="#">Corporate Training</a></li>
+                        <li><a href="#">Бизнес-английский</a></li>
+                        <li><a href="#">Общий английский</a></li>
+                        <li><a href="#">Английский для детей</a></li>
+                        <li><a href="#">Подготовка к IELTS</a></li>
+                        <li><a href="#">Подготовка к TOEFL</a></li>
+                        <li><a href="#">Индивидуальные занятия</a></li>
+                        <li><a href="#">Корпоративное обучение</a></li>
                     </ul>
                 </div>
             </div>
 
             <!-- Copyright Line -->
             <div class="footer-bottom">
-                <p>© 2026 Ally Lingua. All rights reserved.</p>
+                <p>© 2026 Ally Lingua. Все права защищены.</p>
                 <div class="footer-legal">
-                    <a href="./privacy_policy_en.html">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
+                    <a href="./privacy_policy_en.html">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
                 </div>
             </div>
         </footer>
 
-        <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <button id="backToTop" class="back-to-top" aria-label="Наверх">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
@@ -1330,7 +1273,7 @@
         <!-- --------------------------------------------------------------
         # Mobile menu 
         ---------------------------------------------------------------->
-        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <button class="mobile-menu-toggle" aria-label="Открыть меню">
             <span></span>
             <span></span>
             <span></span>
@@ -1338,14 +1281,14 @@
 
         <nav class="mobile-menu-overlay">
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">Главная</a></li>
                 <!-- <li><a href="#about">About</a></li> -->
-                <li><a href="./courses.html">Courses</a></li>
-                <li><a href="./index.html #teachers">Teachers</a></li>
-                <li><a href="./index.html #contact">Reviews</a></li>
+                <li><a href="./courses.html">Курсы</a></li>
+                <li><a href="./index.html #teachers">Преподаватели</a></li>
+                <li><a href="./index.html #contact">Отзывы</a></li>
                 <div class="language-switcher">
-                    <a href="./EN-index.html" class="language-btn" title="Switch to English">
-                        <span class="language-text">RU</span>
+                    <a href="./index-EN.html" class="language-btn" title="Switch to English">
+                        <span class="language-text">EN</span>
                     </a>
                 </div>
             </ul>
@@ -1359,7 +1302,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             const cursor = document.querySelector('.js-cursor-init');
             const cursorCircle = cursor.querySelector('.cursor-circle');
-            const scrollText = cursor.querySelector('.scroll_cursor_txt .text');
             const viewText = cursor.querySelector('.view_more_cursor .text');
 
             // Function to determine if background is dark or light
@@ -1400,7 +1342,6 @@
 
                 // Reset cursor styles
                 cursor.classList.remove('white_cursor', 'dark_cursor', 'active');
-                scrollText.style.display = 'none';
                 viewText.style.display = 'none';
 
                 // Handle different sections
@@ -1411,12 +1352,10 @@
                 // If cursor is over hero section
                 if (heroSection) {
                     cursor.classList.add('active', 'white_cursor');
-                    scrollText.style.display = 'block';
                 }
                 // If cursor is over why choose section
                 else if (whyChooseSection) {
                     cursor.classList.add('active', 'dark_cursor');
-                    scrollText.style.display = 'block';
                 }
                 // If cursor is over navigation
                 else if (navElements) {
@@ -1435,7 +1374,6 @@
                 // Special case for accent-word
                 if (element.classList.contains('accent-word') || element.closest('.accent-word')) {
                     cursor.classList.add('active');
-                    scrollText.style.display = 'none';
                     viewText.style.display = 'block';
                 }
             });
@@ -1507,6 +1445,10 @@
                     return true; // Hero секция тоже считаем тёмной из-за изображения
                 }
 
+                if (element.classList.contains('footer')) {
+                    return true; // Футер всегда тёмный (var(--nav-bg))
+                }
+
                 // Проверяем по цвету фона
                 const backgroundColor = window.getComputedStyle(element).backgroundColor;
                 if (backgroundColor !== 'transparent' && backgroundColor !== 'rgba(0, 0, 0, 0)') {
@@ -1544,13 +1486,25 @@
                 const rightNavX = rightNavRect.left + rightNavRect.width / 2;
                 const rightNavY = rightNavRect.top + rightNavRect.height / 2;
 
+                // ВАЖНО: leftNav/rightNav — fixed, z-index:100, лежат НАД страницей.
+                // Поэтому elementFromPoint попадёт в само меню, а не в секцию под ним.
+                // Временно отключаем pointer-events, чтобы "просветить" его насквозь.
+                const prevLeftPE = leftNav.style.pointerEvents;
+                const prevRightPE = rightNav.style.pointerEvents;
+                leftNav.style.pointerEvents = 'none';
+                rightNav.style.pointerEvents = 'none';
+
                 // Получаем элементы, которые находятся под координатами меню
                 const tempLeft = document.elementFromPoint(leftNavX, leftNavY);
                 const tempRight = document.elementFromPoint(rightNavX, rightNavY);
 
+                // Возвращаем pointer-events обратно
+                leftNav.style.pointerEvents = prevLeftPE;
+                rightNav.style.pointerEvents = prevRightPE;
+
                 // Находим ближайшие секции для левого и правого меню
-                const leftSection = tempLeft ? tempLeft.closest('section') : null;
-                const rightSection = tempRight ? tempRight.closest('section') : null;
+                const leftSection = tempLeft ? tempLeft.closest('section, footer') : null;
+                const rightSection = tempRight ? tempRight.closest('section, footer') : null;
 
                 // Проверяем, тёмные ли эти секции
                 const isLeftDark = leftSection ? isDarkSection(leftSection) : false;
@@ -1563,6 +1517,9 @@
             function updateMenuColors() {
                 // Получаем информацию о секциях под меню
                 const { isLeftDark, isRightDark } = checkMenuOverSection();
+
+                // Переключаем класс для лого (используется в CSS: .left-nav.is-dark ...)
+                leftNav.classList.toggle('is-dark', isLeftDark);
 
                 // Обновляем цвета левого меню (EXPLORE)
                 if (isLeftDark) {
@@ -1627,7 +1584,6 @@
             // Дополнительная проверка после полной загрузки страницы
             window.addEventListener('load', function () {
                 updateMenuColors();
-                // Повторная проверка через небольшой интервал для большей надежности
                 setTimeout(updateMenuColors, 1000);
             });
         });
@@ -1782,7 +1738,7 @@
                 // Разрешаем следующее событие скролла через задержку
                 setTimeout(() => {
                     isScrolling = false;
-                }, 500);
+                }, 250);
             }
 
             // Функция для показа слова
@@ -1794,7 +1750,7 @@
                     // Анимация появления слова
                     layer.style.opacity = '1';
                     layer.style.top = finalPositions[index].top;
-                    layer.style.transition = 'top 0.7s ease, opacity 0.7s ease';
+                    layer.style.transition = 'top 0.3s ease, opacity 0.3s ease';
 
                     // Плавное заполнение цветом с задержкой
                     setTimeout(() => {
@@ -1807,8 +1763,8 @@
                             if (word.id === 'achieve-word') {
                                 applyGoldColor();
                             }
-                        }, 200);
-                    }, 400);
+                        }, 100);
+                    }, 150);
                 }
 
                 // Если это последнее слово, разрешаем прокрутку страницы
@@ -1816,7 +1772,7 @@
                     setTimeout(() => {
                         canScroll = true;
                         document.body.style.overflow = 'auto';
-                    }, 1000);
+                    }, 400);
                 }
             }
 
@@ -1845,8 +1801,8 @@
                     setTimeout(() => {
                         layer.style.opacity = '0';
                         layer.style.top = initialPositions[index].top;
-                        layer.style.transition = 'top 0.7s ease, opacity 0.7s ease';
-                    }, 200);
+                        layer.style.transition = 'top 0.3s ease, opacity 0.3s ease';
+                    }, 100);
                 }
             }
 
@@ -1858,7 +1814,7 @@
                     // Показываем слово
                     layer.style.opacity = '1';
                     layer.style.top = finalPositions[index].top;
-                    layer.style.transition = 'top 0.7s ease, opacity 0.7s ease';
+                    layer.style.transition = 'top 0.3s ease, opacity 0.3s ease';
 
                     // Применяем стиль с задержкой
                     word.classList.add('filling');
@@ -1935,8 +1891,8 @@
                         setTimeout(() => {
                             layer.style.opacity = '0';
                             layer.style.top = initialPositions[index].top;
-                            layer.style.transition = 'top 0.7s ease, opacity 0.7s ease';
-                        }, 200 + index * 100);
+                            layer.style.transition = 'top 0.3s ease, opacity 0.3s ease';
+                        }, 100 + index * 50);
                     });
 
                     // Сбрасываем состояние

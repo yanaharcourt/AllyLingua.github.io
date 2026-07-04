@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Courses - Ally Lingua</title>
+    <title>Наши курсы - Ally Lingua</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/ru-styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 </head>
@@ -29,7 +30,7 @@
         <div class="cursor-circle">
             <div class="circle_wrap"></div>
             <div class="scroll_cursor_txt">
-                <span class="text">Scroll</span>
+                <span class="text">Скролл</span>
             </div>
             <div class="view_more_cursor">
                 <span class="text">View</span>
@@ -41,49 +42,48 @@
     # Left Navigation
     ---------------------------------------------------------------->
     <div class="left-nav">
-        <div class="logo-container">
-            <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/Logo.svg" alt="Logo"
-                class="logo-default">
-            <img src="https://raw.githubusercontent.com/yanaharcourt/My-Portfolio/main/AllyLingua/logo-active.svg"
-                alt="Logo Hover" class="logo-hover">
-        </div>
+        <a href="./index.html" class="logo-container">
+            <img src="./assets/img/Logo.svg" alt="Logo" class="logo-default">
+            <img src="./assets/img/logo-active.svg" alt="Logo Hover" class="logo-hover">
+        </a>
+
         <div class="burger-lines">
             <span class="burger-line"></span>
             <span class="burger-line"></span>
         </div>
-        <span class="explore-text">EXPLORE</span>
+        <span class="explore-text">МЕНЮ</span>
         <div class="side-menu">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="courses.html">COURSES</a></li>
-                <li><a href="#teachers">TEACHERS</a></li>
-                <li><a href="#reviews">REVIEWS</a></li>
+                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                <li><a href="courses.html">КУРСЫ</a></li>
+                <li><a href="#teachers">ПРЕПОДАВАТЕЛИ</a></li>
+                <li><a href="#reviews">ОТЗЫВЫ</a></li>
                 <div class="language-switcher">
-                    <a href="./EN-index.html" class="language-btn" title="Switch to English">
-                        <span class="language-text">RU</span>
+                    <a href="./courses-EN.html" class="language-btn" title="Switch to English">
+                        <span class="language-text">EN</span>
                     </a>
                 </div>
             </ul>
-
         </div>
     </div>
 
     <!-- --------------------------------------------------------------
     # Right Navigation
     ---------------------------------------------------------------->
-    <div class="right-nav">
+    <a href="./courses.html" class="right-nav">
         <span class="arrow">→</span>
-        <span class="enrol-text">ENROL</span>
+        <span class="enrol-text">ЗАПИСАТЬСЯ</span>
         <div class="right-side-menu"></div>
-    </div>
+    </a>
 
     <!-- Hero Section -->
     <section class="courses-hero">
-        <div class="courses-hero-background"></div>
+        <div class="hero-background"
+                style="background-image: url('assets/img/our-courses.jpg');">
+            </div>
         <div class="courses-hero-content">
-            <h1>Our Courses</h1>
-            <p>Choose from our comprehensive range of English language courses designed to meet your specific goals and
-                learning needs</p>
+            <h1>Наши курсы</h1>
+            <p>Выберите из широкого спектра курсов английского языка, разработанных под ваши конкретные цели и потребности в обучении</p>
         </div>
     </section>
 
@@ -91,41 +91,41 @@
     <section class="courses-section">
         <div class="courses-container">
             <div class="section-intro">
-                <h2>Find Your Perfect Course</h2>
-                <p>Whether you're looking to advance your career, prepare for exams, or improve your everyday English,
-                    we have the right course for you. All our programs are taught by experienced native English speakers
-                    using proven Oxford methodologies.</p>
+                <h2>Найдите свой идеальный курс</h2>
+                <p>Хотите продвинуться по карьерной лестнице, подготовиться к экзаменам или улучшить повседневный
+                    английский — у нас есть подходящий курс для вас. Все наши программы ведут опытные
+                    преподаватели по проверенным методикам Oxford.</p>
             </div>
 
             <div class="courses-grid" id="coursesGrid">
-                <!-- Business English Course -->
-                <div class="course-card" data-course="business">
+                <!-- Kids English Course -->
+                <div class="course-card" data-course="kids">
                     <div class="course-compact-view">
-                        <img src="./assets/img/business-english.jpg" alt="Business English" class="course-image">
+                        <img src="./assets/img/kids-english.jpg" alt="Английский для детей" class="course-image">
 
                         <div class="course-content">
-                            <span class="course-category">Professional</span>
-                            <h3 class="course-title">Business English</h3>
+                            <span class="course-category">Юные ученики</span>
+                            <h3 class="course-title">Английский для детей (групповые занятия)</h3>
 
                             <p class="course-description">
-                                Develop confident, professional communication using Oxford Business Result methodology.
+                                Увлекательные интерактивные групповые занятия для детей по методике Cambridge Power Up.
                             </p>
 
                             <ul class="course-benefits">
-                                <li>Lead meetings and presentations with confidence in just 3 months</li>
-                                <li>Write professional emails that get results</li>
-                                <li>Negotiate effectively with international partners</li>
+                                <li>Обучение через игры, песни и истории в живой групповой атмосфере</li>
+                                <li>Расширение словарного запаса и уверенности на темах, подходящих по возрасту</li>
+                                <li>Развитие навыков говорения и аудирования вместе с одноклассниками</li>
                             </ul>
 
                             <div class="course-price-section">
                                 <div class="course-price">
-                                    <span class="price-amount">€300</span>
-                                    <span class="price-period">per month</span>
+                                    <span class="price-amount">8 500 ₽</span>
+                                    <span class="price-period">в месяц</span>
                                 </div>
 
                                 <div class="course-buttons">
-                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                    <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Что я получу</a>
                                 </div>
                             </div>
                         </div>
@@ -135,79 +135,310 @@
                     <div class="course-expanded-view" style="display:none;">
                         <div class="expanded-header">
                             <div class="expanded-image-container">
-                                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&h=500&fit=crop"
-                                    alt="Business English" class="expanded-course-image">
+                                <img src="./assets/img/kids-english.jpg"
+                                    alt="Английский для детей" class="expanded-course-image">
                             </div>
 
                             <div class="expanded-content-wrapper">
-                                <span class="course-category">Professional</span>
-                                <h3 class="course-title">Business English</h3>
+                                <span class="course-category">Юные ученики</span>
+                                <h3 class="course-title">Английский для детей (групповые занятия)</h3>
 
                                 <p class="course-description">
-                                    This programme helps you operate confidently in international business environments.
-                                    You'll work with authentic case studies, role-plays and practical tasks that mirror
-                                    real communication: meetings, conference calls, negotiations and client relations.
-                                    We focus on clarity, diplomacy and natural professional style — so your English
-                                    supports your career rather than limiting it.
+                                    Наш групповой курс для детей объединяет Cambridge Power Up и Oxford Family
+                                    and Friends, сочетая сильные стороны обеих серий: песни, истории, фонетику
+                                    и практику под руководством преподавателя. В небольших группах дети учатся
+                                    вместе через игры, ролевые задания и творческие проекты, развивая
+                                    настоящие навыки общения и сохраняя мотивацию и интерес.
                                 </p>
                             </div>
                         </div>
 
                         <div class="expanded-grid">
                             <div class="expanded-section">
-                                <h3>What You'll Learn</h3>
+                                <h3>Чему вы научитесь</h3>
                                 <ul class="feature-list">
-                                    <li>Professional vocabulary across business situations</li>
-                                    <li>Confident participation in meetings and calls</li>
-                                    <li>Clear and persuasive presentations</li>
-                                    <li>Negotiation language and conflict resolution</li>
-                                    <li>Effective business emails and reports</li>
-                                    <li>Cross-cultural communication strategies</li>
+                                    <li>Базовая лексика через песни, речёвки и истории</li>
+                                    <li>Фонетика и первые навыки чтения</li>
+                                    <li>Повседневная речь через игры и ролевые сценки</li>
+                                    <li>Практика аудирования с аудио носителей языка</li>
+                                    <li>Простая грамматика через повторение</li>
+                                    <li>Уверенность в выступлении перед группой</li>
                                 </ul>
                             </div>
 
                             <div class="expanded-section">
-                                <h3>Who Is This For?</h3>
+                                <h3>Кому подойдёт этот курс?</h3>
                                 <ul class="feature-list">
-                                    <li>Professionals working with international partners</li>
-                                    <li>Entrepreneurs and business owners</li>
-                                    <li>Managers developing leadership communication</li>
-                                    <li>Graduates entering the global job market</li>
+                                    <li>Дети 6–12 лет, начинающие или продолжающие изучать английский</li>
+                                    <li>Дети, которым нравится учиться вместе со сверстниками</li>
+                                    <li>Родители, желающие увлекательную и структурированную программу</li>
+                                    <li>Уровни от начального до предпродвинутого</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="course-details-grid">
                             <div class="detail-item">
-                                <div class="detail-label">Duration</div>
-                                <div class="detail-value">Flexible</div>
+                                <div class="detail-label">Длительность</div>
+                                <div class="detail-value">Гибкое</div>
                             </div>
 
                             <div class="detail-item">
-                                <div class="detail-label">Class Size</div>
-                                <div class="detail-value">1:1 or 1:4</div>
+                                <div class="detail-label">Размер группы</div>
+                                <div class="detail-value">Группа 4–6 чел.</div>
                             </div>
 
                             <div class="detail-item">
-                                <div class="detail-label">Level</div>
-                                <div class="detail-value">Intermediate+</div>
+                                <div class="detail-label">Уровень</div>
+                                <div class="detail-value">От начального</div>
                             </div>
 
                             <div class="detail-item">
-                                <div class="detail-label">Schedule</div>
-                                <div class="detail-value">Twice per week</div>
+                                <div class="detail-label">Расписание</div>
+                                <div class="detail-value">2 раза в неделю</div>
                             </div>
                         </div>
 
                         <div class="course-price-section">
                             <div class="course-price">
-                                <span class="price-amount">€300</span>
-                                <span class="price-period">per month</span>
+                                <span class="price-amount">8 500 ₽</span>
+                                <span class="price-period">в месяц</span>
                             </div>
 
                             <div class="course-buttons">
-                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                <button class="btn-close close-btn">Close</button>
+                                <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                <button class="btn-close close-btn">Закрыть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kids English Individual Course -->
+                <div class="course-card" data-course="kids-individual">
+                    <div class="course-compact-view">
+                        <img src="./assets/img/kids-english-individual.jpg" alt="Английский для детей индивидуально" class="course-image">
+
+                        <div class="course-content">
+                            <span class="course-category">Юные ученики</span>
+                            <h3 class="course-title">Английский для детей (индивидуальные занятия)</h3>
+
+                            <p class="course-description">
+                                Индивидуальные занятия для детей в собственном темпе по методикам Power Up и Family and Friends.
+                            </p>
+
+                            <ul class="course-benefits">
+                                <li>Полностью индивидуальный темп и темы для вашего ребёнка</li>
+                                <li>Более быстрый прогресс благодаря полному вниманию преподавателя</li>
+                                <li>Гибкое расписание с учётом школы и семейных дел</li>
+                            </ul>
+
+                            <div class="course-price-section">
+                                <div class="course-price">
+                                    <span class="price-amount">15 900 ₽</span>
+                                    <span class="price-period">в месяц</span>
+                                </div>
+
+                                <div class="course-buttons">
+                                    <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Что я получу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Expanded view -->
+                    <div class="course-expanded-view" style="display:none;">
+                        <div class="expanded-header">
+                            <div class="expanded-image-container">
+                                <img src="./assets/img/kids-english-individual.jpg"
+                                    alt="Английский для детей индивидуально" class="expanded-course-image">
+                            </div>
+
+                            <div class="expanded-content-wrapper">
+                                <span class="course-category">Юные ученики</span>
+                                <h3 class="course-title">Английский для детей (индивидуальные занятия)</h3>
+
+                                <p class="course-description">
+                                    Индивидуальные занятия, построенные вокруг вашего ребёнка, по методикам
+                                    Cambridge Power Up и Oxford Family and Friends. Преподаватель подстраивает
+                                    темп, темы и активности под уровень и интересы ребёнка, уделяя полное
+                                    внимание произношению, уверенности и стабильному прогрессу без давления
+                                    группового темпа.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="expanded-grid">
+                            <div class="expanded-section">
+                                <h3>Чему вы научитесь</h3>
+                                <ul class="feature-list">
+                                    <li>Лексика и фонетика в темпе вашего ребёнка</li>
+                                    <li>Индивидуальная практика говорения и произношения</li>
+                                    <li>Чтение и аудирование с учётом интересов</li>
+                                    <li>Грамматика закрепляется через персональную обратную связь</li>
+                                    <li>Уверенность без давления группы</li>
+                                    <li>Прогресс отслеживается и корректируется от урока к уроку</li>
+                                </ul>
+                            </div>
+
+                            <div class="expanded-section">
+                                <h3>Кому подойдёт этот курс?</h3>
+                                <ul class="feature-list">
+                                    <li>Дети, которым нужен индивидуальный темп</li>
+                                    <li>Стеснительные ученики, предпочитающие занятия 1:1</li>
+                                    <li>Дети, наверстывающие материал или готовящиеся к школьному английскому</li>
+                                    <li>Семьи, желающие гибкое расписание</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="course-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Длительность</div>
+                                <div class="detail-value">Гибкое</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Размер группы</div>
+                                <div class="detail-value">1:1</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Уровень</div>
+                                <div class="detail-value">От начального</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Расписание</div>
+                                <div class="detail-value">2 раза в неделю</div>
+                            </div>
+                        </div>
+
+                        <div class="course-price-section">
+                            <div class="course-price">
+                                <span class="price-amount">15 900 ₽</span>
+                                <span class="price-period">в месяц</span>
+                            </div>
+
+                            <div class="course-buttons">
+                                <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                <button class="btn-close close-btn">Закрыть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business English Course -->
+                <div class="course-card" data-course="business">
+                    <div class="course-compact-view">
+                        <img src="./assets/img/business-english.jpg" alt="Бизнес-английский" class="course-image">
+
+                        <div class="course-content">
+                            <span class="course-category">Профессиональный</span>
+                            <h3 class="course-title">Бизнес-английский</h3>
+
+                            <p class="course-description">
+                                Развивайте уверенное деловое общение по методике Oxford Business Result.
+                            </p>
+
+                            <ul class="course-benefits">
+                                <li>Уверенно ведите встречи и презентации уже через 3 месяца</li>
+                                <li>Пишите деловые письма, которые приносят результат</li>
+                                <li>Эффективно ведите переговоры с международными партнёрами</li>
+                            </ul>
+
+                            <div class="course-price-section">
+                                <div class="course-price">
+                                    <span class="price-amount">19 900 ₽</span>
+                                    <span class="price-period">в месяц</span>
+                                </div>
+
+                                <div class="course-buttons">
+                                    <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Что я получу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Expanded view -->
+                    <div class="course-expanded-view" style="display:none;">
+                        <div class="expanded-header">
+                            <div class="expanded-image-container">
+                                <img src="./assets/img/business-english.jpg"
+                                    alt="Бизнес-английский" class="expanded-course-image">
+                            </div>
+
+                            <div class="expanded-content-wrapper">
+                                <span class="course-category">Профессиональный</span>
+                                <h3 class="course-title">Бизнес-английский</h3>
+
+                                <p class="course-description">
+                                    Эта программа поможет вам уверенно работать в международной деловой среде.
+                                    Вы будете разбирать реальные кейсы, ролевые ситуации и практические задания,
+                                    отражающие настоящее общение: встречи, конференц-звонки, переговоры и
+                                    отношения с клиентами. Мы делаем акцент на ясности, дипломатичности и
+                                    естественном профессиональном стиле — чтобы английский помогал вашей карьере,
+                                    а не ограничивал её.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="expanded-grid">
+                            <div class="expanded-section">
+                                <h3>Чему вы научитесь</h3>
+                                <ul class="feature-list">
+                                    <li>Профессиональная лексика для деловых ситуаций</li>
+                                    <li>Уверенное участие во встречах и звонках</li>
+                                    <li>Чёткие и убедительные презентации</li>
+                                    <li>Язык переговоров и разрешение конфликтов</li>
+                                    <li>Эффективные деловые письма и отчёты</li>
+                                    <li>Стратегии межкультурного общения</li>
+                                </ul>
+                            </div>
+
+                            <div class="expanded-section">
+                                <h3>Кому подойдёт этот курс?</h3>
+                                <ul class="feature-list">
+                                    <li>Специалисты, работающие с международными партнёрами</li>
+                                    <li>Предприниматели и владельцы бизнеса</li>
+                                    <li>Менеджеры, развивающие лидерскую коммуникацию</li>
+                                    <li>Выпускники, выходящие на глобальный рынок труда</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="course-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Длительность</div>
+                                <div class="detail-value">Гибкое</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Размер группы</div>
+                                <div class="detail-value">1:1 или 1:4</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Уровень</div>
+                                <div class="detail-value">От среднего</div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-label">Расписание</div>
+                                <div class="detail-value">2 раза в неделю</div>
+                            </div>
+                        </div>
+
+                        <div class="course-price-section">
+                            <div class="course-price">
+                                <span class="price-amount">19 900 ₽</span>
+                                <span class="price-period">в месяц</span>
+                            </div>
+
+                            <div class="course-buttons">
+                                <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                <button class="btn-close close-btn">Закрыть</button>
                             </div>
                         </div>
                     </div>
@@ -216,31 +447,31 @@
                 <!-- General English Course -->
                 <div class="course-card" data-course="general">
                     <div class="course-compact-view">
-                        <img src="assets/img/general-english.jpg" alt="General English" class="course-image">
+                        <img src="assets/img/general-english.jpg" alt="Общий английский" class="course-image">
 
                         <div class="course-content">
-                            <span class="course-category">Foundation</span>
-                            <h3 class="course-title">General English</h3>
+                            <span class="course-category">Базовый уровень</span>
+                            <h3 class="course-title">Общий английский</h3>
 
                             <p class="course-description">
-                                Build strong everyday English using Oxford American Headway methodology.
+                                Развивайте уверенный повседневный английский по методике Oxford American Headway.
                             </p>
 
                             <ul class="course-benefits">
-                                <li>Speak confidently in everyday situations within 2 months</li>
-                                <li>Understand native speakers without subtitles</li>
-                                <li>Travel abroad with ease and independence</li>
+                                <li>Уверенно говорите в повседневных ситуациях уже через 2 месяца</li>
+                                <li>Понимайте носителей языка без субтитров</li>
+                                <li>Путешествуйте за границей легко и самостоятельно</li>
                             </ul>
 
                             <div class="course-price-section">
                                 <div class="course-price">
-                                    <span class="price-amount">€250</span>
-                                    <span class="price-period">per month</span>
+                                    <span class="price-amount">19 900 ₽</span>
+                                    <span class="price-period">в месяц</span>
                                 </div>
 
                                 <div class="course-buttons">
-                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                    <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Что я получу</a>
                                 </div>
                             </div>
                         </div>
@@ -249,87 +480,86 @@
                     <div class="course-expanded-view" style="display:none;">
                         <div class="expanded-header">
                             <div class="expanded-image-container">
-                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop"
-                                    alt="General English" class="expanded-course-image">
+                                <img src="assets/img/general-english.jpg"
+                                    alt="Общий английский" class="expanded-course-image">
                             </div>
 
                             <div class="expanded-content-wrapper">
-                                <span class="course-category">Foundation</span>
-                                <h3 class="course-title">General English</h3>
+                                <span class="course-category">Базовый уровень</span>
+                                <h3 class="course-title">Общий английский</h3>
 
                                 <p class="course-description">
-                                    A comprehensive course designed to help you feel comfortable using English every
-                                    day. Lessons combine conversation practice, grammar in context, listening tasks,
-                                    reading
-                                    strategies and guided writing. You'll build fluency step by step, learning natural
-                                    expressions and developing the confidence to speak in travel, work and social
-                                    situations.
+                                    Комплексный курс, который поможет вам чувствовать себя уверенно с английским
+                                    в повседневной жизни. Уроки сочетают разговорную практику, грамматику в
+                                    контексте, аудирование, стратегии чтения и письмо с сопровождением. Вы будете
+                                    последовательно развивать беглость речи, изучать естественные выражения и
+                                    обретать уверенность в путешествиях, на работе и в общении.
                                 </p>
                             </div>
                         </div>
 
                         <div class="expanded-grid">
                             <div class="expanded-section">
-                                <h3>What You'll Learn</h3>
+                                <h3>Чему вы научитесь</h3>
                                 <ul class="feature-list">
-                                    <li>Fluent everyday conversation skills</li>
-                                    <li>Grammar explained in clear, practical ways</li>
-                                    <li>Listening for real-life interactions</li>
-                                    <li>Reading comprehension and vocabulary growth</li>
-                                    <li>Writing for different everyday purposes</li>
-                                    <li>Useful idioms and natural expressions</li>
+                                    <li>Беглая повседневная разговорная речь</li>
+                                    <li>Грамматика, объяснённая понятно и практично</li>
+                                    <li>Аудирование для реальных жизненных ситуаций</li>
+                                    <li>Понимание прочитанного и рост словарного запаса</li>
+                                    <li>Письмо для разных повседневных целей</li>
+                                    <li>Полезные идиомы и естественные выражения</li>
                                 </ul>
                             </div>
 
                             <div class="expanded-section">
-                                <h3>Who Is This For?</h3>
+                                <h3>Кому подойдёт этот курс?</h3>
                                 <ul class="feature-list">
-                                    <li>Adults improving overall English ability</li>
-                                    <li>Learners preparing for travel or relocation</li>
-                                    <li>Students needing stronger language foundations</li>
-                                    <li>Anyone wanting to feel confident speaking</li>
+                                    <li>Взрослые, улучшающие общий уровень английского</li>
+                                    <li>Готовящиеся к путешествию или переезду</li>
+                                    <li>Ученики, которым нужна более прочная база языка</li>
+                                    <li>Все, кто хочет уверенно говорить</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="course-details-grid">
                             <div class="detail-item">
-                                <div class="detail-label">Duration</div>
-                                <div class="detail-value">Flexible</div>
+                                <div class="detail-label">Длительность</div>
+                                <div class="detail-value">Гибкое</div>
                             </div>
 
                             <div class="detail-item">
-                                <div class="detail-label">Class Size</div>
-                                <div class="detail-value">1:1 or 1:4</div>
+                                <div class="detail-label">Размер группы</div>
+                                <div class="detail-value">1:1 или 1:4</div>
                             </div>
 
                             <div class="detail-item">
-                                <div class="detail-label">Level</div>
-                                <div class="detail-value">All levels</div>
+                                <div class="detail-label">Уровень</div>
+                                <div class="detail-value">Любой уровень</div>
                             </div>
 
                             <div class="detail-item">
-                                <div class="detail-label">Schedule</div>
-                                <div class="detail-value">Twice per week</div>
+                                <div class="detail-label">Расписание</div>
+                                <div class="detail-value">2 раза в неделю</div>
                             </div>
                         </div>
 
                         <div class="course-price-section">
                             <div class="course-price">
-                                <span class="price-amount">€250</span>
-                                <span class="price-period">per month</span>
+                                <span class="price-amount">19 900 ₽</span>
+                                <span class="price-period">в месяц</span>
                             </div>
 
                             <div class="course-buttons">
-                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                <button class="btn-close close-btn">Close</button>
+                                <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                <button class="btn-close close-btn">Закрыть</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- English for Children -->
-                <div class="course-card" data-course="children">
+                <!-- <div class="course-card" data-course="children">
                     <div class="course-compact-view">
                         <img src="assets/img/English-for-Children.jpg" alt="English for Children" class="course-image">
                         <div class="course-content">
@@ -347,12 +577,12 @@
 
                             <div class="course-price-section">
                                 <div class="course-price">
-                                    <span class="price-amount">€280</span>
-                                    <span class="price-period">per month</span>
+                                    <span class="price-amount">24 900 ₽</span>
+                                    <span class="price-period">в месяц</span>
                                 </div>
                                 <div class="course-buttons">
-                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                    <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Что я получу</a>
                                 </div>
                             </div>
                         </div>
@@ -361,7 +591,7 @@
                     <div class="course-expanded-view" style="display:none;">
                         <div class="expanded-header">
                             <div class="expanded-image-container">
-                                <img src="https://images.unsplash.com/photo-1604881991720-f91add269bed?w=400&h=500&fit=crop"
+                                <img src="assets/img/English-for-Children.jpgs"
                                     alt="English for Children" class="expanded-course-image">
                             </div>
                             <div class="expanded-content-wrapper">
@@ -391,7 +621,7 @@
                                 </ul>
                             </div>
                             <div class="expanded-section">
-                                <h3>Who Is This For?</h3>
+                                <h3>Кому подойдёт этот курс?</h3>
                                 <ul class="feature-list">
                                     <li>Children aged 6–12</li>
                                     <li>Beginners and continuing learners</li>
@@ -403,61 +633,61 @@
 
                         <div class="course-details-grid">
                             <div class="detail-item">
-                                <div class="detail-label">Duration</div>
+                                <div class="detail-label">Длительность</div>
                                 <div class="detail-value">Ongoing</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Class Size</div>
-                                <div class="detail-value">1:1 or 1:4</div>
+                                <div class="detail-label">Размер группы</div>
+                                <div class="detail-value">1:1 или 1:4</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Level</div>
-                                <div class="detail-value">Beginner+</div>
+                                <div class="detail-label">Уровень</div>
+                                <div class="detail-value">От начального</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Schedule</div>
-                                <div class="detail-value">Twice per week</div>
+                                <div class="detail-label">Расписание</div>
+                                <div class="detail-value">2 раза в неделю</div>
                             </div>
                         </div>
 
                         <div class="course-price-section">
                             <div class="course-price">
-                                <span class="price-amount">€280</span>
-                                <span class="price-period">per month</span>
+                                <span class="price-amount">24 900 ₽</span>
+                                <span class="price-period">в месяц</span>
                             </div>
                             <div class="course-buttons">
-                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                <button class="btn-close close-btn">Close</button>
+                                <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                <button class="btn-close close-btn">Закрыть</button>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- IELTS Preparation -->
                 <div class="course-card" data-course="ielts">
                     <div class="course-compact-view">
-                        <img src="./assets/img/IELTS.png" alt="IELTS Preparation" class="course-image">
+                        <img src="./assets/img/IELTS.png" alt="Подготовка к IELTS" class="course-image">
                         <div class="course-content">
-                            <span class="course-category">Exam Preparation</span>
-                            <h3 class="course-title">IELTS Preparation</h3>
+                            <span class="course-category">Подготовка к экзаменам</span>
+                            <h3 class="course-title">Подготовка к IELTS</h3>
                             <p class="course-description">
-                                A complete strategy-based programme covering all four skills.
+                                Полная программа с чёткими стратегиями по всем четырём навыкам.
                             </p>
 
                             <ul class="course-benefits">
-                                <li>Achieve your target band score in 8-16 weeks</li>
-                                <li>Learn proven exam strategies from certified IELTS tutors</li>
-                                <li>Get individual feedback on Speaking and Writing tasks</li>
+                                <li>Достигните нужного балла за 8–16 недель</li>
+                                <li>Изучите проверенные стратегии от сертифицированных преподавателей IELTS</li>
+                                <li>Получайте индивидуальную обратную связь по Speaking и Writing</li>
                             </ul>
 
                             <div class="course-price-section">
                                 <div class="course-price">
-                                    <span class="price-amount">€350</span>
-                                    <span class="price-period">per month</span>
+                                    <span class="price-amount">22 900 ₽</span>
+                                    <span class="price-period">в месяц</span>
                                 </div>
                                 <div class="course-buttons">
-                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                    <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Что я получу</a>
                                 </div>
                             </div>
                         </div>
@@ -466,72 +696,72 @@
                     <div class="course-expanded-view" style="display:none;">
                         <div class="expanded-header">
                             <div class="expanded-image-container">
-                                <img src="https://images.unsplash.com/photo-1584697964364-7e1a7f3e46e1?w=400&h=500&fit=crop"
-                                    alt="IELTS Preparation" class="expanded-course-image">
+                                <img src="./assets/img/IELTS.png"
+                                    alt="Подготовка к IELTS" class="expanded-course-image">
                             </div>
                             <div class="expanded-content-wrapper">
-                                <span class="course-category">Exam Preparation</span>
-                                <h3 class="course-title">IELTS Preparation</h3>
+                                <span class="course-category">Подготовка к экзаменам</span>
+                                <h3 class="course-title">Подготовка к IELTS</h3>
                                 <p class="course-description">
-                                    This course focuses on real exam performance. We begin with a detailed level
-                                    assessment and create a personal study pathway. You'll learn examiner expectations,
-                                    discover powerful writing templates and practise structured Speaking responses with
-                                    individual feedback. Mock tests, exam simulations and targeted homework ensure
-                                    steady,
-                                    measurable progress so you feel confident and well prepared on exam day.
+                                    Этот курс сфокусирован на реальном результате на экзамене. Мы начинаем с
+                                    подробной оценки уровня и составляем персональный план подготовки. Вы узнаете
+                                    ожидания экзаменаторов, освоите эффективные шаблоны для письма и отработаете
+                                    структурированные ответы Speaking с индивидуальной обратной связью. Пробные
+                                    тесты, симуляции экзамена и целевые домашние задания обеспечивают стабильный,
+                                    измеримый прогресс, чтобы вы чувствовали себя уверенно в день экзамена.
                                 </p>
                             </div>
                         </div>
 
                         <div class="expanded-grid">
                             <div class="expanded-section">
-                                <h3>What You'll Learn</h3>
+                                <h3>Чему вы научитесь</h3>
                                 <ul class="feature-list">
-                                    <li>Time-saving reading techniques and analysis</li>
-                                    <li>Listening strategies for complex audio</li>
-                                    <li>Strong structures for Writing Task 1 & 2</li>
-                                    <li>Speaking practice across Parts 1–3</li>
-                                    <li>Time management and exam psychology</li>
-                                    <li>Individual improvement plans to raise your score</li>
+                                    <li>Техники быстрого чтения и анализа текста</li>
+                                    <li>Стратегии аудирования для сложного аудио</li>
+                                    <li>Надёжные структуры для Writing Task 1 и 2</li>
+                                    <li>Практика Speaking по частям 1–3</li>
+                                    <li>Тайм-менеджмент и психология экзамена</li>
+                                    <li>Индивидуальные планы для повышения балла</li>
                                 </ul>
                             </div>
                             <div class="expanded-section">
-                                <h3>Who Is This For?</h3>
+                                <h3>Кому подойдёт этот курс?</h3>
                                 <ul class="feature-list">
-                                    <li>Students preparing for study abroad</li>
-                                    <li>Applicants for visas and immigration</li>
-                                    <li>Learners aiming for band 6.0–8.0+</li>
+                                    <li>Студенты, готовящиеся к учёбе за границей</li>
+                                    <li>Подающие документы на визу и иммиграцию</li>
+                                    <li>Стремящиеся к баллу 6.0–8.0+</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="course-details-grid">
                             <div class="detail-item">
-                                <div class="detail-label">Duration</div>
-                                <div class="detail-value">8–16 weeks</div>
+                                <div class="detail-label">Длительность</div>
+                                <div class="detail-value">8–16 недель</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Class Size</div>
+                                <div class="detail-label">Размер группы</div>
                                 <div class="detail-value">1:1</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Level</div>
-                                <div class="detail-value">Intermediate+</div>
+                                <div class="detail-label">Уровень</div>
+                                <div class="detail-value">От среднего</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Schedule</div>
-                                <div class="detail-value">Twice per week</div>
+                                <div class="detail-label">Расписание</div>
+                                <div class="detail-value">2 раза в неделю</div>
                             </div>
                         </div>
 
                         <div class="course-price-section">
                             <div class="course-price">
-                                <span class="price-amount">€350</span>
-                                <span class="price-period">per month</span>
+                                <span class="price-amount">22 900 ₽</span>
+                                <span class="price-period">в месяц</span>
                             </div>
                             <div class="course-buttons">
-                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                <button class="btn-close close-btn">Close</button>
+                                <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                <button class="btn-close close-btn">Закрыть</button>
                             </div>
                         </div>
                     </div>
@@ -540,28 +770,28 @@
                 <!-- TOEFL Preparation -->
                 <div class="course-card" data-course="toefl">
                     <div class="course-compact-view">
-                        <img src="./assets/img/TOFEL.jpg" alt="TOEFL Preparation" class="course-image">
+                        <img src="./assets/img/TOFEL.jpg" alt="Подготовка к TOEFL" class="course-image">
                         <div class="course-content">
-                            <span class="course-category">Exam Preparation</span>
-                            <h3 class="course-title">TOEFL Preparation</h3>
+                            <span class="course-category">Подготовка к экзаменам</span>
+                            <h3 class="course-title">Подготовка к TOEFL</h3>
                             <p class="course-description">
-                                Master every TOEFL section with academic language support.
+                                Освойте каждый раздел TOEFL с поддержкой академического языка.
                             </p>
 
                             <ul class="course-benefits">
-                                <li>Score 90+ on TOEFL iBT with proven strategies</li>
-                                <li>Understand complex academic lectures and texts</li>
-                                <li>Write clear, structured academic responses under pressure</li>
+                                <li>Наберите 90+ баллов на TOEFL iBT по проверенным стратегиям</li>
+                                <li>Понимайте сложные академические лекции и тексты</li>
+                                <li>Пишите чёткие структурированные ответы под давлением времени</li>
                             </ul>
 
                             <div class="course-price-section">
                                 <div class="course-price">
-                                    <span class="price-amount">€350</span>
-                                    <span class="price-period">per month</span>
+                                    <span class="price-amount">22 900 ₽</span>
+                                    <span class="price-period">в месяц</span>
                                 </div>
                                 <div class="course-buttons">
-                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                    <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Что я получу</a>
                                 </div>
                             </div>
                         </div>
@@ -570,69 +800,70 @@
                     <div class="course-expanded-view" style="display:none;">
                         <div class="expanded-header">
                             <div class="expanded-image-container">
-                                <img src="https://images.unsplash.com/photo-1518133927612-5bc2b3d36c3f?w=400&h=500&fit=crop"
-                                    alt="TOEFL Preparation" class="expanded-course-image">
+                                <img src="./assets/img/TOFEL.jpg"
+                                    alt="Подготовка к TOEFL" class="expanded-course-image">
                             </div>
                             <div class="expanded-content-wrapper">
-                                <span class="course-category">Exam Preparation</span>
-                                <h3 class="course-title">TOEFL Preparation</h3>
+                                <span class="course-category">Подготовка к экзаменам</span>
+                                <h3 class="course-title">Подготовка к TOEFL</h3>
                                 <p class="course-description">
-                                    Following ETS-style formats, this course builds your academic English whilst
-                                    developing essential exam strategies. You'll learn to interpret complex lectures,
-                                    organise written responses clearly and deliver confident spoken answers. Regular
-                                    mock tests and detailed teacher feedback help refine your performance step by step.
+                                    Следуя форматам ETS, этот курс развивает ваш академический английский и
+                                    ключевые экзаменационные стратегии. Вы научитесь понимать сложные лекции,
+                                    чётко выстраивать письменные ответы и уверенно отвечать устно. Регулярные
+                                    пробные тесты и подробная обратная связь от преподавателя помогают шаг
+                                    за шагом улучшать результат.
                                 </p>
                             </div>
                         </div>
 
                         <div class="expanded-grid">
                             <div class="expanded-section">
-                                <h3>What You'll Learn</h3>
+                                <h3>Чему вы научитесь</h3>
                                 <ul class="feature-list">
-                                    <li>Academic writing with logical structure</li>
-                                    <li>Effective Speaking task responses</li>
-                                    <li>Listening techniques for university lectures</li>
-                                    <li>Recognition of common TOEFL traps</li>
-                                    <li>Full mock tests with analysis</li>
+                                    <li>Академическое письмо с чёткой структурой</li>
+                                    <li>Эффективные ответы в заданиях Speaking</li>
+                                    <li>Техники аудирования университетских лекций</li>
+                                    <li>Распознавание типичных ловушек TOEFL</li>
+                                    <li>Полные пробные тесты с разбором</li>
                                 </ul>
                             </div>
                             <div class="expanded-section">
-                                <h3>Who Is This For?</h3>
+                                <h3>Кому подойдёт этот курс?</h3>
                                 <ul class="feature-list">
-                                    <li>University admissions</li>
-                                    <li>Academic programmes and scholarships</li>
-                                    <li>Learners aiming for competitive scores</li>
+                                    <li>Поступление в университет</li>
+                                    <li>Академические программы и стипендии</li>
+                                    <li>Стремящиеся к конкурентным баллам</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="course-details-grid">
                             <div class="detail-item">
-                                <div class="detail-label">Duration</div>
-                                <div class="detail-value">8–16 weeks</div>
+                                <div class="detail-label">Длительность</div>
+                                <div class="detail-value">8–16 недель</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Class Size</div>
+                                <div class="detail-label">Размер группы</div>
                                 <div class="detail-value">1:1</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Level</div>
-                                <div class="detail-value">Upper-Intermediate+</div>
+                                <div class="detail-label">Уровень</div>
+                                <div class="detail-value">От выше среднего</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Schedule</div>
-                                <div class="detail-value">Twice per week</div>
+                                <div class="detail-label">Расписание</div>
+                                <div class="detail-value">2 раза в неделю</div>
                             </div>
                         </div>
 
                         <div class="course-price-section">
                             <div class="course-price">
-                                <span class="price-amount">€350</span>
-                                <span class="price-period">per month</span>
+                                <span class="price-amount">22 900 ₽</span>
+                                <span class="price-period">в месяц</span>
                             </div>
                             <div class="course-buttons">
-                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                <button class="btn-close close-btn">Close</button>
+                                <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                <button class="btn-close close-btn">Закрыть</button>
                             </div>
                         </div>
                     </div>
@@ -641,28 +872,28 @@
                 <!-- Individual Lessons -->
                 <div class="course-card" data-course="individual">
                     <div class="course-compact-view">
-                        <img src="./assets/img/Individual-Lessons.jpg" alt="Individual Lessons" class="course-image">
+                        <img src="./assets/img/Individual-Lessons.jpg" alt="Индивидуальные занятия" class="course-image">
                         <div class="course-content">
-                            <span class="course-category">Personalised</span>
-                            <h3 class="course-title">Individual Lessons</h3>
+                            <span class="course-category">Индивидуально</span>
+                            <h3 class="course-title">Индивидуальные занятия</h3>
                             <p class="course-description">
-                                Fully personalised programme tailored to your unique goals.
+                                Полностью персонализированная программа под ваши уникальные цели.
                             </p>
 
                             <ul class="course-benefits">
-                                <li>100% focus on your specific needs and learning pace</li>
-                                <li>Flexible scheduling that fits your lifestyle</li>
-                                <li>See measurable progress in as little as 4 weeks</li>
+                                <li>100% внимания вашим конкретным потребностям и темпу обучения</li>
+                                <li>Гибкое расписание под ваш образ жизни</li>
+                                <li>Заметный прогресс уже через 4 недели</li>
                             </ul>
 
                             <div class="course-price-section">
                                 <div class="course-price">
-                                    <span class="price-amount">€380</span>
-                                    <span class="price-period">per month</span>
+                                    <span class="price-amount">19 900 ₽</span>
+                                    <span class="price-period">в месяц</span>
                                 </div>
                                 <div class="course-buttons">
-                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                    <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Что я получу</a>
                                 </div>
                             </div>
                         </div>
@@ -671,71 +902,70 @@
                     <div class="course-expanded-view" style="display:none;">
                         <div class="expanded-header">
                             <div class="expanded-image-container">
-                                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=500&fit=crop"
-                                    alt="Individual Lessons" class="expanded-course-image">
+                                <img src="./assets/img/Individual-Lessons.jpg"
+                                    alt="Индивидуальные занятия" class="expanded-course-image">
                             </div>
                             <div class="expanded-content-wrapper">
-                                <span class="course-category">Personalised</span>
-                                <h3 class="course-title">Individual Lessons</h3>
+                                <span class="course-category">Индивидуально</span>
+                                <h3 class="course-title">Индивидуальные занятия</h3>
                                 <p class="course-description">
-                                    We start with a thorough consultation and build a plan around your lifestyle and
-                                    aims. Lessons focus on real communication, targeted correction and practical
-                                    scenarios.
-                                    You'll receive structured homework, teacher feedback and optional recordings to
-                                    review
-                                    and strengthen your progress between sessions.
+                                    Мы начинаем с подробной консультации и составляем план с учётом вашего образа
+                                    жизни и целей. Занятия сосредоточены на реальном общении, точечной коррекции
+                                    ошибок и практических сценариях. Вы получите структурированные домашние
+                                    задания, обратную связь от преподавателя и, по желанию, записи занятий для
+                                    закрепления прогресса между уроками.
                                 </p>
                             </div>
                         </div>
 
                         <div class="expanded-grid">
                             <div class="expanded-section">
-                                <h3>Perfect For</h3>
+                                <h3>Идеально подходит</h3>
                                 <ul class="feature-list">
-                                    <li>Relocation or job interviews</li>
-                                    <li>Accelerated progress</li>
-                                    <li>Professional communication</li>
-                                    <li>Overcoming speaking barriers</li>
+                                    <li>Переезд или собеседования на работу</li>
+                                    <li>Ускоренный прогресс</li>
+                                    <li>Профессиональное общение</li>
+                                    <li>Преодоление барьера в разговорной речи</li>
                                 </ul>
                             </div>
                             <div class="expanded-section">
-                                <h3>Benefits</h3>
+                                <h3>Преимущества</h3>
                                 <ul class="feature-list">
-                                    <li>Completely customised plan</li>
-                                    <li>Flexible scheduling</li>
-                                    <li>Optional lesson recordings</li>
-                                    <li>Homework with feedback</li>
+                                    <li>Полностью индивидуальный план</li>
+                                    <li>Гибкое расписание</li>
+                                    <li>Записи занятий по желанию</li>
+                                    <li>Домашние задания с обратной связью</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="course-details-grid">
                             <div class="detail-item">
-                                <div class="detail-label">Duration</div>
-                                <div class="detail-value">Flexible</div>
+                                <div class="detail-label">Длительность</div>
+                                <div class="detail-value">Гибкое</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Class Size</div>
+                                <div class="detail-label">Размер группы</div>
                                 <div class="detail-value">1:1</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Level</div>
-                                <div class="detail-value">All levels</div>
+                                <div class="detail-label">Уровень</div>
+                                <div class="detail-value">Любой уровень</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Schedule</div>
-                                <div class="detail-value">Flexible</div>
+                                <div class="detail-label">Расписание</div>
+                                <div class="detail-value">Гибкое</div>
                             </div>
                         </div>
 
                         <div class="course-price-section">
                             <div class="course-price">
-                                <span class="price-amount">€380</span>
-                                <span class="price-period">per month</span>
+                                <span class="price-amount">19 900 ₽</span>
+                                <span class="price-period">в месяц</span>
                             </div>
                             <div class="course-buttons">
-                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                <button class="btn-close close-btn">Close</button>
+                                <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                <button class="btn-close close-btn">Закрыть</button>
                             </div>
                         </div>
                     </div>
@@ -744,28 +974,28 @@
                 <!-- Corporate Training -->
                 <div class="course-card" data-course="corporate">
                     <div class="course-compact-view">
-                        <img src="./assets/img/Corporate-Training.jpg" alt="Corporate Training" class="course-image">
+                        <img src="./assets/img/Corporate-Training.jpg" alt="Корпоративное обучение" class="course-image">
                         <div class="course-content">
-                            <span class="course-category">Corporate</span>
-                            <h3 class="course-title">Corporate Training</h3>
+                            <span class="course-category">Корпоративный</span>
+                            <h3 class="course-title">Корпоративное обучение</h3>
                             <p class="course-description">
-                                Practical English for teams based on Oxford methodologies.
+                                Практический английский для команд по методикам Oxford.
                             </p>
 
                             <ul class="course-benefits">
-                                <li>Transform team communication in international business</li>
-                                <li>Master negotiations, presentations and client relations</li>
-                                <li>Write professional emails that drive results</li>
+                                <li>Измените коммуникацию команды в международном бизнесе</li>
+                                <li>Освойте переговоры, презентации и работу с клиентами</li>
+                                <li>Пишите деловые письма, приносящие результат</li>
                             </ul>
 
                             <div class="course-price-section">
                                 <div class="course-price">
-                                    <span class="price-amount">€300</span>
-                                    <span class="price-period">per month</span>
+                                    <span class="price-amount">26 900 ₽</span>
+                                    <span class="price-period">в месяц</span>
                                 </div>
                                 <div class="course-buttons">
-                                    <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                    <a href="#" class="btn-secondary read-more-btn">Read More</a>
+                                    <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                    <a href="#" class="btn-secondary read-more-btn">Что я получу</a>
                                 </div>
                             </div>
                         </div>
@@ -774,74 +1004,72 @@
                     <div class="course-expanded-view" style="display:none;">
                         <div class="expanded-header">
                             <div class="expanded-image-container">
-                                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=500&fit=crop"
-                                    alt="Corporate Training" class="expanded-course-image">
+                                <img src="./assets/img/Corporate-Training.jpg"
+                                    alt="Корпоративное обучение" class="expanded-course-image">
                             </div>
                             <div class="expanded-content-wrapper">
-                                <span class="course-category">Corporate</span>
-                                <h3 class="course-title">Corporate Training</h3>
+                                <span class="course-category">Корпоративный</span>
+                                <h3 class="course-title">Корпоративное обучение</h3>
                                 <p class="course-description">
-                                    Our corporate programmes align with your company goals. We integrate real case
-                                    studies,
-                                    industry-specific language and communication challenges your teams face daily.
-                                    Regular
-                                    progress tracking and KPI reporting ensure measurable results that support
-                                    productivity,
-                                    sales and client relations.
+                                    Наши корпоративные программы выстроены под цели вашей компании. Мы используем
+                                    реальные кейсы, отраслевую лексику и коммуникационные задачи, с которыми
+                                    ваши команды сталкиваются ежедневно. Регулярное отслеживание прогресса и
+                                    отчётность по KPI обеспечивают измеримые результаты для продуктивности,
+                                    продаж и работы с клиентами.
                                 </p>
                             </div>
                         </div>
 
                         <div class="expanded-grid">
                             <div class="expanded-section">
-                                <h3>What Teams Gain</h3>
+                                <h3>Что получат команды</h3>
                                 <ul class="feature-list">
-                                    <li>Confident professional communication</li>
-                                    <li>Stronger presentations and negotiations</li>
-                                    <li>Clear and effective business emails</li>
-                                    <li>Role-play based on real company scenarios</li>
-                                    <li>Industry-specific vocabulary</li>
-                                    <li>Cross-cultural communication skills</li>
+                                    <li>Уверенная профессиональная коммуникация</li>
+                                    <li>Более сильные презентации и переговоры</li>
+                                    <li>Чёткие и эффективные деловые письма</li>
+                                    <li>Ролевые сценарии на основе реальных ситуаций компании</li>
+                                    <li>Отраслевая лексика</li>
+                                    <li>Навыки межкультурного общения</li>
                                 </ul>
                             </div>
                             <div class="expanded-section">
-                                <h3>Who Is This For?</h3>
+                                <h3>Кому подойдёт этот курс?</h3>
                                 <ul class="feature-list">
-                                    <li>Companies with international clients</li>
-                                    <li>Teams preparing for global projects</li>
-                                    <li>Sales and customer service departments</li>
-                                    <li>Management and leadership teams</li>
+                                    <li>Компании с международными клиентами</li>
+                                    <li>Команды, готовящиеся к глобальным проектам</li>
+                                    <li>Отделы продаж и обслуживания клиентов</li>
+                                    <li>Руководители и менеджмент</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="course-details-grid">
                             <div class="detail-item">
-                                <div class="detail-label">Duration</div>
-                                <div class="detail-value">Flexible</div>
+                                <div class="detail-label">Длительность</div>
+                                <div class="detail-value">Гибкое</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Class Size</div>
-                                <div class="detail-value">Custom</div>
+                                <div class="detail-label">Размер группы</div>
+                                <div class="detail-value">Индивидуально</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Level</div>
-                                <div class="detail-value">All levels</div>
+                                <div class="detail-label">Уровень</div>
+                                <div class="detail-value">Любой уровень</div>
                             </div>
                             <div class="detail-item">
-                                <div class="detail-label">Schedule</div>
-                                <div class="detail-value">Twice per week</div>
+                                <div class="detail-label">Расписание</div>
+                                <div class="detail-value">2 раза в неделю</div>
                             </div>
                         </div>
 
                         <div class="course-price-section">
                             <div class="course-price">
-                                <span class="price-amount">€300</span>
-                                <span class="price-period">per month</span>
+                                <span class="price-amount">26 900 ₽</span>
+                                <span class="price-period">в месяц</span>
                             </div>
                             <div class="course-buttons">
-                                <a href="#" class="btn-primary enroll-btn">Enrol Now</a>
-                                <button class="btn-close close-btn">Close</button>
+                                <a href="#" class="btn-primary enroll-btn">Начать говорить</a>
+                                <button class="btn-close close-btn">Закрыть</button>
                             </div>
                         </div>
                     </div>
@@ -858,31 +1086,28 @@
             <!-- First Column -->
             <div class="footer-col">
                 <h3 class="footer-logo">Ally Lingua</h3>
-                <p class="footer-tagline">English language mastery to achieve your goals</p>
-                <p class="footer-description">A modern language school with a personalised approach to each student. We
-                    help
-                    unlock your language potential and achieve your desired results.</p>
-                <div class="social-icons">
-                    <!-- <a href="#" class="social-icon">
-                            <img src="./assets/img/LinkedIn.svg"
-                                alt="LinkedIn" width="40" height="40">
-                        </a> -->
+                <p class="footer-tagline">Владение английским для достижения ваших целей</p>
+                <p class="footer-description">Современная языковая школа с индивидуальным подходом к каждому студенту.
+                    Мы помогаем раскрыть ваш языковой потенциал и достичь желаемых результатов.</p>
+                <!-- <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <img src="./assets/img/LinkedIn.svg" alt="LinkedIn" width="40" height="40">
+                    </a>
                     <a href="https://www.facebook.com/allylingua" class="social-icon">
                         <img src="./assets/img/Facebook.svg" alt="Facebook" width="40" height="40">
                     </a>
                     <a href="https://www.instagram.com/ally_lingua_ru/" class="social-icon">
-                        <img src="./assets/img/Instagram.svg" alt="Instagram" width="40" height="40">
+                        <img src="./assets/img/Instagram.svg" alt="Instagram"  width="40" height="40">
                     </a>
-                    <!-- <a href="#" class="social-icon">
-                            <img src="./assets/img/x.svg"
-                                alt="X (Twitter)" width="40" height="40">
-                        </a> -->
-                </div>
+                    <a href="#" class="social-icon">
+                        <img src="./assets/img/x.svg" alt="X (Twitter)" width="40" height="40">
+                    </a>
+                </div> -->
             </div>
 
             <!-- Second Column -->
             <div class="footer-col">
-                <h4 class="footer-heading">Contact</h4>
+                <h4 class="footer-heading">Контакты</h4>
                 <ul class="footer-contact-list">
                     <!-- <li class="footer-contact-item">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -898,7 +1123,7 @@
                                 d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
                                 fill="#D4AF37" />
                         </svg>
-                        <a href="linguaally@gmail.com">linguaally@gmail.com</a>
+                        <a href="ally.lingua@gmail.com">ally.lingua@gmail.com</a>
                     </li>
                     <!-- <li class="footer-contact-item">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -914,47 +1139,47 @@
                                 d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z"
                                 fill="#D4AF37" />
                         </svg>
-                        <span>Mon-Fri: 09:00 - 21:00</span>
+                        <span>Пн–Пт: 09:00 – 21:00</span>
                     </li>
                 </ul>
             </div>
 
             <!-- Third Column -->
             <div class="footer-col">
-                <h4 class="footer-heading">Quick Links</h4>
+                <h4 class="footer-heading">Быстрые ссылки</h4>
                 <ul class="footer-links">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./courses.html">Courses</a></li>
-                    <li><a href="#teachers">Teachers</a></li>
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./courses.html">Курсы</a></li>
+                    <li><a href="#teachers">Преподаватели</a></li>
                 </ul>
             </div>
 
             <!-- Fourth Column -->
             <div class="footer-col">
-                <h4 class="footer-heading">Our Courses</h4>
+                <h4 class="footer-heading">Наши курсы</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Business English</a></li>
-                    <li><a href="#">General English</a></li>
-                    <li><a href="#">English for Children</a></li>
-                    <li><a href="#">IELTS Preparation</a></li>
-                    <li><a href="#">TOEFL Preparation</a></li>
-                    <li><a href="#">Individual Lessons</a></li>
-                    <li><a href="#">Corporate Training</a></li>
+                    <li><a href="#">Бизнес-английский</a></li>
+                    <li><a href="#">Общий английский</a></li>
+                    <li><a href="#">Английский для детей</a></li>
+                    <li><a href="#">Подготовка к IELTS</a></li>
+                    <li><a href="#">Подготовка к TOEFL</a></li>
+                    <li><a href="#">Индивидуальные занятия</a></li>
+                    <li><a href="#">Корпоративное обучение</a></li>
                 </ul>
             </div>
         </div>
 
         <!-- Copyright Line -->
         <div class="footer-bottom">
-            <p>© 2025 Ally Lingua. All rights reserved.</p>
+            <p>© 2026 Ally Lingua. Все права защищены.</p>
             <div class="footer-legal">
-                <a href="./privacy_policy_en.html">Privacy Policy</a>
-                <a href="#">Terms of Use</a>
+                <a href="./privacy_policy_en.html">Политика конфиденциальности</a>
+                <a href="#">Условия использования</a>
             </div>
         </div>
     </footer>
 
-    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <button id="backToTop" class="back-to-top" aria-label="Наверх">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" />
@@ -965,7 +1190,7 @@
     <!-- --------------------------------------------------------------
         # Mobile menu 
         ---------------------------------------------------------------->
-    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+    <button class="mobile-menu-toggle" aria-label="Открыть меню">
         <span></span>
         <span></span>
         <span></span>
@@ -973,14 +1198,14 @@
 
     <nav class="mobile-menu-overlay">
         <ul>
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">Главная</a></li>
             <!-- <li><a href="#about">About</a></li> -->
-            <li><a href="./courses.html">Courses</a></li>
-            <li><a href="./index.html #teachers">Teachers</a></li>
-            <li><a href="./index.html #contact">Reviews</a></li>
+            <li><a href="./courses.html">Курсы</a></li>
+            <li><a href="./index.html #teachers">Преподаватели</a></li>
+            <li><a href="./index.html #contact">Отзывы</a></li>
             <div class="language-switcher">
-                <a href="./EN-index.html" class="language-btn" title="Switch to English">
-                    <span class="language-text">RU</span>
+                <a href="./courses-EN.html" class="language-btn" title="Switch to English">
+                    <span class="language-text">EN</span>
                 </a>
             </div>
         </ul>
@@ -1913,7 +2138,7 @@
             enrollBtns.forEach(btn => {
                 btn.addEventListener('click', function (e) {
                     e.preventDefault();
-                    alert('Thank you for your interest! Our team will contact you within 48 hours.');
+                    alert('Спасибо за ваш интерес! Наша команда свяжется с вами в течение 48 часов.');
                 });
             });
         });
