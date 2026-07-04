@@ -4,7 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online English Language School</title>
+    <title>Online English Courses for Adults & Kids | Ally Lingua</title>
+    <meta name="description" content="Learn English online with Ally Lingua: individual and group lessons, Business English, IELTS/TOEFL preparation. Flexible schedule, internationally certified teachers. Free first consultation.">
+    <link rel="canonical" href="https://allylingua.com/index-EN.html">
+    <link rel="alternate" hreflang="ru" href="https://allylingua.com/index.html">
+    <link rel="alternate" hreflang="en" href="https://allylingua.com/index-EN.html">
+    <link rel="alternate" hreflang="x-default" href="https://allylingua.com/index-EN.html">
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ally Lingua">
+    <meta property="og:title" content="Online English Courses for Adults & Kids | Ally Lingua">
+    <meta property="og:description" content="Learn English online: individual and group lessons, Business English, IELTS/TOEFL preparation. Free first consultation.">
+    <meta property="og:url" content="https://allylingua.com/index-EN.html">
+    <meta property="og:image" content="https://allylingua.com/assets/img/Hero.jpg">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:locale:alternate" content="ru_RU">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Online English Courses for Adults & Kids | Ally Lingua">
+    <meta name="twitter:description" content="Learn English online: individual and group lessons, Business English, IELTS/TOEFL preparation.">
+    <meta name="twitter:image" content="https://allylingua.com/assets/img/Hero.jpg">
 
     <!-- Подключение Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +42,82 @@
     <!-- Подключение GSAP для анимаций -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+    <!-- Structured data: organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Ally Lingua",
+      "url": "https://allylingua.com/index-EN.html",
+      "logo": "https://allylingua.com/assets/img/Logo.svg",
+      "description": "Online English school for adults and kids: individual and group lessons, Business English, IELTS and TOEFL preparation.",
+      "sameAs": [
+        "https://www.facebook.com/allylingua",
+        "https://www.instagram.com/ally_lingua_ru/"
+      ],
+      "areaServed": ["Europe", "Worldwide"],
+      "availableLanguage": ["en", "ru"]
+    }
+    </script>
+
+    <!-- Structured data: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How are lessons conducted at Ally Lingua?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lessons are delivered both at our education centre and online via Zoom or Skype. Each lesson incorporates all language skills: speaking, reading, listening, and writing. We use a communicative approach where the primary focus is on practising conversational English in real-life situations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much do the courses cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Course fees depend on the programme selected, intensity, and format of lessons. Individual lessons start from €45 per session, whilst group lessons start from €25. During your free initial consultation, we'll recommend the optimal course for your needs and budget."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long will it take me to learn English?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The duration of your learning journey depends on your goals and starting level. On average, progressing up one level (e.g., from A1 to A2) takes approximately 3-4 months with lessons twice weekly. During your first session, we'll conduct an assessment and provide a more accurate timeline for your learning objectives."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What qualifications do your teachers have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All our teachers have relevant qualifications and international certifications (TEFL, CELTA, DELTA). Most have over 5 years of experience and have trained abroad. We carefully select educators not only based on their qualifications but also on their personal qualities—their ability to connect with each student."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer corporate English courses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer specialised programmes for companies. Our teachers can conduct lessons either at your office or online. We develop corporate courses tailored to your industry's specifics and the particular needs of your employees. Contact us for a bespoke commercial proposal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I miss a lesson?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you notify us about missing a lesson at least 24 hours in advance, we'll reschedule it for another convenient time. If there's no prior notification, the lesson is considered delivered. For group lessons, we provide materials from the missed lesson and the opportunity to ask the teacher questions."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 
     <body>
@@ -1029,7 +1125,7 @@
                         </div>
                         <div class="accordion-content">
                             <p>Course fees depend on the programme selected, intensity, and format of lessons. Individual
-                                lessons start from £45 per session, whilst group lessons start from £25. During your free
+                                lessons start from €45 per session, whilst group lessons start from €25. During your free
                                 initial consultation, we'll recommend the optimal course for your needs and budget.</p>
                         </div>
                         <div class="divider"></div>
@@ -1449,6 +1545,10 @@
                     return true; // Hero секция тоже считаем тёмной из-за изображения
                 }
 
+                if (element.classList.contains('footer')) {
+                    return true; // Футер всегда тёмный (var(--nav-bg))
+                }
+
                 // Проверяем по цвету фона
                 const backgroundColor = window.getComputedStyle(element).backgroundColor;
                 if (backgroundColor !== 'transparent' && backgroundColor !== 'rgba(0, 0, 0, 0)') {
@@ -1486,13 +1586,25 @@
                 const rightNavX = rightNavRect.left + rightNavRect.width / 2;
                 const rightNavY = rightNavRect.top + rightNavRect.height / 2;
 
+                // ВАЖНО: leftNav/rightNav — fixed, z-index:100, лежат НАД страницей.
+                // Поэтому elementFromPoint попадёт в само меню, а не в секцию под ним.
+                // Временно отключаем pointer-events, чтобы "просветить" его насквозь.
+                const prevLeftPE = leftNav.style.pointerEvents;
+                const prevRightPE = rightNav.style.pointerEvents;
+                leftNav.style.pointerEvents = 'none';
+                rightNav.style.pointerEvents = 'none';
+
                 // Получаем элементы, которые находятся под координатами меню
                 const tempLeft = document.elementFromPoint(leftNavX, leftNavY);
                 const tempRight = document.elementFromPoint(rightNavX, rightNavY);
 
+                // Возвращаем pointer-events обратно
+                leftNav.style.pointerEvents = prevLeftPE;
+                rightNav.style.pointerEvents = prevRightPE;
+
                 // Находим ближайшие секции для левого и правого меню
-                const leftSection = tempLeft ? tempLeft.closest('section') : null;
-                const rightSection = tempRight ? tempRight.closest('section') : null;
+                const leftSection = tempLeft ? tempLeft.closest('section, footer') : null;
+                const rightSection = tempRight ? tempRight.closest('section, footer') : null;
 
                 // Проверяем, тёмные ли эти секции
                 const isLeftDark = leftSection ? isDarkSection(leftSection) : false;
@@ -1505,6 +1617,9 @@
             function updateMenuColors() {
                 // Получаем информацию о секциях под меню
                 const { isLeftDark, isRightDark } = checkMenuOverSection();
+
+                // Переключаем класс для лого (используется в CSS: .left-nav.is-dark ...)
+                leftNav.classList.toggle('is-dark', isLeftDark);
 
                 // Обновляем цвета левого меню (EXPLORE)
                 if (isLeftDark) {
@@ -1569,7 +1684,6 @@
             // Дополнительная проверка после полной загрузки страницы
             window.addEventListener('load', function () {
                 updateMenuColors();
-                // Повторная проверка через небольшой интервал для большей надежности
                 setTimeout(updateMenuColors, 1000);
             });
         });
@@ -2454,4 +2568,4 @@
             }
         })();
     </script>
-</html>
+</html>a
