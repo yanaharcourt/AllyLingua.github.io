@@ -1327,6 +1327,7 @@ h6 {
     justify-content: center;
     gap: clamp(30px, 10vw, 180px);
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .tab-header {
