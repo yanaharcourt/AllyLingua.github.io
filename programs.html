@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наши курсы – Ally Lingua</title>
+  <meta name="description"
+    content="Все программы обучения английскому в Ally Lingua — бизнес-английский, общий английский, английский для детей, подготовка к IELTS/TOEFL и корпоративное обучение.">
+  <link rel="alternate" hreflang="ru" href="https://allylingua.com/programs.html">
+  <link rel="alternate" hreflang="en" href="https://allylingua.com/programs-en.html">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/programs.css">
+</head>
+
+<body id="top">
+
+  <!-- Nav -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="./assets/img/logo-active.svg" alt="Ally Lingua">
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Главная</a></li>
+      <li class="has-dropdown">
+        <a href="#" class="nav-current">Программы <img src="./assets/img/arrow.svg" alt=""
+            class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="programs.html?tab=kids-group">Английский для детей (группа)</a></li>
+          <li><a href="programs.html?tab=kids-individual">Английский для детей (инд.)</a></li>
+          <li><a href="programs.html?tab=business">Бизнес-английский</a></li>
+          <li><a href="programs.html?tab=general">Общий английский</a></li>
+          <li><a href="programs.html?tab=ielts">Подготовка к IELTS</a></li>
+          <li><a href="programs.html?tab=toefl">Подготовка к TOEFL</a></li>
+          <li><a href="programs.html?tab=individual">Индивидуальные занятия</a></li>
+          <li><a href="programs.html?tab=corporate">Корпоративное обучение</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#about">О школе</a></li>
+      <li><a href="index.html#testimonials">Отзывы</a></li>
+      <li><a href="index.html#contact">Контакты</a></li>
+
+      <li class="has-dropdown">
+        <a href="#">Ещё <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="index.html#articles">Полезные статьи</a></li>
+          <li><a href="index.html#faq">Вопросы и ответы</a></li>
+          <li><a href="index.html#contact">Контакты</a></li>
+        </ul>
+      </li>
+      <li class="language-switcher">
+        <a href="./programs-en.html" class="language-btn" title="Switch to English">
+          <span class="language-text">EN</span>
+        </a>
+      </li>
+    </ul>
+
+    <a class="btn-apply" href="index.html#contact">Записаться</a>
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+      });
+    </script>
+
+    <button class="burger" id="burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mob-header">
+      <a href="index.html">
+        <img src="./assets/img/Logo.svg" alt="Ally Lingua">
+      </a>
+      <button class="mob-close" id="mobClose" aria-label="Close menu">&#x2715;</button>
+    </div>
+
+    <a href="index.html" class="mob-link">Главная</a>
+
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn nav-current">Программы <span
+          class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="programs.html?tab=kids-group">Английский для детей (группа)</a>
+        <a href="programs.html?tab=kids-individual">Английский для детей (инд.)</a>
+        <a href="programs.html?tab=business">Бизнес-английский</a>
+        <a href="programs.html?tab=general">Общий английский</a>
+        <a href="programs.html?tab=ielts">Подготовка к IELTS</a>
+        <a href="programs.html?tab=toefl">Подготовка к TOEFL</a>
+        <a href="programs.html?tab=individual">Индивидуальные занятия</a>
+        <a href="programs.html?tab=corporate">Корпоративное обучение</a>
+      </div>
+    </div>
+
+    <a href="index.html#programs" class="mob-link">Стоимость курсов</a>
+    <a href="index.html#contact" class="mob-link">Пробный урок</a>
+    <a href="index.html#about" class="mob-link">О школе</a>
+    <a href="index.html#testimonials" class="mob-link">Отзывы</a>
+    <a href="index.html#contact" class="mob-link">Контакты</a>
+
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">Ещё <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="index.html#articles">Полезные статьи</a>
+        <a href="index.html#faq">Вопросы и ответы</a>
+        <a href="index.html#contact">Контакты</a>
+      </div>
+    </div>
+
+    <div class="language-switcher">
+      <a href="./programs-en.html" class="language-btn" title="Switch to English">
+        <span class="language-text">EN</span>
+      </a>
+    </div>
+
+    <a href="index.html#contact" class="mob-apply">Записаться</a>
+  </div>
+
+
+  <!-- PAGE HERO -->
+  <div class="prog-page-hero">
+    <div class="prog-hero-inner">
+      <span class="section-tag">Наши курсы</span>
+      <h1>Найдите свой<br><span>идеальный курс</span></h1>
+      <p>Хотите продвинуться по карьерной лестнице, подготовиться к экзаменам или улучшить повседневный английский —
+        у нас есть подходящий курс для вас. Все программы ведут опытные преподаватели по проверенным методикам
+        Oxford.</p>
+    </div>
+  </div>
+
+
+  <!-- TAB NAVIGATION -->
+  <div class="prog-tabs-wrap" id="progTabsWrap">
+    <button class="prog-tab-btn active" data-tab="kids-group">
+      <span class="prog-tab-label">Детям (группа)</span>
+    </button>
+    <button class="prog-tab-btn" data-tab="kids-individual">
+      <span class="prog-tab-label">Детям (инд.)</span>
+    </button>
+    <button class="prog-tab-btn" data-tab="business">
+      <span class="prog-tab-label">Бизнес-английский</span>
+    </button>
+    <button class="prog-tab-btn" data-tab="general">
+      <span class="prog-tab-label">Общий английский</span>
+    </button>
+    <button class="prog-tab-btn" data-tab="ielts">
+      <span class="prog-tab-label">IELTS</span>
+    </button>
+    <button class="prog-tab-btn" data-tab="toefl">
+      <span class="prog-tab-label">TOEFL</span>
+    </button>
+    <button class="prog-tab-btn" data-tab="individual">
+      <span class="prog-tab-label">Индивидуально</span>
+    </button>
+    <button class="prog-tab-btn" data-tab="corporate">
+      <span class="prog-tab-label">Корпоративный</span>
+    </button>
+  </div>
+
+
+  <!-- TAB 1 — BUSINESS ENGLISH -->
+  <section class="prog-section" id="tab-business">
+
+    <div class="prog-overview">
+      <div class="prog-overview-text">
+        <h2>Бизнес-английский</h2>
+        <p>Развивайте уверенное деловое общение по методике Oxford Business Result. Программа поможет вам уверенно
+          работать в международной деловой среде: разбор реальных кейсов, ролевые ситуации и практические задания,
+          отражающие настоящее общение — встречи, конференц-звонки, переговоры и отношения с клиентами. Акцент на
+          ясности, дипломатичности и естественном профессиональном стиле.</p>
+        <div class="prog-overview-pills">
+          <span class="prog-pill">1:1 или 1:4</span>
+          <span class="prog-pill">Гибкое расписание</span>
+          <span class="prog-pill">2 раза в неделю</span>
+          <span class="prog-pill">От среднего уровня</span>
+        </div>
+        <div class="prog-overview-actions">
+          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price">19 900 ₽/мес</span>
+        </div>
+      </div>
+      <div class="prog-overview-img">
+        <img src="assets/img/business-english.jpg" alt="Бизнес-английский"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-img-ph prog-img-ph--business">💼</div>
+      </div>
+    </div>
+
+    <div class="prog-skills-section">
+      <h3 class="prog-section-label">Чему вы научитесь</h3>
+      <div class="prog-skills-grid">
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-business-comm.svg" alt="">
+          </div>
+          <h4>Профессиональная лексика</h4>
+          <p>Профессиональная лексика и терминология для различных деловых контекстов.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-conversation.svg" alt="">
+          </div>
+          <h4>Переговоры</h4>
+          <p>Тактики и стратегии ведения переговоров на английском языке.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-exercises.svg" alt="">
+          </div>
+          <h4>Деловая переписка</h4>
+          <p>Навыки делового письма: email, отчёты и коммерческие предложения.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-culture.svg" alt="">
+          </div>
+          <h4>Презентации</h4>
+          <p>Навыки презентаций и уверенность в публичных выступлениях.</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="prog-for-section">
+      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <div class="prog-for-list">
+        <div class="prog-for-item">✓ Специалисты, работающие с международными партнёрами</div>
+        <div class="prog-for-item">✓ Предприниматели и владельцы бизнеса</div>
+        <div class="prog-for-item">✓ Менеджеры, развивающие лидерскую коммуникацию</div>
+        <div class="prog-for-item">✓ Выпускники, выходящие на глобальный рынок труда</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TAB 2 — GENERAL ENGLISH -->
+  <section class="prog-section" id="tab-general">
+
+    <div class="prog-overview">
+      <div class="prog-overview-text">
+        <h2>Общий английский</h2>
+        <p>Комплексный курс по методике Oxford American Headway, который поможет вам чувствовать себя уверенно с
+          английским в повседневной жизни. Уроки сочетают разговорную практику, грамматику в контексте, аудирование,
+          стратегии чтения и письмо с сопровождением.</p>
+        <div class="prog-overview-pills">
+          <span class="prog-pill">1:1 или 1:4</span>
+          <span class="prog-pill">Любой уровень</span>
+          <span class="prog-pill">2 раза в неделю</span>
+          <span class="prog-pill">Гибкое расписание</span>
+        </div>
+        <div class="prog-overview-actions">
+          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price">19 900 ₽/мес</span>
+        </div>
+      </div>
+      <div class="prog-overview-img">
+        <img src="assets/img/general-english.jpg" alt="Общий английский"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-img-ph prog-img-ph--general">🗣️</div>
+      </div>
+    </div>
+
+    <div class="prog-skills-section">
+      <h3 class="prog-section-label">Чему вы научитесь</h3>
+      <div class="prog-skills-grid">
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-conversation.svg" alt="">
+          </div>
+          <h4>Разговорная беглость</h4>
+          <p>Развитие навыков естественной разговорной речи.</p>
+        </div>
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-grammar.svg" alt="">
+          </div>
+          <h4>Грамматика</h4>
+          <p>Основы грамматики и продвинутые структуры, объяснённые понятно и практично.</p>
+        </div>
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-phonics.svg" alt="">
+          </div>
+          <h4>Чтение</h4>
+          <p>Понимание прочитанного и развитие критического мышления.</p>
+        </div>
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-exercises.svg" alt="">
+          </div>
+          <h4>Письмо</h4>
+          <p>Навыки письма для разных контекстов и аудиторий.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prog-for-section">
+      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <div class="prog-for-list">
+        <div class="prog-for-item">✓ Взрослые, улучшающие общий уровень английского</div>
+        <div class="prog-for-item">✓ Готовящиеся к путешествию или переезду</div>
+        <div class="prog-for-item">✓ Ученики, которым нужна более прочная база языка</div>
+        <div class="prog-for-item">✓ Все, кто хочет уверенно говорить</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TAB — KIDS ENGLISH (GROUP) -->
+  <section class="prog-section visible" id="tab-kids-group">
+
+    <div class="prog-overview">
+      <div class="prog-overview-text">
+        <h2>Английский для детей (групповые занятия)</h2>
+        <p>Ally Lingua предлагает групповые занятия английским для детей по сериям Oxford Family and Friends и
+          Cambridge Power Up: интерактивные активности, увлекательные истории и языковые упражнения, которые
+          прививают любовь к изучению английского в компании сверстников.</p>
+        <div class="prog-overview-pills">
+          <span class="prog-pill">6–12 лет</span>
+          <span class="prog-pill">Группа 4–6 чел.</span>
+          <span class="prog-pill">2 раза в неделю</span>
+          <span class="prog-pill">От начального уровня</span>
+        </div>
+        <div class="prog-overview-actions">
+          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price">8 500 ₽/мес</span>
+        </div>
+      </div>
+      <div class="prog-overview-img">
+        <img src="assets/img/kids-english.jpg" alt="Английский для детей (групповые занятия)"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-img-ph prog-img-ph--kids">🧒</div>
+      </div>
+    </div>
+
+    <div class="prog-skills-section">
+      <h3 class="prog-section-label">Чему научатся дети</h3>
+      <div class="prog-skills-grid">
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/kids-eng-1.svg" alt="">
+          </div>
+          <h4>Игры и активности</h4>
+          <p>Увлекательные интерактивные игры и активности, которые делают обучение приятным.</p>
+        </div>
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/kids-eng-2.svg" alt="">
+          </div>
+          <h4>Песни и речёвки</h4>
+          <p>Песни, речёвки и ритмичные техники обучения.</p>
+        </div>
+        
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/kids-eng-3.svg" alt="">
+          </div>
+          <h4>Истории по возрасту</h4>
+          <p>Истории и материалы, соответствующие возрасту и захватывающие воображение.</p>
+        </div>
+        
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/kids-eng-4.svg" alt="">
+          </div>
+          <h4>Заботливые преподаватели</h4>
+          <p>Дружелюбные и поддерживающие преподаватели, преданные развитию каждого ребёнка.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prog-for-section">
+      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <div class="prog-for-list">
+        <div class="prog-for-item">✓ Дети 6–12 лет, начинающие или продолжающие изучать английский</div>
+        <div class="prog-for-item">✓ Дети, которым нравится учиться вместе со сверстниками</div>
+        <div class="prog-for-item">✓ Родители, желающие увлекательную и структурированную программу</div>
+        <div class="prog-for-item">✓ Семьи, которым важен более доступный формат обучения</div>
+      </div>
+    </div>
+
+    <div class="prog-parent-note">
+      <div>
+        <strong>Заметка для родителей</strong>
+        <p>После пробного урока мы предоставляем подробную обратную связь об уровне ребёнка, сильных сторонах,
+          зонах роста и персональном плане обучения.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TAB — KIDS ENGLISH (INDIVIDUAL) -->
+  <section class="prog-section" id="tab-kids-individual">
+
+    <div class="prog-overview">
+      <div class="prog-overview-text">
+        <h2>Английский для детей (индивидуальные занятия)</h2>
+        <p>Индивидуальные занятия, построенные вокруг вашего ребёнка, по методикам Cambridge Power Up и Oxford
+          Family and Friends. Преподаватель подстраивает темп, темы и активности под уровень и интересы ребёнка,
+          уделяя полное внимание произношению, уверенности и стабильному прогрессу без давления группового темпа.</p>
+        <div class="prog-overview-pills">
+          <span class="prog-pill">6–12 лет</span>
+          <span class="prog-pill">1:1</span>
+          <span class="prog-pill">2 раза в неделю</span>
+          <span class="prog-pill">От начального уровня</span>
+        </div>
+        <div class="prog-overview-actions">
+          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price">15 900 ₽/мес</span>
+        </div>
+      </div>
+      <div class="prog-overview-img">
+        <img src="assets/img/kids-english-individual.jpg" alt="Английский для детей (индивидуальные занятия)"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-img-ph prog-img-ph--kids">🧒</div>
+      </div>
+    </div>
+
+    <div class="prog-skills-section">
+      <h3 class="prog-section-label">Чему вы научитесь</h3>
+      <div class="prog-skills-grid">
+        
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/kids-eng-3.svg" alt="">
+          </div>
+          <h4>Лексика и фонетика</h4>
+          <p>В темпе, комфортном именно для вашего ребёнка.</p>
+        </div>
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-speaking.svg" alt="">
+          </div>
+          <h4>Говорение и произношение</h4>
+          <p>Индивидуальная практика без давления группы.</p>
+        </div>
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-industry-vocab.svg" alt="">
+          </div>
+          <h4>Чтение и аудирование</h4>
+          <p>Материалы подбираются с учётом интересов ребёнка.</p>
+        </div>
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-grammar.svg" alt="">
+          </div>
+          <h4>Грамматика и уверенность</h4>
+          <p>Закрепляется через персональную обратную связь на каждом уроке.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="prog-for-section">
+      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <div class="prog-for-list">
+        <div class="prog-for-item">✓ Дети, которым нужен индивидуальный темп</div>
+        <div class="prog-for-item">✓ Стеснительные ученики, предпочитающие занятия 1:1</div>
+        <div class="prog-for-item">✓ Дети, наверстывающие материал или готовящиеся к школьному английскому</div>
+        <div class="prog-for-item">✓ Семьи, желающие гибкое расписание</div>
+      </div>
+    </div>
+
+    <div class="prog-parent-note">
+      <div>
+        <strong>Заметка для родителей</strong>
+        <p>После пробного урока мы предоставляем подробную обратную связь об уровне ребёнка, сильных сторонах,
+          зонах роста и персональном плане обучения.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TAB — IELTS -->
+  <section class="prog-section" id="tab-ielts">
+
+    <div class="prog-overview">
+      <div class="prog-overview-text">
+        <h2>Подготовка к IELTS</h2>
+        <p>Полная программа с чёткими стратегиями по всем четырём навыкам IELTS. Мы начинаем с подробной оценки
+          уровня и составляем персональный план подготовки: шаблоны для письма, структурированные ответы Speaking с
+          индивидуальной обратной связью, пробные тесты и симуляции экзамена.</p>
+        <div class="prog-overview-pills">
+          <span class="prog-pill">1:1</span>
+          <span class="prog-pill">8–16 недель</span>
+          <span class="prog-pill">От среднего уровня</span>
+          <span class="prog-pill">2 раза в неделю</span>
+        </div>
+        <div class="prog-overview-actions">
+          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price">22 900 ₽/мес</span>
+        </div>
+      </div>
+      <div class="prog-overview-img">
+        <img src="assets/img/IELTS.png" alt="Подготовка к IELTS"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-img-ph prog-img-ph--exam">🎓</div>
+      </div>
+    </div>
+
+    <div class="prog-skills-section">
+      <h3 class="prog-section-label">Чему вы научитесь</h3>
+      <div class="prog-skills-grid">
+        
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-phonics.svg" alt="">
+          </div>
+          <h4>Reading</h4>
+          <p>Техники быстрого чтения и анализа текста.</p>
+        </div>
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-listening.svg" alt="">
+          </div>
+          <h4>Listening</h4>
+          <p>Стратегии аудирования для сложного аудио.</p>
+        </div>
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-exercises.svg" alt="">
+          </div>
+          <h4>Writing Task</h4>
+          <p>Надёжные структуры письменных заданий.</p>
+        </div>
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-speaking.svg" alt="">
+          </div>
+          <h4>Speaking</h4>
+          <p>Практика Speaking по частям.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="prog-for-section">
+      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <div class="prog-for-list">
+        <div class="prog-for-item">✓ Студенты, готовящиеся к учёбе за границей</div>
+        <div class="prog-for-item">✓ Подающие документы на визу и иммиграцию</div>
+        <div class="prog-for-item">✓ Стремящиеся к баллу IELTS 6.0–8.0+</div>
+        <div class="prog-for-item">✓ Поступающие в университет или на стипендиальные программы</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TAB — TOEFL -->
+  <section class="prog-section" id="tab-toefl">
+
+    <div class="prog-overview">
+      <div class="prog-overview-text">
+        <h2>Подготовка к TOEFL</h2>
+        <p>Полная программа с чёткими стратегиями по всем четырём навыкам TOEFL. Персональный план подготовки,
+          структурированные ответы Speaking и Writing по форматам ETS, пробные тесты и разбор ошибок.</p>
+        <div class="prog-overview-pills">
+          <span class="prog-pill">1:1</span>
+          <span class="prog-pill">8–16 недель</span>
+          <span class="prog-pill">От среднего уровня</span>
+          <span class="prog-pill">2 раза в неделю</span>
+        </div>
+        <div class="prog-overview-actions">
+          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price">22 900 ₽/мес</span>
+        </div>
+      </div>
+      <div class="prog-overview-img">
+        <img src="./assets/img/TOFEL.jpg" alt="Подготовка к TOEFL"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-img-ph prog-img-ph--exam">🎓</div>
+      </div>
+    </div>
+
+    <div class="prog-skills-section">
+      <h3 class="prog-section-label">Чему вы научитесь</h3>
+      <div class="prog-skills-grid">
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-exercises.svg" alt="">
+          </div>
+          <h4>Академическое письмо</h4>
+          <p>Чёткая структура ответов по форматам ETS.</p>
+        </div>
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-speaking.svg" alt="">
+          </div>
+          <h4>Speaking</h4>
+          <p>Эффективные ответы в заданиях Speaking.</p>
+        </div>
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-listening.svg" alt="">
+          </div>
+          <h4>Академическое аудирование</h4>
+          <p>Техники понимания университетских лекций.</p>
+        </div>
+
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon">
+            <img src="./assets/img/icon-vocabulary.svg" alt="">
+          </div>
+          <h4>Полные пробные тесты</h4>
+          <p>Регулярные пробные тесты с разбором ошибок.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="prog-for-section">
+      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <div class="prog-for-list">
+        <div class="prog-for-item">✓ Студенты, готовящиеся к учёбе за границей</div>
+        <div class="prog-for-item">✓ Подающие документы на визу и иммиграцию</div>
+        <div class="prog-for-item">✓ Стремящиеся к баллу TOEFL 90+</div>
+        <div class="prog-for-item">✓ Поступающие в университет или на стипендиальные программы</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TAB — INDIVIDUAL LESSONS (ADULTS) -->
+  <section class="prog-section" id="tab-individual">
+
+    <div class="prog-overview">
+      <div class="prog-overview-text">
+        <h2>Индивидуальные занятия</h2>
+        <p>Полностью персонализированная программа под ваши уникальные цели. Мы начинаем с подробной консультации и
+          составляем план с учётом вашего образа жизни и целей. Занятия сосредоточены на реальном общении, точечной
+          коррекции ошибок и практических сценариях, с домашними заданиями и обратной связью от преподавателя.</p>
+        <div class="prog-overview-pills">
+          <span class="prog-pill">1:1</span>
+          <span class="prog-pill">Гибкое расписание</span>
+          <span class="prog-pill">Любой уровень</span>
+          <span class="prog-pill">Прогресс уже через 4 недели</span>
+        </div>
+        <div class="prog-overview-actions">
+          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price">19 900 ₽/мес</span>
+        </div>
+      </div>
+      <div class="prog-overview-img">
+        <img src="assets/img/Individual-Lessons.jpg" alt="Индивидуальные занятия"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-img-ph prog-img-ph--general">🎯</div>
+      </div>
+    </div>
+
+    <div class="prog-skills-section">
+      <h3 class="prog-section-label">Преимущества</h3>
+      <div class="prog-skills-grid">
+        <div class="prog-skill-card">
+          <h4>Полностью индивидуальный план</h4>
+          <p>100% внимания вашим конкретным потребностям и темпу обучения.</p>
+        </div>
+        <div class="prog-skill-card">
+          <h4>Гибкое расписание</h4>
+          <p>Подстраивается под ваш образ жизни.</p>
+        </div>
+        <div class="prog-skill-card">
+          <h4>Записи занятий</h4>
+          <p>По желанию — для закрепления прогресса между уроками.</p>
+        </div>
+        <div class="prog-skill-card">
+          <h4>Домашние задания</h4>
+          <p>С персональной обратной связью от преподавателя.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prog-for-section">
+      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <div class="prog-for-list">
+        <div class="prog-for-item">✓ Переезд или собеседования на работу</div>
+        <div class="prog-for-item">✓ Ускоренный прогресс</div>
+        <div class="prog-for-item">✓ Профессиональное общение</div>
+        <div class="prog-for-item">✓ Преодоление барьера в разговорной речи</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TAB — CORPORATE TRAINING -->
+  <section class="prog-section" id="tab-corporate">
+
+    <div class="prog-overview">
+      <div class="prog-overview-text">
+        <h2>Корпоративное обучение</h2>
+        <p>Наши корпоративные программы выстроены под цели вашей компании. Мы используем реальные кейсы, отраслевую
+          лексику и коммуникационные задачи, с которыми ваши команды сталкиваются ежедневно. Регулярное
+          отслеживание прогресса и отчётность обеспечивают измеримые результаты для продуктивности, продаж и работы
+          с клиентами.</p>
+        <div class="prog-overview-pills">
+          <span class="prog-pill">Для команд и компаний</span>
+          <span class="prog-pill">Индивидуальная программа</span>
+          <span class="prog-pill">Онлайн или очно</span>
+          <span class="prog-pill">2 раза в неделю</span>
+        </div>
+        <div class="prog-overview-actions">
+          <a href="index.html#contact" class="prog-btn-primary">Запросить предложение →</a>
+          <span class="prog-pill prog-pill--price">от 26 900 ₽/мес</span>
+        </div>
+      </div>
+      <div class="prog-overview-img">
+        <img src="assets/img/Corporate-Training.jpg" alt="Корпоративное обучение"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-img-ph prog-img-ph--corporate">🏢</div>
+      </div>
+    </div>
+
+    <div class="prog-skills-section">
+      <h3 class="prog-section-label">Что получат команды</h3>
+      <div class="prog-skills-grid">
+        <div class="prog-skill-card">
+          <h4>Деловая коммуникация</h4>
+          <p>Уверенная профессиональная коммуникация в презентациях и переговорах.</p>
+        </div>
+        <div class="prog-skill-card">
+          <h4>Деловая переписка</h4>
+          <p>Чёткие и эффективные деловые письма и отчёты.</p>
+        </div>
+        <div class="prog-skill-card">
+          <h4>Работа с клиентами</h4>
+          <p>Ролевые сценарии на основе реальных ситуаций компании.</p>
+        </div>
+        <div class="prog-skill-card">
+          <h4>Отраслевая лексика</h4>
+          <p>Лексика и сценарии под вашу отрасль — технологии, финансы, здравоохранение, гостеприимство и другие.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prog-for-section">
+      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <div class="prog-for-list">
+        <div class="prog-for-item">✓ Компании с международными клиентами</div>
+        <div class="prog-for-item">✓ Команды, готовящиеся к глобальным проектам</div>
+        <div class="prog-for-item">✓ Отделы продаж и обслуживания клиентов</div>
+        <div class="prog-for-item">✓ Руководители и менеджмент</div>
+      </div>
+    </div>
+
+    <!-- Corporate process steps -->
+    <div class="prog-process-section">
+      <h3 class="prog-section-label">Как это работает</h3>
+      <div class="prog-process-grid">
+        <div class="prog-process-step">
+          <div class="prog-process-num">01</div>
+          <h4>Оценка потребностей</h4>
+          <p>Мы встречаемся с вашей командой, чтобы понять цели, текущий уровень английского и специфику отрасли.
+          </p>
+        </div>
+        <div class="prog-process-step">
+          <div class="prog-process-num">02</div>
+          <h4>Индивидуальная программа</h4>
+          <p>Разрабатываем программу обучения специально для ваших сотрудников — не общий курс «из коробки».</p>
+        </div>
+        <div class="prog-process-step">
+          <div class="prog-process-num">03</div>
+          <h4>Проведение занятий</h4>
+          <p>Живые занятия онлайн или в офисе, по удобному для команды расписанию.</p>
+        </div>
+        <div class="prog-process-step">
+          <div class="prog-process-num">04</div>
+          <h4>Отчётность о прогрессе</h4>
+          <p>Регулярные отчёты отслеживают индивидуальный и командный прогресс.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- TRIAL BANNER -->
+  <div class="prog-trial-banner-wrap">
+    <div class="prog-trial-banner">
+      <h2>Не уверены, какая программа вам подходит?</h2>
+      <p>Запишитесь на бесплатную консультацию. Мы оценим ваш уровень и подберём программу под ваши цели — без
+        обязательств.</p>
+      <a href="index.html#contact">Записаться на бесплатную консультацию →</a>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="./assets/img/logo-active.svg" alt="Ally Lingua">
+        </a>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="programs.html" class="nav-current">Программы</a></li>
+        <li><a href="index.html#programs">Стоимость</a></li>
+        <li><a href="index.html#contact">Пробный урок</a></li>
+        <li><a href="index.html#about">О школе</a></li>
+        <li><a href="index.html#testimonials">Отзывы</a></li>
+        <li><a href="index.html#articles">Статьи</a></li>
+        <li><a href="index.html#contact">Контакты</a></li>
+      </ul>
+
+      <!-- <div class="footer-socials">
+        <a href="https://www.facebook.com/allylingua" class="social-btn" title="Facebook"><img
+            src="./assets/img/Facebook.svg" alt="Facebook" class="social-icon"></a>
+        <a href="https://www.instagram.com/ally_lingua_ru/" class="social-btn" title="Instagram"><img
+            src="./assets/img/Instagram.svg" alt="Instagram" class="social-icon"></a>
+      </div> -->
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Ally Lingua. Все права защищены.</p>
+      <div class="footer-links">
+        <a href="./privacy_policy_en.html">Политика конфиденциальности</a>
+        <a href="#">Условия использования</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Made by <a href="http://yanaharcourt.dev" class="designer-link">Yana Harcourt</a></p>
+    </div>
+  </footer>
+
+
+  <script>
+    /* TAB SWITCHING */
+    const progTabBtns = document.querySelectorAll('.prog-tab-btn');
+    const progSections = document.querySelectorAll('.prog-section');
+
+    function switchTab(tabId) {
+      progTabBtns.forEach(b => b.classList.remove('active'));
+      progSections.forEach(s => s.classList.remove('visible'));
+      const btn = document.querySelector(`.prog-tab-btn[data-tab="${tabId}"]`);
+      const section = document.getElementById('tab-' + tabId);
+      if (btn) btn.classList.add('active');
+      if (section) section.classList.add('visible');
+    }
+
+    progTabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        switchTab(btn.dataset.tab);
+        document.getElementById('progTabsWrap').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        history.replaceState(null, '', '?tab=' + btn.dataset.tab);
+        observeCards();
+      });
+    });
+
+    const urlTab = new URLSearchParams(window.location.search).get('tab');
+    if (urlTab) switchTab(urlTab);
+
+    /* SCROLL ANIMATIONS */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px 60px 0px' });
+
+    function observeCards() {
+      document.querySelectorAll('.prog-skill-card, .prog-process-step, .prog-for-item').forEach((el) => {
+        if (el.style.opacity !== '1') {
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(6px)';
+          el.style.transition = `opacity 0.12s ease, transform 0.12s ease`;
+          io.observe(el);
+        }
+      });
+    }
+    observeCards();
+
+    /* MOBILE MENU */
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobClose = document.getElementById('mobClose');
+
+    function openMenu() { burger.classList.add('open'); mobileMenu.classList.add('open'); document.body.classList.add('menu-open'); }
+    function closeMenu() { burger.classList.remove('open'); mobileMenu.classList.remove('open'); document.body.classList.remove('menu-open'); }
+
+    burger.addEventListener('click', () => burger.classList.contains('open') ? closeMenu() : openMenu());
+    mobClose.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    document.querySelectorAll('.mob-dropdown-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dropdown = btn.nextElementSibling;
+        const isOpen = dropdown.classList.contains('open');
+        document.querySelectorAll('.mob-dropdown').forEach(d => d.classList.remove('open'));
+        document.querySelectorAll('.mob-arrow').forEach(a => a.classList.remove('open'));
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          btn.querySelector('.mob-arrow').classList.add('open');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
