@@ -1147,6 +1147,8 @@ section {
     border-radius: 20px;
     padding: 32px 28px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .quote-icon {
@@ -1164,7 +1166,43 @@ section {
     margin-bottom: 24px;
 }
 
+.testi-card p.testi-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+}
+
+.testi-card p.testi-text.expanded {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
+
+.testi-expand-btn {
+    display: inline-block;
+    align-self: flex-start;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: -8px 0 20px;
+    font-size: var(--text-body);
+    font-weight: 600;
+    color: var(--dark-gold);
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.testi-expand-btn:hover {
+    text-decoration: underline;
+}
+
+.testi-expand-btn.hidden {
+    display: none;
+}
+
 .testi-author {
+    margin-top: auto;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -2540,6 +2578,175 @@ section {
 
 .cta-email a:hover {
     color: var(--dark-gold);
+}
+
+/* Trial booking form */
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-container .text-content .section-tag {
+    margin-bottom: 14px;
+}
+
+.form-container .text-content h2 {
+    text-align: left;
+}
+
+.form-container .text-content>p {
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.form-container .cta-btns {
+    justify-content: flex-start;
+}
+
+.form-container .cta-email {
+    justify-content: flex-start;
+}
+
+.form-wrapper {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.form-wrapper .form-group {
+    margin-bottom: 20px;
+}
+
+.form-wrapper .form-group:last-of-type {
+    margin-bottom: 24px;
+}
+
+.form-wrapper label {
+    display: block;
+    font-size: var(--text-small);
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="tel"],
+.form-wrapper input[type="email"],
+.form-wrapper select {
+    width: 100%;
+    padding: 13px 16px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    color: var(--main-bg);
+    font-family: inherit;
+    font-size: var(--text-body);
+    transition: border-color .2s, background .2s;
+}
+
+.form-wrapper input[type="text"]:focus,
+.form-wrapper input[type="tel"]:focus,
+.form-wrapper input[type="email"]:focus,
+.form-wrapper select:focus {
+    outline: none;
+    border-color: var(--dark-gold);
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.form-wrapper select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C4AA6C' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+.form-wrapper select option {
+    background: var(--text-dark);
+    color: var(--main-bg);
+}
+
+.form-wrapper .form-group label:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: var(--text-small);
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.form-wrapper input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    accent-color: var(--dark-gold);
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.form-wrapper .form-group a {
+    color: var(--dark-gold);
+    text-decoration: underline;
+}
+
+.form-wrapper .form-group a:hover {
+    color: var(--dark-gold-hover);
+}
+
+.booking-button {
+    width: 100%;
+    background: var(--dark-gold);
+    color: var(--text-dark);
+    border: none;
+    padding: 16px 32px;
+    border-radius: 6px;
+    font-size: var(--text-body);
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.booking-button:hover {
+    background: var(--dark-gold-hover);
+    color: var(--main-bg);
+}
+
+@media (max-width: 1024px) {
+    .form-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        text-align: center;
+    }
+
+    .form-container .text-content h2,
+    .form-container .text-content>p {
+        text-align: center;
+    }
+
+    .form-container .cta-btns,
+    .form-container .cta-email {
+        justify-content: center;
+    }
+
+    .form-wrapper {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-wrapper {
+        padding: 28px 20px;
+    }
 }
 
 /*--------------------------------------------------------------
