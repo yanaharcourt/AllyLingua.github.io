@@ -1980,6 +1980,10 @@ section {
     color: var(--main-bg);
 }
 
+.language-btn:hover .language-text {
+    color: var(--main-bg);
+}
+
 .mobile-menu .language-switcher {
     padding: 12px 24px;
 }
