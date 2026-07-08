@@ -152,7 +152,17 @@
 .prog-pill--price {
     background: transparent;
     border: none;
+    padding: 6px 0;
+    font-size: 1.375rem;
     font-weight: 700;
+    color: var(--dark-gold);
+    letter-spacing: -0.2px;
+}
+
+@media (max-width: 640px) {
+    .prog-pill--price {
+        font-size: 1.15rem;
+    }
 }
 
 .prog-overview-actions {
