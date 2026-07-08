@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог – Ally Lingua</title>
+  <meta name="description"
+    content="Полезные статьи об изучении английского языка от Ally Lingua: запоминание слов, подготовка к IELTS, английский для путешествий и другие темы.">
+  <link rel="canonical" href="https://allylingua.com/blog.html">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/programs.css">
+</head>
+
+<body id="top">
+
+  <!-- Nav -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="./assets/img/logo-l.svg" alt="Ally Lingua" style="height:56px;width:auto;display:block;">
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="navHome">Главная</a></li>
+      <li class="has-dropdown">
+        <a href="programs.html" data-i18n="navPrograms">Программы <img src="./assets/img/arrow.svg" alt=""
+            class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="programs.html?tab=kids-group" data-i18n="navKidsGroup">Английский для детей (группа)</a></li>
+          <li><a href="programs.html?tab=kids-individual" data-i18n="navKidsIndividual">Английский для детей (инд.)</a></li>
+          <li><a href="programs.html?tab=business" data-i18n="navBusiness">Бизнес-английский</a></li>
+          <li><a href="programs.html?tab=general" data-i18n="navGeneral">Общий английский</a></li>
+          <li><a href="programs.html?tab=ielts" data-i18n="navIelts">Подготовка к IELTS</a></li>
+          <li><a href="programs.html?tab=toefl" data-i18n="navToefl">Подготовка к TOEFL</a></li>
+          <li><a href="programs.html?tab=individual" data-i18n="navIndividual">Индивидуальные занятия</a></li>
+          <li><a href="programs.html?tab=corporate" data-i18n="navCorporate">Корпоративное обучение</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#about" data-i18n="navAbout">О школе</a></li>
+      <li><a href="index.html#testimonials" data-i18n="navTestimonials">Отзывы</a></li>
+      <li><a href="index.html#contact" data-i18n="navContact">Контакты</a></li>
+
+      <li class="has-dropdown">
+        <a href="#" class="nav-current" data-i18n="navMore">Ещё <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="blog.html" data-i18n="navArticles">Полезные статьи</a></li>
+          <li><a href="index.html#faq" data-i18n="navFaq">Вопросы и ответы</a></li>
+          <li><a href="index.html#contact" data-i18n="navContact">Контакты</a></li>
+        </ul>
+      </li>
+      <li class="language-switcher">
+        <button type="button" class="language-btn" onclick="toggleLang()" title="Switch to English">
+          <span class="language-text">EN</span>
+        </button>
+      </li>
+    </ul>
+
+    <a class="btn-apply" href="index.html#contact" data-i18n="navApply">Записаться</a>
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+      });
+    </script>
+
+    <button class="burger" id="burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mob-header">
+      <a href="index.html">
+        <img src="./assets/img/logo-l.svg" alt="Ally Lingua">
+      </a>
+      <button class="mob-close" id="mobClose" aria-label="Close menu">&#x2715;</button>
+    </div>
+
+    <a href="index.html" class="mob-link" data-i18n="navHome">Главная</a>
+
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn"><span data-i18n="navPrograms">Программы</span> <span
+          class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="programs.html?tab=kids-group" data-i18n="navKidsGroup">Английский для детей (группа)</a>
+        <a href="programs.html?tab=kids-individual" data-i18n="navKidsIndividual">Английский для детей (инд.)</a>
+        <a href="programs.html?tab=business" data-i18n="navBusiness">Бизнес-английский</a>
+        <a href="programs.html?tab=general" data-i18n="navGeneral">Общий английский</a>
+        <a href="programs.html?tab=ielts" data-i18n="navIelts">Подготовка к IELTS</a>
+        <a href="programs.html?tab=toefl" data-i18n="navToefl">Подготовка к TOEFL</a>
+        <a href="programs.html?tab=individual" data-i18n="navIndividual">Индивидуальные занятия</a>
+        <a href="programs.html?tab=corporate" data-i18n="navCorporate">Корпоративное обучение</a>
+      </div>
+    </div>
+
+    <a href="index.html#programs" class="mob-link" data-i18n="navPrices">Стоимость курсов</a>
+    <a href="index.html#contact" class="mob-link" data-i18n="navTrial">Пробный урок</a>
+    <a href="index.html#about" class="mob-link" data-i18n="navAbout">О школе</a>
+    <a href="index.html#testimonials" class="mob-link" data-i18n="navTestimonials">Отзывы</a>
+    <a href="index.html#contact" class="mob-link" data-i18n="navContact">Контакты</a>
+
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn nav-current"><span data-i18n="navMore">Ещё</span> <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="blog.html" data-i18n="navArticles">Полезные статьи</a>
+        <a href="index.html#faq" data-i18n="navFaq">Вопросы и ответы</a>
+        <a href="index.html#contact" data-i18n="navContact">Контакты</a>
+      </div>
+    </div>
+
+    <div class="language-switcher">
+      <button type="button" class="language-btn" onclick="toggleLang()" title="Switch to English">
+        <span class="language-text">EN</span>
+      </button>
+    </div>
+
+    <a href="index.html#contact" class="mob-apply" data-i18n="navApply">Записаться</a>
+  </div>
+
+
+  <!-- PAGE HERO -->
+  <div class="prog-page-hero">
+    <div class="prog-hero-inner">
+      <span class="section-tag" data-i18n="blogPageTag">Блог</span>
+      <h1 data-i18n="blogPageH1">Полезные статьи<br><span>об английском языке</span></h1>
+      <p data-i18n="blogPageP">Советы и методики от преподавателей Ally Lingua — как учить слова, как готовиться к экзаменам и как чувствовать себя уверенно в путешествиях.</p>
+    </div>
+  </div>
+
+
+  <!-- ARTICLES -->
+  <section class="prog-section visible" style="padding-top:56px;">
+    <div class="blog-page-grid">
+
+      <div class="blog-card" id="post-1">
+        <img src="assets/img/article1.jpg" data-i18n-alt="blog1Alt" alt="Эффективные способы запоминания новых слов"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="blog-card-ph" style="background:linear-gradient(135deg,#1a3a5c,#2c5f8a);display:none">📰</div>
+        <div class="blog-card-body">
+          <span class="blog-date" data-i18n="blog1Date">12 марта 2023</span>
+          <h4 data-i18n="blog1Title">5 эффективных способов запоминания новых слов</h4>
+          <p class="blog-excerpt" data-i18n="blog1Text">Расширение словарного запаса — один из ключевых аспектов изучения языка. Узнайте проверенные приёмы, которые помогут запоминать новые слова быстрее и эффективнее.</p>
+          <div class="blog-full" data-i18n="blog1Full">
+            <p>Расширение словарного запаса — это марафон, а не спринт. Хорошая новость: результат зависит не столько от того, сколько слов вы пытаетесь запомнить, сколько от того, как вы это делаете. Вот пять методов, которые реально работают — мы используем их в Ally Lingua на всех уровнях, от Elementary до Advanced.</p>
+            <h5>1. Интервальное повторение (spaced repetition)</h5>
+            <p>Мозг забывает новую информацию по предсказуемой кривой — большая часть слов теряется в первые 24 часа. Карточки (Anki, Quizlet или обычная бумага) с постепенно увеличивающимися интервалами повторения «чинят» эту кривую забывания. Просмотрите слово через день, потом через три дня, потом через неделю — и оно перейдёт в долговременную память.</p>
+            <h5>2. Учите слова в контексте, а не списками</h5>
+            <p>«Apple — яблоко» запоминается хуже, чем «I ate a green apple for breakfast». Контекст даёт мозгу зацепки: грамматическую форму, типичные словосочетания, эмоциональную окраску. Старайтесь встречать новое слово минимум в двух-трёх разных предложениях, прежде чем считать его выученным.</p>
+            <h5>3. Связывайте новое слово со знакомым образом</h5>
+            <p>Метод ассоциаций — не какая-то экзотика, а рабочий инструмент. Придумайте яркую, даже нелепую картинку, связывающую звучание слова с его значением. Чем абсурднее образ — тем лучше он запоминается.</p>
+            <h5>4. Используйте слово активно в течение 48 часов</h5>
+            <p>Пассивное узнавание («да, я видел это слово») и активное владение («я могу использовать это слово в разговоре») — разные навыки. Постарайтесь построить хотя бы одно собственное предложение с новым словом в первые два дня после знакомства с ним — устно или письменно.</p>
+            <h5>5. Группируйте слова по темам, а не по алфавиту</h5>
+            <p>Словарь, отсортированный по темам («переговоры», «путешествия», «ресторан»), активирует смысловые связи между словами и облегчает их извлечение из памяти в нужный момент — ведь в реальной жизни мы вспоминаем слова «пачками» под конкретную ситуацию, а не по алфавиту.</p>
+            <p><strong>Начните с одного метода, а не со всех пяти сразу</strong> — устойчивая привычка через две недели даст больше результата, чем идеальная система, которую вы бросите на третий день.</p>
+          </div>
+          <button type="button" class="read-art" onclick="toggleArticle(this)">
+            <span data-i18n="blogRead">Читать статью</span> <span class="read-art-arrow">→</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="blog-card" id="post-2">
+        <img src="assets/img/article2.jpg" data-i18n-alt="blog2Alt" alt="Как подготовиться к экзамену IELTS"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="blog-card-ph" style="background:linear-gradient(135deg,#c9a227,#8b6914);display:none">✏️</div>
+        <div class="blog-card-body">
+          <span class="blog-date" data-i18n="blog2Date">25 февраля 2023</span>
+          <h4 data-i18n="blog2Title">Как подготовиться к экзамену IELTS</h4>
+          <p class="blog-excerpt" data-i18n="blog2Text">Международный экзамен IELTS требует тщательной подготовки. Мы расскажем о структуре экзамена и стратегиях для получения высокого балла.</p>
+          <div class="blog-full" data-i18n="blog2Full">
+            <p>IELTS проверяет все четыре навыка — Listening, Reading, Writing и Speaking — и у каждого есть своя логика подготовки. Вот план, с которого стоит начать.</p>
+            <h5>Оцените свой текущий уровень</h5>
+            <p>Прежде чем составлять план, пройдите один полный пробный тест в реальных условиях по времени. Это покажет не общий «уровень английского», а именно ваш стартовый балл IELTS — а также, какая часть экзамена проседает больше остальных.</p>
+            <h5>Listening: тренируйте не только понимание, но и скорость</h5>
+            <p>На Listening у вас нет времени переслушать — запись звучит один раз. Развивайте навык «предугадывания»: читайте вопросы заранее и отмечайте ключевые слова, чтобы во время прослушивания сразу узнавать нужный момент.</p>
+            <h5>Reading: управляйте временем строже, чем содержанием</h5>
+            <p>На Reading часто не хватает времени, а не знаний. Тренируйтесь на скорочтение (skimming) для общего понимания текста и на просмотровое чтение (scanning) для поиска конкретных фактов и цифр — вместо того чтобы читать каждый абзац подряд.</p>
+            <h5>Writing: используйте проверенную структуру</h5>
+            <p>И Task 1 (отчёт по графику или диаграмме), и Task 2 (эссе) оцениваются по чёткой структуре. Выучите 2–3 надёжных шаблона вступления и заключения, чтобы не тратить время экзамена на придумывание формы — вся энергия должна уходить на содержание и грамматику.</p>
+            <h5>Speaking: говорите вслух каждый день, а не думайте по-английски «в голове»</h5>
+            <p>Часть 2 (монолог на 2 минуты) — это то, где чаще всего теряются баллы из-за нервов, а не из-за уровня языка. Практикуйте её с таймером до тех пор, пока говорить 2 минуты без пауз не станет привычным, а не стрессовым.</p>
+            <p><strong>Сделайте хотя бы один полный пробный тест</strong> в условиях, максимально близких к реальным — с таймером, без словаря, в тишине. Это лучший способ проверить не только знания, но и выносливость: реальный экзамен идёт почти 3 часа подряд.</p>
+          </div>
+          <button type="button" class="read-art" onclick="toggleArticle(this)">
+            <span data-i18n="blogRead">Читать статью</span> <span class="read-art-arrow">→</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="blog-card" id="post-3">
+        <img src="assets/img/article3.jpg" data-i18n-alt="blog3Alt" alt="Английский для путешествий: ключевые фразы и ситуации"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="blog-card-ph" style="display:none;background:#f0ebe0"></div>
+        <div class="blog-card-body">
+          <span class="blog-date" data-i18n="blog3Date">8 февраля 2023</span>
+          <h4 data-i18n="blog3Title">Английский для путешествий: ключевые фразы и ситуации</h4>
+          <p class="blog-excerpt" data-i18n="blog3Text">Планируете поездку за границу? Мы подготовили список необходимых фраз и выражений, которые помогут вам чувствовать себя уверенно в любой ситуации во время путешествия.</p>
+          <div class="blog-full" data-i18n="blog3Full">
+            <p>В путешествии английский нужен не для того, чтобы звучать грамотно, а чтобы быстро решить конкретную задачу — заселиться в отель, сделать заказ, объяснить, что случилось. Вот фразы и ситуации, которые стоит отработать заранее.</p>
+            <h5>В аэропорту и на границе</h5>
+            <ul>
+              <li>«I'm here on holiday / on business.» — по какой цели вы приехали.</li>
+              <li>«Could you tell me where the connecting flight to… is?» — вопрос про стыковочный рейс.</li>
+              <li>«I think my luggage didn't arrive.» — если багаж потерялся, это первая фраза на стойке Lost &amp; Baggage.</li>
+            </ul>
+            <h5>Заселение в отель</h5>
+            <ul>
+              <li>«I have a reservation under the name…» — заселение по брони.</li>
+              <li>«Is breakfast included?» — уточнить, входит ли завтрак.</li>
+              <li>«Could I get a late check-out?» — попросить поздний выезд, если рейс вечером.</li>
+            </ul>
+            <h5>В ресторане и кафе</h5>
+            <ul>
+              <li>«Could we have a table for two, please?» — столик на двоих.</li>
+              <li>«What would you recommend?» — если не уверены в меню, спросите у официанта.</li>
+              <li>«Could we get the bill, please?» — счёт, пожалуйста.</li>
+            </ul>
+            <h5>Если что-то пошло не так</h5>
+            <p>Именно эти фразы чаще всего забывают выучить — и именно они нужнее всего в стрессовой ситуации:</p>
+            <ul>
+              <li>«I've lost my passport / wallet.» — сообщить о пропаже.</li>
+              <li>«Could you call an ambulance / the police, please?» — вызвать скорую или полицию.</li>
+              <li>«Is there a pharmacy nearby?» — найти ближайшую аптеку.</li>
+            </ul>
+            <h5>Мелкие разговоры (small talk)</h5>
+            <p>Небольшой разговор с таксистом, соседом по самолёту или продавцом — это не экзамен, а способ расслабиться и почувствовать язык живым. Пары фраз вроде «How long does it take to get to…?» или «Do you know a good place to eat around here?» достаточно, чтобы завязать лёгкий контакт и заодно получить полезный совет от местного жителя.</p>
+            <p><strong>Совет:</strong> выпишите 15–20 фраз именно под ваш маршрут — для аэропорта, отеля и еды — и проговорите их вслух несколько раз перед поездкой. В момент, когда нужно быстро отреагировать, вспоминается не то, что вы читали, а то, что вы произносили.</p>
+          </div>
+          <button type="button" class="read-art" onclick="toggleArticle(this)">
+            <span data-i18n="blogRead">Читать статью</span> <span class="read-art-arrow">→</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- TRIAL BANNER -->
+  <div class="prog-trial-banner-wrap">
+    <div class="prog-trial-banner">
+      <h2 data-i18n="blogBannerH2">Готовы применить это на практике?</h2>
+      <p data-i18n="blogBannerP">Запишитесь на бесплатную консультацию — оценим ваш уровень и подберём программу под ваши цели.</p>
+      <a href="index.html#contact" data-i18n="trialBannerLink">Записаться на бесплатную консультацию →</a>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="./assets/img/logo-l-gold.svg" alt="Ally Lingua" style="height:56px;width:auto;display:block;">
+        </a>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="programs.html" data-i18n="navPrograms">Программы</a></li>
+        <li><a href="index.html#programs" data-i18n="footerPricing">Стоимость</a></li>
+        <li><a href="index.html#contact" data-i18n="navTrial">Пробный урок</a></li>
+        <li><a href="index.html#about" data-i18n="navAbout">О школе</a></li>
+        <li><a href="index.html#testimonials" data-i18n="navTestimonials">Отзывы</a></li>
+        <li><a href="blog.html" class="nav-current" data-i18n="footerArticles">Статьи</a></li>
+        <li><a href="index.html#contact" data-i18n="navContact">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p data-i18n="footerCopyright">© 2026 Ally Lingua. Все права защищены.</p>
+
+      <div class="footer-links">
+        <a href="./legal/privacy_policy_ru.html" data-i18n="footerPrivacy" data-i18n-href="footerPrivacyHref">Политика конфиденциальности</a>
+        <a href="./legal/terms_of_use_ru.html" data-i18n="footerTerms" data-i18n-href="footerTermsHref">Условия использования</a>
+        <a href="./legal/public_offer_ru.html" data-i18n="footerOffer" data-i18n-href="footerOfferHref">Договор оферты</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Made by <a href="http://yanaharcourt.dev" class="designer-link">Yana Harcourt</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/i18n.js"></script>
+
+  <!-- Translations -->
+  <script>
+    window.I18N = {
+      navHome: { ru: "Главная", en: "Home" },
+      navPrograms: { ru: "Программы <img src=\"./assets/img/arrow.svg\" alt=\"\" class=\"nav-arrow\">", en: "Programmes <img src=\"./assets/img/arrow.svg\" alt=\"\" class=\"nav-arrow\">" },
+      navKidsGroup: { ru: "Английский для детей (группа)", en: "English for Children (Group)" },
+      navKidsIndividual: { ru: "Английский для детей (инд.)", en: "English for Children (Individual)" },
+      navBusiness: { ru: "Бизнес-английский", en: "Business English" },
+      navGeneral: { ru: "Общий английский", en: "General English" },
+      navIelts: { ru: "Подготовка к IELTS", en: "IELTS Preparation" },
+      navToefl: { ru: "Подготовка к TOEFL", en: "TOEFL Preparation" },
+      navIndividual: { ru: "Индивидуальные занятия", en: "Private Lessons" },
+      navCorporate: { ru: "Корпоративное обучение", en: "Corporate Training" },
+      navAbout: { ru: "О школе", en: "About Us" },
+      navTestimonials: { ru: "Отзывы", en: "Testimonials" },
+      navContact: { ru: "Контакты", en: "Contact" },
+      navMore: { ru: "Ещё <img src=\"./assets/img/arrow.svg\" alt=\"\" class=\"nav-arrow\">", en: "More <img src=\"./assets/img/arrow.svg\" alt=\"\" class=\"nav-arrow\">" },
+      navArticles: { ru: "Полезные статьи", en: "Articles" },
+      navFaq: { ru: "Вопросы и ответы", en: "FAQs" },
+      navApply: { ru: "Записаться", en: "Book Now" },
+      navPrices: { ru: "Стоимость курсов", en: "Course Prices" },
+      navTrial: { ru: "Пробный урок", en: "Trial Lesson" },
+
+      blogPageTag: { ru: "Блог", en: "Blog" },
+      blogPageH1: { ru: "Полезные статьи<br><span>об английском языке</span>", en: "Useful Articles<br><span>About Learning English</span>" },
+      blogPageP: { ru: "Советы и методики от преподавателей Ally Lingua — как учить слова, как готовиться к экзаменам и как чувствовать себя уверенно в путешествиях.", en: "Tips and techniques from the Ally Lingua teaching team — how to learn vocabulary, how to prepare for exams, and how to feel confident while travelling." },
+
+      blog1Alt: { ru: "Эффективные способы запоминания новых слов", en: "Effective ways to remember new words" },
+      blog1Date: { ru: "12 марта 2023", en: "12 March 2023" },
+      blog1Title: { ru: "5 эффективных способов запоминания новых слов", en: "5 Effective Ways to Remember New Words" },
+      blog1Text: { ru: "Расширение словарного запаса — один из ключевых аспектов изучения языка. Узнайте проверенные приёмы, которые помогут запоминать новые слова быстрее и эффективнее.", en: "Building your vocabulary is one of the key parts of learning a language. Discover proven techniques to help you remember new words faster and more effectively." },
+      blog1Full: {
+        ru: "<p>Расширение словарного запаса — это марафон, а не спринт. Хорошая новость: результат зависит не столько от того, сколько слов вы пытаетесь запомнить, сколько от того, как вы это делаете. Вот пять методов, которые реально работают — мы используем их в Ally Lingua на всех уровнях, от Elementary до Advanced.</p><h5>1. Интервальное повторение (spaced repetition)</h5><p>Мозг забывает новую информацию по предсказуемой кривой — большая часть слов теряется в первые 24 часа. Карточки (Anki, Quizlet или обычная бумага) с постепенно увеличивающимися интервалами повторения «чинят» эту кривую забывания. Просмотрите слово через день, потом через три дня, потом через неделю — и оно перейдёт в долговременную память.</p><h5>2. Учите слова в контексте, а не списками</h5><p>«Apple — яблоко» запоминается хуже, чем «I ate a green apple for breakfast». Контекст даёт мозгу зацепки: грамматическую форму, типичные словосочетания, эмоциональную окраску. Старайтесь встречать новое слово минимум в двух-трёх разных предложениях, прежде чем считать его выученным.</p><h5>3. Связывайте новое слово со знакомым образом</h5><p>Метод ассоциаций — не какая-то экзотика, а рабочий инструмент. Придумайте яркую, даже нелепую картинку, связывающую звучание слова с его значением. Чем абсурднее образ — тем лучше он запоминается.</p><h5>4. Используйте слово активно в течение 48 часов</h5><p>Пассивное узнавание («да, я видел это слово») и активное владение («я могу использовать это слово в разговоре») — разные навыки. Постарайтесь построить хотя бы одно собственное предложение с новым словом в первые два дня после знакомства с ним — устно или письменно.</p><h5>5. Группируйте слова по темам, а не по алфавиту</h5><p>Словарь, отсортированный по темам («переговоры», «путешествия», «ресторан»), активирует смысловые связи между словами и облегчает их извлечение из памяти в нужный момент — ведь в реальной жизни мы вспоминаем слова «пачками» под конкретную ситуацию, а не по алфавиту.</p><p><strong>Начните с одного метода, а не со всех пяти сразу</strong> — устойчивая привычка через две недели даст больше результата, чем идеальная система, которую вы бросите на третий день.</p>",
+        en: "<p>Growing your vocabulary is a marathon, not a sprint. The good news: results depend less on how many words you try to memorise and more on how you go about it. Here are five methods that genuinely work — we use them at every level at Ally Lingua, from Elementary to Advanced.</p><h5>1. Spaced repetition</h5><p>Your brain forgets new information along a predictable curve — most words are lost within the first 24 hours. Flashcards (Anki, Quizlet, or plain paper) reviewed at gradually increasing intervals correct for this. Look at a word again after a day, then three days, then a week, and it moves into long-term memory.</p><h5>2. Learn words in context, not lists</h5><p>\"Apple\" on its own sticks far less than \"I ate a green apple for breakfast.\" Context gives your brain something to hold onto: grammar, typical collocations, emotional tone. Try to meet a new word in at least two or three different sentences before you count it as learned.</p><h5>3. Link the new word to a vivid image</h5><p>Mnemonics aren't a gimmick — they're a genuine tool. Build a vivid, even ridiculous mental picture connecting how the word sounds to what it means. The more absurd the image, the better it sticks.</p><h5>4. Use the word actively within 48 hours</h5><p>Passively recognising a word (\"yes, I've seen that before\") and actively producing it (\"I can use this in conversation\") are different skills. Try to build at least one sentence of your own with a new word in the first two days — out loud or in writing.</p><h5>5. Group words by topic, not alphabetically</h5><p>A vocabulary list sorted by theme (\"negotiations\", \"travel\", \"at a restaurant\") activates meaningful connections between words and makes them easier to retrieve at the right moment — in real life, we recall words in clusters tied to a situation, not alphabetically.</p><p><strong>Start with one method rather than all five at once</strong> — a habit you keep for two weeks beats a perfect system you abandon on day three.</p>"
+      },
+
+      blog2Alt: { ru: "Как подготовиться к экзамену IELTS", en: "How to prepare for the IELTS exam" },
+      blog2Date: { ru: "25 февраля 2023", en: "25 February 2023" },
+      blog2Title: { ru: "Как подготовиться к экзамену IELTS", en: "How to Prepare for the IELTS Exam" },
+      blog2Text: { ru: "Международный экзамен IELTS требует тщательной подготовки. Мы расскажем о структуре экзамена и стратегиях для получения высокого балла.", en: "The international IELTS exam requires careful preparation. We'll walk you through the exam structure and strategies for achieving a high score." },
+      blog2Full: {
+        ru: "<p>IELTS проверяет все четыре навыка — Listening, Reading, Writing и Speaking — и у каждого есть своя логика подготовки. Вот план, с которого стоит начать.</p><h5>Оцените свой текущий уровень</h5><p>Прежде чем составлять план, пройдите один полный пробный тест в реальных условиях по времени. Это покажет не общий «уровень английского», а именно ваш стартовый балл IELTS — а также, какая часть экзамена проседает больше остальных.</p><h5>Listening: тренируйте не только понимание, но и скорость</h5><p>На Listening у вас нет времени переслушать — запись звучит один раз. Развивайте навык «предугадывания»: читайте вопросы заранее и отмечайте ключевые слова, чтобы во время прослушивания сразу узнавать нужный момент.</p><h5>Reading: управляйте временем строже, чем содержанием</h5><p>На Reading часто не хватает времени, а не знаний. Тренируйтесь на скорочтение (skimming) для общего понимания текста и на просмотровое чтение (scanning) для поиска конкретных фактов и цифр — вместо того чтобы читать каждый абзац подряд.</p><h5>Writing: используйте проверенную структуру</h5><p>И Task 1 (отчёт по графику или диаграмме), и Task 2 (эссе) оцениваются по чёткой структуре. Выучите 2–3 надёжных шаблона вступления и заключения, чтобы не тратить время экзамена на придумывание формы — вся энергия должна уходить на содержание и грамматику.</p><h5>Speaking: говорите вслух каждый день, а не думайте по-английски «в голове»</h5><p>Часть 2 (монолог на 2 минуты) — это то, где чаще всего теряются баллы из-за нервов, а не из-за уровня языка. Практикуйте её с таймером до тех пор, пока говорить 2 минуты без пауз не станет привычным, а не стрессовым.</p><p><strong>Сделайте хотя бы один полный пробный тест</strong> в условиях, максимально близких к реальным — с таймером, без словаря, в тишине. Это лучший способ проверить не только знания, но и выносливость: реальный экзамен идёт почти 3 часа подряд.</p>",
+        en: "<p>IELTS tests all four skills — Listening, Reading, Writing and Speaking — and each one calls for its own approach to preparation. Here's where to start.</p><h5>Assess your current level first</h5><p>Before building a study plan, sit one full mock test under realistic timed conditions. This won't just show your general English level — it will reveal your actual starting IELTS score, and which section is pulling your average down the most.</p><h5>Listening: train speed, not just comprehension</h5><p>In the Listening section there's no rewinding — the recording plays once. Build the skill of \"anticipating\": read the questions ahead of time and underline keywords, so you recognise the right moment the instant you hear it.</p><h5>Reading: manage your time more strictly than your comprehension</h5><p>Most people run out of time on Reading, not knowledge. Practise skimming for the general idea of a text and scanning for specific facts and figures, rather than reading every paragraph in full, start to finish.</p><h5>Writing: lean on a proven structure</h5><p>Both Task 1 (describing a chart or graph) and Task 2 (the essay) are marked against a clear structure. Learn two or three reliable templates for your introduction and conclusion, so you don't burn exam time inventing a shape on the spot — all your energy should go into content and grammar.</p><h5>Speaking: practise talking out loud every day, not thinking in English \"in your head\"</h5><p>Part 2 (the two-minute monologue) is where candidates most often lose marks to nerves rather than language level. Practise it against a timer until speaking for two minutes without long pauses feels routine, not stressful.</p><p><strong>Sit at least one full mock exam</strong> under conditions as close to the real thing as possible — timed, no dictionary, no interruptions. It's the best way to test not just what you know, but your stamina: the real exam runs for almost three hours straight.</p>"
+      },
+
+      blog3Alt: { ru: "Английский для путешествий: ключевые фразы и ситуации", en: "English for travel: key phrases and situations" },
+      blog3Date: { ru: "8 февраля 2023", en: "8 February 2023" },
+      blog3Title: { ru: "Английский для путешествий: ключевые фразы и ситуации", en: "English for Travel: Key Phrases and Situations" },
+      blog3Text: { ru: "Планируете поездку за границу? Мы подготовили список необходимых фраз и выражений, которые помогут вам чувствовать себя уверенно в любой ситуации во время путешествия.", en: "Planning a trip abroad? We've put together a list of essential phrases and expressions to help you feel confident in any situation while travelling." },
+      blog3Full: {
+        ru: "<p>В путешествии английский нужен не для того, чтобы звучать грамотно, а чтобы быстро решить конкретную задачу — заселиться в отель, сделать заказ, объяснить, что случилось. Вот фразы и ситуации, которые стоит отработать заранее.</p><h5>В аэропорту и на границе</h5><ul><li>«I'm here on holiday / on business.» — по какой цели вы приехали.</li><li>«Could you tell me where the connecting flight to… is?» — вопрос про стыковочный рейс.</li><li>«I think my luggage didn't arrive.» — если багаж потерялся, это первая фраза на стойке Lost &amp; Baggage.</li></ul><h5>Заселение в отель</h5><ul><li>«I have a reservation under the name…» — заселение по брони.</li><li>«Is breakfast included?» — уточнить, входит ли завтрак.</li><li>«Could I get a late check-out?» — попросить поздний выезд, если рейс вечером.</li></ul><h5>В ресторане и кафе</h5><ul><li>«Could we have a table for two, please?» — столик на двоих.</li><li>«What would you recommend?» — если не уверены в меню, спросите у официанта.</li><li>«Could we get the bill, please?» — счёт, пожалуйста.</li></ul><h5>Если что-то пошло не так</h5><p>Именно эти фразы чаще всего забывают выучить — и именно они нужнее всего в стрессовой ситуации:</p><ul><li>«I've lost my passport / wallet.» — сообщить о пропаже.</li><li>«Could you call an ambulance / the police, please?» — вызвать скорую или полицию.</li><li>«Is there a pharmacy nearby?» — найти ближайшую аптеку.</li></ul><h5>Мелкие разговоры (small talk)</h5><p>Небольшой разговор с таксистом, соседом по самолёту или продавцом — это не экзамен, а способ расслабиться и почувствовать язык живым. Пары фраз вроде «How long does it take to get to…?» или «Do you know a good place to eat around here?» достаточно, чтобы завязать лёгкий контакт и заодно получить полезный совет от местного жителя.</p><p><strong>Совет:</strong> выпишите 15–20 фраз именно под ваш маршрут — для аэропорта, отеля и еды — и проговорите их вслух несколько раз перед поездкой. В момент, когда нужно быстро отреагировать, вспоминается не то, что вы читали, а то, что вы произносили.</p>",
+        en: "<p>When you're travelling, you don't need English to sound polished — you need it to solve a specific problem fast: checking into a hotel, ordering food, explaining what's gone wrong. Here are the phrases and situations worth rehearsing in advance.</p><h5>At the airport and border control</h5><ul><li>\"I'm here on holiday / on business.\" — stating your reason for travel.</li><li>\"Could you tell me where the connecting flight to… is?\" — asking about a connecting flight.</li><li>\"I think my luggage didn't arrive.\" — the first thing to say at the Lost &amp; Baggage desk if your bag doesn't show up.</li></ul><h5>Checking into a hotel</h5><ul><li>\"I have a reservation under the name…\" — checking in against a booking.</li><li>\"Is breakfast included?\" — confirming whether breakfast is part of the deal.</li><li>\"Could I get a late check-out?\" — asking for a later check-out if your flight is in the evening.</li></ul><h5>At a restaurant or café</h5><ul><li>\"Could we have a table for two, please?\" — asking for a table.</li><li>\"What would you recommend?\" — if you're unsure about the menu, ask the waiter.</li><li>\"Could we get the bill, please?\" — asking for the check.</li></ul><h5>If something goes wrong</h5><p>These are the phrases people most often forget to learn — and the ones you need most in a stressful moment:</p><ul><li>\"I've lost my passport / wallet.\" — reporting something missing.</li><li>\"Could you call an ambulance / the police, please?\" — calling for emergency help.</li><li>\"Is there a pharmacy nearby?\" — finding the nearest pharmacy.</li></ul><h5>Small talk</h5><p>A short conversation with a taxi driver, the person next to you on the plane, or a shopkeeper isn't a test — it's a chance to relax and feel the language come alive. A couple of lines like \"How long does it take to get to…?\" or \"Do you know a good place to eat around here?\" are enough to strike up an easy exchange, and often earn you a useful tip from a local.</p><p><strong>Tip:</strong> write out 15–20 phrases specific to your own trip — for the airport, the hotel, and eating out — and say them out loud a few times before you travel. In the moment you need to react quickly, what comes back to you is what you've spoken, not what you've only read.</p>"
+      },
+
+      blogRead: { ru: "Читать статью", en: "Read Article" },
+      blogReadCollapse: { ru: "Свернуть", en: "Show Less" },
+
+      blogBannerH2: { ru: "Готовы применить это на практике?", en: "Ready to Put This Into Practice?" },
+      blogBannerP: { ru: "Запишитесь на бесплатную консультацию — оценим ваш уровень и подберём программу под ваши цели.", en: "Book a free consultation — we'll assess your level and recommend a programme for your goals." },
+      trialBannerLink: { ru: "Записаться на бесплатную консультацию →", en: "Book a Free Consultation →" },
+
+      footerPricing: { ru: "Стоимость", en: "Pricing" },
+      footerArticles: { ru: "Статьи", en: "Articles" },
+      footerCopyright: { ru: "© 2026 Ally Lingua. Все права защищены.", en: "© 2026 Ally Lingua. All rights reserved." },
+      footerPrivacy: { ru: "Политика конфиденциальности", en: "Privacy Policy" },
+      footerPrivacyHref: { ru: "./legal/privacy_policy_ru.html", en: "./legal/privacy_policy_en.html" },
+      footerTerms: { ru: "Условия использования", en: "Terms of Use" },
+      footerTermsHref: { ru: "./legal/terms_of_use_ru.html", en: "./legal/terms_of_use_en.html" },
+      footerOffer: { ru: "Договор оферты", en: "Public Offer Agreement" },
+      footerOfferHref: { ru: "./legal/public_offer_ru.html", en: "./legal/public_offer_en.html" }
+    };
+
+    window.I18N_META = {
+      ru: { title: "Блог – Ally Lingua", description: "Полезные статьи об изучении английского языка от Ally Lingua: запоминание слов, подготовка к IELTS, английский для путешествий и другие темы." },
+      en: { title: "Blog – Ally Lingua", description: "Useful articles about learning English from Ally Lingua: remembering vocabulary, preparing for IELTS, English for travel, and more." }
+    };
+  </script>
+
+  <script>
+    /* ARTICLE EXPAND/COLLAPSE */
+    function toggleArticle(btn) {
+      const card = btn.closest('.blog-card');
+      const isOpen = card.classList.contains('expanded');
+      document.querySelectorAll('.blog-card.expanded').forEach(c => {
+        if (c !== card) {
+          c.classList.remove('expanded');
+          c.querySelector('.read-art span[data-i18n]').textContent = (window.I18N.blogRead[window.currentLang || 'ru']);
+        }
+      });
+      card.classList.toggle('expanded', !isOpen);
+      const label = card.querySelector('.read-art span[data-i18n]');
+      label.textContent = !isOpen ? window.I18N.blogReadCollapse[window.currentLang || 'ru'] : window.I18N.blogRead[window.currentLang || 'ru'];
+      if (!isOpen) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function openFromHash() {
+      const id = location.hash.replace('#', '');
+      if (!id) return;
+      const card = document.getElementById(id);
+      if (card && card.classList.contains('blog-card')) {
+        card.classList.add('expanded');
+        card.querySelector('.read-art span[data-i18n]').textContent = window.I18N.blogReadCollapse[window.currentLang || 'ru'];
+        setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+      }
+    }
+    document.addEventListener('DOMContentLoaded', openFromHash);
+    document.addEventListener('langchange', () => {
+      document.querySelectorAll('.blog-card').forEach(card => {
+        const label = card.querySelector('.read-art span[data-i18n]');
+        const lang = window.currentLang || 'ru';
+        label.textContent = card.classList.contains('expanded') ? window.I18N.blogReadCollapse[lang] : window.I18N.blogRead[lang];
+      });
+    });
+
+    /* MOBILE MENU */
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobClose = document.getElementById('mobClose');
+
+    function openMenu() { burger.classList.add('open'); mobileMenu.classList.add('open'); document.body.classList.add('menu-open'); }
+    function closeMenu() { burger.classList.remove('open'); mobileMenu.classList.remove('open'); document.body.classList.remove('menu-open'); }
+
+    burger.addEventListener('click', () => burger.classList.contains('open') ? closeMenu() : openMenu());
+    mobClose.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    document.querySelectorAll('.mob-dropdown-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dropdown = btn.nextElementSibling;
+        const isOpen = dropdown.classList.contains('open');
+        document.querySelectorAll('.mob-dropdown').forEach(d => d.classList.remove('open'));
+        document.querySelectorAll('.mob-dropdown-btn').forEach(b => b.classList.remove('open'));
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          btn.classList.add('open');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
