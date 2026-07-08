@@ -378,9 +378,9 @@
       card.classList.toggle('expanded', !isOpen);
       const label = card.querySelector('.read-art span[data-i18n]');
       label.textContent = !isOpen ? window.I18N.blogReadCollapse[window.currentLang || 'ru'] : window.I18N.blogRead[window.currentLang || 'ru'];
-      if (!isOpen) {
+      requestAnimationFrame(() => {
         card.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      });
     }
 
     function openFromHash() {
