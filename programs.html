@@ -7,8 +7,7 @@
   <title>Наши курсы – Ally Lingua</title>
   <meta name="description"
     content="Все программы обучения английскому в Ally Lingua — бизнес-английский, общий английский, английский для детей, подготовка к IELTS/TOEFL и корпоративное обучение.">
-  <link rel="alternate" hreflang="ru" href="https://allylingua.com/programs.html">
-  <link rel="alternate" hreflang="en" href="https://allylingua.com/programs-en.html">
+  <link rel="canonical" href="https://allylingua.com/programs.html">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/main.css">
   <link rel="stylesheet" href="assets/programs.css">
@@ -23,41 +22,41 @@
     </a>
 
     <ul class="nav-links">
-      <li><a href="index.html">Главная</a></li>
+      <li><a href="index.html" data-i18n="navHome">Главная</a></li>
       <li class="has-dropdown">
-        <a href="#" class="nav-current">Программы <img src="./assets/img/arrow.svg" alt=""
+        <a href="#" class="nav-current" data-i18n="navPrograms">Программы <img src="./assets/img/arrow.svg" alt=""
             class="nav-arrow"></a>
         <ul class="dropdown">
-          <li><a href="programs.html?tab=kids-group">Английский для детей (группа)</a></li>
-          <li><a href="programs.html?tab=kids-individual">Английский для детей (инд.)</a></li>
-          <li><a href="programs.html?tab=business">Бизнес-английский</a></li>
-          <li><a href="programs.html?tab=general">Общий английский</a></li>
-          <li><a href="programs.html?tab=ielts">Подготовка к IELTS</a></li>
-          <li><a href="programs.html?tab=toefl">Подготовка к TOEFL</a></li>
-          <li><a href="programs.html?tab=individual">Индивидуальные занятия</a></li>
-          <li><a href="programs.html?tab=corporate">Корпоративное обучение</a></li>
+          <li><a href="programs.html?tab=kids-group" data-i18n="navKidsGroup">Английский для детей (группа)</a></li>
+          <li><a href="programs.html?tab=kids-individual" data-i18n="navKidsIndividual">Английский для детей (инд.)</a></li>
+          <li><a href="programs.html?tab=business" data-i18n="navBusiness">Бизнес-английский</a></li>
+          <li><a href="programs.html?tab=general" data-i18n="navGeneral">Общий английский</a></li>
+          <li><a href="programs.html?tab=ielts" data-i18n="navIelts">Подготовка к IELTS</a></li>
+          <li><a href="programs.html?tab=toefl" data-i18n="navToefl">Подготовка к TOEFL</a></li>
+          <li><a href="programs.html?tab=individual" data-i18n="navIndividual">Индивидуальные занятия</a></li>
+          <li><a href="programs.html?tab=corporate" data-i18n="navCorporate">Корпоративное обучение</a></li>
         </ul>
       </li>
-      <li><a href="index.html#about">О школе</a></li>
-      <li><a href="index.html#testimonials">Отзывы</a></li>
-      <li><a href="index.html#contact">Контакты</a></li>
+      <li><a href="index.html#about" data-i18n="navAbout">О школе</a></li>
+      <li><a href="index.html#testimonials" data-i18n="navTestimonials">Отзывы</a></li>
+      <li><a href="index.html#contact" data-i18n="navContact">Контакты</a></li>
 
       <li class="has-dropdown">
-        <a href="#">Ещё <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <a href="#" data-i18n="navMore">Ещё <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
         <ul class="dropdown">
-          <li><a href="index.html#articles">Полезные статьи</a></li>
-          <li><a href="index.html#faq">Вопросы и ответы</a></li>
-          <li><a href="index.html#contact">Контакты</a></li>
+          <li><a href="index.html#articles" data-i18n="navArticles">Полезные статьи</a></li>
+          <li><a href="index.html#faq" data-i18n="navFaq">Вопросы и ответы</a></li>
+          <li><a href="index.html#contact" data-i18n="navContact">Контакты</a></li>
         </ul>
       </li>
       <li class="language-switcher">
-        <a href="./programs-en.html" class="language-btn" title="Switch to English">
+        <button type="button" class="language-btn" onclick="toggleLang()" title="Switch to English">
           <span class="language-text">EN</span>
-        </a>
+        </button>
       </li>
     </ul>
 
-    <a class="btn-apply" href="index.html#contact">Записаться</a>
+    <a class="btn-apply" href="index.html#contact" data-i18n="navApply">Записаться</a>
 
     <script>
       window.addEventListener('scroll', () => {
@@ -80,54 +79,54 @@
       <button class="mob-close" id="mobClose" aria-label="Close menu">&#x2715;</button>
     </div>
 
-    <a href="index.html" class="mob-link">Главная</a>
+    <a href="index.html" class="mob-link" data-i18n="navHome">Главная</a>
 
     <div class="mob-dropdown-item">
-      <button class="mob-dropdown-btn nav-current">Программы <span
+      <button class="mob-dropdown-btn nav-current"><span data-i18n="navPrograms">Программы</span> <span
           class="mob-arrow">&#8250;</span></button>
       <div class="mob-dropdown">
-        <a href="programs.html?tab=kids-group">Английский для детей (группа)</a>
-        <a href="programs.html?tab=kids-individual">Английский для детей (инд.)</a>
-        <a href="programs.html?tab=business">Бизнес-английский</a>
-        <a href="programs.html?tab=general">Общий английский</a>
-        <a href="programs.html?tab=ielts">Подготовка к IELTS</a>
-        <a href="programs.html?tab=toefl">Подготовка к TOEFL</a>
-        <a href="programs.html?tab=individual">Индивидуальные занятия</a>
-        <a href="programs.html?tab=corporate">Корпоративное обучение</a>
+        <a href="programs.html?tab=kids-group" data-i18n="navKidsGroup">Английский для детей (группа)</a>
+        <a href="programs.html?tab=kids-individual" data-i18n="navKidsIndividual">Английский для детей (инд.)</a>
+        <a href="programs.html?tab=business" data-i18n="navBusiness">Бизнес-английский</a>
+        <a href="programs.html?tab=general" data-i18n="navGeneral">Общий английский</a>
+        <a href="programs.html?tab=ielts" data-i18n="navIelts">Подготовка к IELTS</a>
+        <a href="programs.html?tab=toefl" data-i18n="navToefl">Подготовка к TOEFL</a>
+        <a href="programs.html?tab=individual" data-i18n="navIndividual">Индивидуальные занятия</a>
+        <a href="programs.html?tab=corporate" data-i18n="navCorporate">Корпоративное обучение</a>
       </div>
     </div>
 
-    <a href="index.html#programs" class="mob-link">Стоимость курсов</a>
-    <a href="index.html#contact" class="mob-link">Пробный урок</a>
-    <a href="index.html#about" class="mob-link">О школе</a>
-    <a href="index.html#testimonials" class="mob-link">Отзывы</a>
-    <a href="index.html#contact" class="mob-link">Контакты</a>
+    <a href="index.html#programs" class="mob-link" data-i18n="navPrices">Стоимость курсов</a>
+    <a href="index.html#contact" class="mob-link" data-i18n="navTrial">Пробный урок</a>
+    <a href="index.html#about" class="mob-link" data-i18n="navAbout">О школе</a>
+    <a href="index.html#testimonials" class="mob-link" data-i18n="navTestimonials">Отзывы</a>
+    <a href="index.html#contact" class="mob-link" data-i18n="navContact">Контакты</a>
 
     <div class="mob-dropdown-item">
-      <button class="mob-dropdown-btn">Ещё <span class="mob-arrow">&#8250;</span></button>
+      <button class="mob-dropdown-btn"><span data-i18n="navMore">Ещё</span> <span class="mob-arrow">&#8250;</span></button>
       <div class="mob-dropdown">
-        <a href="index.html#articles">Полезные статьи</a>
-        <a href="index.html#faq">Вопросы и ответы</a>
-        <a href="index.html#contact">Контакты</a>
+        <a href="index.html#articles" data-i18n="navArticles">Полезные статьи</a>
+        <a href="index.html#faq" data-i18n="navFaq">Вопросы и ответы</a>
+        <a href="index.html#contact" data-i18n="navContact">Контакты</a>
       </div>
     </div>
 
     <div class="language-switcher">
-      <a href="./programs-en.html" class="language-btn" title="Switch to English">
+      <button type="button" class="language-btn" onclick="toggleLang()" title="Switch to English">
         <span class="language-text">EN</span>
-      </a>
+      </button>
     </div>
 
-    <a href="index.html#contact" class="mob-apply">Записаться</a>
+    <a href="index.html#contact" class="mob-apply" data-i18n="navApply">Записаться</a>
   </div>
 
 
   <!-- PAGE HERO -->
   <div class="prog-page-hero">
     <div class="prog-hero-inner">
-      <span class="section-tag">Наши курсы</span>
-      <h1>Найдите свой<br><span>идеальный курс</span></h1>
-      <p>Хотите продвинуться по карьерной лестнице, подготовиться к экзаменам или улучшить повседневный английский —
+      <span class="section-tag" data-i18n="pageHeroTag">Наши курсы</span>
+      <h1 data-i18n="pageHeroH1">Найдите свой<br><span>идеальный курс</span></h1>
+      <p data-i18n="pageHeroP">Хотите продвинуться по карьерной лестнице, подготовиться к экзаменам или улучшить повседневный английский —
         у нас есть подходящий курс для вас. Все программы ведут опытные преподаватели по проверенным методикам
         Oxford.</p>
     </div>
@@ -137,28 +136,28 @@
   <!-- TAB NAVIGATION -->
   <div class="prog-tabs-wrap" id="progTabsWrap">
     <button class="prog-tab-btn active" data-tab="kids-group">
-      <span class="prog-tab-label">Детям (группа)</span>
+      <span class="prog-tab-label" data-i18n="tabKidsGroup">Детям (группа)</span>
     </button>
     <button class="prog-tab-btn" data-tab="kids-individual">
-      <span class="prog-tab-label">Детям (инд.)</span>
+      <span class="prog-tab-label" data-i18n="tabKidsIndividual">Детям (инд.)</span>
     </button>
     <button class="prog-tab-btn" data-tab="business">
-      <span class="prog-tab-label">Бизнес-английский</span>
+      <span class="prog-tab-label" data-i18n="tabBusiness">Бизнес-английский</span>
     </button>
     <button class="prog-tab-btn" data-tab="general">
-      <span class="prog-tab-label">Общий английский</span>
+      <span class="prog-tab-label" data-i18n="tabGeneral">Общий английский</span>
     </button>
     <button class="prog-tab-btn" data-tab="ielts">
-      <span class="prog-tab-label">IELTS</span>
+      <span class="prog-tab-label" data-i18n="tabIelts">IELTS</span>
     </button>
     <button class="prog-tab-btn" data-tab="toefl">
-      <span class="prog-tab-label">TOEFL</span>
+      <span class="prog-tab-label" data-i18n="tabToefl">TOEFL</span>
     </button>
     <button class="prog-tab-btn" data-tab="individual">
-      <span class="prog-tab-label">Индивидуально</span>
+      <span class="prog-tab-label" data-i18n="tabIndividual">Индивидуально</span>
     </button>
     <button class="prog-tab-btn" data-tab="corporate">
-      <span class="prog-tab-label">Корпоративный</span>
+      <span class="prog-tab-label" data-i18n="tabCorporate">Корпоративный</span>
     </button>
   </div>
 
@@ -168,71 +167,71 @@
 
     <div class="prog-overview">
       <div class="prog-overview-text">
-        <h2>Бизнес-английский</h2>
-        <p>Развивайте уверенное деловое общение по методике Oxford Business Result. Программа поможет вам уверенно
+        <h2 data-i18n="businessTitle">Бизнес-английский</h2>
+        <p data-i18n="businessDesc">Развивайте уверенное деловое общение по методике Oxford Business Result. Программа поможет вам уверенно
           работать в международной деловой среде: разбор реальных кейсов, ролевые ситуации и практические задания,
           отражающие настоящее общение — встречи, конференц-звонки, переговоры и отношения с клиентами. Акцент на
           ясности, дипломатичности и естественном профессиональном стиле.</p>
         <div class="prog-overview-pills">
-          <span class="prog-pill">1:1 или 1:4</span>
-          <span class="prog-pill">Гибкое расписание</span>
-          <span class="prog-pill">2 раза в неделю</span>
-          <span class="prog-pill">От среднего уровня</span>
+          <span class="prog-pill" data-i18n="businessPill1">1:1 или 1:4</span>
+          <span class="prog-pill" data-i18n="businessPill2">Гибкое расписание</span>
+          <span class="prog-pill" data-i18n="businessPill3">2 раза в неделю</span>
+          <span class="prog-pill" data-i18n="businessPill4">От среднего уровня</span>
         </div>
         <div class="prog-overview-actions">
-          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
-          <span class="prog-pill prog-pill--price">19 900 ₽/мес</span>
+          <a href="index.html#contact" class="prog-btn-primary" data-i18n="ctaTrial">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price" data-i18n="businessPrice">19 900 ₽/мес</span>
         </div>
       </div>
       <div class="prog-overview-img">
-        <img src="assets/img/business-english.jpg" alt="Бизнес-английский"
+        <img src="assets/img/business-english.jpg" data-i18n-alt="businessTitle" alt="Бизнес-английский"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="prog-img-ph prog-img-ph--business">💼</div>
       </div>
     </div>
 
     <div class="prog-skills-section">
-      <h3 class="prog-section-label">Чему вы научитесь</h3>
+      <h3 class="prog-section-label" data-i18n="skillsLabel">Чему вы научитесь</h3>
       <div class="prog-skills-grid">
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-business-comm.svg" alt="">
           </div>
-          <h4>Профессиональная лексика</h4>
-          <p>Профессиональная лексика и терминология для различных деловых контекстов.</p>
+          <h4 data-i18n="businessSkill1Title">Профессиональная лексика</h4>
+          <p data-i18n="businessSkill1Desc">Профессиональная лексика и терминология для различных деловых контекстов.</p>
         </div>
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-conversation.svg" alt="">
           </div>
-          <h4>Переговоры</h4>
-          <p>Тактики и стратегии ведения переговоров на английском языке.</p>
+          <h4 data-i18n="businessSkill2Title">Переговоры</h4>
+          <p data-i18n="businessSkill2Desc">Тактики и стратегии ведения переговоров на английском языке.</p>
         </div>
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-exercises.svg" alt="">
           </div>
-          <h4>Деловая переписка</h4>
-          <p>Навыки делового письма: email, отчёты и коммерческие предложения.</p>
+          <h4 data-i18n="businessSkill3Title">Деловая переписка</h4>
+          <p data-i18n="businessSkill3Desc">Навыки делового письма: email, отчёты и коммерческие предложения.</p>
         </div>
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-culture.svg" alt="">
           </div>
-          <h4>Презентации</h4>
-          <p>Навыки презентаций и уверенность в публичных выступлениях.</p>
+          <h4 data-i18n="businessSkill4Title">Презентации</h4>
+          <p data-i18n="businessSkill4Desc">Навыки презентаций и уверенность в публичных выступлениях.</p>
         </div>
-        
+
       </div>
     </div>
 
     <div class="prog-for-section">
-      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <h3 class="prog-section-label" data-i18n="forLabel">Кому подойдёт этот курс?</h3>
       <div class="prog-for-list">
-        <div class="prog-for-item">✓ Специалисты, работающие с международными партнёрами</div>
-        <div class="prog-for-item">✓ Предприниматели и владельцы бизнеса</div>
-        <div class="prog-for-item">✓ Менеджеры, развивающие лидерскую коммуникацию</div>
-        <div class="prog-for-item">✓ Выпускники, выходящие на глобальный рынок труда</div>
+        <div class="prog-for-item" data-i18n="businessFor1">✓ Специалисты, работающие с международными партнёрами</div>
+        <div class="prog-for-item" data-i18n="businessFor2">✓ Предприниматели и владельцы бизнеса</div>
+        <div class="prog-for-item" data-i18n="businessFor3">✓ Менеджеры, развивающие лидерскую коммуникацию</div>
+        <div class="prog-for-item" data-i18n="businessFor4">✓ Выпускники, выходящие на глобальный рынок труда</div>
       </div>
     </div>
   </section>
@@ -243,70 +242,70 @@
 
     <div class="prog-overview">
       <div class="prog-overview-text">
-        <h2>Общий английский</h2>
-        <p>Комплексный курс по методике English File, который поможет вам чувствовать себя уверенно с английским в повседневной жизни. Уроки сочетают разговорную практику, грамматику в контексте, аудирование, стратегии чтения и письмо с сопровождением.</p>
+        <h2 data-i18n="generalTitle">Общий английский</h2>
+        <p data-i18n="generalDesc">Комплексный курс по методике English File, который поможет вам чувствовать себя уверенно с английским в повседневной жизни. Уроки сочетают разговорную практику, грамматику в контексте, аудирование, стратегии чтения и письмо с сопровождением.</p>
         <div class="prog-overview-pills">
-          <span class="prog-pill">1:1 или 1:4</span>
-          <span class="prog-pill">Любой уровень</span>
-          <span class="prog-pill">2 раза в неделю</span>
-          <span class="prog-pill">Гибкое расписание</span>
+          <span class="prog-pill" data-i18n="generalPill1">1:1 или 1:4</span>
+          <span class="prog-pill" data-i18n="generalPill2">Любой уровень</span>
+          <span class="prog-pill" data-i18n="generalPill3">2 раза в неделю</span>
+          <span class="prog-pill" data-i18n="generalPill4">Гибкое расписание</span>
         </div>
         <div class="prog-overview-actions">
-          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
-          <span class="prog-pill prog-pill--price">19 900 ₽/мес</span>
+          <a href="index.html#contact" class="prog-btn-primary" data-i18n="ctaTrial">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price" data-i18n="generalPrice">19 900 ₽/мес</span>
         </div>
       </div>
       <div class="prog-overview-img">
-        <img src="assets/img/general-english.jpg" alt="Общий английский"
+        <img src="assets/img/general-english.jpg" data-i18n-alt="generalTitle" alt="Общий английский"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="prog-img-ph prog-img-ph--general">🗣️</div>
       </div>
     </div>
 
     <div class="prog-skills-section">
-      <h3 class="prog-section-label">Чему вы научитесь</h3>
+      <h3 class="prog-section-label" data-i18n="skillsLabel">Чему вы научитесь</h3>
       <div class="prog-skills-grid">
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-conversation.svg" alt="">
           </div>
-          <h4>Разговорная беглость</h4>
-          <p>Развитие навыков естественной разговорной речи.</p>
+          <h4 data-i18n="generalSkill1Title">Разговорная беглость</h4>
+          <p data-i18n="generalSkill1Desc">Развитие навыков естественной разговорной речи.</p>
         </div>
 
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-grammar.svg" alt="">
           </div>
-          <h4>Грамматика</h4>
-          <p>Основы грамматики и продвинутые структуры, объяснённые понятно и практично.</p>
+          <h4 data-i18n="generalSkill2Title">Грамматика</h4>
+          <p data-i18n="generalSkill2Desc">Основы грамматики и продвинутые структуры, объяснённые понятно и практично.</p>
         </div>
 
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-phonics.svg" alt="">
           </div>
-          <h4>Чтение</h4>
-          <p>Понимание прочитанного и развитие критического мышления.</p>
+          <h4 data-i18n="generalSkill3Title">Чтение</h4>
+          <p data-i18n="generalSkill3Desc">Понимание прочитанного и развитие критического мышления.</p>
         </div>
 
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-exercises.svg" alt="">
           </div>
-          <h4>Письмо</h4>
-          <p>Навыки письма для разных контекстов и аудиторий.</p>
+          <h4 data-i18n="generalSkill4Title">Письмо</h4>
+          <p data-i18n="generalSkill4Desc">Навыки письма для разных контекстов и аудиторий.</p>
         </div>
       </div>
     </div>
 
     <div class="prog-for-section">
-      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <h3 class="prog-section-label" data-i18n="forLabel">Кому подойдёт этот курс?</h3>
       <div class="prog-for-list">
-        <div class="prog-for-item">✓ Взрослые, улучшающие общий уровень английского</div>
-        <div class="prog-for-item">✓ Готовящиеся к путешествию или переезду</div>
-        <div class="prog-for-item">✓ Ученики, которым нужна более прочная база языка</div>
-        <div class="prog-for-item">✓ Все, кто хочет уверенно говорить</div>
+        <div class="prog-for-item" data-i18n="generalFor1">✓ Взрослые, улучшающие общий уровень английского</div>
+        <div class="prog-for-item" data-i18n="generalFor2">✓ Готовящиеся к путешествию или переезду</div>
+        <div class="prog-for-item" data-i18n="generalFor3">✓ Ученики, которым нужна более прочная база языка</div>
+        <div class="prog-for-item" data-i18n="generalFor4">✓ Все, кто хочет уверенно говорить</div>
       </div>
     </div>
   </section>
@@ -317,79 +316,79 @@
 
     <div class="prog-overview">
       <div class="prog-overview-text">
-        <h2>Английский для детей (групповые занятия)</h2>
-        <p>Ally Lingua предлагает групповые занятия английским для детей по сериям Oxford Family and Friends и
+        <h2 data-i18n="kidsGroupTitle">Английский для детей (групповые занятия)</h2>
+        <p data-i18n="kidsGroupDesc">Ally Lingua предлагает групповые занятия английским для детей по сериям Oxford Family and Friends и
           Cambridge Power Up: интерактивные активности, увлекательные истории и языковые упражнения, которые
           прививают любовь к изучению английского в компании сверстников.</p>
         <div class="prog-overview-pills">
-          <span class="prog-pill">6–12 лет</span>
-          <span class="prog-pill">Группа 4–6 чел.</span>
-          <span class="prog-pill">2 раза в неделю</span>
-          <span class="prog-pill">От начального уровня</span>
+          <span class="prog-pill" data-i18n="kidsGroupPill1">6–12 лет</span>
+          <span class="prog-pill" data-i18n="kidsGroupPill2">Группа 4–6 чел.</span>
+          <span class="prog-pill" data-i18n="kidsGroupPill3">2 раза в неделю</span>
+          <span class="prog-pill" data-i18n="kidsGroupPill4">От начального уровня</span>
         </div>
         <div class="prog-overview-actions">
-          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
-          <span class="prog-pill prog-pill--price">8 500 ₽/мес</span>
+          <a href="index.html#contact" class="prog-btn-primary" data-i18n="ctaTrial">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price" data-i18n="kidsGroupPrice">8 500 ₽/мес</span>
         </div>
       </div>
       <div class="prog-overview-img">
-        <img src="assets/img/kids-english.jpg" alt="Английский для детей (групповые занятия)"
+        <img src="assets/img/kids-english.jpg" data-i18n-alt="kidsGroupTitle" alt="Английский для детей (групповые занятия)"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="prog-img-ph prog-img-ph--kids">🧒</div>
       </div>
     </div>
 
     <div class="prog-skills-section">
-      <h3 class="prog-section-label">Чему научатся дети</h3>
+      <h3 class="prog-section-label" data-i18n="kidsSkillsLabel">Чему научатся дети</h3>
       <div class="prog-skills-grid">
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/kids-eng-1.svg" alt="">
           </div>
-          <h4>Игры и активности</h4>
-          <p>Увлекательные интерактивные игры и активности, которые делают обучение приятным.</p>
+          <h4 data-i18n="kidsGroupSkill1Title">Игры и активности</h4>
+          <p data-i18n="kidsGroupSkill1Desc">Увлекательные интерактивные игры и активности, которые делают обучение приятным.</p>
         </div>
 
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/kids-eng-2.svg" alt="">
           </div>
-          <h4>Песни и речёвки</h4>
-          <p>Песни, речёвки и ритмичные техники обучения.</p>
+          <h4 data-i18n="kidsGroupSkill2Title">Песни и речёвки</h4>
+          <p data-i18n="kidsGroupSkill2Desc">Песни, речёвки и ритмичные техники обучения.</p>
         </div>
-        
+
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/kids-eng-3.svg" alt="">
           </div>
-          <h4>Истории по возрасту</h4>
-          <p>Истории и материалы, соответствующие возрасту и захватывающие воображение.</p>
+          <h4 data-i18n="kidsGroupSkill3Title">Истории по возрасту</h4>
+          <p data-i18n="kidsGroupSkill3Desc">Истории и материалы, соответствующие возрасту и захватывающие воображение.</p>
         </div>
-        
+
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/kids-eng-4.svg" alt="">
           </div>
-          <h4>Заботливые преподаватели</h4>
-          <p>Дружелюбные и поддерживающие преподаватели, преданные развитию каждого ребёнка.</p>
+          <h4 data-i18n="kidsGroupSkill4Title">Заботливые преподаватели</h4>
+          <p data-i18n="kidsGroupSkill4Desc">Дружелюбные и поддерживающие преподаватели, преданные развитию каждого ребёнка.</p>
         </div>
       </div>
     </div>
 
     <div class="prog-for-section">
-      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <h3 class="prog-section-label" data-i18n="forLabel">Кому подойдёт этот курс?</h3>
       <div class="prog-for-list">
-        <div class="prog-for-item">✓ Дети 6–12 лет, начинающие или продолжающие изучать английский</div>
-        <div class="prog-for-item">✓ Дети, которым нравится учиться вместе со сверстниками</div>
-        <div class="prog-for-item">✓ Родители, желающие увлекательную и структурированную программу</div>
-        <div class="prog-for-item">✓ Семьи, которым важен более доступный формат обучения</div>
+        <div class="prog-for-item" data-i18n="kidsGroupFor1">✓ Дети 6–12 лет, начинающие или продолжающие изучать английский</div>
+        <div class="prog-for-item" data-i18n="kidsGroupFor2">✓ Дети, которым нравится учиться вместе со сверстниками</div>
+        <div class="prog-for-item" data-i18n="kidsGroupFor3">✓ Родители, желающие увлекательную и структурированную программу</div>
+        <div class="prog-for-item" data-i18n="kidsGroupFor4">✓ Семьи, которым важен более доступный формат обучения</div>
       </div>
     </div>
 
     <div class="prog-parent-note">
       <div>
-        <strong>Заметка для родителей</strong>
-        <p>После пробного урока мы предоставляем подробную обратную связь об уровне ребёнка, сильных сторонах,
+        <strong data-i18n="parentNoteTitle">Заметка для родителей</strong>
+        <p data-i18n="parentNoteText">После пробного урока мы предоставляем подробную обратную связь об уровне ребёнка, сильных сторонах,
           зонах роста и персональном плане обучения.</p>
       </div>
     </div>
@@ -401,81 +400,81 @@
 
     <div class="prog-overview">
       <div class="prog-overview-text">
-        <h2>Английский для детей (индивидуальные занятия)</h2>
-        <p>Индивидуальные занятия, построенные вокруг вашего ребёнка, по методикам Cambridge Power Up и Oxford
+        <h2 data-i18n="kidsIndTitle">Английский для детей (индивидуальные занятия)</h2>
+        <p data-i18n="kidsIndDesc">Индивидуальные занятия, построенные вокруг вашего ребёнка, по методикам Cambridge Power Up и Oxford
           Family and Friends. Преподаватель подстраивает темп, темы и активности под уровень и интересы ребёнка,
           уделяя полное внимание произношению, уверенности и стабильному прогрессу без давления группового темпа.</p>
         <div class="prog-overview-pills">
-          <span class="prog-pill">6–12 лет</span>
-          <span class="prog-pill">1:1</span>
-          <span class="prog-pill">2 раза в неделю</span>
-          <span class="prog-pill">От начального уровня</span>
+          <span class="prog-pill" data-i18n="kidsIndPill1">6–12 лет</span>
+          <span class="prog-pill" data-i18n="kidsIndPill2">1:1</span>
+          <span class="prog-pill" data-i18n="kidsIndPill3">2 раза в неделю</span>
+          <span class="prog-pill" data-i18n="kidsIndPill4">От начального уровня</span>
         </div>
         <div class="prog-overview-actions">
-          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
-          <span class="prog-pill prog-pill--price">15 900 ₽/мес</span>
+          <a href="index.html#contact" class="prog-btn-primary" data-i18n="ctaTrial">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price" data-i18n="kidsIndPrice">15 900 ₽/мес</span>
         </div>
       </div>
       <div class="prog-overview-img">
-        <img src="assets/img/kids-english-individual.jpg" alt="Английский для детей (индивидуальные занятия)"
+        <img src="assets/img/kids-english-individual.jpg" data-i18n-alt="kidsIndTitle" alt="Английский для детей (индивидуальные занятия)"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="prog-img-ph prog-img-ph--kids">🧒</div>
       </div>
     </div>
 
     <div class="prog-skills-section">
-      <h3 class="prog-section-label">Чему вы научитесь</h3>
+      <h3 class="prog-section-label" data-i18n="skillsLabel">Чему вы научитесь</h3>
       <div class="prog-skills-grid">
-        
+
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/kids-eng-3.svg" alt="">
           </div>
-          <h4>Лексика и фонетика</h4>
-          <p>В темпе, комфортном именно для вашего ребёнка.</p>
+          <h4 data-i18n="kidsIndSkill1Title">Лексика и фонетика</h4>
+          <p data-i18n="kidsIndSkill1Desc">В темпе, комфортном именно для вашего ребёнка.</p>
         </div>
 
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-speaking.svg" alt="">
           </div>
-          <h4>Говорение и произношение</h4>
-          <p>Индивидуальная практика без давления группы.</p>
+          <h4 data-i18n="kidsIndSkill2Title">Говорение и произношение</h4>
+          <p data-i18n="kidsIndSkill2Desc">Индивидуальная практика без давления группы.</p>
         </div>
 
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-industry-vocab.svg" alt="">
           </div>
-          <h4>Чтение и аудирование</h4>
-          <p>Материалы подбираются с учётом интересов ребёнка.</p>
+          <h4 data-i18n="kidsIndSkill3Title">Чтение и аудирование</h4>
+          <p data-i18n="kidsIndSkill3Desc">Материалы подбираются с учётом интересов ребёнка.</p>
         </div>
 
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-grammar.svg" alt="">
           </div>
-          <h4>Грамматика и уверенность</h4>
-          <p>Закрепляется через персональную обратную связь на каждом уроке.</p>
+          <h4 data-i18n="kidsIndSkill4Title">Грамматика и уверенность</h4>
+          <p data-i18n="kidsIndSkill4Desc">Закрепляется через персональную обратную связь на каждом уроке.</p>
         </div>
 
       </div>
     </div>
 
     <div class="prog-for-section">
-      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <h3 class="prog-section-label" data-i18n="forLabel">Кому подойдёт этот курс?</h3>
       <div class="prog-for-list">
-        <div class="prog-for-item">✓ Дети, которым нужен индивидуальный темп</div>
-        <div class="prog-for-item">✓ Стеснительные ученики, предпочитающие занятия 1:1</div>
-        <div class="prog-for-item">✓ Дети, наверстывающие материал или готовящиеся к школьному английскому</div>
-        <div class="prog-for-item">✓ Семьи, желающие гибкое расписание</div>
+        <div class="prog-for-item" data-i18n="kidsIndFor1">✓ Дети, которым нужен индивидуальный темп</div>
+        <div class="prog-for-item" data-i18n="kidsIndFor2">✓ Стеснительные ученики, предпочитающие занятия 1:1</div>
+        <div class="prog-for-item" data-i18n="kidsIndFor3">✓ Дети, наверстывающие материал или готовящиеся к школьному английскому</div>
+        <div class="prog-for-item" data-i18n="kidsIndFor4">✓ Семьи, желающие гибкое расписание</div>
       </div>
     </div>
 
     <div class="prog-parent-note">
       <div>
-        <strong>Заметка для родителей</strong>
-        <p>После пробного урока мы предоставляем подробную обратную связь об уровне ребёнка, сильных сторонах,
+        <strong data-i18n="parentNoteTitle">Заметка для родителей</strong>
+        <p data-i18n="parentNoteText">После пробного урока мы предоставляем подробную обратную связь об уровне ребёнка, сильных сторонах,
           зонах роста и персональном плане обучения.</p>
       </div>
     </div>
@@ -487,38 +486,38 @@
 
     <div class="prog-overview">
       <div class="prog-overview-text">
-        <h2>Подготовка к IELTS</h2>
-        <p>Полная программа с чёткими стратегиями по всем четырём навыкам IELTS. Мы начинаем с подробной оценки
+        <h2 data-i18n="ieltsTitle">Подготовка к IELTS</h2>
+        <p data-i18n="ieltsDesc">Полная программа с чёткими стратегиями по всем четырём навыкам IELTS. Мы начинаем с подробной оценки
           уровня и составляем персональный план подготовки: шаблоны для письма, структурированные ответы Speaking с
           индивидуальной обратной связью, пробные тесты и симуляции экзамена.</p>
         <div class="prog-overview-pills">
-          <span class="prog-pill">1:1</span>
-          <span class="prog-pill">8–16 недель</span>
-          <span class="prog-pill">От среднего уровня</span>
-          <span class="prog-pill">2 раза в неделю</span>
+          <span class="prog-pill" data-i18n="examPill1">1:1</span>
+          <span class="prog-pill" data-i18n="examPill2">8–16 недель</span>
+          <span class="prog-pill" data-i18n="examPill3">От среднего уровня</span>
+          <span class="prog-pill" data-i18n="businessPill3">2 раза в неделю</span>
         </div>
         <div class="prog-overview-actions">
-          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
-          <span class="prog-pill prog-pill--price">22 900 ₽/мес</span>
+          <a href="index.html#contact" class="prog-btn-primary" data-i18n="ctaTrial">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price" data-i18n="ieltsPrice">22 900 ₽/мес</span>
         </div>
       </div>
       <div class="prog-overview-img">
-        <img src="assets/img/IELTS.png" alt="Подготовка к IELTS"
+        <img src="assets/img/IELTS.png" data-i18n-alt="ieltsTitle" alt="Подготовка к IELTS"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="prog-img-ph prog-img-ph--exam">🎓</div>
       </div>
     </div>
 
     <div class="prog-skills-section">
-      <h3 class="prog-section-label">Чему вы научитесь</h3>
+      <h3 class="prog-section-label" data-i18n="skillsLabel">Чему вы научитесь</h3>
       <div class="prog-skills-grid">
-        
+
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-phonics.svg" alt="">
           </div>
           <h4>Reading</h4>
-          <p>Техники быстрого чтения и анализа текста.</p>
+          <p data-i18n="ieltsSkill1Desc">Техники быстрого чтения и анализа текста.</p>
         </div>
 
         <div class="prog-skill-card">
@@ -526,15 +525,15 @@
             <img src="./assets/img/icon-listening.svg" alt="">
           </div>
           <h4>Listening</h4>
-          <p>Стратегии аудирования для сложного аудио.</p>
+          <p data-i18n="ieltsSkill2Desc">Стратегии аудирования для сложного аудио.</p>
         </div>
 
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-exercises.svg" alt="">
           </div>
-          <h4>Writing Task</h4>
-          <p>Надёжные структуры письменных заданий.</p>
+          <h4 data-i18n="ieltsSkill3Title">Writing Task</h4>
+          <p data-i18n="ieltsSkill3Desc">Надёжные структуры письменных заданий.</p>
         </div>
 
         <div class="prog-skill-card">
@@ -542,19 +541,19 @@
             <img src="./assets/img/icon-speaking.svg" alt="">
           </div>
           <h4>Speaking</h4>
-          <p>Практика Speaking по частям.</p>
+          <p data-i18n="ieltsSkill4Desc">Практика Speaking по частям.</p>
         </div>
 
       </div>
     </div>
 
     <div class="prog-for-section">
-      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <h3 class="prog-section-label" data-i18n="forLabel">Кому подойдёт этот курс?</h3>
       <div class="prog-for-list">
-        <div class="prog-for-item">✓ Студенты, готовящиеся к учёбе за границей</div>
-        <div class="prog-for-item">✓ Подающие документы на визу и иммиграцию</div>
-        <div class="prog-for-item">✓ Стремящиеся к баллу IELTS 6.0–8.0+</div>
-        <div class="prog-for-item">✓ Поступающие в университет или на стипендиальные программы</div>
+        <div class="prog-for-item" data-i18n="examFor1">✓ Студенты, готовящиеся к учёбе за границей</div>
+        <div class="prog-for-item" data-i18n="examFor2">✓ Подающие документы на визу и иммиграцию</div>
+        <div class="prog-for-item" data-i18n="ieltsFor3">✓ Стремящиеся к баллу IELTS 6.0–8.0+</div>
+        <div class="prog-for-item" data-i18n="examFor4">✓ Поступающие в университет или на стипендиальные программы</div>
       </div>
     </div>
   </section>
@@ -565,36 +564,36 @@
 
     <div class="prog-overview">
       <div class="prog-overview-text">
-        <h2>Подготовка к TOEFL</h2>
-        <p>Полная программа с чёткими стратегиями по всем четырём навыкам TOEFL. Персональный план подготовки, структурированные ответы Speaking и Writing по форматам ETS, пробные тесты и разбор ошибок.</p>
+        <h2 data-i18n="toeflTitle">Подготовка к TOEFL</h2>
+        <p data-i18n="toeflDesc">Полная программа с чёткими стратегиями по всем четырём навыкам TOEFL. Персональный план подготовки, структурированные ответы Speaking и Writing по форматам ETS, пробные тесты и разбор ошибок.</p>
         <div class="prog-overview-pills">
-          <span class="prog-pill">1:1</span>
-          <span class="prog-pill">8–16 недель</span>
-          <span class="prog-pill">От среднего уровня</span>
-          <span class="prog-pill">2 раза в неделю</span>
+          <span class="prog-pill" data-i18n="examPill1">1:1</span>
+          <span class="prog-pill" data-i18n="examPill2">8–16 недель</span>
+          <span class="prog-pill" data-i18n="examPill3">От среднего уровня</span>
+          <span class="prog-pill" data-i18n="businessPill3">2 раза в неделю</span>
         </div>
         <div class="prog-overview-actions">
-          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
-          <span class="prog-pill prog-pill--price">22 900 ₽/мес</span>
+          <a href="index.html#contact" class="prog-btn-primary" data-i18n="ctaTrial">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price" data-i18n="toeflPrice">22 900 ₽/мес</span>
         </div>
       </div>
       <div class="prog-overview-img">
-        <img src="./assets/img/TOFEL.jpg" alt="Подготовка к TOEFL"
+        <img src="./assets/img/TOFEL.jpg" data-i18n-alt="toeflTitle" alt="Подготовка к TOEFL"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="prog-img-ph prog-img-ph--exam">🎓</div>
       </div>
     </div>
 
     <div class="prog-skills-section">
-      <h3 class="prog-section-label">Чему вы научитесь</h3>
+      <h3 class="prog-section-label" data-i18n="skillsLabel">Чему вы научитесь</h3>
       <div class="prog-skills-grid">
 
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-exercises.svg" alt="">
           </div>
-          <h4>Академическое письмо</h4>
-          <p>Чёткая структура ответов по форматам ETS.</p>
+          <h4 data-i18n="toeflSkill1Title">Академическое письмо</h4>
+          <p data-i18n="toeflSkill1Desc">Чёткая структура ответов по форматам ETS.</p>
         </div>
 
         <div class="prog-skill-card">
@@ -602,35 +601,35 @@
             <img src="./assets/img/icon-speaking.svg" alt="">
           </div>
           <h4>Speaking</h4>
-          <p>Эффективные ответы в заданиях Speaking.</p>
+          <p data-i18n="toeflSkill2Desc">Эффективные ответы в заданиях Speaking.</p>
         </div>
 
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-listening.svg" alt="">
           </div>
-          <h4>Академическое аудирование</h4>
-          <p>Техники понимания университетских лекций.</p>
+          <h4 data-i18n="toeflSkill3Title">Академическое аудирование</h4>
+          <p data-i18n="toeflSkill3Desc">Техники понимания университетских лекций.</p>
         </div>
 
         <div class="prog-skill-card">
           <div class="prog-skill-icon">
             <img src="./assets/img/icon-vocabulary.svg" alt="">
           </div>
-          <h4>Полные пробные тесты</h4>
-          <p>Регулярные пробные тесты с разбором ошибок.</p>
+          <h4 data-i18n="toeflSkill4Title">Полные пробные тесты</h4>
+          <p data-i18n="toeflSkill4Desc">Регулярные пробные тесты с разбором ошибок.</p>
         </div>
 
       </div>
     </div>
 
     <div class="prog-for-section">
-      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <h3 class="prog-section-label" data-i18n="forLabel">Кому подойдёт этот курс?</h3>
       <div class="prog-for-list">
-        <div class="prog-for-item">✓ Студенты, готовящиеся к учёбе за границей</div>
-        <div class="prog-for-item">✓ Подающие документы на визу и иммиграцию</div>
-        <div class="prog-for-item">✓ Стремящиеся к баллу TOEFL 90+</div>
-        <div class="prog-for-item">✓ Поступающие в университет или на стипендиальные программы</div>
+        <div class="prog-for-item" data-i18n="examFor1">✓ Студенты, готовящиеся к учёбе за границей</div>
+        <div class="prog-for-item" data-i18n="examFor2">✓ Подающие документы на визу и иммиграцию</div>
+        <div class="prog-for-item" data-i18n="toeflFor3">✓ Стремящиеся к баллу TOEFL 90+</div>
+        <div class="prog-for-item" data-i18n="examFor4">✓ Поступающие в университет или на стипендиальные программы</div>
       </div>
     </div>
   </section>
@@ -641,57 +640,57 @@
 
     <div class="prog-overview">
       <div class="prog-overview-text">
-        <h2>Индивидуальные занятия</h2>
-        <p>Полностью персонализированная программа под ваши уникальные цели. Мы начинаем с подробной консультации и
+        <h2 data-i18n="individualTitle">Индивидуальные занятия</h2>
+        <p data-i18n="individualDesc">Полностью персонализированная программа под ваши уникальные цели. Мы начинаем с подробной консультации и
           составляем план с учётом вашего образа жизни и целей. Занятия сосредоточены на реальном общении, точечной
           коррекции ошибок и практических сценариях, с домашними заданиями и обратной связью от преподавателя.</p>
         <div class="prog-overview-pills">
-          <span class="prog-pill">1:1</span>
-          <span class="prog-pill">Гибкое расписание</span>
-          <span class="prog-pill">Любой уровень</span>
-          <span class="prog-pill">Прогресс уже через 4 недели</span>
+          <span class="prog-pill" data-i18n="examPill1">1:1</span>
+          <span class="prog-pill" data-i18n="businessPill2">Гибкое расписание</span>
+          <span class="prog-pill" data-i18n="generalPill2">Любой уровень</span>
+          <span class="prog-pill" data-i18n="individualPill4">Прогресс уже через 4 недели</span>
         </div>
         <div class="prog-overview-actions">
-          <a href="index.html#contact" class="prog-btn-primary">Записаться на пробный урок →</a>
-          <span class="prog-pill prog-pill--price">19 900 ₽/мес</span>
+          <a href="index.html#contact" class="prog-btn-primary" data-i18n="ctaTrial">Записаться на пробный урок →</a>
+          <span class="prog-pill prog-pill--price" data-i18n="individualPrice">19 900 ₽/мес</span>
         </div>
       </div>
       <div class="prog-overview-img">
-        <img src="assets/img/Individual-Lessons.jpg" alt="Индивидуальные занятия"
+        <img src="assets/img/Individual-Lessons.jpg" data-i18n-alt="individualTitle" alt="Индивидуальные занятия"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="prog-img-ph prog-img-ph--general">🎯</div>
       </div>
     </div>
 
     <div class="prog-skills-section">
-      <h3 class="prog-section-label">Преимущества</h3>
+      <h3 class="prog-section-label" data-i18n="benefitsLabel">Преимущества</h3>
       <div class="prog-skills-grid">
         <div class="prog-skill-card">
-          <h4>Полностью индивидуальный план</h4>
-          <p>100% внимания вашим конкретным потребностям и темпу обучения.</p>
+          <h4 data-i18n="individualBenefit1Title">Полностью индивидуальный план</h4>
+          <p data-i18n="individualBenefit1Desc">100% внимания вашим конкретным потребностям и темпу обучения.</p>
         </div>
         <div class="prog-skill-card">
-          <h4>Гибкое расписание</h4>
-          <p>Подстраивается под ваш образ жизни.</p>
+          <h4 data-i18n="businessPill2">Гибкое расписание</h4>
+          <p data-i18n="individualBenefit2Desc">Подстраивается под ваш образ жизни.</p>
         </div>
         <div class="prog-skill-card">
-          <h4>Записи занятий</h4>
-          <p>По желанию — для закрепления прогресса между уроками.</p>
+          <h4 data-i18n="individualBenefit3Title">Записи занятий</h4>
+          <p data-i18n="individualBenefit3Desc">По желанию — для закрепления прогресса между уроками.</p>
         </div>
         <div class="prog-skill-card">
-          <h4>Домашние задания</h4>
-          <p>С персональной обратной связью от преподавателя.</p>
+          <h4 data-i18n="individualBenefit4Title">Домашние задания</h4>
+          <p data-i18n="individualBenefit4Desc">С персональной обратной связью от преподавателя.</p>
         </div>
       </div>
     </div>
 
     <div class="prog-for-section">
-      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <h3 class="prog-section-label" data-i18n="forLabel">Кому подойдёт этот курс?</h3>
       <div class="prog-for-list">
-        <div class="prog-for-item">✓ Переезд или собеседования на работу</div>
-        <div class="prog-for-item">✓ Ускоренный прогресс</div>
-        <div class="prog-for-item">✓ Профессиональное общение</div>
-        <div class="prog-for-item">✓ Преодоление барьера в разговорной речи</div>
+        <div class="prog-for-item" data-i18n="individualFor1">✓ Переезд или собеседования на работу</div>
+        <div class="prog-for-item" data-i18n="individualFor2">✓ Ускоренный прогресс</div>
+        <div class="prog-for-item" data-i18n="individualFor3">✓ Профессиональное общение</div>
+        <div class="prog-for-item" data-i18n="individualFor4">✓ Преодоление барьера в разговорной речи</div>
       </div>
     </div>
   </section>
@@ -702,83 +701,83 @@
 
     <div class="prog-overview">
       <div class="prog-overview-text">
-        <h2>Корпоративное обучение</h2>
-        <p>Наши корпоративные программы выстроены под цели вашей компании. Мы используем реальные кейсы, отраслевую лексику и коммуникационные задачи, с которыми ваши команды сталкиваются ежедневно. Регулярное отслеживание прогресса и отчётность обеспечивают измеримые результаты для продуктивности, продаж и работы с клиентами.</p>
+        <h2 data-i18n="corporateTitle">Корпоративное обучение</h2>
+        <p data-i18n="corporateDesc">Наши корпоративные программы выстроены под цели вашей компании. Мы используем реальные кейсы, отраслевую лексику и коммуникационные задачи, с которыми ваши команды сталкиваются ежедневно. Регулярное отслеживание прогресса и отчётность обеспечивают измеримые результаты для продуктивности, продаж и работы с клиентами.</p>
         <div class="prog-overview-pills">
-          <span class="prog-pill">Для команд и компаний</span>
-          <span class="prog-pill">Индивидуальная программа</span>
-          <span class="prog-pill">Онлайн или очно</span>
-          <span class="prog-pill">2 раза в неделю</span>
+          <span class="prog-pill" data-i18n="corporatePill1">Для команд и компаний</span>
+          <span class="prog-pill" data-i18n="corporatePill2">Индивидуальная программа</span>
+          <span class="prog-pill" data-i18n="corporatePill3">Онлайн или очно</span>
+          <span class="prog-pill" data-i18n="businessPill3">2 раза в неделю</span>
         </div>
         <div class="prog-overview-actions">
-          <a href="index.html#contact" class="prog-btn-primary">Запросить предложение →</a>
-          <span class="prog-pill prog-pill--price">от 26 900 ₽/мес</span>
+          <a href="index.html#contact" class="prog-btn-primary" data-i18n="corporateCta">Запросить предложение →</a>
+          <span class="prog-pill prog-pill--price" data-i18n="corporatePrice">от 26 900 ₽/мес</span>
         </div>
       </div>
       <div class="prog-overview-img">
-        <img src="assets/img/Corporate-Training.jpg" alt="Корпоративное обучение"
+        <img src="assets/img/Corporate-Training.jpg" data-i18n-alt="corporateTitle" alt="Корпоративное обучение"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="prog-img-ph prog-img-ph--corporate">🏢</div>
       </div>
     </div>
 
     <div class="prog-skills-section">
-      <h3 class="prog-section-label">Что получат команды</h3>
+      <h3 class="prog-section-label" data-i18n="corporateSkillsLabel">Что получат команды</h3>
       <div class="prog-skills-grid">
         <div class="prog-skill-card">
-          <h4>Деловая коммуникация</h4>
-          <p>Уверенная профессиональная коммуникация в презентациях и переговорах.</p>
+          <h4 data-i18n="corporateSkill1Title">Деловая коммуникация</h4>
+          <p data-i18n="corporateSkill1Desc">Уверенная профессиональная коммуникация в презентациях и переговорах.</p>
         </div>
         <div class="prog-skill-card">
-          <h4>Деловая переписка</h4>
-          <p>Чёткие и эффективные деловые письма и отчёты.</p>
+          <h4 data-i18n="businessSkill3Title">Деловая переписка</h4>
+          <p data-i18n="corporateSkill2Desc">Чёткие и эффективные деловые письма и отчёты.</p>
         </div>
         <div class="prog-skill-card">
-          <h4>Работа с клиентами</h4>
-          <p>Ролевые сценарии на основе реальных ситуаций компании.</p>
+          <h4 data-i18n="corporateSkill3Title">Работа с клиентами</h4>
+          <p data-i18n="corporateSkill3Desc">Ролевые сценарии на основе реальных ситуаций компании.</p>
         </div>
         <div class="prog-skill-card">
-          <h4>Отраслевая лексика</h4>
-          <p>Лексика и сценарии под вашу отрасль — технологии, финансы, здравоохранение, гостеприимство и другие.
+          <h4 data-i18n="corporateSkill4Title">Отраслевая лексика</h4>
+          <p data-i18n="corporateSkill4Desc">Лексика и сценарии под вашу отрасль — технологии, финансы, здравоохранение, гостеприимство и другие.
           </p>
         </div>
       </div>
     </div>
 
     <div class="prog-for-section">
-      <h3 class="prog-section-label">Кому подойдёт этот курс?</h3>
+      <h3 class="prog-section-label" data-i18n="forLabel">Кому подойдёт этот курс?</h3>
       <div class="prog-for-list">
-        <div class="prog-for-item">✓ Компании с международными клиентами</div>
-        <div class="prog-for-item">✓ Команды, готовящиеся к глобальным проектам</div>
-        <div class="prog-for-item">✓ Отделы продаж и обслуживания клиентов</div>
-        <div class="prog-for-item">✓ Руководители и менеджмент</div>
+        <div class="prog-for-item" data-i18n="corporateFor1">✓ Компании с международными клиентами</div>
+        <div class="prog-for-item" data-i18n="corporateFor2">✓ Команды, готовящиеся к глобальным проектам</div>
+        <div class="prog-for-item" data-i18n="corporateFor3">✓ Отделы продаж и обслуживания клиентов</div>
+        <div class="prog-for-item" data-i18n="corporateFor4">✓ Руководители и менеджмент</div>
       </div>
     </div>
 
     <!-- Corporate process steps -->
     <div class="prog-process-section">
-      <h3 class="prog-section-label">Как это работает</h3>
+      <h3 class="prog-section-label" data-i18n="processLabel">Как это работает</h3>
       <div class="prog-process-grid">
         <div class="prog-process-step">
           <div class="prog-process-num">01</div>
-          <h4>Оценка потребностей</h4>
-          <p>Мы встречаемся с вашей командой, чтобы понять цели, текущий уровень английского и специфику отрасли.
+          <h4 data-i18n="process1Title">Оценка потребностей</h4>
+          <p data-i18n="process1Desc">Мы встречаемся с вашей командой, чтобы понять цели, текущий уровень английского и специфику отрасли.
           </p>
         </div>
         <div class="prog-process-step">
           <div class="prog-process-num">02</div>
-          <h4>Индивидуальная программа</h4>
-          <p>Разрабатываем программу обучения специально для ваших сотрудников — не общий курс «из коробки».</p>
+          <h4 data-i18n="process2Title">Индивидуальная программа</h4>
+          <p data-i18n="process2Desc">Разрабатываем программу обучения специально для ваших сотрудников — не общий курс «из коробки».</p>
         </div>
         <div class="prog-process-step">
           <div class="prog-process-num">03</div>
-          <h4>Проведение занятий</h4>
-          <p>Живые занятия онлайн или в офисе, по удобному для команды расписанию.</p>
+          <h4 data-i18n="process3Title">Проведение занятий</h4>
+          <p data-i18n="process3Desc">Живые занятия онлайн или в офисе, по удобному для команды расписанию.</p>
         </div>
         <div class="prog-process-step">
           <div class="prog-process-num">04</div>
-          <h4>Отчётность о прогрессе</h4>
-          <p>Регулярные отчёты отслеживают индивидуальный и командный прогресс.</p>
+          <h4 data-i18n="process4Title">Отчётность о прогрессе</h4>
+          <p data-i18n="process4Desc">Регулярные отчёты отслеживают индивидуальный и командный прогресс.</p>
         </div>
       </div>
     </div>
@@ -789,10 +788,10 @@
   <!-- TRIAL BANNER -->
   <div class="prog-trial-banner-wrap">
     <div class="prog-trial-banner">
-      <h2>Не уверены, какая программа вам подходит?</h2>
-      <p>Запишитесь на бесплатную консультацию. Мы оценим ваш уровень и подберём программу под ваши цели — без
+      <h2 data-i18n="trialBannerH2">Не уверены, какая программа вам подходит?</h2>
+      <p data-i18n="trialBannerP">Запишитесь на бесплатную консультацию. Мы оценим ваш уровень и подберём программу под ваши цели — без
         обязательств.</p>
-      <a href="index.html#contact">Записаться на бесплатную консультацию →</a>
+      <a href="index.html#contact" data-i18n="trialBannerLink">Записаться на бесплатную консультацию →</a>
     </div>
   </div>
 
@@ -806,13 +805,13 @@
         </a>
       </div>
       <ul class="footer-nav">
-        <li><a href="programs.html" class="nav-current">Программы</a></li>
-        <li><a href="index.html#programs">Стоимость</a></li>
-        <li><a href="index.html#contact">Пробный урок</a></li>
-        <li><a href="index.html#about">О школе</a></li>
-        <li><a href="index.html#testimonials">Отзывы</a></li>
-        <li><a href="index.html#articles">Статьи</a></li>
-        <li><a href="index.html#contact">Контакты</a></li>
+        <li><a href="programs.html" class="nav-current" data-i18n="navPrograms">Программы</a></li>
+        <li><a href="index.html#programs" data-i18n="footerPricing">Стоимость</a></li>
+        <li><a href="index.html#contact" data-i18n="navTrial">Пробный урок</a></li>
+        <li><a href="index.html#about" data-i18n="navAbout">О школе</a></li>
+        <li><a href="index.html#testimonials" data-i18n="navTestimonials">Отзывы</a></li>
+        <li><a href="index.html#articles" data-i18n="footerArticles">Статьи</a></li>
+        <li><a href="index.html#contact" data-i18n="navContact">Контакты</a></li>
       </ul>
 
       <!-- <div class="footer-socials">
@@ -824,12 +823,12 @@
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 Ally Lingua. Все права защищены.</p>
+      <p data-i18n="footerCopyright">© 2026 Ally Lingua. Все права защищены.</p>
 
       <div class="footer-links">
-        <a href="./legal/privacy_policy_ru.html">Политика конфиденциальности</a>
-        <a href="./legal/terms_of_use_ru.html">Условия использования</a>
-        <a href="./legal/public_offer_ru.html">Договор оферты</a>
+        <a href="./legal/privacy_policy_ru.html" data-i18n="footerPrivacy" data-i18n-href="footerPrivacyHref">Политика конфиденциальности</a>
+        <a href="./legal/terms_of_use_ru.html" data-i18n="footerTerms" data-i18n-href="footerTermsHref">Условия использования</a>
+        <a href="./legal/public_offer_ru.html" data-i18n="footerOffer" data-i18n-href="footerOfferHref">Договор оферты</a>
       </div>
 
     </div>
@@ -838,6 +837,233 @@
     </div>
   </footer>
 
+  <script src="assets/i18n.js"></script>
+
+  <!-- Translations -->
+  <script>
+    window.I18N = {
+      navHome: { ru: "Главная", en: "Home" },
+      navPrograms: { ru: "Программы <img src=\"./assets/img/arrow.svg\" alt=\"\" class=\"nav-arrow\">", en: "Programmes <img src=\"./assets/img/arrow.svg\" alt=\"\" class=\"nav-arrow\">" },
+      navKidsGroup: { ru: "Английский для детей (группа)", en: "English for Children (Group)" },
+      navKidsIndividual: { ru: "Английский для детей (инд.)", en: "English for Children (Individual)" },
+      navBusiness: { ru: "Бизнес-английский", en: "Business English" },
+      navGeneral: { ru: "Общий английский", en: "General English" },
+      navIelts: { ru: "Подготовка к IELTS", en: "IELTS Preparation" },
+      navToefl: { ru: "Подготовка к TOEFL", en: "TOEFL Preparation" },
+      navIndividual: { ru: "Индивидуальные занятия", en: "Private Lessons" },
+      navCorporate: { ru: "Корпоративное обучение", en: "Corporate Training" },
+      navAbout: { ru: "О школе", en: "About Us" },
+      navTestimonials: { ru: "Отзывы", en: "Testimonials" },
+      navContact: { ru: "Контакты", en: "Contact" },
+      navMore: { ru: "Ещё <img src=\"./assets/img/arrow.svg\" alt=\"\" class=\"nav-arrow\">", en: "More <img src=\"./assets/img/arrow.svg\" alt=\"\" class=\"nav-arrow\">" },
+      navArticles: { ru: "Полезные статьи", en: "Articles" },
+      navFaq: { ru: "Вопросы и ответы", en: "FAQs" },
+      navApply: { ru: "Записаться", en: "Book Now" },
+      navPrices: { ru: "Стоимость курсов", en: "Course Prices" },
+      navTrial: { ru: "Пробный урок", en: "Trial Lesson" },
+
+      pageHeroTag: { ru: "Наши курсы", en: "Our Courses" },
+      pageHeroH1: { ru: "Найдите свой<br><span>идеальный курс</span>", en: "Find Your<br><span>Perfect Course</span>" },
+      pageHeroP: { ru: "Хотите продвинуться по карьерной лестнице, подготовиться к экзаменам или улучшить повседневный английский — у нас есть подходящий курс для вас. Все программы ведут опытные преподаватели по проверенным методикам Oxford.", en: "Whether you want to advance your career, prepare for an exam, or improve your everyday English — we have the right course for you. All our programmes are taught by experienced teachers using proven Oxford methodologies." },
+
+      tabKidsGroup: { ru: "Детям (группа)", en: "Kids (Group)" },
+      tabKidsIndividual: { ru: "Детям (инд.)", en: "Kids (Individual)" },
+      tabBusiness: { ru: "Бизнес-английский", en: "Business English" },
+      tabGeneral: { ru: "Общий английский", en: "General English" },
+      tabIelts: { ru: "IELTS", en: "IELTS" },
+      tabToefl: { ru: "TOEFL", en: "TOEFL" },
+      tabIndividual: { ru: "Индивидуально", en: "Private" },
+      tabCorporate: { ru: "Корпоративный", en: "Corporate" },
+
+      skillsLabel: { ru: "Чему вы научитесь", en: "What You'll Learn" },
+      kidsSkillsLabel: { ru: "Чему научатся дети", en: "What Children Will Learn" },
+      benefitsLabel: { ru: "Преимущества", en: "Benefits" },
+      forLabel: { ru: "Кому подойдёт этот курс?", en: "Who Is This Course For?" },
+      ctaTrial: { ru: "Записаться на пробный урок →", en: "Book a Trial Lesson →" },
+      parentNoteTitle: { ru: "Заметка для родителей", en: "A Note for Parents" },
+      parentNoteText: { ru: "После пробного урока мы предоставляем подробную обратную связь об уровне ребёнка, сильных сторонах, зонах роста и персональном плане обучения.", en: "After the trial lesson, we provide detailed feedback on your child's level, strengths, areas for growth and a personalised learning plan." },
+
+      businessPill2: { ru: "Гибкое расписание", en: "Flexible Scheduling" },
+      businessPill3: { ru: "2 раза в неделю", en: "Twice a Week" },
+      generalPill2: { ru: "Любой уровень", en: "Any Level" },
+      examPill1: { ru: "1:1", en: "1:1" },
+      examPill2: { ru: "8–16 недель", en: "8–16 Weeks" },
+      examPill3: { ru: "От среднего уровня", en: "Intermediate and Above" },
+      examFor1: { ru: "✓ Студенты, готовящиеся к учёбе за границей", en: "✓ Students preparing to study abroad" },
+      examFor2: { ru: "✓ Подающие документы на визу и иммиграцию", en: "✓ Those applying for a visa or immigration" },
+      examFor4: { ru: "✓ Поступающие в университет или на стипендиальные программы", en: "✓ Applicants to university or scholarship programmes" },
+
+      businessTitle: { ru: "Бизнес-английский", en: "Business English" },
+      businessDesc: { ru: "Развивайте уверенное деловое общение по методике Oxford Business Result. Программа поможет вам уверенно работать в международной деловой среде: разбор реальных кейсов, ролевые ситуации и практические задания, отражающие настоящее общение — встречи, конференц-звонки, переговоры и отношения с клиентами. Акцент на ясности, дипломатичности и естественном профессиональном стиле.", en: "Build confident business communication with the Oxford Business Result method. This programme helps you operate confidently in an international business environment: real case studies, role-play scenarios and practical tasks that reflect genuine communication — meetings, conference calls, negotiations and client relationships. The focus is on clarity, diplomacy and a natural professional style." },
+      businessPill1: { ru: "1:1 или 1:4", en: "1:1 or 1:4" },
+      businessPill4: { ru: "От среднего уровня", en: "Intermediate and Above" },
+      businessPrice: { ru: "19 900 ₽/мес", en: "€220/month" },
+      businessSkill1Title: { ru: "Профессиональная лексика", en: "Professional Vocabulary" },
+      businessSkill1Desc: { ru: "Профессиональная лексика и терминология для различных деловых контекстов.", en: "Professional vocabulary and terminology for a range of business contexts." },
+      businessSkill2Title: { ru: "Переговоры", en: "Negotiation" },
+      businessSkill2Desc: { ru: "Тактики и стратегии ведения переговоров на английском языке.", en: "Tactics and strategies for negotiating in English." },
+      businessSkill3Title: { ru: "Деловая переписка", en: "Business Correspondence" },
+      businessSkill3Desc: { ru: "Навыки делового письма: email, отчёты и коммерческие предложения.", en: "Business writing skills: emails, reports and proposals." },
+      businessSkill4Title: { ru: "Презентации", en: "Presentations" },
+      businessSkill4Desc: { ru: "Навыки презентаций и уверенность в публичных выступлениях.", en: "Presentation skills and confidence in public speaking." },
+      businessFor1: { ru: "✓ Специалисты, работающие с международными партнёрами", en: "✓ Professionals working with international partners" },
+      businessFor2: { ru: "✓ Предприниматели и владельцы бизнеса", en: "✓ Entrepreneurs and business owners" },
+      businessFor3: { ru: "✓ Менеджеры, развивающие лидерскую коммуникацию", en: "✓ Managers developing leadership communication" },
+      businessFor4: { ru: "✓ Выпускники, выходящие на глобальный рынок труда", en: "✓ Graduates entering the global job market" },
+
+      generalTitle: { ru: "Общий английский", en: "General English" },
+      generalDesc: { ru: "Комплексный курс по методике English File, который поможет вам чувствовать себя уверенно с английским в повседневной жизни. Уроки сочетают разговорную практику, грамматику в контексте, аудирование, стратегии чтения и письмо с сопровождением.", en: "A comprehensive course based on the English File method, helping you feel confident using English in everyday life. Lessons combine speaking practice, grammar in context, listening, reading strategies and guided writing." },
+      generalPill1: { ru: "1:1 или 1:4", en: "1:1 or 1:4" },
+      generalPill3: { ru: "2 раза в неделю", en: "Twice a Week" },
+      generalPill4: { ru: "Гибкое расписание", en: "Flexible Scheduling" },
+      generalPrice: { ru: "19 900 ₽/мес", en: "€220/month" },
+      generalSkill1Title: { ru: "Разговорная беглость", en: "Conversational Fluency" },
+      generalSkill1Desc: { ru: "Развитие навыков естественной разговорной речи.", en: "Developing natural, confident speaking skills." },
+      generalSkill2Title: { ru: "Грамматика", en: "Grammar" },
+      generalSkill2Desc: { ru: "Основы грамматики и продвинутые структуры, объяснённые понятно и практично.", en: "Core grammar and advanced structures, explained clearly and practically." },
+      generalSkill3Title: { ru: "Чтение", en: "Reading" },
+      generalSkill3Desc: { ru: "Понимание прочитанного и развитие критического мышления.", en: "Reading comprehension and critical thinking skills." },
+      generalSkill4Title: { ru: "Письмо", en: "Writing" },
+      generalSkill4Desc: { ru: "Навыки письма для разных контекстов и аудиторий.", en: "Writing skills for different contexts and audiences." },
+      generalFor1: { ru: "✓ Взрослые, улучшающие общий уровень английского", en: "✓ Adults improving their overall level of English" },
+      generalFor2: { ru: "✓ Готовящиеся к путешествию или переезду", en: "✓ Those preparing to travel or relocate" },
+      generalFor3: { ru: "✓ Ученики, которым нужна более прочная база языка", en: "✓ Learners who need a stronger language foundation" },
+      generalFor4: { ru: "✓ Все, кто хочет уверенно говорить", en: "✓ Anyone who wants to speak with confidence" },
+
+      kidsGroupTitle: { ru: "Английский для детей (групповые занятия)", en: "English for Children (Group Lessons)" },
+      kidsGroupDesc: { ru: "Ally Lingua предлагает групповые занятия английским для детей по сериям Oxford Family and Friends и Cambridge Power Up: интерактивные активности, увлекательные истории и языковые упражнения, которые прививают любовь к изучению английского в компании сверстников.", en: "Ally Lingua offers group English lessons for children based on the Oxford Family and Friends and Cambridge Power Up series: interactive activities, engaging stories and language exercises that build a love of learning English alongside peers." },
+      kidsGroupPill1: { ru: "6–12 лет", en: "Ages 6–12" },
+      kidsGroupPill2: { ru: "Группа 4–6 чел.", en: "Group of 4–6" },
+      kidsGroupPill3: { ru: "2 раза в неделю", en: "Twice a Week" },
+      kidsGroupPill4: { ru: "От начального уровня", en: "Beginner and Above" },
+      kidsGroupPrice: { ru: "8 500 ₽/мес", en: "€100/month" },
+      kidsGroupSkill1Title: { ru: "Игры и активности", en: "Games and Activities" },
+      kidsGroupSkill1Desc: { ru: "Увлекательные интерактивные игры и активности, которые делают обучение приятным.", en: "Fun, interactive games and activities that make learning enjoyable." },
+      kidsGroupSkill2Title: { ru: "Песни и речёвки", en: "Songs and Chants" },
+      kidsGroupSkill2Desc: { ru: "Песни, речёвки и ритмичные техники обучения.", en: "Songs, chants and rhythmic learning techniques." },
+      kidsGroupSkill3Title: { ru: "Истории по возрасту", en: "Age-Appropriate Stories" },
+      kidsGroupSkill3Desc: { ru: "Истории и материалы, соответствующие возрасту и захватывающие воображение.", en: "Stories and materials suited to their age that capture the imagination." },
+      kidsGroupSkill4Title: { ru: "Заботливые преподаватели", en: "Caring Teachers" },
+      kidsGroupSkill4Desc: { ru: "Дружелюбные и поддерживающие преподаватели, преданные развитию каждого ребёнка.", en: "Friendly, supportive teachers dedicated to every child's development." },
+      kidsGroupFor1: { ru: "✓ Дети 6–12 лет, начинающие или продолжающие изучать английский", en: "✓ Children aged 6–12, whether beginners or continuing learners" },
+      kidsGroupFor2: { ru: "✓ Дети, которым нравится учиться вместе со сверстниками", en: "✓ Children who enjoy learning alongside their peers" },
+      kidsGroupFor3: { ru: "✓ Родители, желающие увлекательную и структурированную программу", en: "✓ Parents looking for an engaging, structured programme" },
+      kidsGroupFor4: { ru: "✓ Семьи, которым важен более доступный формат обучения", en: "✓ Families who value a more affordable format" },
+
+      kidsIndTitle: { ru: "Английский для детей (индивидуальные занятия)", en: "English for Children (Individual Lessons)" },
+      kidsIndDesc: { ru: "Индивидуальные занятия, построенные вокруг вашего ребёнка, по методикам Cambridge Power Up и Oxford Family and Friends. Преподаватель подстраивает темп, темы и активности под уровень и интересы ребёнка, уделяя полное внимание произношению, уверенности и стабильному прогрессу без давления группового темпа.", en: "Individual lessons built entirely around your child, using the Cambridge Power Up and Oxford Family and Friends methods. The teacher adapts the pace, topics and activities to your child's level and interests, giving full attention to pronunciation, confidence and steady progress — without the pressure of a group pace." },
+      kidsIndPill1: { ru: "6–12 лет", en: "Ages 6–12" },
+      kidsIndPill2: { ru: "1:1", en: "1:1" },
+      kidsIndPill3: { ru: "2 раза в неделю", en: "Twice a Week" },
+      kidsIndPill4: { ru: "От начального уровня", en: "Beginner and Above" },
+      kidsIndPrice: { ru: "15 900 ₽/мес", en: "€180/month" },
+      kidsIndSkill1Title: { ru: "Лексика и фонетика", en: "Vocabulary and Phonics" },
+      kidsIndSkill1Desc: { ru: "В темпе, комфортном именно для вашего ребёнка.", en: "At a pace that's comfortable for your child." },
+      kidsIndSkill2Title: { ru: "Говорение и произношение", en: "Speaking and Pronunciation" },
+      kidsIndSkill2Desc: { ru: "Индивидуальная практика без давления группы.", en: "One-to-one practice, without any group pressure." },
+      kidsIndSkill3Title: { ru: "Чтение и аудирование", en: "Reading and Listening" },
+      kidsIndSkill3Desc: { ru: "Материалы подбираются с учётом интересов ребёнка.", en: "Materials chosen to match your child's interests." },
+      kidsIndSkill4Title: { ru: "Грамматика и уверенность", en: "Grammar and Confidence" },
+      kidsIndSkill4Desc: { ru: "Закрепляется через персональную обратную связь на каждом уроке.", en: "Reinforced through personal feedback in every lesson." },
+      kidsIndFor1: { ru: "✓ Дети, которым нужен индивидуальный темп", en: "✓ Children who need an individual pace" },
+      kidsIndFor2: { ru: "✓ Стеснительные ученики, предпочитающие занятия 1:1", en: "✓ Shy learners who prefer 1:1 lessons" },
+      kidsIndFor3: { ru: "✓ Дети, наверстывающие материал или готовящиеся к школьному английскому", en: "✓ Children catching up or preparing for school English" },
+      kidsIndFor4: { ru: "✓ Семьи, желающие гибкое расписание", en: "✓ Families who want a flexible schedule" },
+
+      ieltsTitle: { ru: "Подготовка к IELTS", en: "IELTS Preparation" },
+      ieltsDesc: { ru: "Полная программа с чёткими стратегиями по всем четырём навыкам IELTS. Мы начинаем с подробной оценки уровня и составляем персональный план подготовки: шаблоны для письма, структурированные ответы Speaking с индивидуальной обратной связью, пробные тесты и симуляции экзамена.", en: "A comprehensive programme with clear strategies for all four IELTS skills. We start with a detailed level assessment and build a personalised study plan: writing templates, structured Speaking responses with individual feedback, mock tests and full exam simulations." },
+      ieltsPrice: { ru: "22 900 ₽/мес", en: "€250/month" },
+      ieltsSkill1Desc: { ru: "Техники быстрого чтения и анализа текста.", en: "Fast-reading and text-analysis techniques." },
+      ieltsSkill2Desc: { ru: "Стратегии аудирования для сложного аудио.", en: "Listening strategies for complex audio." },
+      ieltsSkill3Title: { ru: "Writing Task", en: "Writing Task" },
+      ieltsSkill3Desc: { ru: "Надёжные структуры письменных заданий.", en: "Reliable structures for written tasks." },
+      ieltsSkill4Desc: { ru: "Практика Speaking по частям.", en: "Part-by-part Speaking practice." },
+      ieltsFor3: { ru: "✓ Стремящиеся к баллу IELTS 6.0–8.0+", en: "✓ Anyone aiming for an IELTS score of 6.0–8.0+" },
+
+      toeflTitle: { ru: "Подготовка к TOEFL", en: "TOEFL Preparation" },
+      toeflDesc: { ru: "Полная программа с чёткими стратегиями по всем четырём навыкам TOEFL. Персональный план подготовки, структурированные ответы Speaking и Writing по форматам ETS, пробные тесты и разбор ошибок.", en: "A comprehensive programme with clear strategies for all four TOEFL skills. A personalised study plan, structured Speaking and Writing responses in ETS formats, mock tests and error analysis." },
+      toeflPrice: { ru: "22 900 ₽/мес", en: "€250/month" },
+      toeflSkill1Title: { ru: "Академическое письмо", en: "Academic Writing" },
+      toeflSkill1Desc: { ru: "Чёткая структура ответов по форматам ETS.", en: "Clear response structures based on ETS formats." },
+      toeflSkill2Desc: { ru: "Эффективные ответы в заданиях Speaking.", en: "Effective responses in Speaking tasks." },
+      toeflSkill3Title: { ru: "Академическое аудирование", en: "Academic Listening" },
+      toeflSkill3Desc: { ru: "Техники понимания университетских лекций.", en: "Techniques for understanding university lectures." },
+      toeflSkill4Title: { ru: "Полные пробные тесты", en: "Full Mock Tests" },
+      toeflSkill4Desc: { ru: "Регулярные пробные тесты с разбором ошибок.", en: "Regular mock tests with detailed error analysis." },
+      toeflFor3: { ru: "✓ Стремящиеся к баллу TOEFL 90+", en: "✓ Anyone aiming for a TOEFL score of 90+" },
+
+      individualTitle: { ru: "Индивидуальные занятия", en: "Private Lessons" },
+      individualDesc: { ru: "Полностью персонализированная программа под ваши уникальные цели. Мы начинаем с подробной консультации и составляем план с учётом вашего образа жизни и целей. Занятия сосредоточены на реальном общении, точечной коррекции ошибок и практических сценариях, с домашними заданиями и обратной связью от преподавателя.", en: "A fully personalised programme built around your unique goals. We start with a detailed consultation and build a plan around your lifestyle and objectives. Lessons focus on real communication, targeted error correction and practical scenarios, with homework and feedback from your teacher." },
+      individualPill4: { ru: "Прогресс уже через 4 недели", en: "Progress Within 4 Weeks" },
+      individualPrice: { ru: "19 900 ₽/мес", en: "€220/month" },
+      individualBenefit1Title: { ru: "Полностью индивидуальный план", en: "Fully Personalised Plan" },
+      individualBenefit1Desc: { ru: "100% внимания вашим конкретным потребностям и темпу обучения.", en: "100% attention on your specific needs and pace of learning." },
+      individualBenefit2Desc: { ru: "Подстраивается под ваш образ жизни.", en: "Fits around your lifestyle." },
+      individualBenefit3Title: { ru: "Записи занятий", en: "Lesson Recordings" },
+      individualBenefit3Desc: { ru: "По желанию — для закрепления прогресса между уроками.", en: "Available on request, to reinforce progress between lessons." },
+      individualBenefit4Title: { ru: "Домашние задания", en: "Homework" },
+      individualBenefit4Desc: { ru: "С персональной обратной связью от преподавателя.", en: "With personal feedback from your teacher." },
+      individualFor1: { ru: "✓ Переезд или собеседования на работу", en: "✓ Relocation or job interviews" },
+      individualFor2: { ru: "✓ Ускоренный прогресс", en: "✓ Accelerated progress" },
+      individualFor3: { ru: "✓ Профессиональное общение", en: "✓ Professional communication" },
+      individualFor4: { ru: "✓ Преодоление барьера в разговорной речи", en: "✓ Overcoming the speaking barrier" },
+
+      corporateTitle: { ru: "Корпоративное обучение", en: "Corporate Training" },
+      corporateDesc: { ru: "Наши корпоративные программы выстроены под цели вашей компании. Мы используем реальные кейсы, отраслевую лексику и коммуникационные задачи, с которыми ваши команды сталкиваются ежедневно. Регулярное отслеживание прогресса и отчётность обеспечивают измеримые результаты для продуктивности, продаж и работы с клиентами.", en: "Our corporate programmes are built around your company's goals. We use real case studies, industry vocabulary and the communication challenges your teams face every day. Regular progress tracking and reporting deliver measurable results for productivity, sales and client relationships." },
+      corporatePill1: { ru: "Для команд и компаний", en: "For Teams and Companies" },
+      corporatePill2: { ru: "Индивидуальная программа", en: "Bespoke Programme" },
+      corporatePill3: { ru: "Онлайн или очно", en: "Online or In-Person" },
+      corporateCta: { ru: "Запросить предложение →", en: "Request a Proposal →" },
+      corporatePrice: { ru: "от 26 900 ₽/мес", en: "From €300/month" },
+      corporateSkillsLabel: { ru: "Что получат команды", en: "What Teams Will Gain" },
+      corporateSkill1Title: { ru: "Деловая коммуникация", en: "Business Communication" },
+      corporateSkill1Desc: { ru: "Уверенная профессиональная коммуникация в презентациях и переговорах.", en: "Confident professional communication in presentations and negotiations." },
+      corporateSkill2Desc: { ru: "Чёткие и эффективные деловые письма и отчёты.", en: "Clear, effective business emails and reports." },
+      corporateSkill3Title: { ru: "Работа с клиентами", en: "Client Relations" },
+      corporateSkill3Desc: { ru: "Ролевые сценарии на основе реальных ситуаций компании.", en: "Role-play scenarios based on your company's real situations." },
+      corporateSkill4Title: { ru: "Отраслевая лексика", en: "Industry Vocabulary" },
+      corporateSkill4Desc: { ru: "Лексика и сценарии под вашу отрасль — технологии, финансы, здравоохранение, гостеприимство и другие.", en: "Vocabulary and scenarios tailored to your industry — technology, finance, healthcare, hospitality and more." },
+      corporateFor1: { ru: "✓ Компании с международными клиентами", en: "✓ Companies with international clients" },
+      corporateFor2: { ru: "✓ Команды, готовящиеся к глобальным проектам", en: "✓ Teams preparing for global projects" },
+      corporateFor3: { ru: "✓ Отделы продаж и обслуживания клиентов", en: "✓ Sales and customer service departments" },
+      corporateFor4: { ru: "✓ Руководители и менеджмент", en: "✓ Executives and management" },
+
+      processLabel: { ru: "Как это работает", en: "How It Works" },
+      process1Title: { ru: "Оценка потребностей", en: "Needs Assessment" },
+      process1Desc: { ru: "Мы встречаемся с вашей командой, чтобы понять цели, текущий уровень английского и специфику отрасли.", en: "We meet with your team to understand your goals, current English level and industry specifics." },
+      process2Title: { ru: "Индивидуальная программа", en: "Bespoke Programme" },
+      process2Desc: { ru: "Разрабатываем программу обучения специально для ваших сотрудников — не общий курс «из коробки».", en: "We design a training programme specifically for your employees — never an off-the-shelf course." },
+      process3Title: { ru: "Проведение занятий", en: "Delivering Lessons" },
+      process3Desc: { ru: "Живые занятия онлайн или в офисе, по удобному для команды расписанию.", en: "Live lessons online or in your office, on a schedule that suits your team." },
+      process4Title: { ru: "Отчётность о прогрессе", en: "Progress Reporting" },
+      process4Desc: { ru: "Регулярные отчёты отслеживают индивидуальный и командный прогресс.", en: "Regular reports track both individual and team progress." },
+
+      trialBannerH2: { ru: "Не уверены, какая программа вам подходит?", en: "Not Sure Which Programme Is Right for You?" },
+      trialBannerP: { ru: "Запишитесь на бесплатную консультацию. Мы оценим ваш уровень и подберём программу под ваши цели — без обязательств.", en: "Book a free consultation. We'll assess your level and recommend the right programme for your goals — with no obligation." },
+      trialBannerLink: { ru: "Записаться на бесплатную консультацию →", en: "Book a Free Consultation →" },
+
+      footerPricing: { ru: "Стоимость", en: "Pricing" },
+      footerArticles: { ru: "Статьи", en: "Articles" },
+      footerCopyright: { ru: "© 2026 Ally Lingua. Все права защищены.", en: "© 2026 Ally Lingua. All rights reserved." },
+      footerPrivacy: { ru: "Политика конфиденциальности", en: "Privacy Policy" },
+      footerPrivacyHref: { ru: "./legal/privacy_policy_ru.html", en: "./legal/privacy_policy_en.html" },
+      footerTerms: { ru: "Условия использования", en: "Terms of Use" },
+      footerTermsHref: { ru: "./legal/terms_of_use_ru.html", en: "./legal/terms_of_use_en.html" },
+      footerOffer: { ru: "Договор оферты", en: "Public Offer Agreement" },
+      footerOfferHref: { ru: "./legal/public_offer_ru.html", en: "./legal/public_offer_en.html" }
+    };
+
+    window.I18N_META = {
+      ru: {
+        title: "Наши курсы – Ally Lingua",
+        description: "Все программы обучения английскому в Ally Lingua — бизнес-английский, общий английский, английский для детей, подготовка к IELTS/TOEFL и корпоративное обучение."
+      },
+      en: {
+        title: "Our Courses – Ally Lingua",
+        description: "All English courses at Ally Lingua — Business English, General English, English for children, IELTS/TOEFL preparation and corporate training."
+      }
+    };
+  </script>
 
   <script>
     /* TAB SWITCHING */
