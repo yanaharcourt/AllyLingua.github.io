@@ -2851,6 +2851,121 @@ section {
 }
 
 /*--------------------------------------------------------------
+# PARTNER PROMO (EnglishPlay.org)
+--------------------------------------------------------------*/
+.partner-promo {
+    background: var(--bg-soft);
+}
+
+.partner-promo-inner {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.partner-promo-text h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: var(--lh-heading);
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.partner-promo-text p {
+    font-size: var(--text-body-large);
+    color: var(--text-light);
+    line-height: 1.65;
+    max-width: 46ch;
+    margin-bottom: 28px;
+}
+
+.partner-promo-btn {
+    display: inline-block;
+}
+
+.partner-promo-stat {
+    position: relative;
+    background: var(--main-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 20px;
+    padding: 40px 40px;
+    overflow: hidden;
+}
+
+.partner-promo-stat::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(196, 170, 108, 0.25), transparent 70%);
+}
+
+.partner-promo-stat-num {
+    position: relative;
+    display: block;
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--dark-gold);
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.partner-promo-stat-lbl {
+    position: relative;
+    display: block;
+    font-size: var(--text-body);
+    color: var(--text-light);
+    margin-top: 10px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--faq-lines);
+    margin-bottom: 24px;
+}
+
+.partner-promo-formats {
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.partner-promo-formats li {
+    position: relative;
+    padding-left: 22px;
+    font-size: var(--text-small);
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.partner-promo-formats li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--dark-gold);
+}
+
+@media (max-width: 1024px) {
+    .partner-promo-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .partner-promo-text p {
+        max-width: none;
+    }
+}
+
+/*--------------------------------------------------------------
 # FOOTER
 --------------------------------------------------------------*/
 footer {
