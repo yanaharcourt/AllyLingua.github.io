@@ -150,17 +150,50 @@
 }
 
 .prog-pill--price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 100%;
+    order: -1;
     background: transparent;
     border: none;
-    padding: 6px 0;
-    font-size: 1.375rem;
-    font-weight: 700;
+    border-radius: 0;
+    padding: 0 0 6px;
+    margin-bottom: 4px;
+    font-size: 3.25rem;
+    font-weight: 800;
+    line-height: 1.1;
     color: var(--dark-gold);
-    letter-spacing: -0.2px;
+    letter-spacing: -0.5px;
+}
+
+.prog-pill--price .prog-price-unit {
+    display: inline;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.prog-pill--price .prog-price-note {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: var(--text-light);
 }
 
 @media (max-width: 640px) {
     .prog-pill--price {
+        font-size: 3rem;
+    }
+
+    .prog-pill--price .prog-price-unit {
+        font-size: 1.5rem;
+    }
+
+    .prog-pill--price .prog-price-note {
         font-size: 1.15rem;
     }
 }
