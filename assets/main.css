@@ -3722,3 +3722,13 @@ button.language-btn {
         animation: none;
     }
 }
+
+/* Price line inside programme cards on the home page */
+.prog-card-body .prog-card-price {
+    display: block;
+    margin-top: 12px;
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: var(--dark-gold);
+}
