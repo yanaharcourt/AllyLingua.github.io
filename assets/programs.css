@@ -150,9 +150,7 @@
 }
 
 .prog-pill--price {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: block;
     flex: 0 0 100%;
     order: -1;
     background: transparent;
