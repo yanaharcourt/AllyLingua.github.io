@@ -11,7 +11,8 @@
     const params = new URLSearchParams(window.location.search);
     const urlLang = params.get('lang');
     if (urlLang === 'en' || urlLang === 'ru') return urlLang;
-    const stored = localStorage.getItem(STORAGE_KEY);
+    let stored = null;
+    try { stored = localStorage.getItem(STORAGE_KEY); } catch (e) {}
     if (stored === 'en' || stored === 'ru') return stored;
     return 'ru';
   }
@@ -76,9 +77,26 @@
 
     if (typeof window.onLangChange === 'function') window.onLangChange(lang);
 
-    localStorage.setItem(STORAGE_KEY, lang);
     window.currentLang = lang;
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+    carryLangInLinks(lang);
     document.dispatchEvent(new CustomEvent('langchange', { detail: { lang } }));
+  }
+
+  // Internal page links keep the language the visitor is currently reading in.
+  function carryLangInLinks(lang) {
+    document.querySelectorAll('a[href]').forEach(a => {
+      const href = a.getAttribute('href');
+      if (!/^(\.\/)?(index|programs|blog)\.html(?=[?#]|$)/.test(href)) return;
+      const hashAt = href.indexOf('#');
+      const hash = hashAt >= 0 ? href.slice(hashAt) : '';
+      const base = hashAt >= 0 ? href.slice(0, hashAt) : href;
+      const qAt = base.indexOf('?');
+      const path = qAt >= 0 ? base.slice(0, qAt) : base;
+      const params = new URLSearchParams(qAt >= 0 ? base.slice(qAt + 1) : '');
+      params.set('lang', lang);
+      a.setAttribute('href', path + '?' + params.toString() + hash);
+    });
   }
 
   window.setLang = applyLang;
